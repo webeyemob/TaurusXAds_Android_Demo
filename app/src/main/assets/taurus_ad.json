@@ -1,0 +1,170 @@
+{
+  "mediation": [{
+    "adName": "AdMob",
+    "banner": "ea6fe45b-c7a9-4dcd-aab8-89d8fdb4a93c",
+    "rewarded": "199ad96c-2ab1-43f3-8f7a-c00c99b5f224",
+    "interstitial": "49d0e6fa-e527-42f0-9b1b-770a5b333beb",
+    "native": "304af8d5-8f88-4b3c-a783-aaf3d7d88db4"
+    },
+    {
+      "adName": "AdColony",
+      "banner": "",
+      "rewarded": "f6a61160-a912-4dbe-b5ef-67e2efe5964a",
+      "interstitial": "5f3d5131-5bd0-4cea-873f-dbb91c701e93",
+      "native": ""
+    },
+    {
+      "adName": "AdGeneration",
+      "banner": "848d76be-4295-43aa-a128-19327a5d95b9",
+      "rewarded": "",
+      "interstitial": "1df516af-a62f-49ba-9bc6-6ebf032e811e",
+      "native": "57d08adf-1358-486e-887f-02a48d7d857a"
+    },
+    {
+      "adName": "Amazon",
+      "banner": "267cf6e3-a198-4166-8dac-8fd21c9cde46",
+      "rewarded": "",
+      "interstitial": "f30a94aa-40ec-463a-afbe-2fc1781bc999",
+      "native": ""
+    },
+    {
+      "adName": "AppLovin",
+      "banner": "613c06f7-f48d-4c69-aba7-d453513d7007",
+      "rewarded": "b03099ed-ac2b-43d7-82ff-1a7b19d17de9",
+      "interstitial": "63d5dbd8-b9ab-4a7a-86d9-406826953da8",
+      "native": "5816ab14-be45-4fb4-a1c0-510d7395a1c5"
+    },
+    {
+      "adName": "ChartBoost",
+      "banner": "",
+      "rewarded": "18df2077-3a2f-4318-9551-afa5e2c65b14",
+      "interstitial": "b235e260-5815-406d-afbe-276a23aa369a",
+      "native": ""
+    },
+    {
+      "adName": "DFP",
+      "banner": "617e49c3-4d6e-4b69-806e-776873fa0c72",
+      "rewarded": "ebe8be54-0e95-49ff-9faf-aba17c43b548",
+      "interstitial": "d6426b6e-9e87-4e73-9634-2fae137fd128",
+      "native": "ee27ab16-772d-43e1-acbb-96e87ee0f0c4"
+    },
+    {
+      "adName": "Display.IO",
+      "banner": "94e0063d-a307-4f60-b352-e4a50c446400",
+      "rewarded": "",
+      "interstitial": "228ab4e9-b4f5-4569-82bc-ba7431196808",
+      "native": ""
+    },
+    {
+      "adName": "DU Ad Platform",
+      "banner": "124c4d62-17d1-413e-974f-352fdf7a2a49",
+      "rewarded": "",
+      "interstitial": "04149544-8235-452f-a640-d8d0e42cc870",
+      "native": "9260d2f2-9145-45a5-b2b8-64871199e547"
+    },
+    {
+      "adName": "Facebook",
+      "banner": "5ccb63da-90a8-4a15-80dc-64cfc279a2a2",
+      "rewarded": "b90cada3-707e-47cc-9875-a39953824090",
+      "interstitial": "e6467841-5c74-4fc7-8582-81b44e649dd7",
+      "native": "00ea7ad6-bb0a-442c-af30-023f08729fec"
+    },
+    {
+      "adName": "Flurry",
+      "banner": "6d63bb65-f229-4f13-8a15-4ef34a9617a0",
+      "rewarded": "f5fcd35b-1a87-465a-98f8-abea65b5d6a1",
+      "interstitial": "51314c1e-3411-44b4-8f89-0c7df3185942",
+      "native": "1aa03a9c-abe3-4776-b751-3117c81ad353"
+    },
+    {
+      "adName": "Fyber",
+      "banner": "cbb2eb10-93b6-4cf0-892f-da79579a778d",
+      "rewarded": "",
+      "interstitial": "53810164-bcd2-4eed-945f-91c97e97bd9e",
+      "native": "256dbe9d-de6d-472e-9401-24a4c3840d30"
+    },
+    {
+      "adName": "Inmobi",
+      "banner": "6db7de82-8c05-4d20-b65a-1d5916d1dee9",
+      "rewarded": "6abd87cc-6a87-4cd1-bc08-490c78b6c7a1",
+      "interstitial": "080148a5-a074-4f1c-9054-23c03b803080",
+      "native": "3c79a853-7264-40e8-983e-8da5c31b8d72"
+    },
+    {
+      "adName": "IronSource",
+      "banner": "102403cc-b10b-49f7-ac95-c47d6bfe5d84",
+      "rewarded": "af7fcea0-0834-4bcd-bdb3-59637c1648f6",
+      "interstitial": "52583d20-5d3a-4989-86a8-d97d714ceed0",
+      "native": ""
+    },
+    {
+      "adName": "Maio",
+      "banner": "",
+      "rewarded": "0e0e2ce7-d255-4ea1-975a-754fed3671c4",
+      "interstitial": "baa759a1-06f3-42ef-86b2-0631b01fe47f",
+      "native": ""
+    },
+    {
+      "adName": "Mopub",
+      "banner": "fa4ed654-95f9-4135-98e0-88001498836e",
+      "rewarded": "95b71076-87f7-4dcd-8b02-c19707f37083",
+      "interstitial": "a71f18ce-7d40-4a2f-b246-d1b60806a435",
+      "native": "96a02419-e2cb-4667-b506-3a15f7702439"
+    },
+    {
+      "adName": "Nend",
+      "banner": "25ba41df-c69b-45f4-a1fd-d25221d3e9d4",
+      "rewarded": "d794a8f0-b5a3-4bc2-9530-f40893a3f851",
+      "interstitial": "9d499190-911a-4b1a-8734-23c2de9a9613",
+      "native": "81d6e364-6d44-46c2-bbc9-539dbdc3bbfa"
+    },
+    {
+      "adName": "Tapjoy",
+      "banner": "",
+      "rewarded": "45d81515-0c07-430f-bce6-577951c4862c",
+      "interstitial": "559ef26b-8b08-4855-8b47-3436101d92dc",
+      "native": ""
+    },
+    {
+      "adName": "Tiktok",
+      "banner": "a68f5be9-7b92-4436-9ca0-90291f66ba90",
+      "rewarded": "9cd47dd7-b5f3-4ab8-a74f-8f9c8c6ca39d",
+      "interstitial": "c88b9ae1-81df-452e-ad86-40e8ba2dd8dc",
+      "native": "0e3227ac-6782-40c1-ada4-8970369a742c"
+    },
+    {
+      "adName": "Unity Ads",
+      "banner": "4691e2e4-5834-4191-803e-9df39b7ca55c",
+      "rewarded": "88874c50-75a3-4c55-b8ad-7f8b584fae41",
+      "interstitial": "63f37f5a-d045-4e63-a8e2-aafe64823d3d",
+      "native": ""
+    },
+    {
+      "adName": "Criteo",
+      "banner": "a57a4c37-bc7d-435b-921a-ed73f4413c86",
+      "rewarded": "",
+      "interstitial": "",
+      "native": ""
+    },
+    {
+      "adName": "MarketPlace",
+      "banner": "c6f057f7-b8bd-40e5-b7e5-4d42287a5acb",
+      "rewarded": "89f7016e-ceae-4305-94fe-569c959ed8d4",
+      "interstitial": "97da9199-8314-486c-a1ce-7949dfbc5c21",
+      "native": ""
+    },
+    {
+      "adName": "Creative",
+      "banner": "5502dfa5-6652-42fb-9e7e-215337799789",
+      "rewarded": "9c9509b3-b4cf-4354-a515-1e754657ef6e",
+      "interstitial": "5568ac9e-be1e-48d6-90f4-726d2f71bc94",
+      "native": "5a28316a-0798-44d1-817e-119998c53643"
+    },
+    {
+      "adName": "Vungle",
+      "banner": "3b748e88-11b4-4e81-bdf4-eb394794491e",
+      "rewarded": "35eaf388-83d9-45ce-bd3e-d2f781064c99",
+      "interstitial": "2d668f07-b84e-4868-bb68-5f06d8be8052",
+      "native": ""
+    }]
+}

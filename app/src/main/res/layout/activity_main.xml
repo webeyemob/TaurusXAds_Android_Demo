@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/divider_gray"/>
+        <TextView
+            android:id="@+id/base_test"
+            android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/ripple_white_mask"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/base_test"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/divider_gray"/>
+
+        <TextView
+            android:id="@+id/networks_test"
+            android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/ripple_white_mask"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/networks_test"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/divider_gray"/>
+
+        <TextView
+            android:id="@+id/strategy_test"
+            android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/ripple_white_mask"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/stratege_test"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/divider_gray"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>
