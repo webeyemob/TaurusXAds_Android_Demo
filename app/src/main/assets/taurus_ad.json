@@ -1,58 +1,60 @@
 {
-  "mediation": [{
-    "adName": "AdMob",
-    "banner": "ea6fe45b-c7a9-4dcd-aab8-89d8fdb4a93c",
-    "rewarded": "199ad96c-2ab1-43f3-8f7a-c00c99b5f224",
-    "interstitial": "49d0e6fa-e527-42f0-9b1b-770a5b333beb",
-    "native": "304af8d5-8f88-4b3c-a783-aaf3d7d88db4"
-    },
+  "mediation": [
     {
       "adName": "AdColony",
       "banner": "",
-      "rewarded": "f6a61160-a912-4dbe-b5ef-67e2efe5964a",
-      "interstitial": "5f3d5131-5bd0-4cea-873f-dbb91c701e93",
+      "rewarded": "a0e7f1f4-b228-4567-875d-83771ac04dfa",
+      "interstitial": "d3d6ca79-fd86-458c-8fda-05896e2534c8",
       "native": ""
     },
     {
+      "adName": "AdMob",
+      "banner": "dbc15c66-6e4e-4a3f-85a2-a02276d695d4",
+      "feedlist": "7b335f40-df8e-4696-96f8-e646634dede3",
+      "rewarded": "cc426990-b2e7-4dc2-b0bd-30941cafc67e",
+      "interstitial": "15148bdb-cffd-426b-aa4f-d37db3906df2",
+      "native": "124f6980-383a-4775-b855-107bf11daacd"
+    },
+    {
       "adName": "AdGeneration",
-      "banner": "848d76be-4295-43aa-a128-19327a5d95b9",
+      "banner": "58c2da4c-4337-4749-8328-b28c488313a7",
       "rewarded": "",
-      "interstitial": "1df516af-a62f-49ba-9bc6-6ebf032e811e",
-      "native": "57d08adf-1358-486e-887f-02a48d7d857a"
+      "interstitial": "d3e8ccbb-66cf-4419-ae4a-8ed482237556",
+      "native": "ade473f4-7553-431e-b732-f10017d63b2d"
     },
     {
       "adName": "Amazon",
-      "banner": "267cf6e3-a198-4166-8dac-8fd21c9cde46",
+      "banner": "fa49042e-2049-4dee-981b-f35a9f9453e4",
       "rewarded": "",
-      "interstitial": "f30a94aa-40ec-463a-afbe-2fc1781bc999",
+      "interstitial": "43120874-aab9-48a9-86da-9502e91160a1",
       "native": ""
     },
     {
       "adName": "AppLovin",
-      "banner": "613c06f7-f48d-4c69-aba7-d453513d7007",
-      "rewarded": "b03099ed-ac2b-43d7-82ff-1a7b19d17de9",
-      "interstitial": "63d5dbd8-b9ab-4a7a-86d9-406826953da8",
-      "native": "5816ab14-be45-4fb4-a1c0-510d7395a1c5"
+      "banner": "8d2b9e68-e6be-4b59-be2e-f94bd9785c93",
+      "rewarded": "96a061df-d6cb-4e1a-aede-69b20c9337dd",
+      "interstitial": "c2e68604-d662-4501-952c-0201c41125ea",
+      "native": "671aa242-199c-4b99-8cdc-014dd912ea6d"
     },
     {
       "adName": "ChartBoost",
       "banner": "",
-      "rewarded": "18df2077-3a2f-4318-9551-afa5e2c65b14",
-      "interstitial": "b235e260-5815-406d-afbe-276a23aa369a",
+      "rewarded": "2f91459c-1e03-4c84-94c2-e1b95f9bb374",
+      "interstitial": "4cbf2b8a-37d6-4dfb-9eee-e68c6966abb6",
       "native": ""
     },
     {
       "adName": "DFP",
-      "banner": "617e49c3-4d6e-4b69-806e-776873fa0c72",
-      "rewarded": "ebe8be54-0e95-49ff-9faf-aba17c43b548",
-      "interstitial": "d6426b6e-9e87-4e73-9634-2fae137fd128",
-      "native": "ee27ab16-772d-43e1-acbb-96e87ee0f0c4"
+      "banner": "ade5efab-fbd0-422d-b0b4-401738a744eb",
+      "rewarded": "2f7d3967-d6f2-4978-bf9c-25a470b53ba7",
+      "interstitial": "772053d7-09f8-4a8b-9a5a-9ded5739f5da",
+      "native": "db1676d4-cfa6-4690-afad-44d5583895e3"
     },
     {
       "adName": "Display.IO",
-      "banner": "94e0063d-a307-4f60-b352-e4a50c446400",
+      "banner": "54800727-e354-4316-a4bc-7b0c01299ef4",
       "rewarded": "",
-      "interstitial": "228ab4e9-b4f5-4569-82bc-ba7431196808",
+      "interstitial": "9c98d4f9-c775-4108-84f3-b82461a5dd3c",
       "native": ""
     },
     {
@@ -64,79 +66,82 @@
     },
     {
       "adName": "Facebook",
-      "banner": "5ccb63da-90a8-4a15-80dc-64cfc279a2a2",
-      "rewarded": "b90cada3-707e-47cc-9875-a39953824090",
-      "interstitial": "e6467841-5c74-4fc7-8582-81b44e649dd7",
-      "native": "00ea7ad6-bb0a-442c-af30-023f08729fec"
+      "banner": "8e4352fb-954b-41e4-9290-ba42bc32708f",
+      "feedlist": "5ef12d72-ce71-4fc5-a8e2-c287784b6c34",
+      "rewarded": "bb187db4-fe72-4760-9dfc-4ca74f3592b2",
+      "interstitial": "441cc5ce-768d-48a9-8835-8f8b73117666",
+      "native": "7256db90-59b9-4197-8a63-c2feb87a8823"
     },
     {
       "adName": "Flurry",
-      "banner": "6d63bb65-f229-4f13-8a15-4ef34a9617a0",
-      "rewarded": "f5fcd35b-1a87-465a-98f8-abea65b5d6a1",
-      "interstitial": "51314c1e-3411-44b4-8f89-0c7df3185942",
-      "native": "1aa03a9c-abe3-4776-b751-3117c81ad353"
+      "banner": "b51c3f97-d08c-4c8d-8fe8-eccecccf91fb",
+      "rewarded": "31ee841d-dc31-4e77-8bed-f9f4ce5f46e4",
+      "interstitial": "4966d5aa-aafa-4767-af89-6863f31b14dc",
+      "native": "c70545e7-1bc8-468e-acc5-f2086114467d"
     },
     {
       "adName": "Fyber",
-      "banner": "cbb2eb10-93b6-4cf0-892f-da79579a778d",
+      "banner": "0903fc38-46ac-4380-8b05-69a8e4c879d2",
       "rewarded": "",
-      "interstitial": "53810164-bcd2-4eed-945f-91c97e97bd9e",
-      "native": "256dbe9d-de6d-472e-9401-24a4c3840d30"
+      "interstitial": "e1109e2c-91cf-4761-895a-9da55d6518eb",
+      "native": "e4c88231-6f5c-499f-a26d-b419414933c9"
     },
     {
       "adName": "Inmobi",
-      "banner": "6db7de82-8c05-4d20-b65a-1d5916d1dee9",
-      "rewarded": "6abd87cc-6a87-4cd1-bc08-490c78b6c7a1",
-      "interstitial": "080148a5-a074-4f1c-9054-23c03b803080",
-      "native": "3c79a853-7264-40e8-983e-8da5c31b8d72"
+      "banner": "0f8803af-a1f0-49b5-95b0-73daec28b19e",
+      "rewarded": "e4c7a854-8030-48a2-a8a9-f747521a27ff",
+      "interstitial": "cec5b04c-a40e-4ba5-b777-2201640e334a",
+      "native": "64f80c96-5c3f-4e86-be27-4432cd59747b"
     },
     {
       "adName": "IronSource",
-      "banner": "102403cc-b10b-49f7-ac95-c47d6bfe5d84",
-      "rewarded": "af7fcea0-0834-4bcd-bdb3-59637c1648f6",
-      "interstitial": "52583d20-5d3a-4989-86a8-d97d714ceed0",
+      "banner": "1f472d1e-cffc-44a4-8683-955d6bf50de0",
+      "rewarded": "2a4d4aa0-9b72-432e-a87b-187c23d9e50f",
+      "interstitial": "a49b31d2-168b-4e2c-8588-6d8b85199bc1",
       "native": ""
     },
     {
       "adName": "Maio",
       "banner": "",
-      "rewarded": "0e0e2ce7-d255-4ea1-975a-754fed3671c4",
-      "interstitial": "baa759a1-06f3-42ef-86b2-0631b01fe47f",
+      "rewarded": "1ad47388-f720-4a96-ac49-e65f662b52cc",
+      "interstitial": "52df638a-420d-406c-82fa-a0731d47b747",
       "native": ""
     },
     {
       "adName": "Mopub",
-      "banner": "fa4ed654-95f9-4135-98e0-88001498836e",
-      "rewarded": "95b71076-87f7-4dcd-8b02-c19707f37083",
-      "interstitial": "a71f18ce-7d40-4a2f-b246-d1b60806a435",
-      "native": "96a02419-e2cb-4667-b506-3a15f7702439"
+      "banner": "560365c2-55e6-43a2-ae6b-2d74a7539f4e",
+      "feedlist": "9c4406c4-3a1a-4a5f-a1db-e2343f00d856",
+      "rewarded": "191120de-d177-49e4-860c-4a88c1406758",
+      "interstitial": "1fa4f6cd-d817-45db-aef4-7ccd0c54c128",
+      "native": "bf833bf5-dda0-4a78-b270-b97ed68bbec9"
     },
     {
       "adName": "Nend",
-      "banner": "25ba41df-c69b-45f4-a1fd-d25221d3e9d4",
-      "rewarded": "d794a8f0-b5a3-4bc2-9530-f40893a3f851",
-      "interstitial": "9d499190-911a-4b1a-8734-23c2de9a9613",
-      "native": "81d6e364-6d44-46c2-bbc9-539dbdc3bbfa"
+      "banner": "3d8d2500-0890-4e1a-aa48-955d1c3f1dbf",
+      "rewarded": "869bd5a6-c4f8-40a2-a27a-20e5afd2c88e",
+      "interstitial": "eb211297-a8ff-4cca-85b9-b98a6e640346",
+      "native": "3a9a4c1c-a184-4761-b029-76c5c4b5ba06"
     },
     {
       "adName": "Tapjoy",
       "banner": "",
-      "rewarded": "45d81515-0c07-430f-bce6-577951c4862c",
-      "interstitial": "559ef26b-8b08-4855-8b47-3436101d92dc",
+      "rewarded": "f8515dd7-5e61-4d9b-abc2-7d9e0dd198ab",
+      "interstitial": "d067eadc-677c-42ee-979b-674ce12e9501",
       "native": ""
     },
     {
       "adName": "Tiktok",
-      "banner": "a68f5be9-7b92-4436-9ca0-90291f66ba90",
-      "rewarded": "9cd47dd7-b5f3-4ab8-a74f-8f9c8c6ca39d",
-      "interstitial": "c88b9ae1-81df-452e-ad86-40e8ba2dd8dc",
-      "native": "0e3227ac-6782-40c1-ada4-8970369a742c"
+      "banner": "a8cdf8b3-9de4-43cf-8d5d-624eb2d92c65",
+      "feedlist": "5d611e41-8a55-4755-a817-d0ae13d4bbb1",
+      "rewarded": "cfc3aafd-5bff-4803-99d0-de3b5a4286ca",
+      "interstitial": "f592c95c-51ce-44d1-8296-5161211f95bb",
+      "native": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b"
     },
     {
       "adName": "Unity Ads",
-      "banner": "4691e2e4-5834-4191-803e-9df39b7ca55c",
-      "rewarded": "88874c50-75a3-4c55-b8ad-7f8b584fae41",
-      "interstitial": "63f37f5a-d045-4e63-a8e2-aafe64823d3d",
+      "banner": "733cd340-e39b-4bd0-b0a7-9b873b22a488",
+      "rewarded": "94a93ce9-33e7-4ad5-9851-668eb094ed74",
+      "interstitial": "adf3fa0f-0c87-499b-b1a6-66b72819967f",
       "native": ""
     },
     {
@@ -147,24 +152,10 @@
       "native": ""
     },
     {
-      "adName": "MarketPlace",
-      "banner": "c6f057f7-b8bd-40e5-b7e5-4d42287a5acb",
-      "rewarded": "89f7016e-ceae-4305-94fe-569c959ed8d4",
-      "interstitial": "97da9199-8314-486c-a1ce-7949dfbc5c21",
-      "native": ""
-    },
-    {
-      "adName": "Creative",
-      "banner": "5502dfa5-6652-42fb-9e7e-215337799789",
-      "rewarded": "9c9509b3-b4cf-4354-a515-1e754657ef6e",
-      "interstitial": "5568ac9e-be1e-48d6-90f4-726d2f71bc94",
-      "native": "5a28316a-0798-44d1-817e-119998c53643"
-    },
-    {
       "adName": "Vungle",
-      "banner": "3b748e88-11b4-4e81-bdf4-eb394794491e",
-      "rewarded": "35eaf388-83d9-45ce-bd3e-d2f781064c99",
-      "interstitial": "2d668f07-b84e-4868-bb68-5f06d8be8052",
+      "banner": "0f481962-639d-4009-bb7a-2d84f3251e76",
+      "rewarded": "6ddece3b-9abc-4640-9fd9-797cce32b622",
+      "interstitial": "217f6a9b-ee18-44e1-89ff-87a2b42659b4",
       "native": ""
     }]
 }
