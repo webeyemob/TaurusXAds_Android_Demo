@@ -1,6 +1,20 @@
 {
   "mediation": [
     {
+      "adName": "360",
+      "banner": "53b625be-314b-426e-8594-bc1de8f0f58a",
+      "rewarded": "026f6b8e-a721-4f8a-8f78-27eb73fadbae",
+      "interstitial": "bba0843c-220e-406b-9451-1dbd7e3c473c",
+      "native": ""
+    },
+    {
+      "adName": "4399",
+      "banner": "a6d1d81e-0120-4f4d-9b2f-0b8fa156dedf",
+      "rewarded": "2a67f31d-a06c-4cad-bb05-ff339bbf10cf",
+      "interstitial": "0bc71269-cadd-40c7-a4be-738e2769a66e",
+      "native": "f2bcaa3f-7461-4fc3-ab68-8ae2c9754026"
+    },
+    {
       "adName": "AdColony",
       "banner": "",
       "rewarded": "a0e7f1f4-b228-4567-875d-83771ac04dfa",
@@ -14,6 +28,13 @@
       "rewarded": "cc426990-b2e7-4dc2-b0bd-30941cafc67e",
       "interstitial": "15148bdb-cffd-426b-aa4f-d37db3906df2",
       "native": "124f6980-383a-4775-b855-107bf11daacd"
+    },
+    {
+      "adName": "Aligames",
+      "banner": "55a36181-fddb-4d49-98f7-fbf83c340ef7",
+      "rewarded": "6233ea32-0956-49a6-bccb-8b5b0255f4fa",
+      "interstitial": "c8c33a6f-5bd4-48ef-a4da-1b7b053ee8dd",
+      "native": "a33c67df-f456-4a3a-8bf6-2733ef5eb205"
     },
     {
       "adName": "AdGeneration",
@@ -37,11 +58,26 @@
       "native": "671aa242-199c-4b99-8cdc-014dd912ea6d"
     },
     {
+      "adName": "Baidu",
+      "banner": "",
+      "feedlist": "a87625ce-9621-4d70-b70f-9f7eb6f36797",
+      "rewarded": "7b5accc2-c6b8-4e4a-8c9c-998748181536",
+      "interstitial": "0aa0d5e3-8b1d-45e5-90dc-b73dd906c765",
+      "native": "958c8c7e-9620-4874-89db-7939ad1599f3"
+    },
+    {
       "adName": "ChartBoost",
       "banner": "",
       "rewarded": "2f91459c-1e03-4c84-94c2-e1b95f9bb374",
       "interstitial": "4cbf2b8a-37d6-4dfb-9eee-e68c6966abb6",
       "native": ""
+    },
+    {
+      "adName": "DU Ad Platform",
+      "banner": "cd832204-d25a-42b5-bd59-03132cf0ad87",
+      "rewarded": "",
+      "interstitial": "7136fd8d-3e7a-4592-829e-2962ada5d9ea",
+      "native": "8896e06b-89f9-4c56-b06e-4d4f7843ee81"
     },
     {
       "adName": "DFP",
@@ -56,13 +92,6 @@
       "rewarded": "",
       "interstitial": "9c98d4f9-c775-4108-84f3-b82461a5dd3c",
       "native": ""
-    },
-    {
-      "adName": "DU Ad Platform",
-      "banner": "124c4d62-17d1-413e-974f-352fdf7a2a49",
-      "rewarded": "",
-      "interstitial": "04149544-8235-452f-a640-d8d0e42cc870",
-      "native": "9260d2f2-9145-45a5-b2b8-64871199e547"
     },
     {
       "adName": "Facebook",
@@ -87,6 +116,14 @@
       "native": "e4c88231-6f5c-499f-a26d-b419414933c9"
     },
     {
+      "adName": "GDT",
+      "banner": "609dfe92-58f2-4cf6-8237-cbfae3a38764",
+      "feedlist": "3afab72a-df0d-4fd8-9757-ada1b9c042da",
+      "rewarded": "82641cd3-acff-4654-846c-d90c287e903b",
+      "interstitial": "49e1628d-3d50-4fcd-aea6-d0177b22a1f7",
+      "native": "98b900eb-1da9-4a86-a182-9383728a1439"
+    },
+    {
       "adName": "Inmobi",
       "banner": "0f8803af-a1f0-49b5-95b0-73daec28b19e",
       "rewarded": "e4c7a854-8030-48a2-a8a9-f747521a27ff",
@@ -108,6 +145,21 @@
       "native": ""
     },
     {
+      "adName": "Xiaomi",
+      "banner": "14ac3b4a-857f-4481-abde-d8cb770f902b",
+      "feedlist": "995d9c22-a4e2-4ca9-b45d-6eda0be24fe1",
+      "rewarded": "87241602-711b-498b-a874-9236ce5a4cb1",
+      "interstitial": "eb6b92bb-4553-4c6a-9c75-84bc9f955acf",
+      "native": "9917c6b1-ca6c-45d5-bd2f-f9949785e891"
+    },
+    {
+      "adName": "Mobvista",
+      "banner": "",
+      "rewarded": "55919798-14b6-4cbb-a857-3af830e2b6b4",
+      "interstitial": "5c7431b7-51f3-438e-97b5-98c4bf65d736",
+      "native": ""
+    },
+    {
       "adName": "Mopub",
       "banner": "560365c2-55e6-43a2-ae6b-2d74a7539f4e",
       "feedlist": "9c4406c4-3a1a-4a5f-a1db-e2343f00d856",
@@ -123,9 +175,16 @@
       "native": "3a9a4c1c-a184-4761-b029-76c5c4b5ba06"
     },
     {
+      "adName": "Oppo",
+      "banner": "f2fdfb47-030e-47e6-bee4-c2680adda549",
+      "rewarded": "aa4202d6-6dd2-4f55-9217-b8efdf90fb1a",
+      "interstitial": "55784876-6725-4b2a-ab70-f4bf97ddeebc",
+      "native": "25e061e0-3017-4099-9185-7c20a571005d"
+    },
+    {
       "adName": "Tapjoy",
       "banner": "",
-      "rewarded": "f8515dd7-5e61-4d9b-abc2-7d9e0dd198ab",
+      "rewarded": "d067eadc-677c-42ee-979b-674ce12e9501",
       "interstitial": "d067eadc-677c-42ee-979b-674ce12e9501",
       "native": ""
     },
@@ -143,12 +202,11 @@
       "rewarded": "94a93ce9-33e7-4ad5-9851-668eb094ed74",
       "interstitial": "adf3fa0f-0c87-499b-b1a6-66b72819967f",
       "native": ""
-    },
-    {
-      "adName": "Criteo",
-      "banner": "a57a4c37-bc7d-435b-921a-ed73f4413c86",
-      "rewarded": "",
-      "interstitial": "",
+    },{
+      "adName": "Vivo",
+      "banner": "",
+      "rewarded": "0bbe3e3b-116e-4725-b6cb-9b2ad7e9abbd",
+      "interstitial": "65b22d08-001e-4012-96cf-0dad66f4efe6",
       "native": ""
     },
     {
@@ -156,6 +214,21 @@
       "banner": "0f481962-639d-4009-bb7a-2d84f3251e76",
       "rewarded": "6ddece3b-9abc-4640-9fd9-797cce32b622",
       "interstitial": "217f6a9b-ee18-44e1-89ff-87a2b42659b4",
+      "native": ""
+    },
+    {
+      "adName": "Zhonghui",
+      "banner": "",
+      "feedlist": "abf460d1-65fc-41b4-bc6c-52dee0164b18",
+      "rewarded": "a9fd9568-e785-43d1-8614-d57bb1f06e07",
+      "interstitial": "",
+      "native": ""
+    },
+    {
+      "adName": "Criteo",
+      "banner": "fed01ef3-b0d0-469b-9a7a-c23648706f35",
+      "rewarded": "",
+      "interstitial": "abcadae9-89bd-472c-9d0d-7dba445a436c",
       "native": ""
     }]
 }
