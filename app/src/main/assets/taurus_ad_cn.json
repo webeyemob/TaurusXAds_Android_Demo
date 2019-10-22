@@ -1,6 +1,64 @@
 {
   "mediation": [
     {
+      "adName": "360",
+      "banner": "53b625be-314b-426e-8594-bc1de8f0f58a",
+      "rewarded": "026f6b8e-a721-4f8a-8f78-27eb73fadbae",
+      "interstitial": "bba0843c-220e-406b-9451-1dbd7e3c473c",
+      "native": ""
+    },
+    {
+      "adName": "4399",
+      "banner": "a6d1d81e-0120-4f4d-9b2f-0b8fa156dedf",
+      "rewarded": "2a67f31d-a06c-4cad-bb05-ff339bbf10cf",
+      "interstitial": "0bc71269-cadd-40c7-a4be-738e2769a66e",
+      "native": "f2bcaa3f-7461-4fc3-ab68-8ae2c9754026"
+    },
+    {
+      "adName": "Aligames",
+      "banner": "55a36181-fddb-4d49-98f7-fbf83c340ef7",
+      "rewarded": "6233ea32-0956-49a6-bccb-8b5b0255f4fa",
+      "interstitial": "c8c33a6f-5bd4-48ef-a4da-1b7b053ee8dd",
+      "native": "a33c67df-f456-4a3a-8bf6-2733ef5eb205"
+    },
+    {
+      "adName": "Xiaomi",
+      "banner": "14ac3b4a-857f-4481-abde-d8cb770f902b",
+      "feedlist": "995d9c22-a4e2-4ca9-b45d-6eda0be24fe1",
+      "rewarded": "87241602-711b-498b-a874-9236ce5a4cb1",
+      "interstitial": "eb6b92bb-4553-4c6a-9c75-84bc9f955acf",
+      "native": "9917c6b1-ca6c-45d5-bd2f-f9949785e891"
+    },
+    {
+      "adName": "Mobvista",
+      "banner": "",
+      "rewarded": "55919798-14b6-4cbb-a857-3af830e2b6b4",
+      "interstitial": "5c7431b7-51f3-438e-97b5-98c4bf65d736",
+      "native": ""
+    },
+    {
+      "adName": "Oppo",
+      "banner": "f2fdfb47-030e-47e6-bee4-c2680adda549",
+      "rewarded": "aa4202d6-6dd2-4f55-9217-b8efdf90fb1a",
+      "interstitial": "55784876-6725-4b2a-ab70-f4bf97ddeebc",
+      "native": "25e061e0-3017-4099-9185-7c20a571005d"
+    },
+    {
+      "adName": "Vivo",
+      "banner": "",
+      "rewarded": "0bbe3e3b-116e-4725-b6cb-9b2ad7e9abbd",
+      "interstitial": "65b22d08-001e-4012-96cf-0dad66f4efe6",
+      "native": ""
+    },
+    {
+      "adName": "Zhonghui",
+      "banner": "",
+      "feedlist": "abf460d1-65fc-41b4-bc6c-52dee0164b18",
+      "rewarded": "a9fd9568-e785-43d1-8614-d57bb1f06e07",
+      "interstitial": "",
+      "native": ""
+    },
+    {
       "adName": "AdColony",
       "banner": "",
       "rewarded": "a0e7f1f4-b228-4567-875d-83771ac04dfa",
