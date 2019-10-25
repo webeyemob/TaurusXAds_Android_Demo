@@ -9,11 +9,19 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.inmobi.ads.InMobiBanner;
 import com.taurusx.ads.core.api.ad.BannerAdView;
+import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.mediation.networkconfig.GDTBanner1_0Config;
+import com.taurusx.ads.mediation.networkconfig.GDTBanner2_0Config;
+import com.taurusx.ads.mediation.networkconfig.InMobiBannerConfig;
+import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
+import com.taurusx.ads.mediation.networkconfig.TikTokExpressBannerConfig;
 
 
 public class BannerActivity extends BaseActivity {
@@ -35,6 +43,8 @@ public class BannerActivity extends BaseActivity {
         initData();
         // Init BannerAdView
         initBannerAdView();
+        // Set NetworkConfigs
+        setNetworkConfigs();
 
     }
 
@@ -93,5 +103,56 @@ public class BannerActivity extends BaseActivity {
             }
         });
 
+    }
+
+    private void setNetworkConfigs() {
+        mBannerAdView.setNetworkConfigs(NetworkConfigs.Builder()
+//                .addConfig(VivoBannerConfig.Builder()
+//                        .setRefreshInterval(30)
+//                        .build())
+                .addConfig(GDTBanner1_0Config.Builder()
+                        .setRefreshInterval(20)
+                        .build())
+                .addConfig(GDTBanner2_0Config.Builder()
+                        .setRefreshInterval(0)
+                        .build())
+                .addConfig(InMobiBannerConfig.Builder()
+                        .setRefreshInterval(25)
+                        .setAnimationType(InMobiBanner.AnimationType.ANIMATION_OFF)
+                        .build())
+                .addConfig(TikTokExpressBannerConfig.Builder()
+                        .setAppDownloadListener(new TikTokAppDownloadListener() {
+                            @Override
+                            public void onIdle() {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+                            }
+
+                            @Override
+                            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+                            }
+
+                            @Override
+                            public void onInstalled(String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+                            }
+                        })
+                        .build())
+                .build());
     }
 }

@@ -8,9 +8,15 @@ import android.view.View;
 import android.widget.Button;
 
 import com.taurusx.ads.core.api.ad.InterstitialAd;
+import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
+import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
+import com.taurusx.ads.mediation.networkconfig.TikTokExpressInterstitialConfig;
+import com.taurusx.ads.mediation.networkconfig.TikTokFullScreenVideoConfig;
+import com.taurusx.ads.mediation.networkconfig.TikTokNormalInterstitialConfig;
 
 public class InterstitialActivity extends BaseActivity {
 
@@ -32,6 +38,7 @@ public class InterstitialActivity extends BaseActivity {
         // Init InterstitialAd
         initInterstitialAd();
         // Set NetworkConfigs
+        setNetworkConfigs();
     }
 
     private void initInterstitialAd() {
@@ -101,5 +108,111 @@ public class InterstitialActivity extends BaseActivity {
         Intent intent = getIntent();
         mInterstitialId = intent.getStringExtra("interstitial");
     }
+
+    private void setNetworkConfigs() {
+        mInterstitialAd.setNetworkConfigs(NetworkConfigs.Builder()
+                .addConfig(TikTokNormalInterstitialConfig.Builder()
+                        .setAppDownloadListener(new TikTokAppDownloadListener() {
+                            @Override
+                            public void onIdle() {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+                            }
+
+                            @Override
+                            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+                            }
+
+                            @Override
+                            public void onInstalled(String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+                            }
+                        })
+                        .build())
+                .addConfig(TikTokExpressInterstitialConfig.Builder()
+                        .setAppDownloadListener(new TikTokAppDownloadListener() {
+                            @Override
+                            public void onIdle() {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+                            }
+
+                            @Override
+                            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+                            }
+
+                            @Override
+                            public void onInstalled(String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+                            }
+                        })
+                        .build())
+                .addConfig(TikTokFullScreenVideoConfig.Builder()
+                        .setAppDownloadListener(new TikTokAppDownloadListener() {
+                            @Override
+                            public void onIdle() {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+                            }
+
+                            @Override
+                            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+                            }
+
+                            @Override
+                            public void onInstalled(String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+                            }
+                        })
+                        .build())
+                .build());
+    }
+
+
 
 }

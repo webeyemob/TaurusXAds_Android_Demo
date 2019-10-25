@@ -8,11 +8,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
+import com.qq.e.ads.nativ.ADSize;
 import com.taurusx.ads.core.api.ad.nativead.NativeAd;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
+import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
+import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
+import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0NativeConfig;
+import com.taurusx.ads.mediation.networkconfig.GDTCustomNativeConfig;
+import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
+import com.taurusx.ads.mediation.networkconfig.OPPONativeTemplateConfig;
+import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
+import com.taurusx.ads.mediation.networkconfig.TikTokCustomBannerConfig;
+import com.taurusx.ads.mediation.networkconfig.TikTokCustomInterstitialConfig;
 
 
 public class NativeActivity extends BaseActivity {
@@ -35,6 +46,9 @@ public class NativeActivity extends BaseActivity {
 
         initData();
         initNativeAd();
+
+        // Set NetworkConfigs
+        setNetworkConfigs();
     }
 
     private void initNativeAd() {
@@ -110,5 +124,151 @@ public class NativeActivity extends BaseActivity {
     private void initData() {
         Intent intent = getIntent();
         mNativeId = intent.getStringExtra("native");
+    }
+
+    private void setNetworkConfigs() {
+        mNativeAd.setNetworkConfigs(NetworkConfigs.Builder()
+                .addConfig(GDTExpressNativeConfig.Builder()
+                        .setADSize(new ADSize(250, ADSize.AUTO_HEIGHT))
+                        .build())
+                .addConfig(GDTCustomNativeConfig.Builder()
+                        .setAppDownloadListener(new GDTAppDownloadListener() {
+                            @Override
+                            public void onIdle(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onIdle: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadActive(String appName, int progress) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadActive: "
+                                        + appName + ", " + progress + "%");
+                            }
+
+                            @Override
+                            public void onDownloadPaused(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadPaused: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFailed(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFailed: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFinished(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFinished: " + appName);
+                            }
+
+                            @Override
+                            public void onInstalled(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onInstalled: " + appName);
+                            }
+                        })
+                        .build())
+                .addConfig(GDTCustom2_0NativeConfig.Builder()
+                        .setAppDownloadListener(new GDTAppDownloadListener() {
+                            @Override
+                            public void onIdle(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onIdle: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadActive(String appName, int progress) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadActive: "
+                                        + appName + ", " + progress + "%");
+                            }
+
+                            @Override
+                            public void onDownloadPaused(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadPaused: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFailed(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFailed: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFinished(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFinished: " + appName);
+                            }
+
+                            @Override
+                            public void onInstalled(String appName) {
+                                LogUtil.d(TAG, "GDTAppDownloadListener: onInstalled: " + appName);
+                            }
+                        })
+                        .build())
+                .addConfig(TikTokCustomInterstitialConfig.Builder()
+                        .setAppDownloadListener(new TikTokAppDownloadListener() {
+                            @Override
+                            public void onIdle() {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+                            }
+
+                            @Override
+                            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+                            }
+
+                            @Override
+                            public void onInstalled(String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+                            }
+                        })
+                        .build())
+                .addConfig(TikTokCustomBannerConfig.Builder()
+                        .setAppDownloadListener(new TikTokAppDownloadListener() {
+                            @Override
+                            public void onIdle() {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+                            }
+
+                            @Override
+                            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+                            }
+
+                            @Override
+                            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+                            }
+
+                            @Override
+                            public void onInstalled(String fileName, String appName) {
+                                LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+                            }
+                        })
+                        .build())
+                .addConfig(OPPONativeTemplateConfig.Builder()
+                        .setWidth(234)
+                        .setHeight(567)
+                        .build())
+                .build());
     }
 }

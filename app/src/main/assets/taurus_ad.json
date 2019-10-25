@@ -180,5 +180,21 @@
       "rewarded": "",
       "interstitial": "abcadae9-89bd-472c-9d0d-7dba445a436c",
       "native": ""
+    },
+    {
+      "adName": "Oppo",
+      "banner": "f2fdfb47-030e-47e6-bee4-c2680adda549",
+      "rewarded": "aa4202d6-6dd2-4f55-9217-b8efdf90fb1a",
+      "interstitial": "55784876-6725-4b2a-ab70-f4bf97ddeebc",
+      "native": "25e061e0-3017-4099-9185-7c20a571005d"
+    },
+    {
+      "adName": "Zhonghui",
+      "banner": "",
+      "feedlist": "abf460d1-65fc-41b4-bc6c-52dee0164b18",
+      "rewarded": "a9fd9568-e785-43d1-8614-d57bb1f06e07",
+      "interstitial": "",
+      "native": "",
+      "splash": "9519ae88-542b-4764-8eeb-e0760550c6ce"
     }]
 }
