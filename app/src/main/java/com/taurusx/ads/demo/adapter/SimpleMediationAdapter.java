@@ -15,19 +15,20 @@ import com.taurusx.ads.demo.constance.Constance;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class SimpleMediationAdapter extends BaseAdapter {
     private Context mContext;
-    private HashMap<String, Mediation> mMediationMap;
+    private List<Map.Entry<String, Mediation>> mListInfo;
     private ArrayList<String> mList = new ArrayList<>();
 
-    public SimpleMediationAdapter(Context context, HashMap<String, Mediation> maps) {
+    public SimpleMediationAdapter(Context context, List<Map.Entry<String, Mediation>> listInfo) {
         mContext = context;
-        mMediationMap = (HashMap<String, Mediation>) maps.clone();
-        Set<String> keys = mMediationMap.keySet();
-        for (String key: keys) {
-            mList.add(key);
+        mListInfo = listInfo;
+        for (Map.Entry<String, Mediation> entry: mListInfo) {
+            mList.add(entry.getKey());
         }
     }
 
@@ -61,7 +62,7 @@ public class SimpleMediationAdapter extends BaseAdapter {
         holder.mTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Mediation mediation = mMediationMap.get(getItem(position));
+                Mediation mediation = mListInfo.get(position).getValue();
                 Intent intent = new Intent();
                 intent.putExtra(Constance.BUNDLE_NETWORK_NAME, mediation.getmName());
                 intent.putExtra(Constance.BUNDLE_TYPE_BANNER, mediation.getBannerId());

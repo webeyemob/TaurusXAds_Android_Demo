@@ -1,6 +1,8 @@
 package com.taurusx.ads.demo.utils;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -11,7 +13,16 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
+import java.util.Set;
 
 public class Utils {
     private static final String TAG = "Utils";
@@ -36,7 +47,7 @@ public class Utils {
         return null;
     }
 
-    public static HashMap<String, Mediation> getMediation(String info) {
+    public static List<Map.Entry<String, Mediation>> getMediation(String info) {
         HashMap<String, Mediation> map = new HashMap<>();
         try {
             JSONObject object = new JSONObject(info);
@@ -51,6 +62,18 @@ public class Utils {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return map;
+        return sortMediation(map);
+    }
+
+    private static List<Map.Entry<String, Mediation>> sortMediation(HashMap<String, Mediation> maps) {
+        Set<Map.Entry<String, Mediation>> set = maps.entrySet();
+        List<Map.Entry<String, Mediation>> list = new ArrayList<>(set);
+        Collections.sort(list, new Comparator<Map.Entry<String, Mediation>>() {
+            @Override
+            public int compare(Map.Entry<String, Mediation> o1, Map.Entry<String, Mediation> o2) {
+                return o1.getKey().compareTo(o2.getKey());
+            }
+        });
+        return list;
     }
 }
