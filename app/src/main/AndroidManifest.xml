@@ -47,8 +47,18 @@
             android:screenOrientation="portrait" />
 
         <activity android:name="com.taurusx.ads.demo.activitys.RewardedVideoActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        android:screenOrientation="portrait" />
+
+        <activity android:name="com.taurusx.ads.demo.activitys.FeedListActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
 
         <provider
             android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"

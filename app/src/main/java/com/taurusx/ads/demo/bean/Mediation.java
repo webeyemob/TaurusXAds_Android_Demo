@@ -8,6 +8,8 @@ public class Mediation {
     private String mInterstitialId;
     private String mRewardedId;
     private String mNativeId;
+    private String mFeedListId;
+    private String mSplashId;
 
     public Mediation() {
 
@@ -16,10 +18,13 @@ public class Mediation {
     public static Mediation fromJson(JSONObject object) {
         Mediation mediation = new Mediation();
         mediation.mName = object.optString("adName");
-        mediation.mBannerId = object.optString("banner");
-        mediation.mInterstitialId = object.optString("interstitial");
-        mediation.mNativeId = object.optString("native");
-        mediation.mRewardedId = object.optString("rewarded");
+        mediation.mBannerId = object.optString("banner", "");
+        mediation.mInterstitialId = object.optString("interstitial", "");
+        mediation.mNativeId = object.optString("native", "");
+        mediation.mRewardedId = object.optString("rewarded", "");
+        mediation.mFeedListId = object.optString("feedlist", "");
+        mediation.mSplashId = object.optString("splash", "");
+
         return mediation;
     }
 
@@ -43,6 +48,15 @@ public class Mediation {
         this.mNativeId = nativeId;
     }
 
+    public void setFeedListId(String feedListId) {
+        this.mFeedListId = feedListId;
+    }
+
+    public void setSplashId(String splashId) {
+        this.mSplashId = splashId;
+    }
+
+
     public String getmName() {
         return mName;
     }
@@ -61,5 +75,13 @@ public class Mediation {
 
     public String getNativeId() {
         return mNativeId;
+    }
+
+    public String getFeedListId() {
+        return mFeedListId;
+    }
+
+    public String getSplashId() {
+        return mSplashId;
     }
 }

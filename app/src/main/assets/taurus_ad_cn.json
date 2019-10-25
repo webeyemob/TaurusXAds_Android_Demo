@@ -12,14 +12,16 @@
       "banner": "a6d1d81e-0120-4f4d-9b2f-0b8fa156dedf",
       "rewarded": "2a67f31d-a06c-4cad-bb05-ff339bbf10cf",
       "interstitial": "0bc71269-cadd-40c7-a4be-738e2769a66e",
-      "native": "f2bcaa3f-7461-4fc3-ab68-8ae2c9754026"
+      "native": "f2bcaa3f-7461-4fc3-ab68-8ae2c9754026",
+      "splash": "9bb523ee-c11e-4076-84a0-8b4324d01e55"
     },
     {
       "adName": "Aligames",
       "banner": "55a36181-fddb-4d49-98f7-fbf83c340ef7",
       "rewarded": "6233ea32-0956-49a6-bccb-8b5b0255f4fa",
       "interstitial": "c8c33a6f-5bd4-48ef-a4da-1b7b053ee8dd",
-      "native": "a33c67df-f456-4a3a-8bf6-2733ef5eb205"
+      "native": "a33c67df-f456-4a3a-8bf6-2733ef5eb205",
+      "splash": "b9c9ce7a-7f01-4dfb-9331-8d5aab863cdf"
     },
     {
       "adName": "Xiaomi",
@@ -27,7 +29,8 @@
       "feedlist": "995d9c22-a4e2-4ca9-b45d-6eda0be24fe1",
       "rewarded": "87241602-711b-498b-a874-9236ce5a4cb1",
       "interstitial": "eb6b92bb-4553-4c6a-9c75-84bc9f955acf",
-      "native": "9917c6b1-ca6c-45d5-bd2f-f9949785e891"
+      "native": "9917c6b1-ca6c-45d5-bd2f-f9949785e891",
+      "splash": "159b29f6-daa9-44a4-91ee-6987d87fa6e2"
     },
     {
       "adName": "Mobvista",
@@ -48,7 +51,8 @@
       "banner": "",
       "rewarded": "0bbe3e3b-116e-4725-b6cb-9b2ad7e9abbd",
       "interstitial": "65b22d08-001e-4012-96cf-0dad66f4efe6",
-      "native": ""
+      "native": "",
+      "splash": "330df99c-e174-4781-ab76-573a3533a9de"
     },
     {
       "adName": "Zhonghui",
@@ -56,7 +60,8 @@
       "feedlist": "abf460d1-65fc-41b4-bc6c-52dee0164b18",
       "rewarded": "a9fd9568-e785-43d1-8614-d57bb1f06e07",
       "interstitial": "",
-      "native": ""
+      "native": "",
+      "splash": "9519ae88-542b-4764-8eeb-e0760550c6ce"
     },
     {
       "adName": "AdColony",

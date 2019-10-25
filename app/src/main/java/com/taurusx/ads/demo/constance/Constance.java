@@ -8,6 +8,7 @@ public class Constance {
     public static final String BUNDLE_TYPE_INTERSTITIAL = "interstitial";
     public static final String BUNDLE_TYPE_REWARDED = "rewarded";
     public static final String BUNDLE_TYPE_FEEDLIST = "feedlist";
+    public static final String BUNDLE_TYPE_SPLASH = "splash";
 
     public static final String CREATIVE_BANNER_ID = "324fd5e3-fa2e-4f09-b13a-8a855696f9ea";
     public static final String CREATIVE_NATIVE_ID = "4e43b149-eade-4d37-a068-c1995bac39c7";

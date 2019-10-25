@@ -43,7 +43,8 @@
       "feedlist": "a87625ce-9621-4d70-b70f-9f7eb6f36797",
       "rewarded": "7b5accc2-c6b8-4e4a-8c9c-998748181536",
       "interstitial": "0aa0d5e3-8b1d-45e5-90dc-b73dd906c765",
-      "native": "958c8c7e-9620-4874-89db-7939ad1599f3"
+      "native": "958c8c7e-9620-4874-89db-7939ad1599f3",
+      "splash": "d1487093-a161-454c-aa29-391903065358"
     },
     {
       "adName": "ChartBoost",
@@ -101,7 +102,8 @@
       "feedlist": "3afab72a-df0d-4fd8-9757-ada1b9c042da",
       "rewarded": "82641cd3-acff-4654-846c-d90c287e903b",
       "interstitial": "49e1628d-3d50-4fcd-aea6-d0177b22a1f7",
-      "native": "98b900eb-1da9-4a86-a182-9383728a1439"
+      "native": "98b900eb-1da9-4a86-a182-9383728a1439",
+      "splash": "78be1ab8-3f07-4b50-9b7b-19daa703c4dd"
     },
     {
       "adName": "Inmobi",
@@ -154,7 +156,8 @@
       "feedlist": "5d611e41-8a55-4755-a817-d0ae13d4bbb1",
       "rewarded": "cfc3aafd-5bff-4803-99d0-de3b5a4286ca",
       "interstitial": "f592c95c-51ce-44d1-8296-5161211f95bb",
-      "native": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b"
+      "native": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b",
+      "splash": "babbee3a-a9f4-4f00-9baa-f47d625c539c"
     },
     {
       "adName": "Unity Ads",

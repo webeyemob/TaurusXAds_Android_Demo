@@ -32,7 +32,19 @@
             android:id="@+id/native_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="NativeAd" />
+            android:text="NativeAd"/>
+
+        <Button
+            android:id="@+id/feedlist_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FeedListAd"/>
+
+        <Button
+            android:id="@+id/splash_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SplashAd"/>
 
     </LinearLayout>
 </ScrollView>

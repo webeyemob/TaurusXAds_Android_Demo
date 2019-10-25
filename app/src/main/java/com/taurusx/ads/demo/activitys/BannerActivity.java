@@ -13,6 +13,7 @@ import com.taurusx.ads.core.api.ad.BannerAdView;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.demo.R;
+import com.taurusx.ads.demo.constance.Constance;
 
 
 public class BannerActivity extends BaseActivity {
@@ -39,7 +40,7 @@ public class BannerActivity extends BaseActivity {
 
     private void initData() {
         Intent intent = getIntent();
-        mBannerId = intent.getStringExtra("banner");
+        mBannerId = intent.getStringExtra(Constance.BUNDLE_TYPE_BANNER);
     }
 
     private void initBannerAdView() {
