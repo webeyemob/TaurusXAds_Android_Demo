@@ -1,11 +1,12 @@
-package com.taurusx.ads.demo;
+package com.taurusx.ads.demo.application;
 
 import android.app.Application;
 
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.TaurusXAdsConfiguration;
+import com.taurusx.ads.demo.constance.Constance;
 
-public class TestApplication extends Application {
+public class TaurusApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
@@ -15,7 +16,7 @@ public class TestApplication extends Application {
         TaurusXAds.setLogEnable(true);
         // Init With AppId
         TaurusXAdsConfiguration configuration = new TaurusXAdsConfiguration.Builder(this)
-                .appId("4b4b6832-4267-42db-9c04-d517d5288bbb")
+                .appId(Constance.APP_UNIT_ID)
                 .build();
         TaurusXAds.getDefault().initialize(this, configuration);
     }

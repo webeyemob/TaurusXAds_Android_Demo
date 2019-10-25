@@ -1,6 +1,8 @@
 package com.taurusx.ads.demo.constance;
 
 public class Constance {
+    public static final String APP_UNIT_ID = "4b4b6832-4267-42db-9c04-d517d5288bbb";
+
     public static final String BUNDLE_NETWORK_NAME = "name";
 
     public static final String BUNDLE_TYPE_BANNER = "banner";
@@ -10,11 +12,17 @@ public class Constance {
     public static final String BUNDLE_TYPE_FEEDLIST = "feedlist";
     public static final String BUNDLE_TYPE_SPLASH = "splash";
 
+    public static final String BUNDLE_TYPE_MIXVIEW = "mixview";
+    public static final String BUNDLE_TYPE_MIXFULLSCREEN = "mixfullscreen";
+
     public static final String CREATIVE_BANNER_ID = "324fd5e3-fa2e-4f09-b13a-8a855696f9ea";
     public static final String CREATIVE_NATIVE_ID = "4e43b149-eade-4d37-a068-c1995bac39c7";
     public static final String CREATIVE_INTERSTITIAL_ID = "6689e8ad-02af-4c36-a273-a420a1d15624";
     public static final String CREATIVE_REWARDED_ID = "b5bdab98-b841-459f-ba0b-ad5c8ee60ce2";
     public static final String CREATIVE_FEEDLIST_ID = "ebfabdbf-9308-4d99-9aca-a0b39fe0ef3d";
+    public static final String CREATIVE_SPLASH_ID = "43386bc9-8a52-4896-a810-6189b19c36f7";
+    public static final String CREATIVE_MIXVIEW_ID = "dfaf9366-b8ca-42b4-ad4f-f20d1067b3f7";
+    public static final String CREATIVE_MIXFULLSCREEN_ID = "14b4a632-4e9f-46ca-a5ee-fd67222c3fcb";
 
     public static final String SERIAL_BANNER_ID = "19364f08-f5a9-4cd5-90ad-7ca8a7eb5f96";
     public static final String SERIAL_NATIVE_ID = "4370b131-ce02-47ac-b127-c200207e1473";

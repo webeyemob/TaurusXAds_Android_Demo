@@ -46,5 +46,17 @@
             android:layout_height="wrap_content"
             android:text="SplashAd"/>
 
+        <Button
+            android:id="@+id/mixview_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MixViewAd"/>
+
+        <Button
+            android:id="@+id/mixfullscreen_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MixFullScreenAd"/>
+
     </LinearLayout>
 </ScrollView>

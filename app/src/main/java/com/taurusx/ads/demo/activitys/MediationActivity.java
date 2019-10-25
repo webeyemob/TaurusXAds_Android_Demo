@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.demo.mixad.MixFullScreenActivity;
+import com.taurusx.ads.demo.mixad.MixViewActivity;
 
 
 public class MediationActivity extends BaseActivity {
@@ -22,6 +24,8 @@ public class MediationActivity extends BaseActivity {
     private String mRewardedId;
     private String mFeedListId;
     private String mSplashId;
+    private String mMixViewId;
+    private String mMixFullScreenId;
 
     // BannerAd
     private Button mBannerButton;
@@ -41,6 +45,12 @@ public class MediationActivity extends BaseActivity {
     // SplashAd
     private Button mSpalshButton;
 
+    // FeedListAd
+    private Button mMixViewButton;
+
+    // SplashAd
+    private Button mMixFullScreenButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +66,8 @@ public class MediationActivity extends BaseActivity {
         initRewardedVideoAd();
         initFeedListAd();
         initSplashAd();
+        initMixViewAd();
+        initMixFullScreenAd();
     }
 
     private void initData() {
@@ -67,6 +79,8 @@ public class MediationActivity extends BaseActivity {
         mRewardedId = intent.getStringExtra(Constance.BUNDLE_TYPE_REWARDED);
         mFeedListId = intent.getStringExtra(Constance.BUNDLE_TYPE_FEEDLIST);
         mSplashId = intent.getStringExtra(Constance.BUNDLE_TYPE_SPLASH);
+        mMixViewId = intent.getStringExtra(Constance.BUNDLE_TYPE_MIXVIEW);
+        mMixFullScreenId = intent.getStringExtra(Constance.BUNDLE_TYPE_MIXFULLSCREEN);
 
     }
 
@@ -174,6 +188,44 @@ public class MediationActivity extends BaseActivity {
                 Intent intent = new Intent();
                 intent.setClass(MediationActivity.this, SplashActivity.class);
                 intent.putExtra(Constance.BUNDLE_TYPE_SPLASH, mSplashId);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    private void initMixViewAd() {
+        mMixViewButton = findViewById(R.id.mixview_button);
+
+        if (mMixViewId == null || TextUtils.isEmpty(mMixViewId)) {
+            mMixViewButton.setVisibility(View.GONE);
+            return;
+        }
+        mMixViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MediationActivity.this, MixViewActivity.class);
+                intent.putExtra(Constance.BUNDLE_TYPE_MIXVIEW, mMixViewId);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    private void initMixFullScreenAd() {
+        mMixFullScreenButton = findViewById(R.id.mixfullscreen_button);
+
+        if (mMixFullScreenId == null || TextUtils.isEmpty(mMixFullScreenId)) {
+            mMixFullScreenButton.setVisibility(View.GONE);
+            return;
+        }
+        mMixFullScreenButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MediationActivity.this, MixFullScreenActivity.class);
+                intent.putExtra(Constance.BUNDLE_TYPE_MIXFULLSCREEN, mMixFullScreenId);
                 startActivity(intent);
             }
         });
