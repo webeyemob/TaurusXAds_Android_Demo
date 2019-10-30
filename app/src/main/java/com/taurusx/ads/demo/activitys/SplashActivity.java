@@ -97,8 +97,6 @@ public class SplashActivity extends Activity {
 
     private void setNetworkConfigs() {
         View bottomArea = LayoutInflater.from(this).inflate(R.layout.layout_splash_oppo_bottom_area, null);
-        // mSplashAd.setBottomArea(bottomArea);
-        mSplashAd.setSize(480, 640);
         mSplashAd.setNetworkConfigs(NetworkConfigs.Builder()
 //                .addConfig(VivoSplashConfig.Builder()
 //                        .setTitle("App Name")

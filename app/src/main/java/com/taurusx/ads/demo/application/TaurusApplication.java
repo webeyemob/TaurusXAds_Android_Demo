@@ -16,6 +16,7 @@ import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.AdMobGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.DFPGlobalConfig;
+import com.taurusx.ads.mediation.networkconfig.FiveGlobalNetworkConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.OPPONativeTemplateConfig;
@@ -273,6 +274,9 @@ public class TaurusApplication extends Application {
                                         LogUtil.d(TAG, "global GDTAppDownloadListener: onInstalled: " + appName);
                                     }
                                 })
+                                .build())
+                        .addConfig(FiveGlobalNetworkConfig.Builder()
+                                .setTestMode(true)
                                 .build())
                         .build());
     }
