@@ -1,5 +1,6 @@
 package com.taurusx.ads.demo.application;
 
+import android.app.Activity;
 import android.app.Application;
 import android.view.View;
 
@@ -7,9 +8,9 @@ import com.bytedance.sdk.openadsdk.TTAdConstant;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.TaurusXAdsConfiguration;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
+import com.taurusx.ads.core.api.tracker.SimpleTrackerListener;
 import com.taurusx.ads.core.api.tracker.TaurusXAdsTracker;
 import com.taurusx.ads.core.api.tracker.TrackerInfo;
-import com.taurusx.ads.core.api.tracker.TrackerListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.BuildConfig;
 import com.taurusx.ads.demo.R;
@@ -19,6 +20,7 @@ import com.taurusx.ads.mediation.networkconfig.DFPGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.FiveGlobalNetworkConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
+import com.taurusx.ads.mediation.networkconfig.KuaiShouGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.OPPONativeTemplateConfig;
 import com.taurusx.ads.mediation.networkconfig.OPPOSplashConfig;
 import com.taurusx.ads.mediation.networkconfig.TMSAppDownloadListener;
@@ -32,6 +34,8 @@ import com.tmsdk.module.ad.StyleAdEntity;
 
 public class TaurusApplication extends Application {
     private final String TAG = "TaurusApplication";
+
+    private Activity mCurrentActivity;
     @Override
     public void onCreate() {
         super.onCreate();
@@ -50,7 +54,7 @@ public class TaurusApplication extends Application {
     }
 
     private void registerTracker() {
-        TaurusXAdsTracker.getInstance().registerListener(new TrackerListener() {
+        TaurusXAdsTracker.getInstance().registerListener(new SimpleTrackerListener() {
             @Override
             public void onAdRequest(TrackerInfo info) {
                 LogUtil.d(TAG, "track onAdRequest");
@@ -277,6 +281,11 @@ public class TaurusApplication extends Application {
                                 .build())
                         .addConfig(FiveGlobalNetworkConfig.Builder()
                                 .setTestMode(true)
+                                .build())
+                        .addConfig(KuaiShouGlobalConfig.Builder()
+                                .showNotification(true)
+                                .setAppName("AppTest")
+                                .debug(false)
                                 .build())
                         .build());
     }

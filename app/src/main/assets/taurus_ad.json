@@ -179,9 +179,8 @@
       "banner": "0f481962-639d-4009-bb7a-2d84f3251e76",
       "rewarded": "6ddece3b-9abc-4640-9fd9-797cce32b622",
       "interstitial": "217f6a9b-ee18-44e1-89ff-87a2b42659b4",
-      "native": ""
+      "native": "bde50144-bc4c-46e0-86ba-b4a3461f3a10"
     },
-
     {
       "adName": "Criteo",
       "banner": "fed01ef3-b0d0-469b-9a7a-c23648706f35",
@@ -195,6 +194,14 @@
       "rewarded": "aa4202d6-6dd2-4f55-9217-b8efdf90fb1a",
       "interstitial": "55784876-6725-4b2a-ab70-f4bf97ddeebc",
       "native": "25e061e0-3017-4099-9185-7c20a571005d"
+    },
+    {
+      "adName": "KuaiShou",
+      "banner": "",
+      "rewarded": "24e29410-8e32-4dd5-8a52-ab0b4f46af5b",
+      "interstitial": "d9f24feb-2dd3-4e48-b26b-b15fe74b72be",
+      "native": "18df86ce-3158-4c0e-ad95-e51085290f39",
+      "feedlist": "dc45260d-be49-45ae-aa12-38da8d732a01"
     },
     {
       "adName": "Zhonghui",

@@ -13,6 +13,7 @@ import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
+import com.taurusx.ads.mediation.networkconfig.KuaiShouInterstitialConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressInterstitialConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokFullScreenVideoConfig;
@@ -52,7 +53,7 @@ public class InterstitialActivity extends BaseActivity {
             return;
         }
 
-        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd = new InterstitialAd(InterstitialActivity.this);
         mInterstitialAd.setAdUnitId(mInterstitialId);
 
         // Listen Ad load result
@@ -209,6 +210,11 @@ public class InterstitialActivity extends BaseActivity {
                                 LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
                             }
                         })
+                        .build())
+                .addConfig(KuaiShouInterstitialConfig.Builder()
+                        .setShowLandscape(false)
+                        .setShowSence("xx game")
+                        .setSkipThirtySecond(true)
                         .build())
                 .build());
     }

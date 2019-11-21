@@ -52,10 +52,6 @@ public class FeedListActivity extends BaseActivity {
 
         setContentView(R.layout.activity_feedlist);
 
-
-
-
-
         initData();
         // Init FeedList
         initFeedList();

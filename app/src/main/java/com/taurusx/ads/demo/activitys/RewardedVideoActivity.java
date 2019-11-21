@@ -14,6 +14,7 @@ import com.taurusx.ads.core.api.listener.SimpleRewardedVideoAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.mediation.networkconfig.KuaiShouRewardedVideoConfig;
 import com.taurusx.ads.mediation.networkconfig.TMSAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TMSRewardedVideoConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
@@ -196,6 +197,11 @@ public class RewardedVideoActivity extends BaseActivity {
                                 LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
                             }
                         })
+                        .build())
+                .addConfig(KuaiShouRewardedVideoConfig.Builder()
+                        .setSkipThirtySecond(true)
+                        .setShowSence("xx game")
+                        .setShowLandscape(false)
                         .build())
                 .build());
     }
