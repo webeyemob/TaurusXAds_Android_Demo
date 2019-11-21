@@ -49,7 +49,7 @@ dependencies {
 
     implementation 'com.android.support:multidex:1.0.3'
 
-    implementation 'com.taurusx.ads:core:1.9.13'
+    implementation 'com.taurusx.ads:core:1.9.15'
 
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:3.3.7.4"
@@ -63,7 +63,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // AdMob & DFP
-    implementation "com.taurusx.ads:mediation_admob:17.2.1.3"
+    implementation "com.taurusx.ads:mediation_admob:17.2.1.5"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // Amazon
@@ -71,7 +71,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // AppLovin
-    implementation "com.taurusx.ads:mediation_applovin:9.9.2.0"
+    implementation "com.taurusx.ads:mediation_applovin:9.9.2.1"
     implementation "com.applovin:applovin-sdk:9.9.2"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
@@ -93,8 +93,8 @@ dependencies {
     implementation "com.taurusx.ads:duadplatform_cw:1.2.2"
 
     // Facebook
-    implementation "com.taurusx.ads:mediation_facebook:5.5.0.1"
-    implementation "com.facebook.android:audience-network-sdk:5.5.0"
+    implementation "com.taurusx.ads:mediation_facebook:5.6.0.0"
+    implementation "com.facebook.android:audience-network-sdk:5.6.0"
     // 5.5.0 及之后的版本需要 support-annotations
     implementation "com.android.support:support-annotations:28.0.0"
 
@@ -209,54 +209,47 @@ dependencies {
 //    implementation "com.taurusx.ads:mediation_aligames:2.5.45.1"
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.82.1"
+    implementation "com.taurusx.ads:mediation_baidu:5.82.3"
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.90.960.6"
-    implementation "com.taurusx.ads:gdtsdk_union:4.90.960"
+    implementation "com.taurusx.ads:mediation_gdt:4.100.970.1"
+    implementation "com.taurusx.ads:gdtsdk_union:4.100.970"
     implementation "com.android.support:support-v4:26.1.0"
 
     // TikTok
-    implementation "com.taurusx.ads:mediation_toutiao:2.3.0.7.11"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.3.0.7"
+    implementation "com.taurusx.ads:mediation_toutiao:2.5.2.1.1"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.5.2.1"
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
     implementation 'com.android.support:support-v4:27.1.1'
 
     // mobvista
-//    implementation "com.taurusx.ads:mediation_mobvista:9.10.4_china.1"
+//    implementation "com.taurusx.ads:mediation_mobvista:10.1.51.0"
 //    implementation 'com.android.support:support-v4:27.1.1'
-    // Common
-//    implementation "com.taurusx.ads:mintegral_chinacommon:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_alphab:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_mtgdownloads:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_playercommon:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_videojs:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_videocommon:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_mtgjscommon:9.10.4_china"
-    // Native
-//    implementation "com.taurusx.ads:mintegral_mtgnative:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_nativeex:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_videofeeds:9.10.4_china"
-    // Interstitial
-//    implementation "com.taurusx.ads:mintegral_interstitial:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_interstitialvideo:9.10.4_china"
-//    // Reward
-//    implementation "com.taurusx.ads:mintegral_reward:9.10.4_china"
-    // Interactive
-//    implementation "com.taurusx.ads:mintegral_interactiveads:9.10.4_china"
-    // AppWall
-//    implementation "com.taurusx.ads:mintegral_appwall:9.10.4_china"
-//    implementation "com.taurusx.ads:mintegral_appwallext:9.10.4_china"
-    // OfferWall
-//    implementation "com.taurusx.ads:mintegral_offerwall:9.10.4_china"
+//    // Common
+//    implementation "com.mintegral.msdk:mtgjscommon:10.1.51"
+//    implementation "com.mintegral.msdk:videocommon:10.1.51"
+//    implementation "com.mintegral.msdk:playercommon:10.1.51"
+//    implementation "com.mintegral.msdk:videojs:10.1.51"
+//    implementation "com.mintegral.msdk:optimizedata:10.1.51"
+//    implementation "com.mintegral.msdk:common:10.1.51"
+//    implementation "com.mintegral.msdk:mtgdownloads:10.1.51"
+//    // Banner
+//    implementation "com.mintegral.msdk:mtgbanner:10.1.51"
+//    // Native
+//    implementation "com.mintegral.msdk:mtgnative:10.1.51"
+//    implementation "com.mintegral.msdk:nativeex:10.1.51"
+//    // Interstitial
+//    implementation "com.mintegral.msdk:interstitial:10.1.51"
+//    implementation "com.mintegral.msdk:interstitialvideo:10.1.51"
+//    // RewardedVideo
+//    implementation "com.mintegral.msdk:reward:10.1.51"
+//    implementation "com.mintegral.msdk:interactiveads:10.1.51"
 
     // Oppo
     implementation "com.taurusx.ads:mediation_oppo:3.1.1.3"
     implementation "com.android.support:support-v4:27.1.1"
 
-    // TMS
-    implementation "com.taurusx.ads:mediation_tms:1.0.1012.6"
 
     // Vivo
 //    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.4"
@@ -264,8 +257,4 @@ dependencies {
     // Xiaomi
 //    implementation "com.taurusx.ads:mediation_mimo:V2019_01_18_17_00.4"
 
-    // Zhonghui
-//    implementation "com.taurusx.ads:mediation_zhonghui:1.0.1.2"
-//    implementation "com.taurusx.ads:wssdk_ads:1.0.1"
-//    implementation "com.android.support:support-v4:26.0.0"
 }

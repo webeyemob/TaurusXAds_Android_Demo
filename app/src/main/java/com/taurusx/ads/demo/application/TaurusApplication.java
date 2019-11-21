@@ -23,14 +23,11 @@ import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.OPPONativeTemplateConfig;
 import com.taurusx.ads.mediation.networkconfig.OPPOSplashConfig;
-import com.taurusx.ads.mediation.networkconfig.TMSAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TMSGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokSplashConfig;
-import com.tmsdk.module.ad.StyleAdEntity;
 
 public class TaurusApplication extends Application {
     private final String TAG = "TaurusApplication";
@@ -142,33 +139,6 @@ public class TaurusApplication extends Application {
                         .addConfig(AdMobGlobalConfig.Builder()
                                 .addTestDevice("Your Test Device Id 1")
                                 .addTestDevice("Your Test Device Id 2")
-                                .build())
-                        .addConfig(TMSGlobalConfig.Builder()
-                                .setChannel("80550")
-                                .setAccountId("testaccount11")
-                                .setLoginKey("testloginkey12")
-                                .setAppDownloadListener(new TMSAppDownloadListener() {
-                                    @Override
-                                    public void onDownloadStart(StyleAdEntity styleAdEntity) {
-                                        LogUtil.d(TAG, "TMS onDownloadStart");
-                                    }
-
-                                    @Override
-                                    public void onDownloadSuccess(StyleAdEntity styleAdEntity, String s) {
-                                        LogUtil.d(TAG, "TMS onDownloadSuccess");
-                                    }
-
-                                    @Override
-                                    public void onAppInstalled(StyleAdEntity styleAdEntity) {
-                                        LogUtil.d(TAG, "TMS onAppInstalled");
-                                    }
-
-                                    @Override
-                                    public void onAppOpened(StyleAdEntity styleAdEntity) {
-                                        LogUtil.d(TAG, "TMS onAppOpened");
-                                    }
-                                })
-                                .setTestMode(false)
                                 .build())
                         .addConfig(TikTokDrawFeedListConfig.Builder()
                                 .setCanInterruptVideoPlay(true)

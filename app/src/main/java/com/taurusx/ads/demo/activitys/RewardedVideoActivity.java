@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.taurusx.ads.core.api.ad.RewardedVideoAd;
-import com.taurusx.ads.core.api.ad.nativead.layout.InteractiveArea;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleRewardedVideoAdListener;
@@ -15,11 +14,8 @@ import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouRewardedVideoConfig;
-import com.taurusx.ads.mediation.networkconfig.TMSAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TMSRewardedVideoConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokRewardedVideoConfig;
-import com.tmsdk.module.ad.StyleAdEntity;
 
 
 public class RewardedVideoActivity extends BaseActivity {
@@ -132,39 +128,6 @@ public class RewardedVideoActivity extends BaseActivity {
 
     private void setNetworkConfigs() {
         mRewardedVideoAd.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(TMSRewardedVideoConfig.Builder()
-                        .setMaxPlayTime(7)
-                        .setCacheVideoBeforePlay(false)
-                        .setInteractiveArea(InteractiveArea.Builder()
-                                .addIconLayout()
-                                .addCallToAction()
-                                .addRootLayout()
-                                .addMediaViewLayout()
-                                .addTitle()
-                                .addBody()
-                                .build())
-                        .setAppDownloadListener(new TMSAppDownloadListener() {
-                            @Override
-                            public void onDownloadStart(StyleAdEntity styleAdEntity) {
-                                LogUtil.d(TAG, "TMS onDownloadStart");
-                            }
-
-                            @Override
-                            public void onDownloadSuccess(StyleAdEntity styleAdEntity, String s) {
-                                LogUtil.d(TAG, "TMS onDownloadSuccess");
-                            }
-
-                            @Override
-                            public void onAppInstalled(StyleAdEntity styleAdEntity) {
-                                LogUtil.d(TAG, "TMS onAppInstalled");
-                            }
-
-                            @Override
-                            public void onAppOpened(StyleAdEntity styleAdEntity) {
-                                LogUtil.d(TAG, "TMS onAppOpened");
-                            }
-                        })
-                        .build())
                 .addConfig(TikTokRewardedVideoConfig.Builder()
                         .setAppDownloadListener(new TikTokAppDownloadListener() {
                             @Override

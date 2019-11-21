@@ -22,13 +22,10 @@ import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
-import com.taurusx.ads.mediation.networkconfig.TMSAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TMSFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressFeedListConfig;
-import com.tmsdk.module.ad.StyleAdEntity;
 
 import java.util.List;
 
@@ -169,29 +166,6 @@ public class FeedListActivity extends BaseActivity {
 //                        .setExpressViewAcceptedWidth(260)
 //                        .setExpressViewAcceptedHeight(0)
 //                        .build())
-                .addConfig(TMSFeedListConfig.Builder()
-                        .setAppDownloadListener(new TMSAppDownloadListener() {
-                            @Override
-                            public void onDownloadStart(StyleAdEntity styleAdEntity) {
-                                LogUtil.d(TAG, "TMS onDownloadStart");
-                            }
-
-                            @Override
-                            public void onDownloadSuccess(StyleAdEntity styleAdEntity, String s) {
-                                LogUtil.d(TAG, "TMS onDownloadSuccess");
-                            }
-
-                            @Override
-                            public void onAppInstalled(StyleAdEntity styleAdEntity) {
-                                LogUtil.d(TAG, "TMS onAppInstalled");
-                            }
-
-                            @Override
-                            public void onAppOpened(StyleAdEntity styleAdEntity) {
-                                LogUtil.d(TAG, "TMS onAppOpened");
-                            }
-                        })
-                        .build())
                 .addConfig(GDTExpressNativeConfig.Builder()
                         // .setADSize(new ADSize(260, 200))
                         .setADSize(new ADSize(260, 200))
