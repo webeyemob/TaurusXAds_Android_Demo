@@ -15,7 +15,6 @@
       "interstitial": "15148bdb-cffd-426b-aa4f-d37db3906df2",
       "native": "124f6980-383a-4775-b855-107bf11daacd"
     },
-
     {
       "adName": "AdGeneration",
       "banner": "58c2da4c-4337-4749-8328-b28c488313a7",
@@ -51,6 +50,13 @@
       "banner": "",
       "rewarded": "2f91459c-1e03-4c84-94c2-e1b95f9bb374",
       "interstitial": "4cbf2b8a-37d6-4dfb-9eee-e68c6966abb6",
+      "native": ""
+    },
+    {
+      "adName": "Criteo",
+      "banner": "fed01ef3-b0d0-469b-9a7a-c23648706f35",
+      "rewarded": "",
+      "interstitial": "abcadae9-89bd-472c-9d0d-7dba445a436c",
       "native": ""
     },
     {
@@ -128,15 +134,30 @@
       "native": ""
     },
     {
+      "adName": "KuaiShou",
+      "banner": "",
+      "rewarded": "24e29410-8e32-4dd5-8a52-ab0b4f46af5b",
+      "interstitial": "d9f24feb-2dd3-4e48-b26b-b15fe74b72be",
+      "native": "18df86ce-3158-4c0e-ad95-e51085290f39",
+      "feedlist": "dc45260d-be49-45ae-aa12-38da8d732a01"
+    },
+    {
       "adName": "Maio",
       "banner": "",
       "rewarded": "1ad47388-f720-4a96-ac49-e65f662b52cc",
       "interstitial": "52df638a-420d-406c-82fa-a0731d47b747",
       "native": ""
     },
-
     {
-      "adName": "Mopub",
+      "adName": "Mobvista",
+      "banner": "89e6dff0-0431-4267-a1f2-fdd60d0dc3bc",
+      "feedlist": "feb5a072-72c3-44c4-876f-56b33bda91ab",
+      "rewarded": "55919798-14b6-4cbb-a857-3af830e2b6b4",
+      "interstitial": "5c7431b7-51f3-438e-97b5-98c4bf65d736",
+      "native": "80f4e069-2958-4c45-9418-b20ca87fa3ae"
+    },
+    {
+      "adName": "MoPub",
       "banner": "560365c2-55e6-43a2-ae6b-2d74a7539f4e",
       "feedlist": "9c4406c4-3a1a-4a5f-a1db-e2343f00d856",
       "rewarded": "191120de-d177-49e4-860c-4a88c1406758",
@@ -150,7 +171,13 @@
       "interstitial": "eb211297-a8ff-4cca-85b9-b98a6e640346",
       "native": "3a9a4c1c-a184-4761-b029-76c5c4b5ba06"
     },
-
+    {
+      "adName": "Oppo",
+      "banner": "f2fdfb47-030e-47e6-bee4-c2680adda549",
+      "rewarded": "aa4202d6-6dd2-4f55-9217-b8efdf90fb1a",
+      "interstitial": "55784876-6725-4b2a-ab70-f4bf97ddeebc",
+      "native": "25e061e0-3017-4099-9185-7c20a571005d"
+    },
     {
       "adName": "Tapjoy",
       "banner": "",
@@ -182,25 +209,12 @@
       "native": "bde50144-bc4c-46e0-86ba-b4a3461f3a10"
     },
     {
-      "adName": "Criteo",
-      "banner": "fed01ef3-b0d0-469b-9a7a-c23648706f35",
-      "rewarded": "",
-      "interstitial": "abcadae9-89bd-472c-9d0d-7dba445a436c",
-      "native": ""
-    },
-    {
-      "adName": "Oppo",
-      "banner": "f2fdfb47-030e-47e6-bee4-c2680adda549",
-      "rewarded": "aa4202d6-6dd2-4f55-9217-b8efdf90fb1a",
-      "interstitial": "55784876-6725-4b2a-ab70-f4bf97ddeebc",
-      "native": "25e061e0-3017-4099-9185-7c20a571005d"
-    },
-    {
-      "adName": "KuaiShou",
+      "adName": "Vivo",
       "banner": "",
-      "rewarded": "24e29410-8e32-4dd5-8a52-ab0b4f46af5b",
-      "interstitial": "d9f24feb-2dd3-4e48-b26b-b15fe74b72be",
-      "native": "18df86ce-3158-4c0e-ad95-e51085290f39",
-      "feedlist": "dc45260d-be49-45ae-aa12-38da8d732a01"
-    }]
+      "rewarded": "0bbe3e3b-116e-4725-b6cb-9b2ad7e9abbd",
+      "interstitial": "65b22d08-001e-4012-96cf-0dad66f4efe6",
+      "native": "",
+      "splash": "330df99c-e174-4781-ab76-573a3533a9de"
+    }
+  ]
 }

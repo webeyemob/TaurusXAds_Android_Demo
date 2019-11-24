@@ -7,11 +7,13 @@ android {
         // for Fyber
 //        applicationId "com.inner.adsdk.demo"
         // for Vungle
-        applicationId "com.publisher.vungle.sample"
+//        applicationId "com.publisher.vungle.sample"
 //         for DAP
 //        applicationId "abs.workout.home.fit.belly.fat"
         // for Amazon
 //        applicationId "com.amazon.sample.simplead"
+        // for Mobvista
+        applicationId "com.mintegral.sdk.demo"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -49,7 +51,7 @@ dependencies {
 
     implementation 'com.android.support:multidex:1.0.3'
 
-    implementation 'com.taurusx.ads:core:1.9.15'
+    implementation 'com.taurusx.ads:core:1.9.16'
 
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:3.3.7.4"
@@ -63,7 +65,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // AdMob & DFP
-    implementation "com.taurusx.ads:mediation_admob:17.2.1.5"
+    implementation "com.taurusx.ads:mediation_admob:17.2.1.6"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // Amazon
@@ -93,7 +95,7 @@ dependencies {
     implementation "com.taurusx.ads:duadplatform_cw:1.2.2"
 
     // Facebook
-    implementation "com.taurusx.ads:mediation_facebook:5.6.0.0"
+    implementation "com.taurusx.ads:mediation_facebook:5.6.0.2"
     implementation "com.facebook.android:audience-network-sdk:5.6.0"
     // 5.5.0 及之后的版本需要 support-annotations
     implementation "com.android.support:support-annotations:28.0.0"
@@ -208,11 +210,11 @@ dependencies {
 //    implementation "com.taurusx.ads:mediation_aligames:2.5.45.1"
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.82.4"
+    implementation "com.taurusx.ads:mediation_baidu:5.82.5"
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.100.970.1"
+    implementation "com.taurusx.ads:mediation_gdt:4.100.970.2"
     implementation "com.taurusx.ads:gdtsdk_union:4.100.970"
     implementation "com.android.support:support-v4:26.1.0"
 
@@ -222,28 +224,29 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
     implementation 'com.android.support:support-v4:27.1.1'
 
-    // mobvista
-//    implementation "com.taurusx.ads:mediation_mobvista:10.1.51.0"
-//    implementation 'com.android.support:support-v4:27.1.1'
-//    // Common
-//    implementation "com.mintegral.msdk:mtgjscommon:10.1.51"
-//    implementation "com.mintegral.msdk:videocommon:10.1.51"
-//    implementation "com.mintegral.msdk:playercommon:10.1.51"
-//    implementation "com.mintegral.msdk:videojs:10.1.51"
-//    implementation "com.mintegral.msdk:optimizedata:10.1.51"
-//    implementation "com.mintegral.msdk:common:10.1.51"
-//    implementation "com.mintegral.msdk:mtgdownloads:10.1.51"
-//    // Banner
-//    implementation "com.mintegral.msdk:mtgbanner:10.1.51"
-//    // Native
-//    implementation "com.mintegral.msdk:mtgnative:10.1.51"
-//    implementation "com.mintegral.msdk:nativeex:10.1.51"
-//    // Interstitial
-//    implementation "com.mintegral.msdk:interstitial:10.1.51"
-//    implementation "com.mintegral.msdk:interstitialvideo:10.1.51"
-//    // RewardedVideo
-//    implementation "com.mintegral.msdk:reward:10.1.51"
-//    implementation "com.mintegral.msdk:interactiveads:10.1.51"
+    // Mobvista
+    implementation "com.taurusx.ads:mediation_mobvista:10.1.51.1"
+    implementation 'com.android.support:support-v4:27.1.1'
+    // 10.1.51 与 TikTok 有类冲突，使用 10.1.31，Mobvista 官方正在修复
+    // Common
+    implementation "com.mintegral.msdk:mtgjscommon:10.1.31"
+    implementation "com.mintegral.msdk:videocommon:10.1.31"
+    implementation "com.mintegral.msdk:playercommon:10.1.31"
+    implementation "com.mintegral.msdk:videojs:10.1.31"
+    implementation "com.mintegral.msdk:optimizedata:10.1.31"
+    implementation "com.mintegral.msdk:common:10.1.31"
+    implementation "com.mintegral.msdk:mtgdownloads:10.1.31"
+    // Banner
+    implementation "com.mintegral.msdk:mtgbanner:10.1.31"
+    // Native
+    implementation "com.mintegral.msdk:mtgnative:10.1.31"
+    implementation "com.mintegral.msdk:nativeex:10.1.31"
+    // Interstitial
+    implementation "com.mintegral.msdk:interstitial:10.1.31"
+    implementation "com.mintegral.msdk:interstitialvideo:10.1.31"
+    // RewardedVideo
+    implementation "com.mintegral.msdk:reward:10.1.31"
+    implementation "com.mintegral.msdk:interactiveads:10.1.31"
 
     // Oppo
     implementation "com.taurusx.ads:mediation_oppo:3.1.1.3"
