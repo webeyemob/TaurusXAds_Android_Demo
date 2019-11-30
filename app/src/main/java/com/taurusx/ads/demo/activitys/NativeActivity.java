@@ -20,13 +20,12 @@ import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0NativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTCustomNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
+import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouNativeConfig;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouNativeDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.OPPONativeTemplateConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomInterstitialConfig;
-import com.taurusx.ads.mediation.networkconfig.VungleNativeNetworkConfig;
 
 
 public class NativeActivity extends BaseActivity {
@@ -277,7 +276,7 @@ public class NativeActivity extends BaseActivity {
 //                        .setHeight(250)
 //                        .build())
                 .addConfig(KuaiShouNativeConfig.Builder()
-                        .setListener(new KuaiShouNativeDownloadListener() {
+                        .setAppDownloadListener(new KuaiShouAppDownloadListener() {
                             @Override
                             public void onIdle() {
                                 LogUtil.d(TAG ,"kuaishou onIdle");
