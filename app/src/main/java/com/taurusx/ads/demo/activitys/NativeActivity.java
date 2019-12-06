@@ -21,7 +21,7 @@ import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0NativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTCustomNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouNativeConfig;
+import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.OPPONativeTemplateConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomBannerConfig;
@@ -275,7 +275,7 @@ public class NativeActivity extends BaseActivity {
 //                        .setWidth(300)
 //                        .setHeight(250)
 //                        .build())
-                .addConfig(KuaiShouNativeConfig.Builder()
+                .addConfig(KuaiShouCustomNativeConfig.Builder()
                         .setAppDownloadListener(new KuaiShouAppDownloadListener() {
                             @Override
                             public void onIdle() {

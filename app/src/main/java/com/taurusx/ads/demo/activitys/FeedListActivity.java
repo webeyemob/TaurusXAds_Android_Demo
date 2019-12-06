@@ -23,7 +23,8 @@ import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouFeedListConfig;
+import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
+import com.taurusx.ads.mediation.networkconfig.KuaiShouExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
@@ -341,7 +342,7 @@ public class FeedListActivity extends BaseActivity {
                             }
                         })
                         .build())
-                .addConfig(KuaiShouFeedListConfig.Builder()
+                .addConfig(KuaiShouCustomFeedListConfig.Builder()
                         .setAppDownloadListener(new KuaiShouAppDownloadListener() {
                             @Override
                             public void onIdle() {
@@ -364,6 +365,9 @@ public class FeedListActivity extends BaseActivity {
                             }
                         })
                     .build())
+                .addConfig(KuaiShouExpressFeedListConfig.Builder()
+                        .setVideoSoundEnable(false)
+                        .build())
                 .build());
     }
 }
