@@ -13,7 +13,7 @@ android {
         // for Amazon
 //        applicationId "com.amazon.sample.simplead"
         // for Mobvista
-        applicationId "com.mintegral.sdk.demo"
+        applicationId "com.tiktok.test.demo"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -219,8 +219,8 @@ dependencies {
     implementation "com.android.support:support-v4:26.1.0"
 
     // TikTok
-    implementation "com.taurusx.ads:mediation_toutiao:2.5.2.1.1"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.5.2.1"
+    implementation "com.taurusx.ads:mediation_toutiao:2.5.3.2.0"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.5.3.2"
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
     implementation 'com.android.support:support-v4:27.1.1'
 
