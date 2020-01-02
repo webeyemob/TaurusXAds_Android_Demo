@@ -72,14 +72,13 @@ public class BannerActivity extends BaseActivity {
 
         mBannerAdView = new BannerAdView(this);
         mBannerAdView.setAdUnitId(mBannerId);
+        mContainer.addView(mBannerAdView);
 
         // Listen Ad load result
         mBannerAdView.setAdListener(new SimpleAdListener() {
             @Override
             public void onAdLoaded() {
                 Log.d(TAG, "BannerAdView onAdLoaded");
-                mContainer.removeAllViews();
-                mContainer.addView(mBannerAdView);
             }
 
             @Override
