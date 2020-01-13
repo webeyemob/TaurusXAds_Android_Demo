@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
+import com.qq.e.ads.cfg.VideoOption;
 import com.qq.e.ads.nativ.ADSize;
 import com.taurusx.ads.core.api.ad.nativead.NativeAd;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
@@ -17,8 +18,8 @@ import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
+import com.taurusx.ads.mediation.networkconfig.GDTCustom1_0NativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0NativeConfig;
-import com.taurusx.ads.mediation.networkconfig.GDTCustomNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomNativeConfig;
@@ -122,7 +123,6 @@ public class NativeActivity extends BaseActivity {
     }
 
 
-
     private void initData() {
         Intent intent = getIntent();
         mNativeId = intent.getStringExtra("native");
@@ -131,9 +131,14 @@ public class NativeActivity extends BaseActivity {
     private void setNetworkConfigs() {
         mNativeAd.setNetworkConfigs(NetworkConfigs.Builder()
                 .addConfig(GDTExpressNativeConfig.Builder()
-                        .setADSize(new ADSize(250, ADSize.AUTO_HEIGHT))
+                        .setADSize(new ADSize(320, ADSize.AUTO_HEIGHT))
+                        .setMinVideoDuration(0)
+                        .setMaxVideoDuration(0)
+                        .setVideoOption(new VideoOption.Builder()
+                                .setNeedProgressBar(false)
+                                .build())
                         .build())
-                .addConfig(GDTCustomNativeConfig.Builder()
+                .addConfig(GDTCustom1_0NativeConfig.Builder()
                         .setAppDownloadListener(new GDTAppDownloadListener() {
                             @Override
                             public void onIdle(String appName) {
@@ -168,6 +173,12 @@ public class NativeActivity extends BaseActivity {
                         })
                         .build())
                 .addConfig(GDTCustom2_0NativeConfig.Builder()
+                        .setMinVideoDuration(15)
+                        .setMaxVideoDuration(55)
+                        .setVideoOption(new VideoOption.Builder()
+                                .setAutoPlayMuted(false)
+                                .setDetailPageMuted(true)
+                                .build())
                         .setAppDownloadListener(new GDTAppDownloadListener() {
                             @Override
                             public void onIdle(String appName) {
@@ -279,22 +290,22 @@ public class NativeActivity extends BaseActivity {
                         .setAppDownloadListener(new KuaiShouAppDownloadListener() {
                             @Override
                             public void onIdle() {
-                                LogUtil.d(TAG ,"kuaishou onIdle");
+                                LogUtil.d(TAG, "kuaishou onIdle");
                             }
 
                             @Override
                             public void onProgressUpdate(int i) {
-                                LogUtil.d(TAG ,"kuaishou onProgressUpdate");
+                                LogUtil.d(TAG, "kuaishou onProgressUpdate");
                             }
 
                             @Override
                             public void onDownloadFinished() {
-                                LogUtil.d(TAG ,"kuaishou onDownloadFinished");
+                                LogUtil.d(TAG, "kuaishou onDownloadFinished");
                             }
 
                             @Override
                             public void onInstalled() {
-                                LogUtil.d(TAG ,"kuaishou onInstalled");
+                                LogUtil.d(TAG, "kuaishou onInstalled");
                             }
                         })
                         .build())

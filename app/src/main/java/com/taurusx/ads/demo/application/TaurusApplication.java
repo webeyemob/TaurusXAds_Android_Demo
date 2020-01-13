@@ -5,9 +5,11 @@ import android.app.Application;
 import android.view.View;
 
 import com.bytedance.sdk.openadsdk.TTAdConstant;
+import com.facebook.ads.AdSettings;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.TaurusXAdsConfiguration;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
+import com.taurusx.ads.core.api.segment.Segment;
 import com.taurusx.ads.core.api.tracker.SimpleTrackerListener;
 import com.taurusx.ads.core.api.tracker.TaurusXAdsTracker;
 import com.taurusx.ads.core.api.tracker.TrackerInfo;
@@ -29,25 +31,31 @@ import com.taurusx.ads.mediation.networkconfig.TikTokExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokSplashConfig;
 
+import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class TaurusApplication extends Application {
     private final String TAG = "TaurusApplication";
 
     private Activity mCurrentActivity;
+
     @Override
     public void onCreate() {
         super.onCreate();
 
         TaurusXAds.getDefault().setGdprConsent(true);
-        // Show Log
-        TaurusXAds.setLogEnable(true);
-        // Init With AppId
-        TaurusXAdsConfiguration configuration = new TaurusXAdsConfiguration.Builder(this)
-                .appId(Constance.APP_UNIT_ID)
-                .build();
-        TaurusXAds.getDefault().initialize(this, configuration);
+        TaurusXAds.getDefault().setLogEnable(true);
+        TaurusXAds.getDefault().setSegment(Segment.Builder()
+                        .setChannel("test_channel")
+                        .build());
+        setGlobalNetworkConfigs();
+        TaurusXAds.getDefault().init(this, Constance.APP_UNIT_ID);
 
         registerTracker();
-        setGlobalNetworkConfigs();
+
+        AdSettings.setTestMode(true);
     }
 
     private void registerTracker() {
@@ -124,14 +132,6 @@ public class TaurusApplication extends Application {
         TaurusXAds.getDefault().setGlobalNetworkConfigs(
                 NetworkConfigs.Builder()
                         .addConfig(DFPGlobalConfig.Builder()
-                                .addTestDevice("device id ")
-                                .addTestDevice("device id")
-                                .build())
-                        .build());
-
-        TaurusXAds.getDefault().setGlobalNetworkConfigs(
-                NetworkConfigs.Builder()
-                        .addConfig(DFPGlobalConfig.Builder()
                                 .addTestDevice("acb")
                                 .addTestDevice("ddd")
                                 .addTestDevice("ABDBC6250A42D15197AD0FFEFDFE2BF2")
@@ -163,8 +163,6 @@ public class TaurusApplication extends Application {
                         .addConfig(TikTokGlobalConfig.Builder()
                                 // 设置是否为计费用户，默认为非计费用户
                                 .setIsPaid(false)
-                                // 设置用户性别，默认为未知 TTAdConstant.GENDER_UNKNOWN
-                                .setGender(TTAdConstant.GENDER_FEMALE)
                                 // 设置用户年龄，须大于 0
                                 .setAge(29)
                                 // 设置用户画像的关键词列表，不能超过为 1000 个字符

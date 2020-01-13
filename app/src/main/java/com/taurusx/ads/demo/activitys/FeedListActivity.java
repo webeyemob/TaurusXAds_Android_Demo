@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.qq.e.ads.cfg.VideoOption;
 import com.qq.e.ads.nativ.ADSize;
 import com.taurusx.ads.core.api.ad.feedlist.Feed;
 import com.taurusx.ads.core.api.ad.feedlist.FeedList;
@@ -19,8 +20,9 @@ import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
+import com.taurusx.ads.mediation.networkconfig.GDTCustom1_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.GDTCustomFeedListConfig;
+import com.taurusx.ads.mediation.networkconfig.GDTExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
@@ -85,6 +87,7 @@ public class FeedListActivity extends BaseActivity {
                 if (feedList != null && !feedList.isEmpty()) {
                     mContainer.removeAllViews();
                     for (Feed feed : feedList) {
+                        LogUtil.d(TAG, "haha mode: "+feed.getFeedData().getAdMode());
                         View adView = feed.getView();
                         if (adView != null) {
                             mContainer.addView(adView);
@@ -168,11 +171,12 @@ public class FeedListActivity extends BaseActivity {
 //                        .setExpressViewAcceptedWidth(260)
 //                        .setExpressViewAcceptedHeight(0)
 //                        .build())
-                .addConfig(GDTExpressNativeConfig.Builder()
-                        // .setADSize(new ADSize(260, 200))
-                        .setADSize(new ADSize(260, 200))
+                .addConfig(GDTExpressFeedListConfig.Builder()
+                        .setADSize(new ADSize(300, ADSize.AUTO_HEIGHT))
+                        .setMinVideoDuration(6)
+                        .setMaxVideoDuration(56)
                         .build())
-                .addConfig(GDTCustomFeedListConfig.Builder()
+                .addConfig(GDTCustom1_0FeedListConfig.Builder()
                         .setAppDownloadListener(new GDTAppDownloadListener() {
                             @Override
                             public void onIdle(String appName) {
@@ -207,6 +211,14 @@ public class FeedListActivity extends BaseActivity {
                         })
                         .build())
                 .addConfig(GDTCustom2_0FeedListConfig.Builder()
+                        .setMinVideoDuration(0)
+                        .setMaxVideoDuration(63)
+                        .setVideoOption(new VideoOption.Builder()
+                                .setDetailPageMuted(true)
+                                .setAutoPlayMuted(false)
+                                .setNeedProgressBar(false)
+                                .setEnableDetailPage(false)
+                                .build())
                         .setAppDownloadListener(new GDTAppDownloadListener() {
                             @Override
                             public void onIdle(String appName) {
@@ -346,25 +358,25 @@ public class FeedListActivity extends BaseActivity {
                         .setAppDownloadListener(new KuaiShouAppDownloadListener() {
                             @Override
                             public void onIdle() {
-                                LogUtil.d(TAG ,"kuaishou onIdle");
+                                LogUtil.d(TAG, "kuaishou onIdle");
                             }
 
                             @Override
                             public void onProgressUpdate(int i) {
-                                LogUtil.d(TAG ,"kuaishou onProgressUpdate");
+                                LogUtil.d(TAG, "kuaishou onProgressUpdate");
                             }
 
                             @Override
                             public void onDownloadFinished() {
-                                LogUtil.d(TAG ,"kuaishou onDownloadFinished");
+                                LogUtil.d(TAG, "kuaishou onDownloadFinished");
                             }
 
                             @Override
                             public void onInstalled() {
-                                LogUtil.d(TAG ,"kuaishou onInstalled");
+                                LogUtil.d(TAG, "kuaishou onInstalled");
                             }
                         })
-                    .build())
+                        .build())
                 .addConfig(KuaiShouExpressFeedListConfig.Builder()
                         .setVideoSoundEnable(false)
                         .build())

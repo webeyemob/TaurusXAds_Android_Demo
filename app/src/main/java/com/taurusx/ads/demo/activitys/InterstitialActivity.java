@@ -7,12 +7,17 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.five_corp.ad.NeedGdprNonPersonalizedAdsTreatment;
+import com.qq.e.ads.cfg.VideoOption;
+import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.InterstitialAd;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
+import com.taurusx.ads.mediation.interstitial.GDTInterstitial;
+import com.taurusx.ads.mediation.networkconfig.GDTInterstitial2_0Config;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouInterstitialConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressInterstitialConfig;
@@ -53,7 +58,7 @@ public class InterstitialActivity extends BaseActivity {
             return;
         }
 
-        mInterstitialAd = new InterstitialAd(InterstitialActivity.this);
+        mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(mInterstitialId);
 
         // Listen Ad load result
@@ -98,7 +103,7 @@ public class InterstitialActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 if (mInterstitialAd.isReady()) {
-                    mInterstitialAd.show();
+                    mInterstitialAd.show(InterstitialActivity.this);
                 }
                 mShowButton.setEnabled(false);
             }
@@ -112,6 +117,13 @@ public class InterstitialActivity extends BaseActivity {
 
     private void setNetworkConfigs() {
         mInterstitialAd.setNetworkConfigs(NetworkConfigs.Builder()
+                .addConfig(GDTInterstitial2_0Config.Builder()
+                        .setMinVideoDuration(5)
+                        .setMaxVideoDuration(60)
+                        .setVideoOption(new VideoOption.Builder()
+                                .setAutoPlayPolicy(VideoOption.AutoPlayPolicy.WIFI)
+                                .build())
+                        .build())
                 .addConfig(TikTokNormalInterstitialConfig.Builder()
                         .setAppDownloadListener(new TikTokAppDownloadListener() {
                             @Override

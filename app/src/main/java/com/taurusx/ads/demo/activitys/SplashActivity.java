@@ -14,6 +14,7 @@ import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
+import com.taurusx.ads.core.api.utils.ScreenUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.OPPOSplashConfig;

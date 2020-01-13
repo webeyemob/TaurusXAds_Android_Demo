@@ -13,7 +13,15 @@ android {
         // for Amazon
 //        applicationId "com.amazon.sample.simplead"
         // for Mobvista
+<<<<<<< HEAD
         applicationId "com.tiktok.test.demo"
+=======
+//        applicationId "com.mintegral.sdk.demo"
+        applicationId "com.dewmobile.kuaiya.web"
+
+//        applicationId "com.qq.e.union.demo"
+
+>>>>>>> update version
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -51,8 +59,8 @@ dependencies {
 
     implementation 'com.android.support:multidex:1.0.3'
 
-    implementation 'com.taurusx.ads:core:1.9.24'
-    
+    implementation 'com.taurusx.ads:core:1.9.27'
+
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:3.3.7.4"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
@@ -73,8 +81,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // AppLovin
-    implementation "com.taurusx.ads:mediation_applovin:9.9.2.1"
-    implementation "com.applovin:applovin-sdk:9.9.2"
+    implementation "com.taurusx.ads:mediation_applovin:9.10.3.0"
+    implementation "com.applovin:applovin-sdk:9.10.3"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // Chartboost
@@ -95,7 +103,7 @@ dependencies {
     implementation "com.taurusx.ads:duadplatform_cw:1.2.2"
 
     // Facebook
-    implementation "com.taurusx.ads:mediation_facebook:5.6.0.2"
+    implementation "com.taurusx.ads:mediation_facebook:5.6.0.4"
     implementation "com.facebook.android:audience-network-sdk:5.6.0"
     // 5.5.0 及之后的版本需要 support-annotations
     implementation "com.android.support:support-annotations:28.0.0"
@@ -124,7 +132,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // InMobi
-    implementation "com.taurusx.ads:mediation_inmobi:7.2.2.5"
+    implementation "com.taurusx.ads:mediation_inmobi:7.2.2.6"
     implementation "com.inmobi.monetization:inmobi-ads:7.2.2"
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.android.gms:play-services-ads:17.1.2"
@@ -145,7 +153,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // MoPub
-    implementation "com.taurusx.ads:mediation_mopub:5.8.0.0"
+    implementation "com.taurusx.ads:mediation_mopub:5.8.0.2.alpha"
     implementation "com.google.android.gms:play-services-basement:16.1.0"
     implementation("com.mopub:mopub-sdk:5.8.0@aar") {
         transitive = true
@@ -214,13 +222,13 @@ dependencies {
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.100.970.2"
-    implementation "com.taurusx.ads:gdtsdk_union:4.100.970"
+    implementation "com.taurusx.ads:mediation_gdt:4.132.1002.0"
+    implementation "com.taurusx.ads:gdtsdk_tbs:4.132.1002"
     implementation "com.android.support:support-v4:26.1.0"
 
     // TikTok
-    implementation "com.taurusx.ads:mediation_toutiao:2.5.3.2.0"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.5.3.2"
+    implementation "com.taurusx.ads:mediation_toutiao:2.7.5.2.0"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.7.5.2"
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
     implementation 'com.android.support:support-v4:27.1.1'
 

@@ -22,6 +22,7 @@ import com.taurusx.ads.mediation.networkconfig.GDTBanner2_0Config;
 import com.taurusx.ads.mediation.networkconfig.InMobiBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressBannerConfig;
+import com.taurusx.ads.mediation.networkconfig.TikTokNormalBannerConfig;
 
 
 public class BannerActivity extends BaseActivity {
@@ -109,17 +110,15 @@ public class BannerActivity extends BaseActivity {
 //                .addConfig(VivoBannerConfig.Builder()
 //                        .setRefreshInterval(30)
 //                        .build())
-                .addConfig(GDTBanner1_0Config.Builder()
-                        .setRefreshInterval(20)
-                        .build())
-                .addConfig(GDTBanner2_0Config.Builder()
-                        .setRefreshInterval(0)
-                        .build())
                 .addConfig(InMobiBannerConfig.Builder()
                         .setRefreshInterval(25)
                         .setAnimationType(InMobiBanner.AnimationType.ANIMATION_OFF)
                         .build())
+                .addConfig(TikTokNormalBannerConfig.Builder()
+                        .setSlideIntervalTime(30_000)
+                        .build())
                 .addConfig(TikTokExpressBannerConfig.Builder()
+                        .setSlideIntervalTime(30_000)
                         .setAppDownloadListener(new TikTokAppDownloadListener() {
                             @Override
                             public void onIdle() {
