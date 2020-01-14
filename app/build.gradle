@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-//        applicationId "com.taurusx.ads.demo"
+        applicationId "com.taurusx.ads.demo"
         // for Fyber
 //        applicationId "com.inner.adsdk.demo"
         // for Vungle
@@ -13,15 +13,10 @@ android {
         // for Amazon
 //        applicationId "com.amazon.sample.simplead"
         // for Mobvista
-<<<<<<< HEAD
-        applicationId "com.tiktok.test.demo"
-=======
 //        applicationId "com.mintegral.sdk.demo"
-        applicationId "com.dewmobile.kuaiya.web"
 
 //        applicationId "com.qq.e.union.demo"
 
->>>>>>> update version
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
