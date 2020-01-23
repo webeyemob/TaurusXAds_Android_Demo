@@ -1,13 +1,11 @@
 package com.taurusx.ads.demo.application;
 
-import android.app.Activity;
 import android.app.Application;
 import android.view.View;
 
 import com.bytedance.sdk.openadsdk.TTAdConstant;
 import com.facebook.ads.AdSettings;
 import com.taurusx.ads.core.api.TaurusXAds;
-import com.taurusx.ads.core.api.TaurusXAdsConfiguration;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.segment.Segment;
 import com.taurusx.ads.core.api.tracker.SimpleTrackerListener;
@@ -31,15 +29,9 @@ import com.taurusx.ads.mediation.networkconfig.TikTokExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokSplashConfig;
 
-import java.net.URLEncoder;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-
 public class TaurusApplication extends Application {
-    private final String TAG = "TaurusApplication";
 
-    private Activity mCurrentActivity;
+    private final String TAG = "TaurusApplication";
 
     @Override
     public void onCreate() {
@@ -163,8 +155,6 @@ public class TaurusApplication extends Application {
                         .addConfig(TikTokGlobalConfig.Builder()
                                 // 设置是否为计费用户，默认为非计费用户
                                 .setIsPaid(false)
-                                // 设置用户年龄，须大于 0
-                                .setAge(29)
                                 // 设置用户画像的关键词列表，不能超过为 1000 个字符
                                 .setKeywords("food, run, movie")
                                 // 设置额外的用户信息，不能超过为 1000 个字符

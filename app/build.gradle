@@ -8,14 +8,10 @@ android {
 //        applicationId "com.inner.adsdk.demo"
         // for Vungle
 //        applicationId "com.publisher.vungle.sample"
-//         for DAP
-//        applicationId "abs.workout.home.fit.belly.fat"
         // for Amazon
 //        applicationId "com.amazon.sample.simplead"
         // for Mobvista
 //        applicationId "com.mintegral.sdk.demo"
-
-//        applicationId "com.qq.e.union.demo"
 
         minSdkVersion 19
         targetSdkVersion 28
@@ -27,10 +23,6 @@ android {
 
     signingConfigs {
         config {
-            storeFile file('../release.jks')
-            storePassword 'marssecurity2019'
-            keyAlias 'marssecurity'
-            keyPassword 'marssecurity2019'
         }
     }
 
@@ -54,7 +46,7 @@ dependencies {
 
     implementation 'com.android.support:multidex:1.0.3'
 
-    implementation 'com.taurusx.ads:core:1.9.27'
+    implementation 'com.taurusx.ads:core:1.9.28'
 
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:3.3.7.4"
@@ -148,7 +140,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // MoPub
-    implementation "com.taurusx.ads:mediation_mopub:5.8.0.2.alpha"
+    implementation "com.taurusx.ads:mediation_mopub:5.8.0.1"
     implementation "com.google.android.gms:play-services-basement:16.1.0"
     implementation("com.mopub:mopub-sdk:5.8.0@aar") {
         transitive = true
@@ -222,7 +214,7 @@ dependencies {
     implementation "com.android.support:support-v4:26.1.0"
 
     // TikTok
-    implementation "com.taurusx.ads:mediation_toutiao:2.7.5.2.0"
+    implementation "com.taurusx.ads:mediation_toutiao:2.7.5.2.4"
     implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.7.5.2"
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
     implementation 'com.android.support:support-v4:27.1.1'
