@@ -37,8 +37,8 @@ public class TaurusApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        TaurusXAds.getDefault().setGdprConsent(true);
         TaurusXAds.getDefault().setLogEnable(true);
+        TaurusXAds.getDefault().setGdprConsent(true);
         TaurusXAds.getDefault().setSegment(Segment.Builder()
                         .setChannel("test_channel")
                         .build());
@@ -169,8 +169,6 @@ public class TaurusApplication extends Application {
                                 .setAllowShowPageWhenScreenLock(true)
                                 // 设置是否支持多进程
                                 .setSupportMultiProcess(false)
-                                // 是否打开 debug 调试信息输出
-                                .setIsDebug(BuildConfig.DEBUG)
                                 .setAppDownloadListener(new TikTokAppDownloadListener() {
                                     @Override
                                     public void onIdle() {

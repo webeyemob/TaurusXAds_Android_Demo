@@ -14,6 +14,7 @@ import com.taurusx.ads.core.api.ad.BannerAdView;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
@@ -80,6 +81,8 @@ public class BannerActivity extends BaseActivity {
             @Override
             public void onAdLoaded() {
                 Log.d(TAG, "BannerAdView onAdLoaded");
+                ILineItem lineItem = mBannerAdView.getReadyLineItem();
+                Log.d(TAG, "BannerAdView Ready LineItem: "+lineItem);
             }
 
             @Override
