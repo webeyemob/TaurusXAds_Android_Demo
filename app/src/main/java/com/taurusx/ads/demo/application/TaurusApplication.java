@@ -4,15 +4,14 @@ import android.app.Application;
 import android.view.View;
 
 import com.bytedance.sdk.openadsdk.TTAdConstant;
-import com.facebook.ads.AdSettings;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
+import com.taurusx.ads.core.api.model.Network;
 import com.taurusx.ads.core.api.segment.Segment;
 import com.taurusx.ads.core.api.tracker.SimpleTrackerListener;
 import com.taurusx.ads.core.api.tracker.TaurusXAdsTracker;
 import com.taurusx.ads.core.api.tracker.TrackerInfo;
 import com.taurusx.ads.core.api.utils.LogUtil;
-import com.taurusx.ads.demo.BuildConfig;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.AdMobGlobalConfig;
@@ -43,11 +42,11 @@ public class TaurusApplication extends Application {
                         .setChannel("test_channel")
                         .build());
         setGlobalNetworkConfigs();
+        // TaurusXAds.getDefault().setNetworkDebugMode(true);
+        // TaurusXAds.getDefault().setNetworkTestMode(true);
         TaurusXAds.getDefault().init(this, Constance.APP_UNIT_ID);
 
         registerTracker();
-
-        AdSettings.setTestMode(true);
     }
 
     private void registerTracker() {

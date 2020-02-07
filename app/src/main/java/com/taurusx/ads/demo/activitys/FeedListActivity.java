@@ -2,11 +2,12 @@ package com.taurusx.ads.demo.activitys;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+
+import androidx.annotation.Nullable;
 
 import com.qq.e.ads.cfg.VideoOption;
 import com.qq.e.ads.nativ.ADSize;
@@ -23,7 +24,6 @@ import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom1_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouExpressFeedListConfig;
