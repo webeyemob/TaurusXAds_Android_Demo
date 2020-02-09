@@ -35,6 +35,8 @@ allprojects {
 
         //AdGeneration
         maven { url 'https://adgeneration.github.io/ADG-Android-SDK/repository' }
+
+        maven { url "https://gitee.com/waves_wb/InsightSdk/raw/master/"}
         
     }
 }

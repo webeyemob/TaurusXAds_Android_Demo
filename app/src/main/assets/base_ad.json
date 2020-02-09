@@ -1,0 +1,31 @@
+{
+  "mediation": [
+    {
+      "adName": "Creative Ads",
+      "banner": {
+        "banner": "324fd5e3-fa2e-4f09-b13a-8a855696f9ea"
+      },
+      "rewarded": {
+        "rewarded": "b5bdab98-b841-459f-ba0b-ad5c8ee60ce2"
+      },
+      "interstitial": {
+        "interstitial": "6689e8ad-02af-4c36-a273-a420a1d15624"
+      },
+      "native": {
+        "native": "4e43b149-eade-4d37-a068-c1995bac39c7"
+      },
+      "feedlist": {
+        "feedlist": "ebfabdbf-9308-4d99-9aca-a0b39fe0ef3d"
+      },
+      "splash": {
+        "splash": "43386bc9-8a52-4896-a810-6189b19c36f7"
+      },
+      "mixview": {
+        "mixview": "dfaf9366-b8ca-42b4-ad4f-f20d1067b3f7"
+      },
+      "mixfullscreen": {
+        "mixfullscreen": "14b4a632-4e9f-46ca-a5ee-fd67222c3fcb"
+      }
+    }
+  ]
+}

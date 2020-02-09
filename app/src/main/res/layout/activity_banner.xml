@@ -10,10 +10,12 @@
         android:layout_margin="12dp"
         android:text="Load Banner" />
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/layout_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:layout_alignParentBottom="true"
         android:background="#dddddd" />
 </RelativeLayout>

@@ -13,6 +13,8 @@ android {
         // for Mobvista
 //        applicationId "com.mintegral.sdk.demo"
 
+//        applicationId "com.tiktok.test.demo"
+//        applicationId "merge.popball.chs"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -60,8 +62,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // AdMob & DFP
-    implementation "com.taurusx.ads:mediation_admob:17.2.1.6"
-    implementation "com.google.android.gms:play-services-ads:17.2.1"
+    implementation "com.taurusx.ads:mediation_admob:18.3.0.0"
+    implementation "com.google.android.gms:play-services-ads:18.3.0"
 
     // Amazon
     implementation "com.taurusx.ads:mediation_amazon:5.9.0.2"
@@ -79,7 +81,7 @@ dependencies {
 
     // Criteo
     implementation "com.taurusx.ads:criteopublishersdk:3.1.0"
-    implementation "com.taurusx.ads:mediation_criteo:3.1.0.3"
+    implementation "com.taurusx.ads:mediation_criteo:3.1.0.4"
 
     // Display.IO
     implementation "com.taurusx.ads:mediation_displayio:3.3.0.0"
@@ -118,6 +120,10 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
+    // Imobile
+    implementation "com.taurusx.ads:mediation_imobile:2.0.20.1.10"
+    implementation "com.google.android.gms:play-services-ads:17.1.2"
+
     // InMobi
     implementation "com.taurusx.ads:mediation_inmobi:7.2.2.6"
     implementation "com.inmobi.monetization:inmobi-ads:7.2.2"
@@ -136,7 +142,7 @@ dependencies {
 
     // Maio
     implementation "com.taurusx.ads:mediation_maio:1.1.10.0"
-    implementation("com.maio:android-sdk:1.1.10@aar")
+    implementation "com.maio:android-sdk:1.1.10@aar"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // MoPub
@@ -151,7 +157,7 @@ dependencies {
     implementation "com.taurusx.ads:mopub-sdk-interstitial:5.8.0"
 
     // KuaiShou
-    implementation "com.taurusx.ads:ks_adsdk:2.3.0"
+    implementation "com.taurusx.ads:ks_adsdk:2.3.0_1"
     implementation "com.taurusx.ads:mediation_kuaishou:2.3.0.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
@@ -258,6 +264,6 @@ dependencies {
 
 configurations.all {
     resolutionStrategy {
-        force 'com.google.android.gms:play-services-ads-identifier:16.0.0'
+//        force 'com.google.android.gms:play-services-ads-identifier:16.0.0'
     }
 }

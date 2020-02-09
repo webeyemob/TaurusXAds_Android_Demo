@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.inmobi.ads.InMobiBanner;
@@ -31,7 +32,7 @@ public class BannerActivity extends BaseActivity {
     private final String TAG = "BannerActivity";
 
     private Button mLoadButton;
-    private FrameLayout mContainer;
+    private LinearLayout mContainer;
     private String mBannerId;
 
     private BannerAdView mBannerAdView;

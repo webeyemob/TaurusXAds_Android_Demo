@@ -67,6 +67,10 @@
             android:name="com.taurusx.ads.demo.mixad.MixFullScreenActivity"
             android:screenOrientation="portrait" />
 
+        <activity android:name="com.taurusx.ads.demo.activitys.AdContainerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
 
         <provider
             android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
@@ -85,8 +89,6 @@
         <meta-data
             android:name="app_license"
             android:value="162025bb97c64772b2288919d51b0250" />
-
-
 
         <provider
             android:name="androidx.core.content.FileProvider"

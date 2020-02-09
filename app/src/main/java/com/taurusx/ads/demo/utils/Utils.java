@@ -1,10 +1,12 @@
 package com.taurusx.ads.demo.utils;
 
 import android.content.Context;
+import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Log;
 
 import com.taurusx.ads.demo.bean.Mediation;
+import com.taurusx.ads.demo.constance.Constance;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,7 +54,7 @@ public class Utils {
             for(int i=0; i<size; i++) {
                 JSONObject item = array.getJSONObject(i);
                 Mediation mediation = Mediation.fromJson(item);
-                map.put(mediation.getmName(), mediation);
+                map.put(mediation.getName(), mediation);
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -70,5 +72,56 @@ public class Utils {
             }
         });
         return list;
+    }
+
+    public static Mediation getMediationSingle(String info) {
+        try {
+            JSONObject object = new JSONObject(info);
+            JSONArray array = object.optJSONArray("mediation");
+            JSONObject mediationJson = array.getJSONObject(0);
+            Mediation mediation = Mediation.fromJson(mediationJson);
+            return mediation;
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static HashMap<String, Mediation> getMediationMap(String info) {
+        HashMap<String, Mediation> map = new HashMap<>();
+        try {
+            JSONObject object = new JSONObject(info);
+            JSONArray array = object.optJSONArray("mediation");
+            int size = array.length();
+            map.clear();
+            for (int i = 0; i < size; i++) {
+                JSONObject item = array.getJSONObject(i);
+                Mediation mediation = Mediation.fromJson(item);
+                map.put(mediation.getName(), mediation);
+            }
+            return map;
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static Intent getBaseIntent(Mediation mediation) {
+        Intent intent = new Intent();
+        if (mediation.getBannerJson() != null) {
+            intent.putExtra(Constance.BUNDLE_TYPE_BANNER, mediation.getBannerJson().toString());
+        }
+        if (mediation.getInterstitalJson() != null) {
+            intent.putExtra(Constance.BUNDLE_TYPE_INTERSTITIAL, mediation.getInterstitalJson().toString());
+        }
+        if (mediation.getNativeJson() != null) {
+            intent.putExtra(Constance.BUNDLE_TYPE_NATIVE, mediation.getNativeJson().toString());
+        }
+        if (mediation.getRewardedVideoJson() != null) {
+            intent.putExtra(Constance.BUNDLE_TYPE_REWARDED, mediation.getRewardedVideoJson().toString());
+        }
+        return intent;
     }
 }

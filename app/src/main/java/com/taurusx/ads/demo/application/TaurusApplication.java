@@ -6,7 +6,6 @@ import android.view.View;
 import com.bytedance.sdk.openadsdk.TTAdConstant;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
-import com.taurusx.ads.core.api.model.Network;
 import com.taurusx.ads.core.api.segment.Segment;
 import com.taurusx.ads.core.api.tracker.SimpleTrackerListener;
 import com.taurusx.ads.core.api.tracker.TaurusXAdsTracker;
@@ -37,16 +36,18 @@ public class TaurusApplication extends Application {
         super.onCreate();
 
         TaurusXAds.getDefault().setLogEnable(true);
-        TaurusXAds.getDefault().setGdprConsent(true);
+        TaurusXAds.getDefault().setGdprConsent(false);
         TaurusXAds.getDefault().setSegment(Segment.Builder()
-                        .setChannel("test_channel")
-                        .build());
+                .setChannel("test_channel")
+                .build());
         setGlobalNetworkConfigs();
         // TaurusXAds.getDefault().setNetworkDebugMode(true);
         // TaurusXAds.getDefault().setNetworkTestMode(true);
         TaurusXAds.getDefault().init(this, Constance.APP_UNIT_ID);
 
         registerTracker();
+
+        TaurusXAds.getDefault().setTestMode(true);
     }
 
     private void registerTracker() {
@@ -123,13 +124,10 @@ public class TaurusApplication extends Application {
         TaurusXAds.getDefault().setGlobalNetworkConfigs(
                 NetworkConfigs.Builder()
                         .addConfig(DFPGlobalConfig.Builder()
-                                .addTestDevice("acb")
-                                .addTestDevice("ddd")
-                                .addTestDevice("ABDBC6250A42D15197AD0FFEFDFE2BF2")
+                                .addTestDevice("Your Test Device Id 2")
                                 .build())
                         .addConfig(AdMobGlobalConfig.Builder()
                                 .addTestDevice("Your Test Device Id 1")
-                                .addTestDevice("Your Test Device Id 2")
                                 .build())
                         .addConfig(TikTokDrawFeedListConfig.Builder()
                                 .setCanInterruptVideoPlay(true)

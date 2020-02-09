@@ -64,13 +64,27 @@ public class SimpleMediationAdapter extends BaseAdapter {
             public void onClick(View v) {
                 Mediation mediation = mListInfo.get(position).getValue();
                 Intent intent = new Intent();
-                intent.putExtra(Constance.BUNDLE_NETWORK_NAME, mediation.getmName());
-                intent.putExtra(Constance.BUNDLE_TYPE_BANNER, mediation.getBannerId());
-                intent.putExtra(Constance.BUNDLE_TYPE_INTERSTITIAL, mediation.getInterstitialId());
-                intent.putExtra(Constance.BUNDLE_TYPE_REWARDED, mediation.getRewardedId());
-                intent.putExtra(Constance.BUNDLE_TYPE_NATIVE, mediation.getNativeId());
-                intent.putExtra(Constance.BUNDLE_TYPE_FEEDLIST, mediation.getFeedListId());
-                intent.putExtra(Constance.BUNDLE_TYPE_SPLASH, mediation.getSplashId());
+                intent.putExtra(Constance.BUNDLE_NETWORK_NAME, mediation.getName());
+                if (mediation.getBannerJson() != null) {
+                    intent.putExtra(Constance.BUNDLE_TYPE_BANNER, mediation.getBannerJson().toString());
+                }
+                if (mediation.getInterstitalJson() != null) {
+                    intent.putExtra(Constance.BUNDLE_TYPE_INTERSTITIAL, mediation.getInterstitalJson().toString());
+                }
+                if (mediation.getRewardedVideoJson() != null) {
+                    intent.putExtra(Constance.BUNDLE_TYPE_REWARDED, mediation.getRewardedVideoJson().toString());
+
+                }
+                if (mediation.getNativeJson() != null) {
+                    intent.putExtra(Constance.BUNDLE_TYPE_NATIVE, mediation.getNativeJson().toString());
+                }
+                if (mediation.getFeedlistJson() != null) {
+                    intent.putExtra(Constance.BUNDLE_TYPE_FEEDLIST, mediation.getFeedlistJson().toString());
+                }
+
+                if (mediation.getSplashJson() != null) {
+                    intent.putExtra(Constance.BUNDLE_TYPE_SPLASH, mediation.getSplashJson().toString());
+                }
 
                 intent.setClass(mContext, MediationActivity.class);
                 mContext.startActivity(intent);

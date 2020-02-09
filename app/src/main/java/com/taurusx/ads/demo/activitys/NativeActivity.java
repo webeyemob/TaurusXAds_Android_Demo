@@ -15,8 +15,6 @@ import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
-import com.taurusx.ads.core.api.model.IAdUnit;
-import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
@@ -98,9 +96,6 @@ public class NativeActivity extends BaseActivity {
             public void onAdLoaded() {
                 Log.d(TAG, "NativeAd onAdLoaded");
                 mShowButton.setEnabled(true);
-                ILineItem lineItem = mNativeAd.getReadyLineItem();
-                IAdUnit adUnit = lineItem.getAdUnit();
-                Log.d(TAG, "ready: " + adUnit.getName() + ", " + adUnit.getId());
             }
 
             @Override

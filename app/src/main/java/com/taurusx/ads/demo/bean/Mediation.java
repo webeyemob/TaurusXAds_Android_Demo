@@ -1,15 +1,19 @@
 package com.taurusx.ads.demo.bean;
 
+import com.taurusx.ads.demo.constance.Constance;
+
 import org.json.JSONObject;
 
 public class Mediation {
     private String mName;
-    private String mBannerId;
-    private String mInterstitialId;
-    private String mRewardedId;
-    private String mNativeId;
-    private String mFeedListId;
-    private String mSplashId;
+    private JSONObject mBannerJson;
+    private JSONObject mNativeJson;
+    private JSONObject mInterstitalJson;
+    private JSONObject mRewardedVideoJson;
+    private JSONObject mMixViewJson;
+    private JSONObject mMixFullScreenJson;
+    private JSONObject mFeedListJson;
+    private JSONObject mSplashJson;
 
     public Mediation() {
 
@@ -17,14 +21,15 @@ public class Mediation {
 
     public static Mediation fromJson(JSONObject object) {
         Mediation mediation = new Mediation();
-        mediation.mName = object.optString("adName");
-        mediation.mBannerId = object.optString("banner", "");
-        mediation.mInterstitialId = object.optString("interstitial", "");
-        mediation.mNativeId = object.optString("native", "");
-        mediation.mRewardedId = object.optString("rewarded", "");
-        mediation.mFeedListId = object.optString("feedlist", "");
-        mediation.mSplashId = object.optString("splash", "");
-
+        mediation.mName = object.optString(Constance.BUNDLE_TYPE_MEDIATION_NAME);
+        mediation.mBannerJson = object.optJSONObject(Constance.BUNDLE_TYPE_BANNER);
+        mediation.mNativeJson = object.optJSONObject(Constance.BUNDLE_TYPE_NATIVE);
+        mediation.mInterstitalJson = object.optJSONObject(Constance.BUNDLE_TYPE_INTERSTITIAL);
+        mediation.mRewardedVideoJson = object.optJSONObject(Constance.BUNDLE_TYPE_REWARDED);
+        mediation.mMixViewJson = object.optJSONObject(Constance.BUNDLE_TYPE_MIXVIEW);
+        mediation.mMixFullScreenJson = object.optJSONObject(Constance.BUNDLE_TYPE_MIXFULLSCREEN);
+        mediation.mFeedListJson = object.optJSONObject(Constance.BUNDLE_TYPE_FEEDLIST);
+        mediation.mSplashJson = object.optJSONObject(Constance.BUNDLE_TYPE_SPLASH);
         return mediation;
     }
 
@@ -32,56 +37,41 @@ public class Mediation {
         this.mName = name;
     }
 
-    public void setBannerId(String bannerId) {
-        this.mBannerId = bannerId;
-    }
-
-    public void setInterstitialId(String interstitialId) {
-        this.mInterstitialId = interstitialId;
-    }
-
-    public void setRewardedId(String rewardedId) {
-        this.mRewardedId = rewardedId;
-    }
-
-    public void setNativeId(String nativeId) {
-        this.mNativeId = nativeId;
-    }
-
-    public void setFeedListId(String feedListId) {
-        this.mFeedListId = feedListId;
-    }
-
-    public void setSplashId(String splashId) {
-        this.mSplashId = splashId;
-    }
-
-
-    public String getmName() {
+    public String getName() {
         return mName;
     }
 
-    public String getBannerId() {
-        return mBannerId;
+    public JSONObject getBannerJson() {
+        return mBannerJson;
     }
 
-    public String getInterstitialId() {
-        return mInterstitialId;
+
+    public JSONObject getNativeJson() {
+        return mNativeJson;
     }
 
-    public String getRewardedId() {
-        return mRewardedId;
+    public JSONObject getInterstitalJson() {
+        return mInterstitalJson;
     }
 
-    public String getNativeId() {
-        return mNativeId;
+    public JSONObject getRewardedVideoJson() {
+        return mRewardedVideoJson;
     }
 
-    public String getFeedListId() {
-        return mFeedListId;
+    public JSONObject getMixViewJson() {
+        return mMixViewJson;
     }
 
-    public String getSplashId() {
-        return mSplashId;
+    public JSONObject getMixFullScreenJson() {
+        return mMixFullScreenJson;
     }
+
+    public JSONObject getFeedlistJson() {
+        return mFeedListJson;
+    }
+
+    public JSONObject getSplashJson() {
+        return mSplashJson;
+    }
+
 }
