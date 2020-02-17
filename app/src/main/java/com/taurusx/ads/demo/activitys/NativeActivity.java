@@ -278,10 +278,6 @@ public class NativeActivity extends BaseActivity {
                             }
                         })
                         .build())
-                .addConfig(OPPONativeTemplateConfig.Builder()
-                        .setWidth(234)
-                        .setHeight(567)
-                        .build())
 //                .addConfig(VungleNativeNetworkConfig.Builder()
 //                        .setWidth(300)
 //                        .setHeight(250)

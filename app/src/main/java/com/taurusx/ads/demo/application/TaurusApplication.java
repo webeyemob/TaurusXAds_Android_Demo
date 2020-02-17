@@ -145,10 +145,6 @@ public class TaurusApplication extends Application {
                                 .setTitle(R.string.settings)
                                 .setDesc("share_info")
                                 .build())
-                        .addConfig(OPPONativeTemplateConfig.Builder()
-                                .setWidth(222)
-                                .setHeight(111)
-                                .build())
                         .addConfig(TikTokGlobalConfig.Builder()
                                 // 设置是否为计费用户，默认为非计费用户
                                 .setIsPaid(false)
@@ -233,12 +229,10 @@ public class TaurusApplication extends Application {
                                 })
                                 .build())
                         .addConfig(FiveGlobalNetworkConfig.Builder()
-                                .setTestMode(true)
                                 .build())
                         .addConfig(KuaiShouGlobalConfig.Builder()
                                 .showNotification(true)
                                 .setAppName("AppTest")
-                                .debug(false)
                                 .build())
                         .build());
     }

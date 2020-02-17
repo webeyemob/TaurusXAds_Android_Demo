@@ -115,7 +115,6 @@ public class BannerActivity extends BaseActivity {
 //                        .setRefreshInterval(30)
 //                        .build())
                 .addConfig(InMobiBannerConfig.Builder()
-                        .setRefreshInterval(25)
                         .setAnimationType(InMobiBanner.AnimationType.ANIMATION_OFF)
                         .build())
                 .addConfig(TikTokNormalBannerConfig.Builder()
