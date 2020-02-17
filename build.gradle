@@ -36,8 +36,9 @@ allprojects {
         //AdGeneration
         maven { url 'https://adgeneration.github.io/ADG-Android-SDK/repository' }
 
-        maven { url "https://gitee.com/waves_wb/InsightSdk/raw/master/"}
-        
+        // MoPub
+        maven { url "https://s3.amazonaws.com/moat-sdk-builds" }
+
     }
 }
 

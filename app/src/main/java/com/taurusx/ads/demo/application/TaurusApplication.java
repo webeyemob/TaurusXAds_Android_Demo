@@ -41,8 +41,8 @@ public class TaurusApplication extends Application {
                 .setChannel("test_channel")
                 .build());
         setGlobalNetworkConfigs();
-        // TaurusXAds.getDefault().setNetworkDebugMode(true);
-        // TaurusXAds.getDefault().setNetworkTestMode(true);
+        TaurusXAds.getDefault().setNetworkDebugMode(true);
+        TaurusXAds.getDefault().setNetworkTestMode(true);
         TaurusXAds.getDefault().init(this, Constance.APP_UNIT_ID);
 
         registerTracker();

@@ -330,7 +330,7 @@
       }
     },
     {
-      "adName": "Oppo",
+      "adName": "OPPO",
       "banner": {
         "banner": "f2fdfb47-030e-47e6-bee4-c2680adda549"
       },
@@ -342,6 +342,15 @@
       },
       "native": {
         "native": "25e061e0-3017-4099-9185-7c20a571005d"
+      }
+    },
+    {
+      "adName": "Pangle",
+      "rewarded": {
+        "rewarded": "7ef22fb6-1b63-4dce-914a-943f1fb0914f"
+      },
+      "interstitial" : {
+        "interstitial": "3a7d45a7-1838-414e-bac2-dda2d6eb334a"
       }
     },
     {
@@ -402,7 +411,7 @@
       }
     },
     {
-      "adName": "Vivo",
+      "adName": "vivo",
       "rewarded": {
         "rewarded": "0bbe3e3b-116e-4725-b6cb-9b2ad7e9abbd"
       },
