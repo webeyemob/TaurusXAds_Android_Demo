@@ -70,7 +70,7 @@ public class NativeActivity extends BaseActivity {
                 mShowButton.setEnabled(false);
                 // Add NativeAd AdView To UI
                 View adView = mNativeAd.getAdView();
-                if (adView != null) {
+                if (adView != null && adView != mContainer.getChildAt(0)) {
                     mContainer.removeAllViews();
                     mContainer.addView(adView);
                 }

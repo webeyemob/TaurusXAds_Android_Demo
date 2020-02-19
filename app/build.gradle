@@ -124,7 +124,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // Imobile
-    implementation "com.taurusx.ads:mediation_imobile:2.0.20.1"
+    implementation "com.taurusx.ads:mediation_imobile:2.0.20.2"
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // InMobi
@@ -152,7 +152,9 @@ dependencies {
     implementation "com.taurusx.ads:mediation_mopub:5.11.0.0"
     implementation("com.mopub:mopub-sdk:5.11.0@aar") {
         transitive = true
+        exclude module: 'moat-mobile-app-kit'
     }
+    implementation "com.taurusx.ads:mopub-moat-mobile-app-kit:2.4.5"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-base:16.1.0"
 
@@ -225,8 +227,8 @@ dependencies {
         implementation "com.taurusx.ads:pangle_open_ad_sdk:2.1.5.0"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:2.7.5.4.1"
-        implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.7.5.4"
+        implementation "com.taurusx.ads:mediation_toutiao:2.8.0.2.0"
+        implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.8.0.2"
         implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
         implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     }

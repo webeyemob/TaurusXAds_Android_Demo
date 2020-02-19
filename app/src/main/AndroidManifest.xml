@@ -40,7 +40,7 @@
 
         <activity android:name="com.taurusx.ads.demo.activitys.NativeActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait" />
+            />
 
         <activity android:name="com.taurusx.ads.demo.activitys.InterstitialActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
@@ -89,6 +89,9 @@
         <meta-data
             android:name="app_license"
             android:value="162025bb97c64772b2288919d51b0250" />
+
+        <!-- 调试模式 -->
+        <meta-data android:name="i-mobile_DebugLogging" android:value="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
