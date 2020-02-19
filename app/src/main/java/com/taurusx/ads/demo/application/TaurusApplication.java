@@ -47,7 +47,7 @@ public class TaurusApplication extends Application {
 
         registerTracker();
 
-        TaurusXAds.getDefault().setTestMode(true);
+//        TaurusXAds.getDefault().setTestMode(true);
     }
 
     private void registerTracker() {

@@ -4,6 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.taurusx.ads.demo"
+//        applicationId "com.wesdk.network.test"
         // for Fyber
 //        applicationId "com.inner.adsdk.demo"
         // for Vungle
@@ -25,6 +26,10 @@ android {
 
     signingConfigs {
         config {
+            storeFile file('../debug.jks')
+            storePassword 'android'
+            keyAlias 'debug'
+            keyPassword 'android'
         }
     }
 
@@ -51,7 +56,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.9.32'
+    implementation 'com.taurusx.ads:core:1.9.33'
 
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:3.3.7.5"
