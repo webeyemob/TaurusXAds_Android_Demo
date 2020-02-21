@@ -35,10 +35,6 @@ allprojects {
 
         //AdGeneration
         maven { url 'https://adgeneration.github.io/ADG-Android-SDK/repository' }
-
-        // MoPub
-        maven { url "https://s3.amazonaws.com/moat-sdk-builds" }
-
     }
 }
 
