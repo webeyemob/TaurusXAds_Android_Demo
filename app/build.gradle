@@ -57,7 +57,7 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.0'
 
     implementation 'com.taurusx.ads:core:1.9.36'
-    
+
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:3.3.7.5"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
