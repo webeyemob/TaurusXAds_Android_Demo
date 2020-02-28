@@ -18,6 +18,7 @@ import com.taurusx.ads.core.api.utils.ScreenUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.OPPOSplashConfig;
+import com.taurusx.ads.mediation.networkconfig.SigmobSplashConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokSplashConfig;
 
@@ -140,6 +141,12 @@ public class SplashActivity extends Activity {
                             }
                         })
                         .build())
+                .addConfig(SigmobSplashConfig.Builder()
+                        .setDisableAutoHideAd(false)
+                        .setDescription("TaurusXDemo")
+                        .setTitle("TaurusX")
+                        .build()
+                )
                 .build());
     }
 

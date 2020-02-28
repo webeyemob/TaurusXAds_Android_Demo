@@ -354,6 +354,18 @@
       }
     },
     {
+      "adName": "Sigmob",
+      "rewarded": {
+        "rewarded": "af59fd1e-36eb-42ae-8d7f-5c7ff08d4b79"
+      },
+      "interstitial" : {
+        "interstitial": "62948afa-16cf-46cc-b6da-c024820c4f42"
+      },
+      "splash": {
+        "splash": "14721d21-9511-48e8-9258-a6eb12d21d98"
+      }
+    },
+    {
       "adName": "Tapjoy",
       "rewarded": {
         "rewarded": "d067eadc-677c-42ee-979b-674ce12e9501"

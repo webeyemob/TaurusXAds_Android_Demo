@@ -67,7 +67,7 @@ public class TaurusApplication extends Application {
             @Override
             public void onAdCallShow(TrackerInfo info) {
                 LogUtil.d(TAG, "track onAdCallShow");
-                LogUtil.d(TAG, info.toString());
+                LogUtil.d(TAG, info.getAdContentInfo().toString());
             }
 
             @Override
