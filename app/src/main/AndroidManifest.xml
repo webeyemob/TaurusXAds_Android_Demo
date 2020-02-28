@@ -101,7 +101,7 @@
             android:value="162025bb97c64772b2288919d51b0250" />
 
         <!-- 调试模式 -->
-        <meta-data android:name="i-mobile_DebugLogging" android:value="false" />
+        <meta-data android:name="i-mobile_DebugLogging" android:value="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

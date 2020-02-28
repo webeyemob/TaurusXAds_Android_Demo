@@ -21,6 +21,9 @@ allprojects {
 
         maven { url "https://dl.bintray.com/taurrusxads/TaurusxAds/" }
 
+        // AdColony
+        maven { url "https://adcolony.bintray.com/AdColony" }
+
         // Display
         maven { url "http://maven.display.io/" }
 

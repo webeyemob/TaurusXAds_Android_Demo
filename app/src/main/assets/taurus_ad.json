@@ -2,6 +2,9 @@
   "mediation": [
     {
       "adName": "AdColony",
+      "banner": {
+        "banner": "fb6c8e20-bd62-4f3a-8927-2081e19f5114"
+      },
       "rewarded": {
         "rewarded": "a0e7f1f4-b228-4567-875d-83771ac04dfa"
       },
@@ -398,13 +401,13 @@
     {
       "adName": "Unity Ads",
       "banner": {
-        "banner": "733cd340-e39b-4bd0-b0a7-9b873b22a488"
+        "banner": "a92176d2-cf15-40fa-96ed-0b6c9b2312ce"
       },
       "rewarded": {
-        "rewarded": "94a93ce9-33e7-4ad5-9851-668eb094ed74"
+        "rewarded": "80df8049-378d-48bc-b826-1f2e098433c5"
       },
       "interstitial": {
-        "interstitial": "adf3fa0f-0c87-499b-b1a6-66b72819967f"
+        "interstitial": "d12b52dd-4bb8-4911-bf7d-c6ef974cd53e"
       }
     },
     {
