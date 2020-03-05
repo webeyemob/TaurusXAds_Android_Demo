@@ -53,7 +53,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.9.41'
+    implementation 'com.taurusx.ads:core:1.9.42'
 
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:4.1.4.1"
@@ -67,7 +67,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // AdMob & DFP
-    implementation "com.taurusx.ads:mediation_admob:18.3.0.0"
+    implementation "com.taurusx.ads:mediation_admob:18.3.0.2"
     implementation "com.google.android.gms:play-services-ads:18.3.0"
 
     // Amazon
@@ -126,7 +126,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // Imobile
-    implementation "com.taurusx.ads:mediation_imobile:2.0.20.5"
+    implementation "com.taurusx.ads:mediation_imobile:2.0.20.6"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
     // InMobi

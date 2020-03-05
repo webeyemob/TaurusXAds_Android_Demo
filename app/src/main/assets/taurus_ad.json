@@ -15,7 +15,8 @@
     {
       "adName": "AdMob",
       "banner": {
-        "banner": "dbc15c66-6e4e-4a3f-85a2-a02276d695d4"
+        "banner": "dbc15c66-6e4e-4a3f-85a2-a02276d695d4",
+        "adaptive banner": "138c96cf-d5a5-4484-b470-b0a5241ed2c9"
       },
       "rewarded": {
         "rewarded": "cc426990-b2e7-4dc2-b0bd-30941cafc67e"
@@ -117,7 +118,8 @@
     {
       "adName": "DFP",
       "banner": {
-        "banner": "ade5efab-fbd0-422d-b0b4-401738a744eb"
+        "banner": "ade5efab-fbd0-422d-b0b4-401738a744eb",
+        "adaptive banner": "dea4c923-ab6f-4700-8fba-be351e7f961e"
       },
       "rewarded": {
         "rewarded": "2f7d3967-d6f2-4978-bf9c-25a470b53ba7"
