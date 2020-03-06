@@ -286,23 +286,26 @@
     {
       "adName": "Mobvista",
       "banner": {
-        "banner": "89e6dff0-0431-4267-a1f2-fdd60d0dc3bc"
+        "banner": "89e6dff0-0431-4267-a1f2-fdd60d0dc3bc",
+        "banner_headerbidding": "f5f93659-39b2-4964-836f-8505e5de3a38"
       },
       "rewarded": {
         "rewarded": "55919798-14b6-4cbb-a857-3af830e2b6b4",
-        "rewarded_with_hb": "0d407cfa-f19f-402c-bb66-c979407cdbc6",
-        "rewarded_interactive": "f2d858f7-6965-43a6-b53f-353fac4a2c2b"
+        "rewarded_headerbidding": "ae5b6772-49b1-484c-bdf8-4ba11be3e718",
+        "rewarded_interactive": "0d407cfa-f19f-402c-bb66-c979407cdbc6"
       },
       "interstitial": {
-        "interstitial": "5c7431b7-51f3-438e-97b5-98c4bf65d736",
-        "interstitial_normal": "903ad939-bb84-40d8-8929-7b53e2cfc61a",
-        "interstitial_video_hb": "9052a544-3e30-425e-a033-6ce11cc334b7"
+        "interstitial": "903ad939-bb84-40d8-8929-7b53e2cfc61a",
+        "interstitial_video": "9052a544-3e30-425e-a033-6ce11cc334b7",
+        "interstitial_video_headerbidding": "c9bbf9a4-f8f6-49e7-9932-ab54e9f24620"
       },
       "native": {
-        "native": "80f4e069-2958-4c45-9418-b20ca87fa3ae"
+        "native": "80f4e069-2958-4c45-9418-b20ca87fa3ae",
+        "native_headerbidding": "2d4046ed-69f0-43c8-8107-53b5223ceb61"
       },
       "feedlist": {
-        "feedlist": "feb5a072-72c3-44c4-876f-56b33bda91ab"
+        "feedlist": "feb5a072-72c3-44c4-876f-56b33bda91ab",
+        "feedlist_headerbidding": "e251dd1f-8ccb-438e-a94c-b830e801cf5a"
       }
     },
     {

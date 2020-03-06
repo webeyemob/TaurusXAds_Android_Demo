@@ -36,7 +36,7 @@ public class TaurusApplication extends Application {
         super.onCreate();
 
         TaurusXAds.getDefault().setLogEnable(true);
-        TaurusXAds.getDefault().setGdprConsent(false);
+        TaurusXAds.getDefault().setGdprConsent(true);
         TaurusXAds.getDefault().setSegment(Segment.Builder()
                 .setChannel("test_channel")
                 .build());
