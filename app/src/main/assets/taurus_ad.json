@@ -289,10 +289,14 @@
         "banner": "89e6dff0-0431-4267-a1f2-fdd60d0dc3bc"
       },
       "rewarded": {
-        "rewarded": "55919798-14b6-4cbb-a857-3af830e2b6b4"
+        "rewarded": "55919798-14b6-4cbb-a857-3af830e2b6b4",
+        "rewarded_with_hb": "0d407cfa-f19f-402c-bb66-c979407cdbc6",
+        "rewarded_interactive": "f2d858f7-6965-43a6-b53f-353fac4a2c2b"
       },
       "interstitial": {
-        "interstitial": "5c7431b7-51f3-438e-97b5-98c4bf65d736"
+        "interstitial": "5c7431b7-51f3-438e-97b5-98c4bf65d736",
+        "interstitial_normal": "903ad939-bb84-40d8-8929-7b53e2cfc61a",
+        "interstitial_video_hb": "9052a544-3e30-425e-a033-6ce11cc334b7"
       },
       "native": {
         "native": "80f4e069-2958-4c45-9418-b20ca87fa3ae"
