@@ -19,6 +19,10 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled = true
+
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
     }
 
     signingConfigs {
@@ -53,7 +57,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.9.42'
+    implementation 'com.taurusx.ads:core:1.9.45'
 
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:4.1.4.1"
@@ -130,15 +134,23 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
     // InMobi
-    implementation "com.taurusx.ads:mediation_inmobi:7.2.2.7"
-    implementation "com.inmobi.monetization:inmobi-ads:7.2.2"
-    implementation "com.google.android.gms:play-services-base:16.1.0"
-    implementation "com.google.android.gms:play-services-ads:17.1.2"
-    implementation "com.google.android.gms:play-services-location:16.0.0"
-    implementation "com.google.android.gms:play-services-plus:16.0.0"
-    implementation "com.squareup.picasso:picasso:2.5.2"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+//    implementation "com.taurusx.ads:mediation_inmobi:7.2.2.7"
+//    implementation "com.inmobi.monetization:inmobi-ads:7.2.2"
+//    implementation "com.google.android.gms:play-services-base:16.1.0"
+//    implementation "com.google.android.gms:play-services-ads:17.1.2"
+//    implementation "com.google.android.gms:play-services-location:16.0.0"
+//    implementation "com.google.android.gms:play-services-plus:16.0.0"
+//    implementation "com.squareup.picasso:picasso:2.5.2"
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation "com.taurusx.ads:mediation_inmobi:7.4.1.test1"
+    implementation "com.squareup.picasso:picasso:2.71828"
+    implementation 'com.taurusx.ads:miit_mdid:1.0.10'
+    implementation "com.android.support:support-v4:26.1.0"
+    implementation "com.android.support:recyclerview-v7:27.1.0"
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
 
     // IronSource
     implementation "com.taurusx.ads:mediation_ironsource:6.8.0.1.6"
@@ -235,28 +247,30 @@ dependencies {
     }
 
     // Mobvista
-    implementation "com.taurusx.ads:mediation_mobvista:10.1.51.1"
+    implementation "com.taurusx.ads:mediation_mobvista:12.2.11.0.9"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    // 10.1.51 与 TikTok 有类冲突，使用 10.1.31，Mobvista 官方正在修复
+    // 10.1.51 与 TikTok 有类冲突，使用 12.2.11，Mobvista 官方正在修复
     // Common
-    implementation "com.mintegral.msdk:mtgjscommon:10.1.31"
-    implementation "com.mintegral.msdk:videocommon:10.1.31"
-    implementation "com.mintegral.msdk:playercommon:10.1.31"
-    implementation "com.mintegral.msdk:videojs:10.1.31"
-    implementation "com.mintegral.msdk:optimizedata:10.1.31"
-    implementation "com.mintegral.msdk:common:10.1.31"
-    implementation "com.mintegral.msdk:mtgdownloads:10.1.31"
+    implementation "com.mintegral.msdk:mtgjscommon:12.2.11"
+    implementation "com.mintegral.msdk:videocommon:12.2.11"
+    implementation "com.mintegral.msdk:playercommon:12.2.11"
+    implementation "com.mintegral.msdk:videojs:12.2.11"
+    implementation "com.mintegral.msdk:optimizedata:12.2.11"
+    implementation "com.mintegral.msdk:common:12.2.11"
+    implementation "com.mintegral.msdk:mtgdownloads:12.2.11"
     // Banner
-    implementation "com.mintegral.msdk:mtgbanner:10.1.31"
+    implementation "com.mintegral.msdk:mtgbanner:12.2.11"
     // Native
-    implementation "com.mintegral.msdk:mtgnative:10.1.31"
-    implementation "com.mintegral.msdk:nativeex:10.1.31"
+    implementation "com.mintegral.msdk:mtgnative:12.2.11"
+    implementation "com.mintegral.msdk:nativeex:12.2.11"
     // Interstitial
-    implementation "com.mintegral.msdk:interstitial:10.1.31"
-    implementation "com.mintegral.msdk:interstitialvideo:10.1.31"
+    implementation "com.mintegral.msdk:interstitial:12.2.11"
+    implementation "com.mintegral.msdk:interstitialvideo:12.2.11"
     // RewardedVideo
-    implementation "com.mintegral.msdk:reward:10.1.31"
-    implementation "com.mintegral.msdk:interactiveads:10.1.31"
+    implementation "com.mintegral.msdk:reward:12.2.11"
+    implementation "com.mintegral.msdk:interactiveads:12.2.11"
+    // HB
+    implementation "com.mintegral.msdk:mtgbid:12.2.11"
 
     // Oppo
     implementation "com.taurusx.ads:mediation_oppo:3.1.1.4"

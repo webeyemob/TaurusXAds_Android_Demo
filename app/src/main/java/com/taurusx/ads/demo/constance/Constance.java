@@ -1,7 +1,7 @@
 package com.taurusx.ads.demo.constance;
 
 public class Constance {
-    public static final String APP_UNIT_ID = "4b4b6832-4267-42db-9c04-d517d5288bbb";
+    public static final String APP_ID = "4b4b6832-4267-42db-9c04-d517d5288bbb";
 
     public static final String BUNDLE_NETWORK_NAME = "name";
 
