@@ -134,15 +134,21 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
     // InMobi
-    implementation "com.taurusx.ads:mediation_inmobi:7.2.2.7"
-    implementation "com.inmobi.monetization:inmobi-ads:7.2.2"
-    implementation "com.google.android.gms:play-services-base:16.1.0"
-    implementation "com.google.android.gms:play-services-ads:17.1.2"
-    implementation "com.google.android.gms:play-services-location:16.0.0"
-    implementation "com.google.android.gms:play-services-plus:16.0.0"
-    implementation "com.squareup.picasso:picasso:2.5.2"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+//    implementation "com.taurusx.ads:mediation_inmobi:7.2.2.7"
+//    implementation "com.inmobi.monetization:inmobi-ads:7.2.2"
+//    implementation "com.google.android.gms:play-services-base:16.1.0"
+//    implementation "com.google.android.gms:play-services-ads:17.1.2"
+//    implementation "com.google.android.gms:play-services-location:16.0.0"
+//    implementation "com.google.android.gms:play-services-plus:16.0.0"
+//    implementation "com.squareup.picasso:picasso:2.5.2"
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'androidx.recyclerview:recyclerview:1.0.0'0
+    implementation "com.taurusx.ads:mediation_inmobi:7.4.1.0"
+
+    implementation("com.squareup.picasso:picasso:2.71828")
+    implementation("com.android.support:support-v4:26.1.0")
+    implementation("com.android.support:recyclerview-v7:27.1.0")
+    implementation("com.taurusx.ads:miit_mdid:1.0.10")
 
     // IronSource
     implementation "com.taurusx.ads:mediation_ironsource:6.8.0.1.6"
@@ -233,13 +239,16 @@ dependencies {
         implementation "com.taurusx.ads:pangle_open_ad_sdk:2.1.5.0"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:2.9.0.0.0"
-        implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.9.0.0"
+//        implementation "com.taurusx.ads:mediation_toutiao:2.9.0.0.0"
+//        implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.9.0.0"
+        implementation "com.taurusx.ads:mediation_toutiao:2.8.0.2.0"
+        implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.8.0.2"
+        implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
         implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     }
 
     // Mobvista
-    implementation "com.taurusx.ads:mediation_mobvista:12.2.11.0.hbtest2"
+    implementation "com.taurusx.ads:mediation_mobvista:12.2.11.0.hbtest3"
     implementation "com.mintegral.msdk:videojs:12.2.11"
     implementation "com.mintegral.msdk:mtgjscommon:12.2.11"
     implementation "com.mintegral.msdk:playercommon:12.2.11"

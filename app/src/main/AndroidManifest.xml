@@ -1,17 +1,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.taurusx.ads.demo">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:remove="android:maxSdkVersion" />
+
     <application
+        android:name=".application.TaurusApplication"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".application.TaurusApplication"
         android:networkSecurityConfig="@xml/network_security_config"
-        android:hardwareAccelerated="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -22,35 +26,38 @@
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.MediationListActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
 
-        <activity android:name="com.taurusx.ads.demo.activitys.LoadModeActivity"
-            android:screenOrientation="portrait">
-        </activity>
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.LoadModeActivity"
+            android:screenOrientation="portrait"></activity>
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.MediationActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
-        <activity android:name="com.taurusx.ads.demo.activitys.BannerActivity"
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.BannerActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.taurusx.ads.demo.activitys.NativeActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            />
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.NativeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
 
-        <activity android:name="com.taurusx.ads.demo.activitys.InterstitialActivity"
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.InterstitialActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.taurusx.ads.demo.activitys.RewardedVideoActivity"
-        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-        android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.RewardedVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
 
-        <activity android:name="com.taurusx.ads.demo.activitys.FeedListActivity"
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.FeedListActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
 
@@ -67,7 +74,8 @@
             android:name="com.taurusx.ads.demo.mixad.MixFullScreenActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.taurusx.ads.demo.activitys.AdContainerActivity"
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.AdContainerActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
 
@@ -84,12 +92,12 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/sigmob_provider_paths"/>
+                android:resource="@xml/sigmob_provider_paths" />
         </provider>
 
         <meta-data
-        android:name="com.google.android.gms.ads.APPLICATION_ID"
-        android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
 
         <meta-data
             android:name="applovin.sdk.key"
@@ -101,7 +109,9 @@
             android:value="162025bb97c64772b2288919d51b0250" />
 
         <!-- 调试模式 -->
-        <meta-data android:name="i-mobile_DebugLogging" android:value="true" />
+        <meta-data
+            android:name="i-mobile_DebugLogging"
+            android:value="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -110,10 +120,23 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/gdt_file_path" />
+                android:resource="@xml/provider" />
         </provider>
 
-        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider" />
+        </provider>
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
     </application>
 </manifest>

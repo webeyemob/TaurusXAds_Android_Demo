@@ -243,6 +243,12 @@
       },
       "native": {
         "native": "64f80c96-5c3f-4e86-be27-4432cd59747b"
+      },
+      "splash": {
+        "splash": "00ad49dc-6e31-434e-9442-1a6df6b8428a"
+      },
+      "feedlist":{
+        "feedlist": "6d1bce8f-d77b-4f30-a950-4932ae2c83f8"
       }
     },
     {
@@ -361,7 +367,7 @@
       "rewarded": {
         "rewarded": "7ef22fb6-1b63-4dce-914a-943f1fb0914f"
       },
-      "interstitial" : {
+      "interstitial": {
         "interstitial": "3a7d45a7-1838-414e-bac2-dda2d6eb334a"
       }
     },
@@ -370,7 +376,7 @@
       "rewarded": {
         "rewarded": "af59fd1e-36eb-42ae-8d7f-5c7ff08d4b79"
       },
-      "interstitial" : {
+      "interstitial": {
         "interstitial": "62948afa-16cf-46cc-b6da-c024820c4f42"
       },
       "splash": {
