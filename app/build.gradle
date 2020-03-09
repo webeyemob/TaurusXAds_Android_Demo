@@ -248,7 +248,7 @@ dependencies {
     }
 
     // Mobvista
-    implementation "com.taurusx.ads:mediation_mobvista:12.2.11.0.hbtest3"
+    implementation "com.taurusx.ads:mediation_mintegral:12.2.11.0"
     implementation "com.mintegral.msdk:videojs:12.2.11"
     implementation "com.mintegral.msdk:mtgjscommon:12.2.11"
     implementation "com.mintegral.msdk:playercommon:12.2.11"
