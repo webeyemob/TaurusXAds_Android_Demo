@@ -14,10 +14,8 @@ import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
-import com.taurusx.ads.core.api.utils.ScreenUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
-import com.taurusx.ads.mediation.networkconfig.OPPOSplashConfig;
 import com.taurusx.ads.mediation.networkconfig.SigmobSplashConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokSplashConfig;
@@ -104,9 +102,6 @@ public class SplashActivity extends Activity {
 //                        .setTitle("App Name")
 //                        .setDesc("App Desc")
 //                        .build())
-                .addConfig(OPPOSplashConfig.Builder()
-                        .setBottomArea(bottomArea)
-                        .build())
                 .addConfig(TikTokSplashConfig.Builder()
                         .setImageAcceptedSize(1080, 1920)
                         .setAppDownloadListener(new TikTokAppDownloadListener() {
