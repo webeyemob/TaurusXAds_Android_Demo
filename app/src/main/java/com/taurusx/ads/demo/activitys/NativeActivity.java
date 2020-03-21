@@ -23,7 +23,6 @@ import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0NativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomNativeConfig;
-import com.taurusx.ads.mediation.networkconfig.OPPONativeTemplateConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomInterstitialConfig;

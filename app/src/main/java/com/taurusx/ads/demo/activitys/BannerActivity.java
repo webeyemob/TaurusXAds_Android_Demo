@@ -6,7 +6,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -19,8 +18,6 @@ import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
-import com.taurusx.ads.mediation.networkconfig.GDTBanner1_0Config;
-import com.taurusx.ads.mediation.networkconfig.GDTBanner2_0Config;
 import com.taurusx.ads.mediation.networkconfig.InMobiBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressBannerConfig;

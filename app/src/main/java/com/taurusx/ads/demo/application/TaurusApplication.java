@@ -1,7 +1,6 @@
 package com.taurusx.ads.demo.application;
 
 import android.app.Application;
-import android.view.View;
 
 import com.bytedance.sdk.openadsdk.TTAdConstant;
 import com.taurusx.ads.core.api.TaurusXAds;
@@ -19,8 +18,6 @@ import com.taurusx.ads.mediation.networkconfig.FiveGlobalNetworkConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouGlobalConfig;
-import com.taurusx.ads.mediation.networkconfig.OPPONativeTemplateConfig;
-import com.taurusx.ads.mediation.networkconfig.OPPOSplashConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressFeedListConfig;
@@ -139,11 +136,6 @@ public class TaurusApplication extends Application {
                                 .build())
                         .addConfig(TikTokSplashConfig.Builder()
                                 .setImageAcceptedSize(1000, 1000)
-                                .build())
-                        .addConfig(OPPOSplashConfig.Builder()
-                                .setBottomArea(new View(this))
-                                .setTitle(R.string.settings)
-                                .setDesc("share_info")
                                 .build())
                         .addConfig(TikTokGlobalConfig.Builder()
                                 // 设置是否为计费用户，默认为非计费用户
