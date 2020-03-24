@@ -59,10 +59,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
     implementation 'androidx.multidex:multidex:2.0.0'
-
-    implementation 'com.taurusx.ads:core:1.9.52'
-    implementation 'com.android.support:recyclerview-v7:26.1.0'
-
+    implementation 'com.taurusx.ads:core:1.9.56.alpha'
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:4.1.4.1"
     implementation "com.adcolony:sdk:4.1.4"
