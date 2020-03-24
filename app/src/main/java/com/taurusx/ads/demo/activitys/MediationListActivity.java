@@ -8,7 +8,6 @@ import com.taurusx.ads.demo.adapter.SimpleMediationAdapter;
 import com.taurusx.ads.demo.bean.Mediation;
 import com.taurusx.ads.demo.utils.Utils;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

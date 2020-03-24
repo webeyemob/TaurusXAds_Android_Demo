@@ -8,55 +8,85 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@color/divider_gray"/>
+            android:background="@color/divider_gray" />
+
         <TextView
             android:id="@+id/base_test"
             android:layout_width="match_parent"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/ripple_white_mask"
             android:gravity="center"
-            android:layout_height="wrap_content"
-            android:text="@string/base_test"/>
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/base_test" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@color/divider_gray"/>
+            android:background="@color/divider_gray" />
 
         <TextView
             android:id="@+id/networks_test"
             android:layout_width="match_parent"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/ripple_white_mask"
             android:gravity="center"
-            android:layout_height="wrap_content"
-            android:text="@string/networks_test"/>
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/networks_test" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@color/divider_gray"/>
+            android:background="@color/divider_gray" />
 
         <TextView
             android:id="@+id/strategy_test"
             android:layout_width="match_parent"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/ripple_white_mask"
             android:gravity="center"
-            android:layout_height="wrap_content"
-            android:text="@string/stratege_test"/>
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/stratege_test" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@color/divider_gray"/>
+            android:background="@color/divider_gray" />
 
+        <TextView
+            android:id="@+id/listview_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_white_mask"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/listview_test" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/divider_gray" />
 
+        <TextView
+            android:id="@+id/recyclerview_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_white_mask"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/recyclerview_test" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/divider_gray" />
     </LinearLayout>
 </LinearLayout>

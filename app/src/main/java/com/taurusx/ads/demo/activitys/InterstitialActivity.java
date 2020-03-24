@@ -7,16 +7,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.five_corp.ad.NeedGdprNonPersonalizedAdsTreatment;
 import com.qq.e.ads.cfg.VideoOption;
-import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.InterstitialAd;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
-import com.taurusx.ads.mediation.interstitial.GDTInterstitial;
 import com.taurusx.ads.mediation.networkconfig.GDTInterstitial2_0Config;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouInterstitialConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;

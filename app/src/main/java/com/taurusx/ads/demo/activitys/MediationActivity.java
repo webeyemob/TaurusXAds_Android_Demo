@@ -8,8 +8,6 @@ import android.widget.Button;
 
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
-import com.taurusx.ads.demo.mixad.MixFullScreenActivity;
-import com.taurusx.ads.demo.mixad.MixViewActivity;
 
 
 public class MediationActivity extends BaseActivity {

@@ -1,17 +1,12 @@
 package com.taurusx.ads.demo;
 
 import android.app.Activity;
-import android.app.Application;
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.taurusx.ads.demo.activitys.AdapterTestActivity;
 import com.taurusx.ads.demo.activitys.LoadModeActivity;
 import com.taurusx.ads.demo.activitys.MediationActivity;
 import com.taurusx.ads.demo.activitys.MediationListActivity;
@@ -80,6 +75,22 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, LoadModeActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        TextView listviewTest = findViewById(R.id.listview_test);
+        listviewTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AdapterTestActivity.start(MainActivity.this, true);
+            }
+        });
+
+        TextView recyclerTest = findViewById(R.id.recyclerview_test);
+        recyclerTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AdapterTestActivity.start(MainActivity.this, false);
             }
         });
     }

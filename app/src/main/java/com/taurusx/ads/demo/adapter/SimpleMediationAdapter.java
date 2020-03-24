@@ -14,10 +14,8 @@ import com.taurusx.ads.demo.bean.Mediation;
 import com.taurusx.ads.demo.constance.Constance;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class SimpleMediationAdapter extends BaseAdapter {
     private Context mContext;

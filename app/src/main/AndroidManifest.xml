@@ -79,6 +79,17 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.AdapterTestActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.ListViewActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.RecyclerViewActivity"
+            android:screenOrientation="portrait"></activity>
 
         <provider
             android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
