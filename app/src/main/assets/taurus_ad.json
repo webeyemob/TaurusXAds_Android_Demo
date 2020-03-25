@@ -203,13 +203,14 @@
     {
       "adName": "GDT",
       "banner": {
-        "banner": "609dfe92-58f2-4cf6-8237-cbfae3a38764"
+        "Banner 2.0": "609dfe92-58f2-4cf6-8237-cbfae3a38764"
       },
       "rewarded": {
-        "rewarded": "82641cd3-acff-4654-846c-d90c287e903b"
+        "RewardedVideo": "82641cd3-acff-4654-846c-d90c287e903b"
       },
       "interstitial": {
-        "interstitial": "49e1628d-3d50-4fcd-aea6-d0177b22a1f7"
+        "Interstitial 2.0": "49e1628d-3d50-4fcd-aea6-d0177b22a1f7",
+        "Interstitial 2.0 FullScreenVideo": "9802de6d-d6df-418a-9545-105217e0b518"
       },
       "native": {
         "Custom 2.0 Native": "3ec30809-8260-4b37-add6-7458b327705e",
@@ -220,7 +221,7 @@
         "Express FeedList": "748648ed-b564-4139-9df6-e758f298c8d8"
       },
       "splash": {
-        "splash": "78be1ab8-3f07-4b50-9b7b-19daa703c4dd"
+        "Splash": "78be1ab8-3f07-4b50-9b7b-19daa703c4dd"
       }
     },
     {
@@ -260,13 +261,13 @@
     {
       "adName": "IronSource",
       "banner": {
-        "banner": "1f472d1e-cffc-44a4-8683-955d6bf50de0"
+        "Banner": "1f472d1e-cffc-44a4-8683-955d6bf50de0"
       },
       "rewarded": {
-        "rewarded": "2a4d4aa0-9b72-432e-a87b-187c23d9e50f"
+        "RewardedVideo": "2a4d4aa0-9b72-432e-a87b-187c23d9e50f"
       },
       "interstitial": {
-        "interstitial": "a49b31d2-168b-4e2c-8588-6d8b85199bc1"
+        "Interstitial": "a49b31d2-168b-4e2c-8588-6d8b85199bc1"
       }
     },
     {
@@ -337,16 +338,17 @@
     {
       "adName": "Nend",
       "banner": {
-        "banner": "3d8d2500-0890-4e1a-aa48-955d1c3f1dbf"
+        "Banner": "3d8d2500-0890-4e1a-aa48-955d1c3f1dbf"
       },
       "rewarded": {
-        "rewarded": "869bd5a6-c4f8-40a2-a27a-20e5afd2c88e"
+        "RewardedVideo": "869bd5a6-c4f8-40a2-a27a-20e5afd2c88e"
       },
       "interstitial": {
-        "interstitial": "eb211297-a8ff-4cca-85b9-b98a6e640346"
+        "Interstitial": "eb211297-a8ff-4cca-85b9-b98a6e640346"
       },
       "native": {
-        "native": "3a9a4c1c-a184-4761-b029-76c5c4b5ba06"
+        "Image Native": "e2da9525-dc34-42bc-8642-393f9913b315",
+        "Video Native": "3a9a4c1c-a184-4761-b029-76c5c4b5ba06"
       }
     },
     {

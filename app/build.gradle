@@ -6,7 +6,7 @@ android {
     signingConfigs {
         defaultConfig {
 
-        applicationId "com.taurusx.ads.demo"
+            applicationId "com.taurusx.ads.demo"
             // for Fyber
 //        applicationId "com.inner.adsdk.demo"
             // for Vungle
@@ -144,10 +144,12 @@ dependencies {
     implementation("com.android.support:recyclerview-v7:27.1.0")
     implementation("com.taurusx.ads:miit_mdid:1.0.10")
 
-    // IronSource
-    implementation "com.taurusx.ads:mediation_ironsource:6.8.0.1.6"
+    // ironSource
+    implementation "com.taurusx.ads:mediation_ironsource:6.15.0.1.0"
+    implementation "com.ironsource.sdk:mediationsdk:6.15.0.1@jar"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
+    implementation "com.google.android.gms:play-services-location:16.0.0"
 
     // Maio
     implementation "com.taurusx.ads:mediation_maio:1.1.11.0"
@@ -170,7 +172,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Nend
-    implementation "com.taurusx.ads:mediation_nend:5.4.2.1"
+    implementation "com.taurusx.ads:mediation_nend:5.4.2.3"
     implementation "net.nend.android:nend-sdk:5.4.2"
 
     // Prebid
@@ -231,7 +233,7 @@ dependencies {
     implementation "com.taurusx.ads:gdtsdk_union:4.176.1046"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    if(use_pangle) {
+    if (use_pangle) {
         // Pangle
         implementation "com.taurusx.ads:mediation_pangle:2.9.0.0.0"
         implementation "com.taurusx.ads:pangle_open_ad_sdk:2.9.0.0"
