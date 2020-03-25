@@ -212,10 +212,12 @@
         "interstitial": "49e1628d-3d50-4fcd-aea6-d0177b22a1f7"
       },
       "native": {
-        "native": "98b900eb-1da9-4a86-a182-9383728a1439"
+        "Custom 2.0 Native": "3ec30809-8260-4b37-add6-7458b327705e",
+        "Express Native": "98b900eb-1da9-4a86-a182-9383728a1439"
       },
       "feedlist": {
-        "feedlist": "3afab72a-df0d-4fd8-9757-ada1b9c042da"
+        "Custom 2.0 FeedList": "3afab72a-df0d-4fd8-9757-ada1b9c042da",
+        "Express FeedList": "748648ed-b564-4139-9df6-e758f298c8d8"
       },
       "splash": {
         "splash": "78be1ab8-3f07-4b50-9b7b-19daa703c4dd"
@@ -370,11 +372,23 @@
     },
     {
       "adName": "Pangle",
+      "banner": {
+        "Express Banner": "4177af0c-ecf6-44d0-a01c-29afc0e721f3"
+      },
       "rewarded": {
-        "rewarded": "7ef22fb6-1b63-4dce-914a-943f1fb0914f"
+        "RewardedVideo": "7ef22fb6-1b63-4dce-914a-943f1fb0914f",
+        "Express RewardedVideo": "4e587912-9123-4e2e-a808-82dc28892704"
       },
       "interstitial": {
-        "interstitial": "3a7d45a7-1838-414e-bac2-dda2d6eb334a"
+        "Express Interstitial": "24535ba6-52f5-4268-b19f-3b1acf528790",
+        "FullScreenVideo": "c4a9a9ea-8ed6-4ff8-8f21-5afee92c4cd4",
+        "Express FullScreenVideo": "868c9bd8-0baa-4cf7-923f-4c98d3cdd477"
+      },
+      "feedlist": {
+        "Custom FeedList": "354e15b8-9168-4a15-a419-c775f9325fb5",
+        "Express FeedList": "88529901-1668-4e9d-8d6b-1ffd43e92ad4",
+        "Draw FeedList": "7ba7f7ae-185f-4c12-a3ac-259f3040066a",
+        "Express Draw FeedList": "7e9c7b3f-d63b-41f1-8798-2be38d132e72"
       }
     },
     {
@@ -401,22 +415,30 @@
     {
       "adName": "Tiktok",
       "banner": {
-        "banner": "a8cdf8b3-9de4-43cf-8d5d-624eb2d92c65"
+        "Express Banner": "a8cdf8b3-9de4-43cf-8d5d-624eb2d92c65"
       },
       "rewarded": {
-        "rewarded": "cfc3aafd-5bff-4803-99d0-de3b5a4286ca"
+        "RewardedVideo": "cfc3aafd-5bff-4803-99d0-de3b5a4286ca",
+        "Express RewardedVideo": "2d642eb9-5f61-4534-a190-5f46349bab83"
       },
       "interstitial": {
-        "interstitial": "f592c95c-51ce-44d1-8296-5161211f95bb"
+        "Express Interstitial": "f592c95c-51ce-44d1-8296-5161211f95bb",
+        "FullScreen Video": "5e065a2f-f319-42c8-a5dd-cd4f636b0f7f",
+        "Express FullScreen Video": "63983dd4-0cfe-467a-be68-d9364a94615c"
       },
       "native": {
-        "native": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b"
+        "Native Banner": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b",
+        "Native Interstitial": "b65564fa-c10e-4d65-a656-8599d90a2874"
       },
       "feedlist": {
-        "feedlist": "5d611e41-8a55-4755-a817-d0ae13d4bbb1"
+        "Custom FeedList": "9bf7f567-bc1f-4b97-a980-44e8b10c81ab",
+        "Express FeedList": "65b81eda-481b-4cfb-989c-cb1745d097dc",
+        "Draw FeedList": "c007b3e5-d66e-4569-9021-33e1d60a48a5",
+        "Express Draw FeedList": "5d611e41-8a55-4755-a817-d0ae13d4bbb1"
       },
       "splash": {
-        "splash": "babbee3a-a9f4-4f00-9baa-f47d625c539c"
+        "Splash": "babbee3a-a9f4-4f00-9baa-f47d625c539c",
+        "Express Splash": "d144ecf6-0193-40c3-98ec-67b56d8f676b"
       }
     },
     {
