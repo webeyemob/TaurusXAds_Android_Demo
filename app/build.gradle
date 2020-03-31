@@ -235,7 +235,7 @@ dependencies {
 
     if (use_pangle) {
         // Pangle
-        implementation "com.taurusx.ads:mediation_pangle:2.9.0.1.1"
+        implementation "com.taurusx.ads:mediation_pangle:2.9.0.1.2"
         implementation "com.taurusx.ads:pangle_open_ad_sdk:2.9.0.1"
     } else {
         // TikTok
