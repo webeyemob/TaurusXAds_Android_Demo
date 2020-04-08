@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.9.52'
+    implementation 'com.taurusx.ads:core:1.9.55'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
 
     // AdColony
@@ -172,7 +172,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Nend
-    implementation "com.taurusx.ads:mediation_nend:5.4.2.3"
+    implementation "com.taurusx.ads:mediation_nend:5.4.2.5"
     implementation "net.nend.android:nend-sdk:5.4.2"
 
     // Prebid
@@ -185,7 +185,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // Unity ads
-    implementation "com.taurusx.ads:mediation_unity:3.4.2.0"
+    implementation "com.taurusx.ads:mediation_unity:3.4.2.1"
     implementation "com.taurusx.ads:unity-ads:3.4.2"
 
     // Vungle
