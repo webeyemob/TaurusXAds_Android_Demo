@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.9.55'
+    implementation 'com.taurusx.ads:core:1.9.58'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
 
     // AdColony
