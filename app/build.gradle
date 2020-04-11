@@ -13,7 +13,7 @@ android {
 //        applicationId "com.publisher.vungle.sample"
             // for Amazon
 //        applicationId "com.amazon.sample.simplead"
-            // for Mobvista
+            // for Mintegral
 //        applicationId "com.mintegral.sdk.demo"
             // for OPPO
 //        applicationId "com.opos.mobaddemo"
@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.9.55'
+    implementation 'com.taurusx.ads:core:1.9.58'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     
     // AdColony
@@ -167,8 +167,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:2.3.0.1"
-    implementation "com.taurusx.ads:ks_adsdk:2.3.0_1"
+    implementation "com.taurusx.ads:mediation_kuaishou:2.6.2.2"
+    implementation "com.taurusx.ads:ks_adsdk:2.6.2"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Nend
@@ -189,14 +189,13 @@ dependencies {
     implementation "com.taurusx.ads:unity-ads:3.4.2"
 
     // Vungle
-    implementation "com.taurusx.ads:mediation_vungle:6.4.11.1"
-    implementation "com.github.vungle:vungle-android-sdk:6.4.11"
-    // Recommended
-    implementation "com.google.android.gms:play-services-basement:16.1.0"
-    // Optional
-    implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
-    // Optional
-    implementation "com.google.android.gms:play-services-location:16.0.0"
+    implementation "com.taurusx.ads:mediation_vungle:6.5.3.0"
+    implementation "com.vungle:publisher-sdk-android:6.5.3"
+    implementation "androidx.core:core:1.1.0"
+    implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
+    // Recommended for SDK to be able to get Android Advertising ID
+    implementation "com.google.android.gms:play-services-basement:17.0.0"
+    implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 
     // 360
 //    implementation "com.taurusx.ads:mediation_360:1.4.1036.2"
@@ -229,7 +228,7 @@ dependencies {
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.176.1046.1"
+    implementation "com.taurusx.ads:mediation_gdt:4.176.1046.2"
     implementation "com.taurusx.ads:gdtsdk_union:4.176.1046"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
@@ -239,13 +238,13 @@ dependencies {
         implementation "com.taurusx.ads:pangle_open_ad_sdk:2.9.0.1"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:2.8.0.3.1"
+        implementation "com.taurusx.ads:mediation_toutiao:2.8.0.3.3"
         implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.8.0.3"
         implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     }
 
-    // Mobvista
-    implementation "com.taurusx.ads:mediation_mintegral:12.2.11.0"
+    // Mintegral
+    implementation "com.taurusx.ads:mediation_mintegral:12.2.11.1"
     implementation "com.mintegral.msdk:videojs:12.2.11"
     implementation "com.mintegral.msdk:mtgjscommon:12.2.11"
     implementation "com.mintegral.msdk:playercommon:12.2.11"
