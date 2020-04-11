@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.qq.e.ads.cfg.VideoOption;
-import com.qq.e.ads.nativ.ADSize;
+import com.taurusx.ads.core.api.ad.config.AdSize;
 import com.taurusx.ads.core.api.ad.nativead.NativeAd;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
@@ -89,6 +89,9 @@ public class NativeActivity extends BaseActivity {
         // Set Single NativeAdLayout
         mNativeAd.setNativeAdLayout(NativeAdLayout.getLargeLayout1());
 
+        // Set Express Native Size
+        mNativeAd.setExpressAdSize(new AdSize(360, 250));
+
         // Listen Ad load result
         mNativeAd.setAdListener(new SimpleAdListener() {
             @Override
@@ -130,7 +133,6 @@ public class NativeActivity extends BaseActivity {
     private void setNetworkConfigs() {
         mNativeAd.setNetworkConfigs(NetworkConfigs.Builder()
                 .addConfig(GDTExpressNativeConfig.Builder()
-                        .setADSize(new ADSize(320, ADSize.AUTO_HEIGHT))
                         .setMinVideoDuration(0)
                         .setMaxVideoDuration(0)
                         .setVideoOption(new VideoOption.Builder()
@@ -277,10 +279,6 @@ public class NativeActivity extends BaseActivity {
                             }
                         })
                         .build())
-//                .addConfig(VungleNativeNetworkConfig.Builder()
-//                        .setWidth(300)
-//                        .setHeight(250)
-//                        .build())
                 .addConfig(KuaiShouCustomNativeConfig.Builder()
                         .setAppDownloadListener(new KuaiShouAppDownloadListener() {
                             @Override

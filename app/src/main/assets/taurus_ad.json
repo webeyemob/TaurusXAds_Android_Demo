@@ -391,7 +391,8 @@
         "Express FullScreenVideo": "868c9bd8-0baa-4cf7-923f-4c98d3cdd477"
       },
       "native": {
-        "Custom FeedList": "e3945699-915e-4d57-8abf-ebf599e10bf5"
+        "Custom FeedList": "e3945699-915e-4d57-8abf-ebf599e10bf5",
+        "Express FeedList": "0a1e4246-d8cb-4fb1-9bba-36759d056ac4"
       },
       "feedlist": {
         "Custom FeedList": "354e15b8-9168-4a15-a419-c775f9325fb5",
