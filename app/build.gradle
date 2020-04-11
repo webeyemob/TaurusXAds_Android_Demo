@@ -75,16 +75,16 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // AdMob & DFP
-    implementation "com.taurusx.ads:mediation_admob:18.3.0.3"
-    implementation "com.google.android.gms:play-services-ads:18.3.0"
+    implementation "com.taurusx.ads:mediation_admob:19.0.1.0"
+    implementation "com.google.android.gms:play-services-ads:19.0.1"
 
     // Amazon
     implementation "com.taurusx.ads:mediation_amazon:5.9.0.3"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // AppLovin
-    implementation "com.taurusx.ads:mediation_applovin:9.11.2.0"
-    implementation "com.applovin:applovin-sdk:9.11.2"
+    implementation "com.taurusx.ads:mediation_applovin:9.12.0.0"
+    implementation "com.applovin:applovin-sdk:9.12.0"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // Chartboost
@@ -265,7 +265,7 @@ dependencies {
     implementation "com.mintegral.msdk:mtgbid:12.2.11"
 
     // OPPO (不能与穿山甲、优量汇同时使用)
-//    implementation "com.taurusx.ads:mediation_oppo:3.2.9.1"
+//    implementation "com.taurusx.ads:mediation_oppo:3.2.9.2"
 //    implementation "com.taurusx.ads:oppo_mobad_sdk:3.2.9"
 //    implementation "com.android.support:appcompat-v7:26.1.0"
 //    implementation "com.squareup.wire:wire-runtime:2.2.0"

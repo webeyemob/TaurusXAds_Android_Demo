@@ -315,6 +315,9 @@
       },
       "feedlist": {
         "FeedList": "feb5a072-72c3-44c4-876f-56b33bda91ab"
+      },
+      "splash": {
+        "Splash": "21945645-a4f7-47b8-b9b4-bb5f16fdea43"
       }
     },
     {
@@ -365,7 +368,7 @@
         "Video Interstitial": "f783f580-cc0c-4f06-892f-92c30ed58e44"
       },
       "native": {
-        "Native": "b964d9f9-fcb5-4066-b03a-254387a64187",
+        "Custom Native": "b964d9f9-fcb5-4066-b03a-254387a64187",
         "Template Native": "25e061e0-3017-4099-9185-7c20a571005d",
         "Custom 2.0 Native": "8d90dbf6-cddc-49ac-9408-d272ecb96a6e"
       },
