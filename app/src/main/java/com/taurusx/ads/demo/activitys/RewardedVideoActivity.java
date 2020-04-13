@@ -13,7 +13,6 @@ import com.taurusx.ads.core.api.listener.SimpleRewardedVideoAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
-import com.taurusx.ads.mediation.networkconfig.GDTRewardedVideoConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouRewardedVideoConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokRewardedVideoConfig;
@@ -166,9 +165,6 @@ public class RewardedVideoActivity extends BaseActivity {
                         .setSkipThirtySecond(true)
                         .setShowSence("xx game")
                         .setShowLandscape(false)
-                        .build())
-                .addConfig(GDTRewardedVideoConfig.Builder()
-                        .volumeOn(false)
                         .build())
                 .build());
     }

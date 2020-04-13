@@ -98,12 +98,7 @@ public class SplashActivity extends Activity {
     private void setNetworkConfigs() {
         View bottomArea = LayoutInflater.from(this).inflate(R.layout.layout_splash_oppo_bottom_area, null);
         mSplashAd.setNetworkConfigs(NetworkConfigs.Builder()
-//                .addConfig(VivoSplashConfig.Builder()
-//                        .setTitle("App Name")
-//                        .setDesc("App Desc")
-//                        .build())
                 .addConfig(TikTokSplashConfig.Builder()
-                        .setImageAcceptedSize(1080, 1920)
                         .setAppDownloadListener(new TikTokAppDownloadListener() {
                             @Override
                             public void onIdle() {
@@ -144,5 +139,4 @@ public class SplashActivity extends Activity {
                 )
                 .build());
     }
-
 }

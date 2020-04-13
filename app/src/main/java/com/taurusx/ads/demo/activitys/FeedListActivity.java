@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.Nullable;
 
 import com.qq.e.ads.cfg.VideoOption;
-import com.qq.e.ads.nativ.ADSize;
+import com.taurusx.ads.core.api.ad.config.AdSize;
 import com.taurusx.ads.core.api.ad.feedlist.Feed;
 import com.taurusx.ads.core.api.ad.feedlist.FeedList;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
@@ -27,7 +27,6 @@ import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
@@ -131,6 +130,9 @@ public class FeedListActivity extends BaseActivity {
 //                .setVideoLayout(NativeAdLayout.getLargeLayout3())
 //                .build());
 
+        // Set Express FeedList Size
+        mFeedList.setExpressAdSize(new AdSize(360, 250));
+
         // Set FeedList Load Event
         mFeedList.setAdListener(new SimpleFeedAdListener() {
             @Override
@@ -163,16 +165,11 @@ public class FeedListActivity extends BaseActivity {
 
     private void setNetworkConfigs() {
         mFeedList.setNetworkConfigs(NetworkConfigs.Builder()
-//                .addConfig(TikTokDrawFeedListConfig.Builder()
-//                        .setCanInterruptVideoPlay(false)
-//                        .setPauseIcon(R.drawable.ic_wesdk_comm_star)
-//                        .setPauseIconSize(150)
-//                        .build())
-//                .addConfig(TikTokExpressFeedListConfig.Builder()
-//                        .setExpressViewAcceptedSize(260,0)
-//                        .build())
+                .addConfig(TikTokDrawFeedListConfig.Builder()
+                        .setCanInterruptVideoPlay(false)
+                        .setPauseIconSize(150)
+                        .build())
                 .addConfig(GDTExpressFeedListConfig.Builder()
-                        .setADSize(new ADSize(300, ADSize.AUTO_HEIGHT))
                         .setMinVideoDuration(6)
                         .setMaxVideoDuration(56)
                         .build())
@@ -249,42 +246,6 @@ public class FeedListActivity extends BaseActivity {
                             @Override
                             public void onInstalled(String appName) {
                                 LogUtil.d(TAG, "GDTAppDownloadListener: onInstalled: " + appName);
-                            }
-                        })
-                        .build())
-                .addConfig(TikTokDrawFeedListConfig.Builder()
-                        .setCanInterruptVideoPlay(true)
-//                        .setPauseIcon(R.drawable.ic_wesdk_comm_star)
-//                        .setPauseIconSize(150)
-                        .setAppDownloadListener(new TikTokAppDownloadListener() {
-                            @Override
-                            public void onIdle() {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                            }
-
-                            @Override
-                            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                            }
-
-                            @Override
-                            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                            }
-
-                            @Override
-                            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                            }
-
-                            @Override
-                            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                            }
-
-                            @Override
-                            public void onInstalled(String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
                             }
                         })
                         .build())
@@ -376,9 +337,6 @@ public class FeedListActivity extends BaseActivity {
                                 LogUtil.d(TAG, "kuaishou onInstalled");
                             }
                         })
-                        .build())
-                .addConfig(KuaiShouExpressFeedListConfig.Builder()
-                        .setVideoSoundEnable(false)
                         .build())
                 .build());
     }
