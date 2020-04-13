@@ -244,25 +244,27 @@ dependencies {
     }
 
     // Mintegral
-    implementation "com.taurusx.ads:mediation_mintegral:12.2.11.1"
-    implementation "com.mintegral.msdk:videojs:12.2.11"
-    implementation "com.mintegral.msdk:mtgjscommon:12.2.11"
-    implementation "com.mintegral.msdk:playercommon:12.2.11"
-    implementation "com.mintegral.msdk:reward:12.2.11"
-    implementation "com.mintegral.msdk:videocommon:12.2.11"
-    implementation "com.mintegral.msdk:common:12.2.11"
-    implementation "com.mintegral.msdk:interstitialvideo:12.2.11"
-    implementation "com.mintegral.msdk:mtgnative:12.2.11"
-    implementation "com.mintegral.msdk:nativeex:12.2.11"
-    implementation "com.mintegral.msdk:mtgbanner:12.2.11"
-    implementation "com.mintegral.msdk:interstitial:12.2.11"
-    implementation "com.mintegral.msdk:interactiveads:12.2.11"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    // 国内产品
-    implementation "com.mintegral.msdk:optimizedata:12.2.11"
-    implementation "com.mintegral.msdk:mtgdownloads:12.2.11"
+    implementation "com.taurusx.ads:mediation_mintegral:13.0.41.0"
+    implementation "com.mintegral.msdk:videojs:13.0.41"
+    implementation "com.mintegral.msdk:mtgjscommon:13.0.41"
+    implementation "com.mintegral.msdk:playercommon:13.0.41"
+    implementation "com.mintegral.msdk:reward:13.0.41"
+    implementation "com.mintegral.msdk:videocommon:13.0.41"
+    implementation "com.mintegral.msdk:common:13.0.41"
+    implementation "com.mintegral.msdk:alphab:13.0.41"
+    implementation "com.mintegral.msdk:interstitialvideo:13.0.41"
+    implementation "com.mintegral.msdk:mtgnative:13.0.41"
+    implementation "com.mintegral.msdk:nativeex:13.0.41"
+    implementation "com.mintegral.msdk:mtgsplash:13.0.41"
+    implementation "com.mintegral.msdk:interactiveads:13.0.41"
+    implementation "com.mintegral.msdk:mtgbanner:13.0.41"
+    implementation "com.mintegral.msdk:interstitial:13.0.41"
+    implementation "com.android.support:support-v4:26.0.1"
+    // 国内产品必须添加
+//    implementation "com.mintegral.msdk:optimizedata:13.0.41"
+//    implementation "com.mintegral.msdk:mtgdownloads:13.0.41"
     // Head Bidding
-    implementation "com.mintegral.msdk:mtgbid:12.2.11"
+    implementation "com.mintegral.msdk:mtgbid:13.0.41"
 
     // OPPO (不能与穿山甲、优量汇同时使用)
 //    implementation "com.taurusx.ads:mediation_oppo:3.2.9.2"
