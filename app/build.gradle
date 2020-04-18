@@ -167,7 +167,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:2.6.2.2"
+    implementation "com.taurusx.ads:mediation_kuaishou:2.6.2.3"
     implementation "com.taurusx.ads:ks_adsdk:2.6.2"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
