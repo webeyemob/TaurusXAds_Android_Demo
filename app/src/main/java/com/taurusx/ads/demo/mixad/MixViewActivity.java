@@ -1,6 +1,5 @@
 package com.taurusx.ads.demo.mixad;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -8,7 +7,9 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.taurusx.ads.core.api.ad.MixViewAd;
+import com.taurusx.ads.core.api.ad.config.AdSize;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
+import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.demo.R;
@@ -19,26 +20,22 @@ public class MixViewActivity extends BaseActivity {
 
     private final String TAG = "MixViewActivity";
 
+    private String mMixViewId;
+    private MixViewAd mMixViewAd;
+
     private Button mLoadButton;
     private Button mShowButton;
     private FrameLayout mContainer;
-
-    private MixViewAd mMixViewAd;
-    private String mMixViewId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActionBar().setTitle("MixViewAd");
-
         setContentView(R.layout.activity_mixview);
 
-        initData();
-        // Init MixViewAd
+        mMixViewId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_MIXVIEW);
         initMixView();
-    }
 
-    private void initMixView() {
         mLoadButton = findViewById(R.id.mxiview_load);
         mLoadButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,13 +60,20 @@ public class MixViewActivity extends BaseActivity {
         });
 
         mContainer = findViewById(R.id.layout_container);
+    }
 
+    private void initMixView() {
+        // Create MixViewAd
         mMixViewAd = new MixViewAd(this);
-        // Set AdUnitId
         mMixViewAd.setAdUnitId(mMixViewId);
 
-        // Or Set NativeAdLayout Supported By WeSdk To Render Ad
-        mMixViewAd.setNativeAdLayout(NativeAdLayout.getLargeLayout2());
+        // Set Custom NativeAdLayout To Render Ad
+//        mMixViewAd.setNativeAdLayout(NativeAdLayout.Builder()
+//                .setLayoutIdWithDefaultViewId(R.layout.native_custom_layout)
+//                .build());
+
+        // Or Set NativeAdLayout Supported By TaurusX To Render Ad
+        mMixViewAd.setNativeAdLayout(NativeAdLayout.getLargeLayout1());
 
         // Or Set NativeAdLayoutPolicy To Render Ad
         // WeSdk Support SequenceNativeAdLayoutPolicy And RandomNativeAdLayoutPolicy
@@ -83,11 +87,26 @@ public class MixViewActivity extends BaseActivity {
 
         // Or Set MultiStyleNativeAdLayout To Render Ad
 //        mMixViewAd.setNativeAdLayout(MultiStyleNativeAdLayout.Builder()
-//                .setDefaultLayout(NativeAdLayout.getSmallLayout())
-//                .setLargeImageLayout(NativeAdLayout.getLargeLayout3())
-//                .setGroupImageLayout(NativeAdLayout.getLargeLayout2())
-//                .setVideoLayout(NativeAdLayout.getLargeLayout4())
+//                .setDefaultLayout(NativeAdLayout.getMediumLayout())
+//                .setLargeImageLayout(NativeAdLayout.getLargeLayout4())
+//                .setGroupImageLayout(NativeAdLayout.getLargeLayout1())
+//                .setVideoLayout(NativeAdLayout.getLargeLayout3())
 //                .build());
+
+        // Set Express Native Size
+        mMixViewAd.setExpressAdSize(new AdSize(360, 250));
+
+        // Set Video Muted, default is muted
+        // mMixViewAd.setMuted(false);
+
+        // (Optional) Set Network special Config
+        // MixViewAd can set Banner, Native, FeedList Config
+        // Please see: BannerActivity, NativeActivity, FeedListActivity
+        mMixViewAd.setNetworkConfigs(NetworkConfigs.Builder()
+                // .addConfig(Banner NetworkConfig)
+                // .addConfig(Native NetworkConfig)
+                // .addConfig(FeedList NetworkConfig)
+                .build());
 
         // Set MixView Load Event
         mMixViewAd.setAdListener(new SimpleAdListener() {
@@ -117,10 +136,5 @@ public class MixViewActivity extends BaseActivity {
                 Log.d(TAG, "MixViewAd onAdClosed");
             }
         });
-    }
-
-    private void initData() {
-        Intent intent = getIntent();
-        mMixViewId = intent.getStringExtra(Constance.BUNDLE_TYPE_MIXVIEW);
     }
 }

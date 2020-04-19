@@ -1,8 +1,6 @@
 package com.taurusx.ads.demo.activitys;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 
@@ -22,29 +20,22 @@ public class RewardedVideoActivity extends BaseActivity {
 
     private final String TAG = "RewardedVideoActivity";
 
+    private String mRewardedId;
+    private RewardedVideoAd mRewardedVideoAd;
+
     private Button mLoadButton;
     private Button mShowButton;
-    private String mRewardedId;
-
-    private RewardedVideoAd mRewardedVideoAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActionBar().setTitle("RewardedVideoAd");
-
         setContentView(R.layout.activity_rewardedvideo);
-        initData();
-        // Init RewardedVideoAd
-        initRewardedVideoAd();
-        // Set NetworkConfigs
-        setNetworkConfigs();
-    }
 
-    private void initRewardedVideoAd() {
-        // Create RewardedVideoAd
+        mRewardedId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_REWARDED);
+        initRewardedVideoAd();
+
         mLoadButton = findViewById(R.id.rewardedvideo_load);
-        // Load ad
         mLoadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +43,6 @@ public class RewardedVideoActivity extends BaseActivity {
             }
         });
         mShowButton = findViewById(R.id.rewardedvideo_show);
-        // Show ad
         mShowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,14 +52,21 @@ public class RewardedVideoActivity extends BaseActivity {
                 mShowButton.setEnabled(false);
             }
         });
+    }
 
-        if (mRewardedId == null || TextUtils.isEmpty(mRewardedId)) {
-            mLoadButton.setVisibility(View.GONE);
-            mShowButton.setVisibility(View.GONE);
-            return;
-        }
+    private void initRewardedVideoAd() {
+        // Create RewardedVideoAd
         mRewardedVideoAd = new RewardedVideoAd(this);
         mRewardedVideoAd.setAdUnitId(mRewardedId);
+
+        // Set Video Muted, default is sound
+        // mRewardedVideoAd.setMuted(false);
+
+        // (Optional) Set Network special Config
+        mRewardedVideoAd.setNetworkConfigs(NetworkConfigs.Builder()
+                .addConfig(createKuaiShouRewardedVideoConfig())
+                .addConfig(createTikTokRewardedVideoConfig())
+                .build());
 
         // Listen Ad load result
         mRewardedVideoAd.setAdListener(new SimpleRewardedVideoAdListener() {
@@ -121,51 +118,51 @@ public class RewardedVideoActivity extends BaseActivity {
         });
     }
 
-    private void initData() {
-        Intent intent = getIntent();
-        mRewardedId = intent.getStringExtra(Constance.BUNDLE_TYPE_REWARDED);
+    private KuaiShouRewardedVideoConfig createKuaiShouRewardedVideoConfig() {
+        return KuaiShouRewardedVideoConfig.Builder()
+                // 拓展场景参数，可不设置
+                .setShowSence("xx game")
+                // 显示是否为横屏
+                .setShowLandscape(false)
+                // 30 秒后可关闭
+                .setSkipThirtySecond(false)
+                .build();
     }
 
-    private void setNetworkConfigs() {
-        mRewardedVideoAd.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(TikTokRewardedVideoConfig.Builder()
-                        .setAppDownloadListener(new TikTokAppDownloadListener() {
-                            @Override
-                            public void onIdle() {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                            }
+    private TikTokRewardedVideoConfig createTikTokRewardedVideoConfig() {
+        return TikTokRewardedVideoConfig.Builder()
+                // 监听应用类广告下载
+                .setAppDownloadListener(new TikTokAppDownloadListener() {
+                    @Override
+                    public void onIdle() {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+                    }
 
-                            @Override
-                            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                            }
+                    @Override
+                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+                    }
 
-                            @Override
-                            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                            }
+                    @Override
+                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+                    }
 
-                            @Override
-                            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                            }
+                    @Override
+                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+                    }
 
-                            @Override
-                            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                            }
+                    @Override
+                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+                    }
 
-                            @Override
-                            public void onInstalled(String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                            }
-                        })
-                        .build())
-                .addConfig(KuaiShouRewardedVideoConfig.Builder()
-                        .setSkipThirtySecond(true)
-                        .setShowSence("xx game")
-                        .setShowLandscape(false)
-                        .build())
-                .build());
+                    @Override
+                    public void onInstalled(String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+                    }
+                })
+                .build();
     }
 }

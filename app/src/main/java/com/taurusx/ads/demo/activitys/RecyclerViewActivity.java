@@ -1,6 +1,5 @@
 package com.taurusx.ads.demo.activitys;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -20,7 +19,6 @@ import com.taurusx.ads.core.api.ad.nativead.layout.SequenceNativeAdLayoutPolicy;
 import com.taurusx.ads.core.api.model.AdType;
 import com.taurusx.ads.core.api.stream.AdapterAdLoadedListener;
 import com.taurusx.ads.core.api.stream.AdapterAdParams;
-import com.taurusx.ads.core.api.stream.ClientPosition;
 import com.taurusx.ads.core.api.stream.TaurusXRecyclerAdapter;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.core.api.utils.ScreenUtil;

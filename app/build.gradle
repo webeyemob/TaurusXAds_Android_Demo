@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.9.58'
+    implementation 'com.taurusx.ads:core:1.10.3'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     
     // AdColony
@@ -228,7 +228,7 @@ dependencies {
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.176.1046.2"
+    implementation "com.taurusx.ads:mediation_gdt:4.176.1046.3"
     implementation "com.taurusx.ads:gdtsdk_union:4.176.1046"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
@@ -238,7 +238,7 @@ dependencies {
         implementation "com.taurusx.ads:pangle_open_ad_sdk:2.9.0.1"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:2.8.0.3.3"
+        implementation "com.taurusx.ads:mediation_toutiao:2.8.0.3.5"
         implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.8.0.3"
         implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     }

@@ -1,14 +1,12 @@
 package com.taurusx.ads.demo.activitys;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
+import com.google.android.gms.ads.AdSize;
 import com.inmobi.ads.InMobiBanner;
 import com.taurusx.ads.core.api.ad.BannerAdView;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
@@ -18,7 +16,10 @@ import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.mediation.networkconfig.AdMobBannerConfig;
+import com.taurusx.ads.mediation.networkconfig.DFPBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.InMobiBannerConfig;
+import com.taurusx.ads.mediation.networkconfig.MintegralBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressBannerConfig;
 
@@ -27,11 +28,11 @@ public class BannerActivity extends BaseActivity {
 
     private final String TAG = "BannerActivity";
 
+    private String mBannerId;
+    private BannerAdView mBannerAdView;
+
     private Button mLoadButton;
     private LinearLayout mContainer;
-    private String mBannerId;
-
-    private BannerAdView mBannerAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,39 +40,35 @@ public class BannerActivity extends BaseActivity {
         getActionBar().setTitle("BannerAdView");
         setContentView(R.layout.activity_banner);
 
-        initData();
-        // Init BannerAdView
+        mBannerId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_BANNER);
         initBannerAdView();
-        // Set NetworkConfigs
-        setNetworkConfigs();
 
-    }
-
-    private void initData() {
-        Intent intent = getIntent();
-        mBannerId = intent.getStringExtra(Constance.BUNDLE_TYPE_BANNER);
-    }
-
-    private void initBannerAdView() {
         mContainer = findViewById(R.id.layout_banner);
+        // Add Banner to UI
+        mContainer.addView(mBannerAdView);
+
         mLoadButton = findViewById(R.id.banner_load);
         mLoadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Load BannerAdView
                 mBannerAdView.loadAd();
             }
         });
+    }
 
-        if (mBannerId == null || TextUtils.isEmpty(mBannerId)) {
-            mLoadButton.setVisibility(View.GONE);
-            Toast.makeText(BannerActivity.this, "bannerId is null", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
+    private void initBannerAdView() {
+        // Create BannerAdView
         mBannerAdView = new BannerAdView(this);
         mBannerAdView.setAdUnitId(mBannerId);
-        mContainer.addView(mBannerAdView);
+
+        // (Optional) Set Network special Config
+        mBannerAdView.setNetworkConfigs(NetworkConfigs.Builder()
+                .addConfig(createAdMobBannerConfig())
+                .addConfig(createDFPBannerConfig())
+                .addConfig(createInMobiBannerConfig())
+                .addConfig(createMintegralBannerConfig())
+                .addConfig(createTikTokExpressBannerConfig())
+                .build());
 
         // Listen Ad load result
         mBannerAdView.setAdListener(new SimpleAdListener() {
@@ -102,47 +99,88 @@ public class BannerActivity extends BaseActivity {
                 Log.d(TAG, "BannerAdView onAdFailedToLoad: " + adError.toString());
             }
         });
-
     }
 
-    private void setNetworkConfigs() {
-        mBannerAdView.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(InMobiBannerConfig.Builder()
-                        .setAnimationType(InMobiBanner.AnimationType.ANIMATION_OFF)
-                        .build())
-                .addConfig(TikTokExpressBannerConfig.Builder()
-                        .setAppDownloadListener(new TikTokAppDownloadListener() {
-                            @Override
-                            public void onIdle() {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                            }
+    private AdMobBannerConfig createAdMobBannerConfig() {
+        // 根据当前屏幕的方向设置尺寸。
+        return AdMobBannerConfig.Builder()
+                .setAdaptiveBannerSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 320))
+                .build();
 
-                            @Override
-                            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                            }
+        // 或者，如果你想预加载，可以指定期望的屏幕方向。
+//        return AdMobBannerConfig.Builder()
+//                .setAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
+//                // .setAdaptiveBannerSize(AdSize.getLandscapeAnchoredAdaptiveBannerAdSize(this, 320))
+//                .build();
+    }
 
-                            @Override
-                            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                            }
+    private DFPBannerConfig createDFPBannerConfig() {
+        // 根据当前屏幕的方向设置尺寸。
+        return DFPBannerConfig.Builder()
+                .setAdaptiveBannerSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 320))
+                .build();
 
-                            @Override
-                            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                            }
+        // 或者，如果你想预加载，可以指定期望的屏幕方向。
+//        return DFPBannerConfig.Builder()
+//                .setAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
+//                // .setAdaptiveBannerSize(AdSize.getLandscapeAnchoredAdaptiveBannerAdSize(this, 320))
+//                .build();
+    }
 
-                            @Override
-                            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                            }
+    private InMobiBannerConfig createInMobiBannerConfig() {
+        return InMobiBannerConfig.Builder()
+                // 设置刷新动画；默认为 InMobiBanner.AnimationType.ROTATE_HORIZONTAL_AXIS
+                .setAnimationType(InMobiBanner.AnimationType.ANIMATION_ALPHA)
+                // 关闭刷新动画
+                // .setAnimationType(InMobiBanner.AnimationType.ANIMATION_OFF)
+                .build();
+    }
 
-                            @Override
-                            public void onInstalled(String fileName, String appName) {
-                                LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                            }
-                        })
-                        .build())
-                .build());
+    private MintegralBannerConfig createMintegralBannerConfig() {
+        return MintegralBannerConfig.Builder()
+                // 是否显示关闭按钮
+                .setAllowShowCloseBtn(false)
+                .build();
+    }
+
+    private TikTokExpressBannerConfig createTikTokExpressBannerConfig() {
+        return TikTokExpressBannerConfig.Builder()
+                // 使用默认的 Dislike Dialog 样式，仅需设置 Dislike 回调
+                // .setDislikeCallback(new TikTokGetDislikeCallback() {})
+                // 或自定义 Dislike Dialog
+                // .setDislikeDialog(new TikTokGetDislikeDialog() {})
+                // 监听应用类广告下载
+                .setAppDownloadListener(new TikTokAppDownloadListener() {
+                    @Override
+                    public void onIdle() {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+                    }
+
+                    @Override
+                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+                    }
+
+                    @Override
+                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+                    }
+
+                    @Override
+                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+                    }
+
+                    @Override
+                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+                    }
+
+                    @Override
+                    public void onInstalled(String fileName, String appName) {
+                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+                    }
+                })
+                .build();
     }
 }

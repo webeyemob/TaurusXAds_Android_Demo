@@ -1,13 +1,14 @@
 package com.taurusx.ads.demo.mixad;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.taurusx.ads.core.api.ad.config.AdSize;
 import com.taurusx.ads.core.api.ad.mixfull.MixFullScreenAd;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
+import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.demo.R;
@@ -18,11 +19,11 @@ public class MixFullScreenActivity extends BaseActivity {
 
     private final String TAG = "MixFullScreenActivity";
 
+    private String mMixFulSscreenId;
+    private MixFullScreenAd mMixFullScreenAd;
+
     private Button mLoadButton;
     private Button mShowButton;
-
-    private MixFullScreenAd mMixFullScreenAd;
-    private String mMixFulSscreenId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,16 +32,13 @@ public class MixFullScreenActivity extends BaseActivity {
 
         setContentView(R.layout.activity_mixfullscreen);
 
-        initData();
+        mMixFulSscreenId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_MIXFULLSCREEN);
         initMixFullScreenAd();
-    }
 
-    private void initMixFullScreenAd() {
         mLoadButton = findViewById(R.id.mixfullscreen_load);
         mLoadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Load MixFullScreenAd
                 mMixFullScreenAd.loadAd();
             }
         });
@@ -50,13 +48,16 @@ public class MixFullScreenActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 mShowButton.setEnabled(false);
-                // Show MixFullScreenAd
-                mMixFullScreenAd.show();
+                if (mMixFullScreenAd.isReady()) {
+                    mMixFullScreenAd.show(MixFullScreenActivity.this);
+                }
             }
         });
+    }
 
+    private void initMixFullScreenAd() {
+        // Create MixFullScreenAd
         mMixFullScreenAd = new MixFullScreenAd(this);
-        // Set AdUnitId
         mMixFullScreenAd.setAdUnitId(mMixFulSscreenId);
 
         // Set Custom NativeAdLayout To Render Ad
@@ -84,6 +85,27 @@ public class MixFullScreenActivity extends BaseActivity {
 //                .setGroupImageLayout(NativeAdLayout.getFullLayout3())
 //                .setVideoLayout(NativeAdLayout.getFullLayout4())
 //                .build());
+
+        // Set Express Native Size
+        mMixFullScreenAd.setExpressAdSize(new AdSize(360, 250));
+
+        // Set Video Muted, default is sound
+        // mMixFullScreenAd.setMuted(false);
+
+        // Set whether use can press Android back key to close MixFullScreenAd.
+        // This value is only for Banner and Native, InterstitialAd always has self close logic.
+        // Default is false.
+        mMixFullScreenAd.setBackPressEnable(false);
+
+        // (Optional) Set Network special Config
+        // MixFullScreenAd can set Banner, Native, FeedList, Interstitial Config
+        // Please see: BannerActivity, NativeActivity, FeedListActivity, InterstitialActivity
+        mMixFullScreenAd.setNetworkConfigs(NetworkConfigs.Builder()
+                // .addConfig(Banner NetworkConfig)
+                // .addConfig(Native NetworkConfig)
+                // .addConfig(FeedList NetworkConfig)
+                // .addConfig(Interstitial NetworkConfig)
+                .build());
 
         // Set MixFullScreenAd Load Event
         mMixFullScreenAd.setAdListener(new SimpleAdListener() {
@@ -113,10 +135,5 @@ public class MixFullScreenActivity extends BaseActivity {
                 Log.d(TAG, "MixFullScreenAd onAdClosed");
             }
         });
-    }
-
-    private void initData() {
-        Intent intent = getIntent();
-        mMixFulSscreenId = intent.getStringExtra(Constance.BUNDLE_TYPE_MIXFULLSCREEN);
     }
 }

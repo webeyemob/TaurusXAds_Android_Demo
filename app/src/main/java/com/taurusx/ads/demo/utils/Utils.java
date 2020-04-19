@@ -68,7 +68,7 @@ public class Utils {
         Collections.sort(list, new Comparator<Map.Entry<String, Mediation>>() {
             @Override
             public int compare(Map.Entry<String, Mediation> o1, Map.Entry<String, Mediation> o2) {
-                return o1.getKey().compareTo(o2.getKey());
+                return o1.getKey().toLowerCase().compareTo(o2.getKey().toLowerCase());
             }
         });
         return list;

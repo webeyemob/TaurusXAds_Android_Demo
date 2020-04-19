@@ -4,7 +4,6 @@
 
 package com.taurusx.ads.demo.activitys;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +17,6 @@ import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.nativead.layout.SequenceNativeAdLayoutPolicy;
 import com.taurusx.ads.core.api.model.AdType;
 import com.taurusx.ads.core.api.stream.AdapterAdParams;
-import com.taurusx.ads.core.api.stream.ClientPosition;
 import com.taurusx.ads.core.api.stream.TaurusXAdAdapter;
 import com.taurusx.ads.demo.R;
 
