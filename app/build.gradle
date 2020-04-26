@@ -60,7 +60,8 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.10.3'
+    implementation 'com.taurusx.ads:core:1.10.4'
+
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     
     // AdColony
@@ -167,9 +168,10 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:2.6.2.3"
-    implementation "com.taurusx.ads:ks_adsdk:2.6.2"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "com.taurusx.ads:mediation_kuaishou:2.6.5.1"
+    implementation "com.taurusx.ads:ks_adsdk:2.6.5"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     // Nend
     implementation "com.taurusx.ads:mediation_nend:5.4.2.5"
