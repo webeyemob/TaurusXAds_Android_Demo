@@ -6,7 +6,7 @@ android {
     signingConfigs {
         defaultConfig {
 
-            applicationId "com.taurusx.ads.demo"
+            applicationId "com.five_corp.interstitialviewdemo"
             // for Fyber
 //        applicationId "com.inner.adsdk.demo"
             // for Vungle
@@ -117,7 +117,7 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.0.0'
 
     // Five
-    implementation "com.taurusx.ads:mediation_five:20191029.2"
+    implementation "com.taurusx.ads:mediation_five:20200423.0"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
     // Flurry
