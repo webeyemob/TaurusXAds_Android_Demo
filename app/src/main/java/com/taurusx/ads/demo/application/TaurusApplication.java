@@ -167,6 +167,8 @@ public class TaurusApplication extends Application {
                 // .setTimeoutMillis(2_000)
                 // 是否允许使用地理位置信息，默认 false
                 // .setShareGeoLocation(true)
+                // 设置用户唯一 Id
+                // .setBuyerId("user id")
                 .build();
     }
 
