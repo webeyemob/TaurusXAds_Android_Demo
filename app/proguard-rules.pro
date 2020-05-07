@@ -19,3 +19,13 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+#Adcolony
+-dontwarn com.adcolony.sdk.ADCLogEvent
+
+#Mopub
+-dontwarn com.google.android.exoplayer2.**
+-keep class com.google.android.exoplayer2.util.Util { *; }
+
+# GDT
+-optimizations !method/propagation/*
