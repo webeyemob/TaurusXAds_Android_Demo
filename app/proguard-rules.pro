@@ -27,5 +27,5 @@
 -dontwarn com.google.android.exoplayer2.**
 -keep class com.google.android.exoplayer2.util.Util { *; }
 
-# GDT
--optimizations !method/propagation/*
+# GDT TBS
+#-optimizations !method/propagation/*
