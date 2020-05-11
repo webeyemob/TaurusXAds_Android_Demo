@@ -116,6 +116,20 @@
       }
     },
     {
+      "adName": "AppNexus",
+      "banner": {
+        "320*50": "896248a8-a6e0-4f70-9133-8347ef1b967f",
+        "300*250": "1c022fde-ddf6-4e39-adbb-ccc832ff3a4b"
+      },
+      "interstitial": {
+        "Interstitial": "eff10b4c-6ab0-483e-8709-55d5a837cba6"
+      },
+      "native": {
+        "Normal": "812021e3-54aa-47bb-8f9b-d9aea189acd1",
+        "Instream Video": "e80d7b68-e1f3-4010-8420-b7eb88e4b982"
+      }
+    },
+    {
       "adName": "Baidu",
       "interstitial": {
         "Interstitial": "0aa0d5e3-8b1d-45e5-90dc-b73dd906c765"

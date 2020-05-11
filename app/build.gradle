@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.10.6'
+    implementation 'com.taurusx.ads:core:1.11.0'
 
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     
@@ -87,6 +87,11 @@ dependencies {
     implementation "com.taurusx.ads:mediation_applovin:9.12.0.0"
     implementation "com.applovin:applovin-sdk:9.12.0"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
+
+    // AppNexus
+    implementation "com.taurusx.ads:mediation_appnexus:7.3.1.0"
+    implementation "com.appnexus.opensdk:appnexus-sdk:7.3.1"
+    implementation "com.appnexus.opensdk:appnexus-instreamvideo:7.3.1-1.19"
 
     // Chartboost
     implementation "com.taurusx.ads:mediation_chartboost:7.3.1.8"
