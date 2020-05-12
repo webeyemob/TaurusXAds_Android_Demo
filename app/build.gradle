@@ -6,7 +6,7 @@ android {
     signingConfigs {
         defaultConfig {
 
-            applicationId "com.five_corp.interstitialviewdemo"
+            applicationId "com.taurusx.ads.demo"
             // for Fyber
 //        applicationId "com.inner.adsdk.demo"
             // for Vungle
