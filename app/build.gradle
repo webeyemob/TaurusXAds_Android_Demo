@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.0'
 
-    implementation 'com.taurusx.ads:core:1.11.0'
+    implementation 'com.taurusx.ads:core:1.11.3'
 
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     
@@ -234,8 +234,8 @@ dependencies {
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.210.1080.0"
-    implementation "com.taurusx.ads:gdtsdk_union:4.210.1080"
+    implementation "com.taurusx.ads:mediation_gdt:4.211.1081.0"
+    implementation "com.taurusx.ads:gdtsdk_union:4.211.1081"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     if (use_pangle) {
