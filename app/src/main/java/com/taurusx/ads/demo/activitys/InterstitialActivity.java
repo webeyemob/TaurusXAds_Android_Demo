@@ -118,10 +118,8 @@ public class InterstitialActivity extends BaseActivity {
 
     private KuaiShouInterstitialConfig createKuaiShouInterstitialConfig() {
         return KuaiShouInterstitialConfig.Builder()
-                // 显示是否为横屏
-                .setShowLandscape(false)
                 // 拓展场景参数，可不设置
-                .setShowSence("xx game")
+                .setShowScene("xx game")
                 // 30 秒后可关闭
                 .setSkipThirtySecond(false)
                 .build();

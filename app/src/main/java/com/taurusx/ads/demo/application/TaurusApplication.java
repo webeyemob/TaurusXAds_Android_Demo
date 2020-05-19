@@ -131,7 +131,7 @@ public class TaurusApplication extends Application {
 
     private KuaiShouGlobalConfig createKuaiShouConfig() {
         return KuaiShouGlobalConfig.Builder()
-                .setAppName("TaurusX Demo")
+                // Apk 下载时，是否在通知栏中提示
                 .showNotification(true)
                 .build();
     }
