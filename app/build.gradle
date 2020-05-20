@@ -87,6 +87,8 @@ dependencies {
     implementation "com.taurusx.ads:mediation_applovin:9.12.0.0"
     implementation "com.applovin:applovin-sdk:9.12.0"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
+    // 使用 Header Bidding 需要 headerbiddingkit
+    implementation "com.taurusx.ads:headerbiddingkit:0.4.1"
 
     // AppNexus
     implementation "com.taurusx.ads:mediation_appnexus:7.3.1.0"
@@ -115,6 +117,8 @@ dependencies {
     implementation "com.facebook.android:audience-network-sdk:5.9.0"
     // 5.5.0 及之后的版本需要 support-annotations
     implementation 'androidx.annotation:annotation:1.1.0'
+    // 使用 Header Bidding 需要 headerbiddingkit
+    implementation "com.taurusx.ads:headerbiddingkit:0.4.1"
 
     // Five
     implementation "com.taurusx.ads:mediation_five:20200423.0"
