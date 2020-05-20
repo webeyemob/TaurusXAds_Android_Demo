@@ -58,11 +58,11 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
-    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
 
     implementation 'com.taurusx.ads:core:1.11.3'
 
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
     
     // AdColony
     implementation "com.taurusx.ads:mediation_adcolony:4.1.4.1"
@@ -111,10 +111,10 @@ dependencies {
     implementation "com.taurusx.ads:duadplatform_cw:1.2.2"
 
     // Facebook
-    implementation "com.taurusx.ads:mediation_facebook:5.7.1.0"
-    implementation "com.facebook.android:audience-network-sdk:5.7.1"
+    implementation "com.taurusx.ads:mediation_facebook:5.9.0.0"
+    implementation "com.facebook.android:audience-network-sdk:5.9.0"
     // 5.5.0 及之后的版本需要 support-annotations
-    implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
 
     // Five
     implementation "com.taurusx.ads:mediation_five:20200423.0"
@@ -134,7 +134,7 @@ dependencies {
     implementation "com.taurusx.ads:ia-native-kit-release:7.2.1"
     implementation "com.taurusx.ads:ia-sdk-core-release:7.2.1"
     implementation "com.taurusx.ads:ia-video-kit-release:7.2.1"
-    implementation "com.google.code.gson:gson:2.8.4"
+    implementation "com.google.code.gson:gson:2.8.6"
     // Add gson to support native ads
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.android.gms:play-services-ads:17.1.2"
@@ -197,7 +197,7 @@ dependencies {
     // Vungle
     implementation "com.taurusx.ads:mediation_vungle:6.5.3.0"
     implementation "com.vungle:publisher-sdk-android:6.5.3"
-    implementation "androidx.core:core:1.1.0"
+    implementation "androidx.core:core:1.2.0"
     implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
     // Recommended for SDK to be able to get Android Advertising ID
     implementation "com.google.android.gms:play-services-basement:17.0.0"
