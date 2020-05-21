@@ -8,7 +8,6 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
-import com.qq.e.ads.cfg.VideoOption;
 import com.taurusx.ads.core.api.ad.config.AdSize;
 import com.taurusx.ads.core.api.ad.feedlist.Feed;
 import com.taurusx.ads.core.api.ad.feedlist.FeedList;
@@ -16,21 +15,9 @@ import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleFeedAdListener;
-import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.core.api.utils.ViewUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
-import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.GDTExpressFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.MintegralFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TikTokCustomFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokExpressDrawFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokExpressFeedListConfig;
 
 import java.util.List;
 
@@ -128,14 +115,14 @@ public class FeedListActivity extends BaseActivity {
 
         // (Optional) Set Network special Config
         mFeedList.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(createGDTCustom2_0FeedListConfig())
-                .addConfig(createGDTExpressFeedListConfig())
-                .addConfig(createKuaiShouCustomFeedListConfig())
-                .addConfig(createMintegralFeedListConfig())
-                .addConfig(createTikTokCustomFeedListConfig())
-                .addConfig(createTikTokExpressFeedListConfig())
-                .addConfig(createTikTokDrawFeedListConfig())
-                .addConfig(createTikTokExpressDrawFeedListConfig())
+//                .addConfig(createGDTCustom2_0FeedListConfig())
+//                .addConfig(createGDTExpressFeedListConfig())
+//                .addConfig(createKuaiShouCustomFeedListConfig())
+//                .addConfig(createMintegralFeedListConfig())
+//                .addConfig(createTikTokCustomFeedListConfig())
+//                .addConfig(createTikTokExpressFeedListConfig())
+//                .addConfig(createTikTokDrawFeedListConfig())
+//                .addConfig(createTikTokExpressDrawFeedListConfig())
                 .build());
 
         // Set FeedList Load Event
@@ -168,176 +155,176 @@ public class FeedListActivity extends BaseActivity {
         });
     }
 
-    private GDTCustom2_0FeedListConfig createGDTCustom2_0FeedListConfig() {
-        return GDTCustom2_0FeedListConfig.Builder()
-                // 视频播放配置
-                .setVideoOption(new VideoOption.Builder()
-                        // .setXxx(Xxx)
-                        .build())
-                // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
-                // 此设置会影响广告填充，请谨慎设置。
-                .setMinVideoDuration(5)
-                .setMaxVideoDuration(60)
-                // 监听应用类广告下载
-                .setAppDownloadListener(new GDTAppDownloadListener() {
-                    @Override
-                    public void onIdle(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onIdle: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadActive(String appName, int progress) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadActive: "
-                                + appName + ", " + progress + "%");
-                    }
-
-                    @Override
-                    public void onDownloadPaused(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onInstalled: " + appName);
-                    }
-                })
-                .build();
-    }
-
-    private GDTExpressFeedListConfig createGDTExpressFeedListConfig() {
-        return GDTExpressFeedListConfig.Builder()
-                // 视频播放配置
-                .setVideoOption(new VideoOption.Builder()
-                        // .setXxx(Xxx)
-                        .build())
-                // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
-                // 此设置会影响广告填充，请谨慎设置。
-                // .setMinVideoDuration(5)
-                // .setMaxVideoDuration(60)
-                .build();
-    }
-
-    private KuaiShouCustomFeedListConfig createKuaiShouCustomFeedListConfig() {
-        return KuaiShouCustomFeedListConfig.Builder()
-                .setAppDownloadListener(new KuaiShouAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG ,"KuaiShou onIdle");
-                    }
-
-                    @Override
-                    public void onProgressUpdate(int i) {
-                        LogUtil.d(TAG ,"KuaiShou onProgressUpdate: " + i);
-                    }
-
-                    @Override
-                    public void onDownloadFinished() {
-                        LogUtil.d(TAG ,"KuaiShou onDownloadFinished");
-                    }
-
-                    @Override
-                    public void onInstalled() {
-                        LogUtil.d(TAG ,"KuaiShou onInstalled");
-                    }
-                })
-                .build();
-    }
-
-    private MintegralFeedListConfig createMintegralFeedListConfig() {
-        return MintegralFeedListConfig.Builder()
-                // 是否循环播放视频
-                .setAllowLoopPlay(false)
-                // 屏幕方向改变时是否重新加载视频
-                .setAllowScreenChange(false)
-                // 在视频未准备好播放之前是否显示图片
-                .setAllowVideoRefresh(false)
-                // 是否显示进度
-                .setProgressVisibility(true)
-                // 是否允许全屏显示
-                .setIsAllowFullScreen(false)
-                // 是否显示音量按钮
-                .setSoundIndicatorVisibility(true)
-                .build();
-    }
-
-    private TikTokCustomFeedListConfig createTikTokCustomFeedListConfig() {
-        return TikTokCustomFeedListConfig.Builder()
-                .setAppDownloadListener(new TikTokAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                    }
-
-                    @Override
-                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                    }
-                })
-                .build();
-    }
-
-    private TikTokExpressFeedListConfig createTikTokExpressFeedListConfig() {
-        return TikTokExpressFeedListConfig.Builder()
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
-                // 使用默认的 Dislike Dialog 样式，仅需设置 Dislike 回调
-                // .setDislikeCallback(new TikTokGetDislikeCallback() {})
-                // 或自定义 Dislike Dialog
-                // .setDislikeDialog(new TikTokGetDislikeDialog() {})
-                .build();
-    }
-
-    private TikTokDrawFeedListConfig createTikTokDrawFeedListConfig() {
-        return TikTokDrawFeedListConfig.Builder()
-                // 点击视频是否可以控制暂停/播放；默认不可控制
-                .setCanInterruptVideoPlay(true)
-                // 暂停时显示的图标；默认为 R.drawable.ic_toutiao_pause_icon
-                // .setPauseIcon(R.drawable.ic_toutiao_pause_icon)
-                // .setPauseIcon(bitmap)
-                // .setPauseIcon(drawable)
-                // 设置图标大小，单位 dp；默认为 50dp
-                .setPauseIconSize(50)
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
-                .build();
-    }
-
-    private TikTokExpressDrawFeedListConfig createTikTokExpressDrawFeedListConfig() {
-        return TikTokExpressDrawFeedListConfig.Builder()
-                // 点击视频是否可以控制暂停/播放；默认不可控制
-                .setCanInterruptVideoPlay(true)
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
-                .build();
-    }
+//    private GDTCustom2_0FeedListConfig createGDTCustom2_0FeedListConfig() {
+//        return GDTCustom2_0FeedListConfig.Builder()
+//                // 视频播放配置
+//                .setVideoOption(new VideoOption.Builder()
+//                        // .setXxx(Xxx)
+//                        .build())
+//                // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
+//                // 此设置会影响广告填充，请谨慎设置。
+//                .setMinVideoDuration(5)
+//                .setMaxVideoDuration(60)
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new GDTAppDownloadListener() {
+//                    @Override
+//                    public void onIdle(String appName) {
+//                        LogUtil.d(TAG, "GDTAppDownloadListener: onIdle: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadActive(String appName, int progress) {
+//                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadActive: "
+//                                + appName + ", " + progress + "%");
+//                    }
+//
+//                    @Override
+//                    public void onDownloadPaused(String appName) {
+//                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadPaused: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFailed(String appName) {
+//                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFailed: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFinished(String appName) {
+//                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFinished: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onInstalled(String appName) {
+//                        LogUtil.d(TAG, "GDTAppDownloadListener: onInstalled: " + appName);
+//                    }
+//                })
+//                .build();
+//    }
+//
+//    private GDTExpressFeedListConfig createGDTExpressFeedListConfig() {
+//        return GDTExpressFeedListConfig.Builder()
+//                // 视频播放配置
+//                .setVideoOption(new VideoOption.Builder()
+//                        // .setXxx(Xxx)
+//                        .build())
+//                // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
+//                // 此设置会影响广告填充，请谨慎设置。
+//                // .setMinVideoDuration(5)
+//                // .setMaxVideoDuration(60)
+//                .build();
+//    }
+//
+//    private KuaiShouCustomFeedListConfig createKuaiShouCustomFeedListConfig() {
+//        return KuaiShouCustomFeedListConfig.Builder()
+//                .setAppDownloadListener(new KuaiShouAppDownloadListener() {
+//                    @Override
+//                    public void onIdle() {
+//                        LogUtil.d(TAG ,"KuaiShou onIdle");
+//                    }
+//
+//                    @Override
+//                    public void onProgressUpdate(int i) {
+//                        LogUtil.d(TAG ,"KuaiShou onProgressUpdate: " + i);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFinished() {
+//                        LogUtil.d(TAG ,"KuaiShou onDownloadFinished");
+//                    }
+//
+//                    @Override
+//                    public void onInstalled() {
+//                        LogUtil.d(TAG ,"KuaiShou onInstalled");
+//                    }
+//                })
+//                .build();
+//    }
+//
+//    private MintegralFeedListConfig createMintegralFeedListConfig() {
+//        return MintegralFeedListConfig.Builder()
+//                // 是否循环播放视频
+//                .setAllowLoopPlay(false)
+//                // 屏幕方向改变时是否重新加载视频
+//                .setAllowScreenChange(false)
+//                // 在视频未准备好播放之前是否显示图片
+//                .setAllowVideoRefresh(false)
+//                // 是否显示进度
+//                .setProgressVisibility(true)
+//                // 是否允许全屏显示
+//                .setIsAllowFullScreen(false)
+//                // 是否显示音量按钮
+//                .setSoundIndicatorVisibility(true)
+//                .build();
+//    }
+//
+//    private TikTokCustomFeedListConfig createTikTokCustomFeedListConfig() {
+//        return TikTokCustomFeedListConfig.Builder()
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {
+//                    @Override
+//                    public void onIdle() {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+//                    }
+//
+//                    @Override
+//                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onInstalled(String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+//                    }
+//                })
+//                .build();
+//    }
+//
+//    private TikTokExpressFeedListConfig createTikTokExpressFeedListConfig() {
+//        return TikTokExpressFeedListConfig.Builder()
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+//                // 使用默认的 Dislike Dialog 样式，仅需设置 Dislike 回调
+//                // .setDislikeCallback(new TikTokGetDislikeCallback() {})
+//                // 或自定义 Dislike Dialog
+//                // .setDislikeDialog(new TikTokGetDislikeDialog() {})
+//                .build();
+//    }
+//
+//    private TikTokDrawFeedListConfig createTikTokDrawFeedListConfig() {
+//        return TikTokDrawFeedListConfig.Builder()
+//                // 点击视频是否可以控制暂停/播放；默认不可控制
+//                .setCanInterruptVideoPlay(true)
+//                // 暂停时显示的图标；默认为 R.drawable.ic_toutiao_pause_icon
+//                // .setPauseIcon(R.drawable.ic_toutiao_pause_icon)
+//                // .setPauseIcon(bitmap)
+//                // .setPauseIcon(drawable)
+//                // 设置图标大小，单位 dp；默认为 50dp
+//                .setPauseIconSize(50)
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+//                .build();
+//    }
+//
+//    private TikTokExpressDrawFeedListConfig createTikTokExpressDrawFeedListConfig() {
+//        return TikTokExpressDrawFeedListConfig.Builder()
+//                // 点击视频是否可以控制暂停/播放；默认不可控制
+//                .setCanInterruptVideoPlay(true)
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+//                .build();
+//    }
 }
