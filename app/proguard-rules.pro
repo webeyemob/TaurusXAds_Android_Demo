@@ -29,3 +29,5 @@
 
 # GDT TBS
 #-optimizations !method/propagation/*
+
+-dontwarn com.heytap.**
