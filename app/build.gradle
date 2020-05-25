@@ -144,7 +144,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // Imobile
-    implementation "com.taurusx.ads:mediation_imobile:2.0.20.8"
+    implementation "com.taurusx.ads:mediation_imobile:2.0.21.0"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
     // InMobi
