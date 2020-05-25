@@ -497,8 +497,8 @@
         "Express FullScreen Video": "63983dd4-0cfe-467a-be68-d9364a94615c"
       },
       "native": {
-        "Native Custom Banner": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b",
-        "Native Custom Interstitial": "b65564fa-c10e-4d65-a656-8599d90a2874"
+        "Custom Banner": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b",
+        "Custom Interstitial": "b65564fa-c10e-4d65-a656-8599d90a2874"
       },
       "rewarded": {
         "RewardedVideo": "cfc3aafd-5bff-4803-99d0-de3b5a4286ca",
