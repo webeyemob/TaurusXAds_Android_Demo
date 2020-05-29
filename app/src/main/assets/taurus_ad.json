@@ -636,6 +636,7 @@
     {
       "adName": "Nath",
       "rewarded": {
+        "nath_ad_no_template": "f80918cc-005e-4266-8442-eee0df9b8352",
         "nath_ad_rewarded_android": "87a18763-9ee5-4666-be0f-38ede551fae7"
       },
       "interstitial": {

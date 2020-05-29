@@ -72,6 +72,7 @@ public class TaurusApplication extends Application {
         TaurusXAds.getDefault().setDownloadConfirmNetwork(DownloadNetwork.NONE);
 
         // 初始化
+        TaurusXAds.getDefault().setTestMode(true);
         TaurusXAds.getDefault().init(this, Constance.APP_ID);
     }
 
