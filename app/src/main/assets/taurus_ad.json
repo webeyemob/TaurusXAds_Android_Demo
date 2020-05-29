@@ -125,7 +125,7 @@
         "Interstitial": "eff10b4c-6ab0-483e-8709-55d5a837cba6"
       },
       "native": {
-        "Normal": "812021e3-54aa-47bb-8f9b-d9aea189acd1",
+        "Native": "812021e3-54aa-47bb-8f9b-d9aea189acd1",
         "Instream Video": "e80d7b68-e1f3-4010-8420-b7eb88e4b982"
       }
     },
@@ -204,7 +204,8 @@
       },
       "native": {
         "Native": "7256db90-59b9-4197-8a63-c2feb87a8823",
-        "Native Banner": "2ff0eda5-791e-4456-9b34-a773c051c661"
+        "Native Banner": "2ff0eda5-791e-4456-9b34-a773c051c661",
+        "In-Stream Video": "e608be57-568c-4428-a1fb-1ce3c4f7a95d"
       },
       "rewarded": {
         "RewardedVideo": "bb187db4-fe72-4760-9dfc-4ca74f3592b2"
@@ -346,8 +347,8 @@
         "Banner": "89e6dff0-0431-4267-a1f2-fdd60d0dc3bc"
       },
       "interstitial": {
-        "Image Interstitial": "903ad939-bb84-40d8-8929-7b53e2cfc61a",
-        "Video Interstitial": "9052a544-3e30-425e-a033-6ce11cc334b7"
+        "Static Interstitial": "903ad939-bb84-40d8-8929-7b53e2cfc61a",
+        "Interstitial Video": "9052a544-3e30-425e-a033-6ce11cc334b7"
       },
       "native": {
         "Native": "80f4e069-2958-4c45-9418-b20ca87fa3ae"
@@ -387,9 +388,9 @@
         "Banner": "3d8d2500-0890-4e1a-aa48-955d1c3f1dbf"
       },
       "interstitial": {
-        "Interstitial": "eb211297-a8ff-4cca-85b9-b98a6e640346",
-        "FullScreen Interstitial": "4e574a73-d79b-4cbe-93f3-33bfaa3ba3e9",
-        "Interstitial Video": "d1bedef5-617b-4496-8727-c9322c9e24f3"
+        "Image Interstitial": "eb211297-a8ff-4cca-85b9-b98a6e640346",
+        "Video Interstitial": "d1bedef5-617b-4496-8727-c9322c9e24f3",
+        "FullBoard Interstitial": "4e574a73-d79b-4cbe-93f3-33bfaa3ba3e9"
       },
       "native": {
         "Image Native": "e2da9525-dc34-42bc-8642-393f9913b315",
@@ -405,13 +406,13 @@
         "Banner": "f2fdfb47-030e-47e6-bee4-c2680adda549"
       },
       "interstitial": {
-        "Interstitial": "55784876-6725-4b2a-ab70-f4bf97ddeebc",
-        "Interstitial Video": "2e8838ac-8615-460b-914e-8fe9c27a1abb"
+        "Small Size (General)": "55784876-6725-4b2a-ab70-f4bf97ddeebc",
+        "Large Size (Video)": "2e8838ac-8615-460b-914e-8fe9c27a1abb"
       },
       "native": {
-        "Custom Native": "b964d9f9-fcb5-4066-b03a-254387a64187",
-        "Custom 2.0 Native": "c37bb994-9b83-46ab-964b-1b4c9e9cddfc",
-        "Template Native": "25e061e0-3017-4099-9185-7c20a571005d"
+        "Custom": "b964d9f9-fcb5-4066-b03a-254387a64187",
+        "Custom 2.0": "c37bb994-9b83-46ab-964b-1b4c9e9cddfc",
+        "Template": "25e061e0-3017-4099-9185-7c20a571005d"
       },
       "rewarded": {
         "RewardedVideo": "aa4202d6-6dd2-4f55-9217-b8efdf90fb1a"
