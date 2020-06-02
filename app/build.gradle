@@ -253,7 +253,7 @@ dependencies {
 //    } else {
 //        // TikTok
 //        implementation "com.taurusx.ads:mediation_toutiao:2.9.5.8.0"
-//        // implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.9.5.8"
+//         implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.9.5.8"
 //        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 //    }
 
