@@ -47,7 +47,7 @@ public class ListViewActivity extends BaseActivity {
 
         mAdType = AdType.from(getIntent().getIntExtra(KEY_AD_TYPE, AdType.MixView.getType()));
         mAdUnitId = getIntent().getStringExtra(KEY_ADUNIT_ID);
-        getActionBar().setTitle(mAdType.getName());
+        getSupportActionBar().setTitle(mAdType.getName());
 
         mAdParams = AdapterAdParams.newBuilder()
                 .setAdUnit(mAdType, mAdUnitId)

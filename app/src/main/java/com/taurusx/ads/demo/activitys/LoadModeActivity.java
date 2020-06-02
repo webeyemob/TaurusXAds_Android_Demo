@@ -35,7 +35,7 @@ public class LoadModeActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_strategy);
-        getActionBar().setTitle("Strategy Test");
+        getSupportActionBar().setTitle("Strategy Test");
         initData();
         initView();
     }

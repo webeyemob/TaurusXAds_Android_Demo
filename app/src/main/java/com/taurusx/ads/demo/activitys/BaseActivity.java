@@ -1,18 +1,19 @@
 package com.taurusx.ads.demo.activitys;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class BaseActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setIcon(null);
-        getActionBar().setDisplayUseLogoEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setIcon(null);
+        getSupportActionBar().setDisplayUseLogoEnabled(false);
     }
 
     @Override

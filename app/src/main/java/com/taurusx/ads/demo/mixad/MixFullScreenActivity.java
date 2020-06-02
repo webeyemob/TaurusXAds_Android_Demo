@@ -28,7 +28,7 @@ public class MixFullScreenActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().setTitle("MixFullScreenAd");
+        getSupportActionBar().setTitle("MixFullScreenAd");
 
         setContentView(R.layout.activity_mixfullscreen);
 

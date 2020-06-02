@@ -1,10 +1,13 @@
 package com.taurusx.ads.demo;
 
-import android.app.Activity;
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.taurusx.ads.demo.activitys.AdapterTestActivity;
 import com.taurusx.ads.demo.activitys.LoadModeActivity;
@@ -14,12 +17,15 @@ import com.taurusx.ads.demo.bean.Mediation;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.demo.utils.Utils;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_STATE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE}, 100);
     }
 
     private void initView() {

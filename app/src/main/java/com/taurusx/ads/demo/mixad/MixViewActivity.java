@@ -30,7 +30,7 @@ public class MixViewActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().setTitle("MixViewAd");
+        getSupportActionBar().setTitle("MixViewAd");
         setContentView(R.layout.activity_mixview);
 
         mMixViewId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_MIXVIEW);

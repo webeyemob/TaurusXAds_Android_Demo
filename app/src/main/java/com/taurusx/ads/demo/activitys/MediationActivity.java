@@ -56,7 +56,7 @@ public class MediationActivity extends BaseActivity {
 
         setContentView(R.layout.activity_mediation);
         initData();
-        getActionBar().setTitle(mNetworkName);
+        getSupportActionBar().setTitle(mNetworkName);
         // Init Ads
         initBannerAdView();
         initNativeAd();

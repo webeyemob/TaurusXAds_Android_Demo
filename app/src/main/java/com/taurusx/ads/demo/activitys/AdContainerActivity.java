@@ -30,7 +30,7 @@ public class AdContainerActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initData();
-        getActionBar().setTitle(mTitle + "_" + mType);
+        getSupportActionBar().setTitle(mTitle + "_" + mType);
         setContentView(R.layout.activity_container);
 
 

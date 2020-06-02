@@ -12,11 +12,6 @@ import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
-import com.taurusx.ads.mediation.networkconfig.GDTInterstitial2_0Config;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouInterstitialConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TikTokExpressInterstitialConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokFullScreenVideoConfig;
 
 public class InterstitialActivity extends BaseActivity {
 
@@ -31,7 +26,7 @@ public class InterstitialActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().setTitle("InterstitialAd");
+        getSupportActionBar().setTitle("InterstitialAd");
         setContentView(R.layout.activity_interstitial);
 
         mInterstitialId = getIntent().getStringExtra("interstitial");
@@ -67,10 +62,10 @@ public class InterstitialActivity extends BaseActivity {
 
         // (Optional) Set Network special Config
         mInterstitialAd.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(createGDTInterstitial2_0Config())
-                .addConfig(createKuaiShouInterstitialConfig())
-                .addConfig(createTikTokExpressInterstitialConfig())
-                .addConfig(createTikTokFullScreenVideoConfig())
+//                .addConfig(createGDTInterstitial2_0Config())
+//                .addConfig(createKuaiShouInterstitialConfig())
+//                .addConfig(createTikTokExpressInterstitialConfig())
+//                .addConfig(createTikTokFullScreenVideoConfig())
                 .build());
 
         // Listen Ad load result
@@ -103,69 +98,69 @@ public class InterstitialActivity extends BaseActivity {
         });
     }
 
-    private GDTInterstitial2_0Config createGDTInterstitial2_0Config() {
-        return GDTInterstitial2_0Config.Builder()
-                // 视频播放配置
-                .setVideoOption(new VideoOption.Builder()
-                        // .setXxx(Xxx)
-                        .build())
-                // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
-                // 此设置会影响广告填充，请谨慎设置。
-                // .setMinVideoDuration(5)
-                // .setMaxVideoDuration(60)
-                .build();
-    }
-
-    private KuaiShouInterstitialConfig createKuaiShouInterstitialConfig() {
-        return KuaiShouInterstitialConfig.Builder()
-                // 拓展场景参数，可不设置
-                .setShowScene("xx game")
-                // 30 秒后可关闭
-                .setSkipThirtySecond(false)
-                .build();
-    }
-
-    private TikTokExpressInterstitialConfig createTikTokExpressInterstitialConfig() {
-        return TikTokExpressInterstitialConfig.Builder()
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                    }
-
-                    @Override
-                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                    }
-                })
-                .build();
-    }
-
-    private TikTokFullScreenVideoConfig createTikTokFullScreenVideoConfig() {
-        return TikTokFullScreenVideoConfig.Builder()
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
-                .build();
-    }
+//    private GDTInterstitial2_0Config createGDTInterstitial2_0Config() {
+//        return GDTInterstitial2_0Config.Builder()
+//                // 视频播放配置
+//                .setVideoOption(new VideoOption.Builder()
+//                        // .setXxx(Xxx)
+//                        .build())
+//                // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
+//                // 此设置会影响广告填充，请谨慎设置。
+//                // .setMinVideoDuration(5)
+//                // .setMaxVideoDuration(60)
+//                .build();
+//    }
+//
+//    private KuaiShouInterstitialConfig createKuaiShouInterstitialConfig() {
+//        return KuaiShouInterstitialConfig.Builder()
+//                // 拓展场景参数，可不设置
+//                .setShowScene("xx game")
+//                // 30 秒后可关闭
+//                .setSkipThirtySecond(false)
+//                .build();
+//    }
+//
+//    private TikTokExpressInterstitialConfig createTikTokExpressInterstitialConfig() {
+//        return TikTokExpressInterstitialConfig.Builder()
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {
+//                    @Override
+//                    public void onIdle() {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+//                    }
+//
+//                    @Override
+//                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onInstalled(String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+//                    }
+//                })
+//                .build();
+//    }
+//
+//    private TikTokFullScreenVideoConfig createTikTokFullScreenVideoConfig() {
+//        return TikTokFullScreenVideoConfig.Builder()
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+//                .build();
+//    }
 }

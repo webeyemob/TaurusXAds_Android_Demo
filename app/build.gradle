@@ -6,7 +6,11 @@ android {
     signingConfigs {
         defaultConfig {
 
-            applicationId "com.taurusx.ads.demo"
+//            applicationId "com.taurusx.ads.demo"
+            // for 360
+//        applicationId "com.ak.juhe.sample"
+            // for 4399
+        applicationId "com.mob4399.demo"
             // for Fyber
 //        applicationId "com.inner.adsdk.demo"
             // for Vungle
@@ -212,69 +216,69 @@ dependencies {
 //    implementation "com.taurusx.ads:torch_game-adcore:1.4.1036"
 
     // 4399
-//    implementation "com.taurusx.ads:mediation_4399:1.1.8.0"
-//    implementation "com.taurusx.ads:au4399-sdk-release:1.1.8"
-//    implementation "com.taurusx.ads:baidu_mobads_sdk:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_alphab:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_chinacommon:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_interstitialvideo:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_mtgdownloads:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_mtgjscommon:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_playercommon:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_reward:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_videocommon:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_videojs:4399_1.1.8"
-//    implementation "com.taurusx.ads:mobgiads-generic-release:4.5.1"
-//    implementation "com.taurusx.ads:oneway-plugin:2.1.3"
-//    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4399_1.1.8"
-//    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
+    implementation "com.taurusx.ads:mediation_4399:1.1.8.2"
+    implementation "com.taurusx.ads:au4399-sdk-release:1.1.8"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:4399_1.1.8"
+    implementation "com.taurusx.ads:mintegral_alphab:4399_1.1.8"
+    implementation "com.taurusx.ads:mintegral_chinacommon:4399_1.1.8"
+    implementation "com.taurusx.ads:mintegral_interstitialvideo:4399_1.1.8"
+    implementation "com.taurusx.ads:mintegral_mtgdownloads:4399_1.1.8"
+    implementation "com.taurusx.ads:mintegral_mtgjscommon:4399_1.1.8"
+    implementation "com.taurusx.ads:mintegral_playercommon:4399_1.1.8"
+    implementation "com.taurusx.ads:mintegral_reward:4399_1.1.8"
+    implementation "com.taurusx.ads:mintegral_videocommon:4399_1.1.8"
+    implementation "com.taurusx.ads:mintegral_videojs:4399_1.1.8"
+    implementation "com.taurusx.ads:mobgiads-generic-release:4.5.1"
+    implementation "com.taurusx.ads:oneway-plugin:2.1.3"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4399_1.1.8"
+    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
 
     // Aligames
 //    implementation "com.taurusx.ads:aligames_ngad_release_sdk:2.5.45"
 //    implementation "com.taurusx.ads:mediation_aligames:2.5.45.1"
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.82.5"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
+//    implementation "com.taurusx.ads:mediation_baidu:5.82.5"
+//    implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.211.1081.1"
-    implementation "com.taurusx.ads:gdtsdk_union:4.211.1081"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-
-    if (use_pangle) {
-        // Pangle
-        implementation "com.taurusx.ads:mediation_pangle:2.9.0.1.5"
-        implementation "com.taurusx.ads:pangle_open_ad_sdk:2.9.0.1"
-    } else {
-        // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:2.9.5.8.0"
-        implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.9.5.8"
-        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    }
+//    implementation "com.taurusx.ads:mediation_gdt:4.211.1081.1"
+//    implementation "com.taurusx.ads:gdtsdk_union:4.211.1081"
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//
+//    if (use_pangle) {
+//        // Pangle
+//        implementation "com.taurusx.ads:mediation_pangle:2.9.0.1.5"
+//        implementation "com.taurusx.ads:pangle_open_ad_sdk:2.9.0.1"
+//    } else {
+//        // TikTok
+//        implementation "com.taurusx.ads:mediation_toutiao:2.9.5.8.0"
+//        // implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.9.5.8"
+//        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    }
 
     // Mintegral
-    implementation "com.taurusx.ads:mediation_mintegral:13.1.11.0"
-    implementation "com.mintegral.msdk:videojs:13.1.11"
-    implementation "com.mintegral.msdk:mtgjscommon:13.1.11"
-    implementation "com.mintegral.msdk:playercommon:13.1.11"
-    implementation "com.mintegral.msdk:reward:13.1.11"
-    implementation "com.mintegral.msdk:videocommon:13.1.11"
-    implementation "com.mintegral.msdk:common:13.1.11"
-    implementation "com.mintegral.msdk:alphab:13.1.11"
-    implementation "com.mintegral.msdk:interstitialvideo:13.1.11"
-    implementation "com.mintegral.msdk:mtgnative:13.1.11"
-    implementation "com.mintegral.msdk:nativeex:13.1.11"
-    implementation "com.mintegral.msdk:mtgsplash:13.1.11"
-    implementation "com.mintegral.msdk:interactiveads:13.1.11"
-    implementation "com.mintegral.msdk:mtgbanner:13.1.11"
-    implementation "com.mintegral.msdk:interstitial:13.1.11"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    // 国内产品必须添加
-//    implementation "com.mintegral.msdk:optimizedata:13.1.11"
-//    implementation "com.mintegral.msdk:mtgdownloads:13.1.11"
-    // Head Bidding
-    implementation "com.mintegral.msdk:mtgbid:13.1.11"
+//    implementation "com.taurusx.ads:mediation_mintegral:13.1.11.0"
+//    implementation "com.mintegral.msdk:videojs:13.1.11"
+//    implementation "com.mintegral.msdk:mtgjscommon:13.1.11"
+//    implementation "com.mintegral.msdk:playercommon:13.1.11"
+//    implementation "com.mintegral.msdk:reward:13.1.11"
+//    implementation "com.mintegral.msdk:videocommon:13.1.11"
+//    implementation "com.mintegral.msdk:common:13.1.11"
+//    implementation "com.mintegral.msdk:alphab:13.1.11"
+//    implementation "com.mintegral.msdk:interstitialvideo:13.1.11"
+//    implementation "com.mintegral.msdk:mtgnative:13.1.11"
+//    implementation "com.mintegral.msdk:nativeex:13.1.11"
+//    implementation "com.mintegral.msdk:mtgsplash:13.1.11"
+//    implementation "com.mintegral.msdk:interactiveads:13.1.11"
+//    implementation "com.mintegral.msdk:mtgbanner:13.1.11"
+//    implementation "com.mintegral.msdk:interstitial:13.1.11"
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    // 国内产品必须添加
+////    implementation "com.mintegral.msdk:optimizedata:13.1.11"
+////    implementation "com.mintegral.msdk:mtgdownloads:13.1.11"
+//    // Head Bidding
+//    implementation "com.mintegral.msdk:mtgbid:13.1.11"
 
     // OPPO (不能与穿山甲、优量汇同时使用)
 //    implementation "com.taurusx.ads:mediation_oppo:3.2.9.2"
@@ -290,9 +294,9 @@ dependencies {
 //    implementation "com.taurusx.ads:mediation_mimo:V2019_01_18_17_00.4"
 
     // Sigmob
-    implementation 'com.taurusx.ads:mediation_sigmob:2.15.4.2'
-    implementation 'com.taurusx.ads:windAd:2.15.4'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'com.taurusx.ads:mediation_sigmob:2.15.4.2'
+//    implementation 'com.taurusx.ads:windAd:2.15.4'
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
 }
 

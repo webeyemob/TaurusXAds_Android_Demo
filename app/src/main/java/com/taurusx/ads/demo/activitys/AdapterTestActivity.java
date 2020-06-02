@@ -28,7 +28,7 @@ public class AdapterTestActivity extends BaseActivity {
         setContentView(R.layout.activity_adapter_test);
 
         mIsListView = getIntent().getBooleanExtra(KEY_IS_LISTVIEW, true);
-        getActionBar().setTitle(mIsListView ? "ListAdapter Test" : "RecyclerAdapter Test");
+        getSupportActionBar().setTitle(mIsListView ? "ListAdapter Test" : "RecyclerAdapter Test");
 
         findViewById(R.id.banner).setOnClickListener(new View.OnClickListener() {
             @Override
