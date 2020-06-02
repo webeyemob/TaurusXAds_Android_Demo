@@ -70,7 +70,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 
     // AdGeneration
-    implementation "com.taurusx.ads:mediation_adgeneration:2.18.0.0"
+    implementation "com.taurusx.ads:mediation_adgeneration:2.18.0.1"
     implementation "com.socdm.d.adgeneration:adg:2.18.0"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-ads:17.1.2"
@@ -212,7 +212,7 @@ dependencies {
 //    implementation "com.taurusx.ads:torch_game-adcore:1.4.1036"
 
     // 4399
-//    implementation "com.taurusx.ads:mediation_4399:1.1.8.0"
+//    implementation "com.taurusx.ads:mediation_4399:1.1.8.2"
 //    implementation "com.taurusx.ads:au4399-sdk-release:1.1.8"
 //    implementation "com.taurusx.ads:baidu_mobads_sdk:4399_1.1.8"
 //    implementation "com.taurusx.ads:mintegral_alphab:4399_1.1.8"
