@@ -114,6 +114,9 @@
       "native": {
         "Native": "671aa242-199c-4b99-8cdc-014dd912ea6d"
       },
+      "feedlist": {
+        "FeedList": "25c91317-2852-42c1-87cc-1e26c43496b5"
+      },
       "rewarded": {
         "RewardedVideo": "96a061df-d6cb-4e1a-aede-69b20c9337dd"
       }
