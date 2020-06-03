@@ -217,11 +217,13 @@
         "Native Banner": "2ff0eda5-791e-4456-9b34-a773c051c661",
         "In-Stream Video": "e608be57-568c-4428-a1fb-1ce3c4f7a95d"
       },
+      "feedlist": {
+        "Native": "5ef12d72-ce71-4fc5-a8e2-c287784b6c34",
+        "Native Banner": "7b8473b3-c4a4-4e2c-ac72-e812f2d3a6c5",
+        "In-Stream Video": "0b2e87b0-c007-4c97-ba41-dd93f945f66b"
+      },
       "rewarded": {
         "RewardedVideo": "bb187db4-fe72-4760-9dfc-4ca74f3592b2"
-      },
-      "feedlist": {
-        "FeedList": "5ef12d72-ce71-4fc5-a8e2-c287784b6c34"
       }
     },
     {
