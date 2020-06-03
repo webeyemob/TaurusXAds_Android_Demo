@@ -293,8 +293,12 @@
         "Interstitial": "358dccf3-9ed4-44d4-bba0-8d478f6ccb5b"
       },
       "native": {
-        "Custom Native": "008f926b-9f30-4209-9675-8baae4702b33",
-        "InLine Native": "21ad431c-6fe6-4846-bb88-f15a4e10577e"
+        "Native": "008f926b-9f30-4209-9675-8baae4702b33",
+        "FullScreen/InLine": "21ad431c-6fe6-4846-bb88-f15a4e10577e"
+      },
+      "feedlist": {
+        "Native": "b52d547c-3767-490e-a0aa-5e45bebb7e8e",
+        "FullScreen/InLine": "0abca915-4c21-42b3-bf46-471430f9bb9a"
       }
     },
     {
