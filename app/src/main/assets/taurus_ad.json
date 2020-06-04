@@ -412,6 +412,10 @@
         "Image Native": "e2da9525-dc34-42bc-8642-393f9913b315",
         "Video Native": "3a9a4c1c-a184-4761-b029-76c5c4b5ba06"
       },
+      "feedlist": {
+        "Image Native": "05162480-571c-4ec3-85f0-276066ef7c82",
+        "Video Native": "1e644b2f-8405-48d2-b9c3-28bdab40052d"
+      },
       "rewarded": {
         "RewardedVideo": "869bd5a6-c4f8-40a2-a27a-20e5afd2c88e"
       }
