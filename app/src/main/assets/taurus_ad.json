@@ -413,6 +413,11 @@
         "Custom 2.0 Native": "c37bb994-9b83-46ab-964b-1b4c9e9cddfc",
         "Template Native": "25e061e0-3017-4099-9185-7c20a571005d"
       },
+      "feedlist": {
+        "Custom": "785d6288-3e99-4d24-bd68-2dcd2781e031",
+        "Custom 2.0": "aa94f8c9-1bac-4129-8050-ade9f824a5d9",
+        "Template": "20e7dd7d-0970-4823-9d39-77aa3544803e"
+      },
       "rewarded": {
         "RewardedVideo": "aa4202d6-6dd2-4f55-9217-b8efdf90fb1a"
       },
