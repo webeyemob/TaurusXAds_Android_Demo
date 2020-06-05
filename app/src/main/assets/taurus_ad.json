@@ -525,6 +525,14 @@
         "Custom Banner": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b",
         "Custom Interstitial": "b65564fa-c10e-4d65-a656-8599d90a2874"
       },
+      "feedlist": {
+        "Custom FeedList": "9bf7f567-bc1f-4b97-a980-44e8b10c81ab",
+        "Express FeedList": "65b81eda-481b-4cfb-989c-cb1745d097dc",
+        "Draw FeedList": "c007b3e5-d66e-4569-9021-33e1d60a48a5",
+        "Express Draw FeedList": "5d611e41-8a55-4755-a817-d0ae13d4bbb1",
+        "Custom Banner": "527548c4-be69-45a0-ad67-68e62475f80b",
+        "Custom Interstitial": "f9ce3aec-9298-4591-8bcd-645276a8ae16"
+      },
       "rewarded": {
         "RewardedVideo": "cfc3aafd-5bff-4803-99d0-de3b5a4286ca",
         "Express RewardedVideo": "2d642eb9-5f61-4534-a190-5f46349bab83"
@@ -532,12 +540,6 @@
       "splash": {
         "Splash": "babbee3a-a9f4-4f00-9baa-f47d625c539c",
         "Express Splash": "d144ecf6-0193-40c3-98ec-67b56d8f676b"
-      },
-      "feedlist": {
-        "Custom FeedList": "9bf7f567-bc1f-4b97-a980-44e8b10c81ab",
-        "Express FeedList": "65b81eda-481b-4cfb-989c-cb1745d097dc",
-        "Draw FeedList": "c007b3e5-d66e-4569-9021-33e1d60a48a5",
-        "Express Draw FeedList": "5d611e41-8a55-4755-a817-d0ae13d4bbb1"
       }
     },
     {
