@@ -199,7 +199,7 @@ dependencies {
     implementation "com.taurusx.ads:unity-ads:3.4.2"
 
     // Vungle
-    implementation "com.taurusx.ads:mediation_vungle:6.5.3.0"
+    implementation "com.taurusx.ads:mediation_vungle:6.5.3.1"
     implementation "com.vungle:publisher-sdk-android:6.5.3"
     implementation "androidx.core:core:1.2.0"
     implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
