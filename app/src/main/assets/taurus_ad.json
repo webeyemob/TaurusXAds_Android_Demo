@@ -575,8 +575,17 @@
     },
     {
       "adName": "vivo",
+      "banner": {
+        "Banner": "9686cf6c-4d14-42de-b42e-c29be5153518"
+      },
       "interstitial": {
         "Interstitial": "65b22d08-001e-4012-96cf-0dad66f4efe6"
+      },
+      "native": {
+        "Native": "977f5550-9e7d-4690-b734-6ce0cef43b66"
+      },
+      "feedlist": {
+        "Native": "7218b666-337c-4559-bf06-ebb0dbc9b8df"
       },
       "rewarded": {
         "RewardedVideo": "0bbe3e3b-116e-4725-b6cb-9b2ad7e9abbd"

@@ -13,8 +13,6 @@ import com.taurusx.ads.core.api.segment.Segment;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.AdMobGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.DFPGlobalConfig;
-import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.MintegralGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.PrebidConfig;
@@ -50,7 +48,7 @@ public class TaurusApplication extends Application {
                 NetworkConfigs.Builder()
                         .addConfig(createAdMobConfig())
                         .addConfig(createDFPConfig())
-                        .addConfig(createGDTConfig())
+//                        .addConfig(createGDTConfig())
                         .addConfig(createKuaiShouConfig())
                         .addConfig(createMintegralConfig())
                         .addConfig(createPrebidConfig())
@@ -90,45 +88,45 @@ public class TaurusApplication extends Application {
                 .build();
     }
 
-    private GDTGlobalConfig createGDTConfig() {
-        return GDTGlobalConfig.Builder()
-                .setAppDownloadListener(new GDTAppDownloadListener() {
-                    @Override
-                    public void onIdle(String appName) {
-                        // 空闲状态
-                    }
-
-                    /**
-                     * @param appName  当前下载的应用名称
-                     * @param progress 下载进度，0～100
-                     */
-                    @Override
-                    public void onDownloadActive(String appName, int progress) {
-                        // 下载中，会调用多次
-                    }
-
-                    @Override
-                    public void onDownloadPaused(String appName) {
-                        // 下载暂停
-                    }
-
-                    @Override
-                    public void onDownloadFailed(String appName) {
-                        // 下载失败
-                    }
-
-                    @Override
-                    public void onDownloadFinished(String appName) {
-                        // 下载完成
-                    }
-
-                    @Override
-                    public void onInstalled(String appName) {
-                        // 安装完成
-                    }
-                })
-                .build();
-    }
+//    private GDTGlobalConfig createGDTConfig() {
+//        return GDTGlobalConfig.Builder()
+//                .setAppDownloadListener(new GDTAppDownloadListener() {
+//                    @Override
+//                    public void onIdle(String appName) {
+//                        // 空闲状态
+//                    }
+//
+//                    /**
+//                     * @param appName  当前下载的应用名称
+//                     * @param progress 下载进度，0～100
+//                     */
+//                    @Override
+//                    public void onDownloadActive(String appName, int progress) {
+//                        // 下载中，会调用多次
+//                    }
+//
+//                    @Override
+//                    public void onDownloadPaused(String appName) {
+//                        // 下载暂停
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFailed(String appName) {
+//                        // 下载失败
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFinished(String appName) {
+//                        // 下载完成
+//                    }
+//
+//                    @Override
+//                    public void onInstalled(String appName) {
+//                        // 安装完成
+//                    }
+//                })
+//                .build();
+//    }
 
     private KuaiShouGlobalConfig createKuaiShouConfig() {
         return KuaiShouGlobalConfig.Builder()

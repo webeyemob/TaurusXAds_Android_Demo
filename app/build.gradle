@@ -6,7 +6,8 @@ android {
     signingConfigs {
         defaultConfig {
 
-            applicationId "com.taurusx.ads.demo"
+            applicationId "com.vivo.mobilead"
+//            applicationId "com.taurusx.ads.demo"
             // for Fyber
 //        applicationId "com.inner.adsdk.demo"
             // for Vungle
@@ -234,13 +235,13 @@ dependencies {
 //    implementation "com.taurusx.ads:mediation_aligames:2.5.45.1"
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.82.5"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
+//    implementation "com.taurusx.ads:mediation_baidu:5.82.5"
+//    implementation "com.taurusx.ads:baidu_mobads_sdk:5.82"
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.211.1081.1"
-    implementation "com.taurusx.ads:gdtsdk_union:4.211.1081"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation "com.taurusx.ads:mediation_gdt:4.211.1081.1"
+//    implementation "com.taurusx.ads:gdtsdk_union:4.211.1081"
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     if (use_pangle) {
         // Pangle
@@ -284,7 +285,7 @@ dependencies {
 //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
 
     // Vivo
-//    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.4"
+    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.6"
 
     // Xiaomi
 //    implementation "com.taurusx.ads:mediation_mimo:V2019_01_18_17_00.4"
