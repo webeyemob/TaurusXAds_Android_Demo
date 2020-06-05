@@ -187,7 +187,7 @@ dependencies {
     implementation "net.nend.android:nend-sdk:5.4.2"
 
     // Prebid
-    implementation "com.taurusx.ads:mediation_prebid:1.5.0"
+    implementation "com.taurusx.ads:mediation_prebid:1.5.1"
 
     // Tapjoy
     implementation "com.taurusx.ads:mediation_tapjoy:12.2.0.2"
