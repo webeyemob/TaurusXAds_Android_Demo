@@ -284,7 +284,7 @@ dependencies {
 //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
 
     // Vivo
-//    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.4"
+//    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.6"
 
     // Xiaomi
 //    implementation "com.taurusx.ads:mediation_mimo:V2019_01_18_17_00.4"
