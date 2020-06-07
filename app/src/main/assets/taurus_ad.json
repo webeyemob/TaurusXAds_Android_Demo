@@ -23,6 +23,9 @@
       "native": {
         "Native": "f2bcaa3f-7461-4fc3-ab68-8ae2c9754026"
       },
+      "feedlist": {
+        "FeedList": "f1849aa6-d9de-49bf-a521-1c426fe4a967"
+      },
       "rewarded": {
         "RewardedVideo": "2a67f31d-a06c-4cad-bb05-ff339bbf10cf"
       },
@@ -602,14 +605,14 @@
       "native": {
         "Native": "9917c6b1-ca6c-45d5-bd2f-f9949785e891"
       },
+      "feedlist": {
+        "FeedList": "995d9c22-a4e2-4ca9-b45d-6eda0be24fe1"
+      },
       "rewarded": {
         "RewardedVideo": "87241602-711b-498b-a874-9236ce5a4cb1"
       },
       "splash": {
         "Splash": "159b29f6-daa9-44a4-91ee-6987d87fa6e2"
-      },
-      "feedlist": {
-        "FeedList": "995d9c22-a4e2-4ca9-b45d-6eda0be24fe1"
       }
     },
     {
