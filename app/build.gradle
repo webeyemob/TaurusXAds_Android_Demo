@@ -123,7 +123,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
     // Flurry
-    implementation "com.taurusx.ads:mediation_flurry:11.4.0.2"
+    implementation "com.taurusx.ads:mediation_flurry:11.4.0.3"
     implementation "com.flurry.android:analytics:11.4.0@aar"
     implementation "com.flurry.android:ads:11.4.0@aar"
     // Recommended

@@ -249,6 +249,9 @@
       "native": {
         "Native": "c70545e7-1bc8-468e-acc5-f2086114467d"
       },
+      "feedlist": {
+        "FeedList": "6ceaa3a3-1c45-4323-9d8e-41db7d95837c"
+      },
       "rewarded": {
         "RewardedVideo": "31ee841d-dc31-4e77-8bed-f9f4ce5f46e4"
       }
