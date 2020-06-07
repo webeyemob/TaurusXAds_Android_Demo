@@ -7,8 +7,6 @@ android {
         defaultConfig {
 
             applicationId "com.taurusx.ads.demo"
-            // for Fyber
-//        applicationId "com.inner.adsdk.demo"
             // for Vungle
 //        applicationId "com.publisher.vungle.sample"
             // for Amazon
@@ -133,7 +131,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // Fyber
-    implementation "com.taurusx.ads:mediation_fyber:7.2.1.1"
+    implementation "com.taurusx.ads:mediation_fyber:7.2.1.2"
     implementation "com.taurusx.ads:ia-mraid-kit-release:7.2.1"
     implementation "com.taurusx.ads:ia-native-kit-release:7.2.1"
     implementation "com.taurusx.ads:ia-sdk-core-release:7.2.1"
