@@ -9,9 +9,11 @@ import com.mintegral.msdk.MIntegralUser;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.constant.DownloadNetwork;
+import com.taurusx.ads.core.api.model.Network;
 import com.taurusx.ads.core.api.segment.Segment;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.AdMobGlobalConfig;
+import com.taurusx.ads.mediation.networkconfig.BaiduGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.DFPGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
@@ -49,6 +51,7 @@ public class TaurusApplication extends Application {
         TaurusXAds.getDefault().setGlobalNetworkConfigs(
                 NetworkConfigs.Builder()
                         .addConfig(createAdMobConfig())
+                        .addConfig(createBaiduConfig())
                         .addConfig(createDFPConfig())
                         .addConfig(createGDTConfig())
                         .addConfig(createKuaiShouConfig())
@@ -80,6 +83,15 @@ public class TaurusApplication extends Application {
         return AdMobGlobalConfig.Builder()
                 .addTestDevice("Your Test Device Id 1")
                 .addTestDevice("Your Test Device Id 2")
+                .build();
+    }
+
+    private BaiduGlobalConfig createBaiduConfig() {
+        return BaiduGlobalConfig.Builder()
+                .setPermissionReadDeviceID(true) // 读取设备 ID 的权限（建议授权），可有效提升广告的 eCPM
+                .setPermissionAppList(true) // 读取已安装应用列表权限（建议授权），可有效提升广告的 eCPM
+                .setPermissionLocation(true) // 读取粗略地理位置权限
+                .setPermissionStorage(true) // 读写外部存储权限
                 .build();
     }
 
