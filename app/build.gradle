@@ -109,7 +109,7 @@ dependencies {
     implementation "com.brandio.ads:sdk:3.3.0"
 
     // DU Ad Platform
-    implementation "com.taurusx.ads:mediation_duadplatform:1.2.2.3"
+    implementation "com.taurusx.ads:mediation_duadplatform:1.2.2.4"
     implementation "com.taurusx.ads:duadplatform_cw:1.2.2"
 
     // Facebook
