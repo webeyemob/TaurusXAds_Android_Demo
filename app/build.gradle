@@ -58,7 +58,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.taurusx.ads:core:1.11.4.test'
+    implementation 'com.taurusx.ads:core:1.11.4'
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
