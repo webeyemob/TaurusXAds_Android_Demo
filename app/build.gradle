@@ -228,8 +228,8 @@ dependencies {
 //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
 
     // Aligames
+//    implementation "com.taurusx.ads:mediation_aligames:2.5.45.3"
 //    implementation "com.taurusx.ads:aligames_ngad_release_sdk:2.5.45"
-//    implementation "com.taurusx.ads:mediation_aligames:2.5.45.1"
 
     // Baidu
     implementation "com.taurusx.ads:mediation_baidu:5.85.1"
