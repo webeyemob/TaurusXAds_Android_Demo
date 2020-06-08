@@ -58,7 +58,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.taurusx.ads:core:1.11.4'
+    implementation 'com.taurusx.ads:core:1.11.4.test'
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -232,7 +232,7 @@ dependencies {
 //    implementation "com.taurusx.ads:aligames_ngad_release_sdk:2.5.45"
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.85.1"
+    implementation "com.taurusx.ads:mediation_baidu:5.85.2"
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.85"
 
     // Tencent GDT
