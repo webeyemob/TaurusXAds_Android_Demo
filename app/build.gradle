@@ -275,7 +275,7 @@ dependencies {
     implementation "com.mintegral.msdk:mtgbid:13.1.11"
 
     // OPPO (不能与穿山甲、优量汇同时使用)
-//    implementation "com.taurusx.ads:mediation_oppo:3.2.9.2"
+//    implementation "com.taurusx.ads:mediation_oppo:3.2.9.3"
 //    implementation "com.taurusx.ads:oppo_mobad_sdk:3.2.9"
 //    implementation "com.android.support:appcompat-v7:26.1.0"
 //    implementation "com.squareup.wire:wire-runtime:2.2.0"
