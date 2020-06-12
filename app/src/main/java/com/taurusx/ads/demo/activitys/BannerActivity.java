@@ -129,9 +129,7 @@ public class BannerActivity extends BaseActivity {
 
     private InMobiBannerConfig createInMobiBannerConfig() {
         return InMobiBannerConfig.Builder()
-                // 设置刷新动画；默认为 InMobiBanner.AnimationType.ROTATE_HORIZONTAL_AXIS
-                .setAnimationType(InMobiBanner.AnimationType.ANIMATION_ALPHA)
-                // 关闭刷新动画
+                // 设置刷新动画；默认为 InMobiBanner.AnimationType.ANIMATION_OFF
                 // .setAnimationType(InMobiBanner.AnimationType.ANIMATION_OFF)
                 .build();
     }
