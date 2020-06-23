@@ -1,10 +1,11 @@
 package com.taurusx.ads.demo.activitys;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.FrameLayout;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.taurusx.ads.core.api.ad.SplashAd;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
@@ -17,7 +18,7 @@ import com.taurusx.ads.mediation.networkconfig.SigmobSplashConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokSplashConfig;
 
-public class SplashActivity extends Activity {
+public class SplashActivity extends FragmentActivity {
 
     private final String TAG = "SplashActivity";
 
