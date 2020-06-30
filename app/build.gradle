@@ -246,8 +246,9 @@ dependencies {
 //    implementation "com.taurusx.ads:aligames_ngad_release_sdk:2.5.45"
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.85.2"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:5.85"
+    implementation "com.taurusx.ads:mediation_baidu:5.86.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:5.86"
+    implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
     // Tencent GDT
     implementation "com.taurusx.ads:mediation_gdt:4.211.1081.1"
