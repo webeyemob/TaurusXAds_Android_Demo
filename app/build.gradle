@@ -121,7 +121,7 @@ dependencies {
     implementation "com.taurusx.ads:headerbiddingkit:0.4.1"
 
     // Five
-    implementation "com.taurusx.ads:mediation_five:20200423.0"
+    implementation "com.taurusx.ads:mediation_five:20200610.0"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
     // Flurry
