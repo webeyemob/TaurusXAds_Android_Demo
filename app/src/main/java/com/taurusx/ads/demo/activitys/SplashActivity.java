@@ -45,7 +45,7 @@ public class SplashActivity extends FragmentActivity {
             public void run() {
                 finish();
             }
-        }, 3000);
+        }, 30000);
     }
 
     private void initSplash() {

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.bytedance.sdk.openadsdk.TTAdSdk;
 import com.taurusx.ads.demo.activitys.AdapterTestActivity;
 import com.taurusx.ads.demo.activitys.LoadModeActivity;
 import com.taurusx.ads.demo.activitys.MediationActivity;
@@ -20,6 +21,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+        TTAdSdk.getAdManager().requestPermissionIfNecessary(this);
     }
 
     private void initView() {

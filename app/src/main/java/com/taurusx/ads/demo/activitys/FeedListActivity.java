@@ -121,7 +121,7 @@ public class FeedListActivity extends BaseActivity {
 //                .build());
 
         // Set Express FeedList Size
-        mFeedList.setExpressAdSize(new AdSize(360, 240));
+        mFeedList.setExpressAdSize(new AdSize(360, 100));
 
         // Set Video Muted, default is muted
         // mFeedList.setMuted(false);

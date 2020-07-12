@@ -612,19 +612,24 @@
         "Banner": "14ac3b4a-857f-4481-abde-d8cb770f902b"
       },
       "interstitial": {
-        "Interstitial": "eb6b92bb-4553-4c6a-9c75-84bc9f955acf"
+        "Vertical": "eb6b92bb-4553-4c6a-9c75-84bc9f955acf",
+        "Horizontal": "d2de0192-e7fc-427b-9a63-554e8b4913e2"
       },
       "native": {
-        "Native": "9917c6b1-ca6c-45d5-bd2f-f9949785e891"
+        "Template": "9917c6b1-ca6c-45d5-bd2f-f9949785e891",
+        "Custom": "ae7cafe2-096c-4abb-81d6-600a845da2b0"
       },
       "feedlist": {
-        "FeedList": "995d9c22-a4e2-4ca9-b45d-6eda0be24fe1"
+        "Template": "468f9c13-dafa-4cd2-a64e-d9d4067f3cf6",
+        "Custom": "995d9c22-a4e2-4ca9-b45d-6eda0be24fe1"
       },
       "rewarded": {
-        "RewardedVideo": "87241602-711b-498b-a874-9236ce5a4cb1"
+        "Vertical": "87241602-711b-498b-a874-9236ce5a4cb1",
+        "Horizontal": "00902a4a-bbf1-4621-a4df-2290a87f46be"
       },
       "splash": {
-        "Splash": "159b29f6-daa9-44a4-91ee-6987d87fa6e2"
+        "Vertical": "159b29f6-daa9-44a4-91ee-6987d87fa6e2",
+        "Horizontal": "a7804e67-63c4-421c-8445-cd4fb28db2e3"
       }
     },
     {

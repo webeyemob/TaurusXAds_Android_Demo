@@ -100,7 +100,7 @@ public class NativeActivity extends BaseActivity {
 //                .build());
 
         // Set Express Native Size
-        mNativeAd.setExpressAdSize(new AdSize(360, 250));
+        mNativeAd.setExpressAdSize(new AdSize(200, 100));
 
         // Set Video Muted, default is muted
         // mNativeAd.setMuted(false);

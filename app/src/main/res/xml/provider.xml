@@ -9,4 +9,11 @@
     <cache-path
         name="gdt_sdk_download_path2"
         path="com_qq_e_download" />
+
+    <external-path
+        name="files_root"
+        path="mimoDownload" />
+    <external-path
+        name="external_storage_root"
+        path="." />
 </paths>
