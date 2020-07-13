@@ -61,7 +61,7 @@ public class TaurusApplication extends Application {
                         .build());
 
         // 开启 Network 调试模式
-        TaurusXAds.getDefault().setNetworkDebugMode(true);
+//        TaurusXAds.getDefault().setNetworkDebugMode(true);
         // 为某个 Network 开启调试模式
         // TaurusXAds.getDefault().setNetworkDebugMode(Network.Xxx, true);
 
