@@ -300,7 +300,11 @@ dependencies {
 //    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.6"
 
     // Xiaomi
-//    implementation "com.taurusx.ads:mediation_mimo:V2019_01_18_17_00.4"
+//    implementation "com.taurusx.ads:mediation_mimo:1.5.0.1"
+//    implementation "com.taurusx.ads:mimo_sdk:1.5.0"
+//    implementation "com.android.support:appcompat-v7:28.0.0"
+//    implementation "com.android.support:support-v4:28.0.0"
+//    implementation "com.google.code.gson:gson:2.8.5"
 
     // Sigmob
     implementation 'com.taurusx.ads:mediation_sigmob:2.15.4.2'
