@@ -251,8 +251,8 @@ dependencies {
     implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.211.1081.1"
-    implementation "com.taurusx.ads:gdtsdk_union:4.211.1081"
+    implementation "com.taurusx.ads:mediation_gdt:4.232.1102.0"
+    implementation "com.taurusx.ads:gdtsdk_union:4.232.1102"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     if (use_pangle) {

@@ -642,12 +642,13 @@
         "Interstitial 2.0 FullScreenVideo": "9802de6d-d6df-418a-9545-105217e0b518"
       },
       "native": {
-        "Custom 2.0 Native": "3ec30809-8260-4b37-add6-7458b327705e",
-        "Express Native": "98b900eb-1da9-4a86-a182-9383728a1439"
+        "Custom 2.0": "3ec30809-8260-4b37-add6-7458b327705e",
+        "Express": "98b900eb-1da9-4a86-a182-9383728a1439"
       },
       "feedlist": {
-        "Custom 2.0 FeedList": "3afab72a-df0d-4fd8-9757-ada1b9c042da",
-        "Express FeedList": "748648ed-b564-4139-9df6-e758f298c8d8"
+        "Custom 2.0": "3afab72a-df0d-4fd8-9757-ada1b9c042da",
+        "Express": "748648ed-b564-4139-9df6-e758f298c8d8",
+        "Express 2.0": "3bd11058-b2e5-4a74-a348-462461d4494d"
       },
       "rewarded": {
         "RewardedVideo": "82641cd3-acff-4654-846c-d90c287e903b"
