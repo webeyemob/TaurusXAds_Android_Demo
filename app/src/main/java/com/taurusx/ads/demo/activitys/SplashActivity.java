@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.taurusx.ads.core.api.ad.SplashAd;
@@ -51,6 +52,11 @@ public class SplashActivity extends Activity {
 
         // Set container to show SplashAd
         mSplashAd.setContainer(mContainer);
+
+        Button button = new Button(this);
+        button.setText("BottomView");
+//        mSplashAd.setBottomView(button);
+        mSplashAd.setBottomText("My Title", "My Desc");
 
         // (Optional) Set Network special Config
         mSplashAd.setNetworkConfigs(NetworkConfigs.Builder()

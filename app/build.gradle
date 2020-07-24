@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.taurusx.ads:core:1.11.4'
+    implementation 'com.taurusx.ads:core:1.12.5'
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     
@@ -277,7 +277,7 @@ dependencies {
     implementation "com.mintegral.msdk:mtgbid:13.0.41"
 
     // OPPO (不能与穿山甲、优量汇同时使用)
-    implementation "com.taurusx.ads:mediation_oppo:3.2.9.3"
+    implementation "com.taurusx.ads:mediation_oppo:3.2.9.4"
     implementation "com.taurusx.ads:oppo_mobad_sdk:3.2.9"
     implementation "com.android.support:appcompat-v7:26.1.0"
     implementation "com.squareup.wire:wire-runtime:2.2.0"
