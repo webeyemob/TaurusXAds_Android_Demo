@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.taurusx.ads</groupId>
   <artifactId>mediation_vivo</artifactId>
-  <version>2.9.0.1.6</version>
+  <version>2.9.0.1.7</version>
   <packaging>aar</packaging>
   <name>TaurusXAds</name>
   <dependencies/>

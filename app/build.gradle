@@ -61,7 +61,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.taurusx.ads:core:1.11.4'
+    implementation 'com.taurusx.ads:core:1.12.5'
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -285,7 +285,7 @@ dependencies {
 //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
 
     // Vivo
-    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.6"
+    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.7"
 
     // Xiaomi
 //    implementation "com.taurusx.ads:mediation_mimo:V2019_01_18_17_00.4"

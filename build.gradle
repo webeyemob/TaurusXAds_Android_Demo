@@ -19,7 +19,6 @@ allprojects {
         google()
         jcenter()
 
-        maven { url "../Upload-Mediation" }
         maven { url "https://dl.bintray.com/taurrusxads/TaurusxAds/" }
 
         // AdColony

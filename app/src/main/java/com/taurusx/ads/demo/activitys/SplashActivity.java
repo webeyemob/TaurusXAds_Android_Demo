@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.taurusx.ads.core.api.ad.SplashAd;
@@ -62,6 +63,11 @@ public class SplashActivity extends Activity {
                 .addConfig(createTikTokSplashConfig())
                 // .addConfig(createVivoSplashConfig())
                 .build());
+
+        Button button = new Button(this);
+        button.setText("Bottom View Area");
+        mSplashAd.setBottomView(button);
+        mSplashAd.setBottomText("My Title", "My Desc");
 
         // Set SplashAd Load Event
         mSplashAd.setAdListener(new SimpleAdListener() {
