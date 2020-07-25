@@ -3,6 +3,8 @@ package com.taurusx.ads.demo.activitys;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import androidx.fragment.app.FragmentActivity;
@@ -58,11 +60,16 @@ public class SplashActivity extends FragmentActivity {
 
         // (Optional) Set Network special Config
         mSplashAd.setNetworkConfigs(NetworkConfigs.Builder()
-                // .addConfig(createOPPOSplashConfig())
                 .addConfig(createSigmobSplashConfig())
                 .addConfig(createTikTokSplashConfig())
-                // .addConfig(createVivoSplashConfig())
                 .build());
+
+        // Bottom area settings (For: OPPO, Sigmob and vivo)
+        // Set the title & description displayed at the bottom of the splash ad
+        mSplashAd.setBottomText("TaurusX Ads", "Demo for TaurusX Ads Sdk");
+        // Or set the view displayed at the bottom of splash ad
+        // View bottomArea = LayoutInflater.from(this).inflate(R.layout.layout_splash_bottom_area, null);
+        // mSplashAd.setBottomView(bottomArea);
 
         // Set SplashAd Load Event
         mSplashAd.setAdListener(new SimpleAdListener() {
@@ -98,32 +105,8 @@ public class SplashActivity extends FragmentActivity {
         mSplashAd.loadAd();
     }
 
-//    private OPPOSplashConfig createOPPOSplashConfig() {
-//        // 配置开屏广告底部的布局，可以设置 View 或标题和描述。
-//
-////        View bottomArea = LayoutInflater.from(this).inflate(R.layout.layout_splash_oppo_bottom_area, null);
-////        return OPPOSplashConfig.Builder()
-////                .setBottomArea(bottomArea)
-////                .build();
-//
-////        return OPPOSplashConfig.Builder()
-////                // 设置标题 id
-////                .setTitle(R.string.app_name)
-////                // 设置描述 id
-////                .setDesc(R.string.app_desc)
-////                // 设置标题
-////                // .setTitle("App Name")
-////                // 设置描述
-////                // .setDesc("App Desc")
-////                .build();
-//    }
-
     private SigmobSplashConfig createSigmobSplashConfig() {
         return SigmobSplashConfig.Builder()
-                // 设置开屏底部显示的标题，一般为应用名称
-                .setTitle("App Name")
-                // 设置开屏底部显示的描述
-                .setDescription("App Desc")
                 /**
                  * 广告结束，广告内容是否自动隐藏；默认 false。
                  * 若开屏和应用共用 Activity，建议 false。
@@ -173,17 +156,4 @@ public class SplashActivity extends FragmentActivity {
                 })
                 .build();
     }
-
-//    private VivoSplashConfig createVivoSplashConfig() {
-//        return VivoSplashConfig.Builder()
-//                // 设置标题 id
-//                .setTitle(R.string.app_name)
-//                // 设置描述 id
-//                .setDesc(R.string.app_desc)
-//                // 设置标题
-//                // .setTitle("App Name")
-//                // 设置描述
-//                // .setDesc("App Desc")
-//                .build();
-//    }
 }
