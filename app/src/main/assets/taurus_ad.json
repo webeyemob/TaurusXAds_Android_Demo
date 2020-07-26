@@ -48,7 +48,10 @@
     {
       "adName": "AdGeneration",
       "banner": {
-        "Banner": "58c2da4c-4337-4749-8328-b28c488313a7"
+        "320*50": "58c2da4c-4337-4749-8328-b28c488313a7",
+        "320*100": "886bbfb4-2614-4c71-9f0e-06826c5cf0fc",
+        "300*250": "5c04a050-3181-406f-8aca-e9013d5f761f",
+        "728*90": "cb3d15c7-5212-454c-9e8f-cdc3d02f9313"
       },
       "interstitial": {
         "Interstitial": "d3e8ccbb-66cf-4419-ae4a-8ed482237556"
