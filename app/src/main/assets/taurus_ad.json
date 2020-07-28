@@ -318,6 +318,27 @@
       }
     },
     {
+      "adName": "IFly",
+      "banner": {
+        "Banner": "d6a0f450-793d-49f1-98fd-5377ad77c321"
+      },
+      "interstitial": {
+        "Interstitial": "f90dec1c-8d1e-42f7-8657-0a83df4279dc",
+        "FullScreenVideo": "d36c0ba4-4eb1-479c-976d-32d1a4fd1a97"
+      },
+      "feedlist": {
+        "Custom": "cc5bf8a4-faf0-4c78-9e10-cf7667fe7e7d",
+        "Video": "64e3dc06-fb93-4592-8118-39cc35b58ea4",
+        "Audio": "642b93d9-b12e-4a32-9626-8767b58be343"
+      },
+      "rewarded": {
+        "RewardedVideo": "18609e6b-7bd1-4e02-838d-bb0fd0c60709"
+      },
+      "splash": {
+        "Splash": "798860d3-8d64-46ea-829c-25daf55ac84a"
+      }
+    },
+    {
       "adName": "InMobi",
       "banner": {
         "Banner": "0f8803af-a1f0-49b5-95b0-73daec28b19e"

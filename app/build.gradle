@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.taurusx.ads:core:1.12.5'
+    implementation 'com.taurusx.ads:core:1.12.7'
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -143,9 +143,14 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
-    // Imobile
+    // i-mobile
     implementation "com.taurusx.ads:mediation_imobile:2.0.21.1"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
+
+    // IFly
+    implementation "com.taurusx.ads:ifly_ad:4.4.4"
+    implementation "com.taurusx.ads:mediation_ifly:4.4.4.1"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // InMobi
     if(inmobi_oversea) {
