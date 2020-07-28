@@ -324,7 +324,8 @@
       },
       "interstitial": {
         "Interstitial": "f90dec1c-8d1e-42f7-8657-0a83df4279dc",
-        "FullScreenVideo": "d36c0ba4-4eb1-479c-976d-32d1a4fd1a97"
+        "FullScreenVideo Portrait": "d36c0ba4-4eb1-479c-976d-32d1a4fd1a97",
+        "FullScreenVideo Landscape": "dd5f9bb1-1fe8-49f9-95ca-9c68bef50cb6"
       },
       "feedlist": {
         "Custom": "cc5bf8a4-faf0-4c78-9e10-cf7667fe7e7d",
@@ -332,7 +333,8 @@
         "Audio": "642b93d9-b12e-4a32-9626-8767b58be343"
       },
       "rewarded": {
-        "RewardedVideo": "18609e6b-7bd1-4e02-838d-bb0fd0c60709"
+        "RewardedVideo Portrait": "18609e6b-7bd1-4e02-838d-bb0fd0c60709",
+        "RewardedVideo Landscape": "9cbf9cfa-d9d9-486d-a98c-25e0cc674c4b"
       },
       "splash": {
         "Splash": "798860d3-8d64-46ea-829c-25daf55ac84a"
