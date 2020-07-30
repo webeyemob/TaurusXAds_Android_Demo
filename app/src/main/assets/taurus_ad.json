@@ -491,12 +491,18 @@
     {
       "adName": "Pangle",
       "banner": {
-        "Express Banner": "4177af0c-ecf6-44d0-a01c-29afc0e721f3"
+        "Express Banner 320*50": "4177af0c-ecf6-44d0-a01c-29afc0e721f3",
+        "Express Banner 320*100": "f2e55fc1-cd49-465a-b963-bf955575df0f",
+        "Express Banner 300*250": "8871083b-d236-4b27-98b9-58d1fda38700",
+        "Express Banner 728*90": "190672a3-1936-4d8a-ac99-5dde71ceb2cf",
+        "Express Banner 468*60": "29e16f7c-3776-4ea1-836f-1f062f39367b"
       },
       "interstitial": {
         "Express Interstitial": "24535ba6-52f5-4268-b19f-3b1acf528790",
-        "FullScreenVideo": "c4a9a9ea-8ed6-4ff8-8f21-5afee92c4cd4",
-        "Express FullScreenVideo": "868c9bd8-0baa-4cf7-923f-4c98d3cdd477"
+        "FullScreenVideo Vertical": "c4a9a9ea-8ed6-4ff8-8f21-5afee92c4cd4",
+        "FullScreenVideo Horizontal": "14eee7bc-59b2-40d0-ac20-413ff1c6dc43",
+        "Express FullScreenVideo Vertical": "868c9bd8-0baa-4cf7-923f-4c98d3cdd477",
+        "Express FullScreenVideo Horizontal": "f2c37e09-3151-49a8-a3da-f5c397306dd9"
       },
       "native": {
         "Custom FeedList": "e3945699-915e-4d57-8abf-ebf599e10bf5",
@@ -509,8 +515,10 @@
         "Express Draw FeedList": "7e9c7b3f-d63b-41f1-8798-2be38d132e72"
       },
       "rewarded": {
-        "RewardedVideo": "7ef22fb6-1b63-4dce-914a-943f1fb0914f",
-        "Express RewardedVideo": "4e587912-9123-4e2e-a808-82dc28892704"
+        "RewardedVideo Vertical": "7ef22fb6-1b63-4dce-914a-943f1fb0914f",
+        "RewardedVideo Horizontal": "acab7142-4ec0-4867-a02e-50f674538d26",
+        "Express RewardedVideo Vertical": "4e587912-9123-4e2e-a808-82dc28892704",
+        "Express RewardedVideo Horizontal": "f16b7b4c-d796-4857-9f0f-3b49d469f923"
       }
     },
     {

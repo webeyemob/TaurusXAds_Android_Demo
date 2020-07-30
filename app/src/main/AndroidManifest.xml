@@ -2,7 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.taurusx.ads.demo">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:remove="android:maxSdkVersion" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:remove="android:maxSdkVersion" />
 
     <application
         android:name=".application.TaurusApplication"
@@ -26,11 +28,11 @@
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.MediationListActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.LoadModeActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.MediationActivity"
@@ -39,8 +41,7 @@
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.BannerActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait" />
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.NativeActivity"
@@ -81,15 +82,15 @@
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.AdapterTestActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.ListViewActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.RecyclerViewActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <provider
             android:name="com.sigmob.sdk.SigmobXFileProvider"
