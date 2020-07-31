@@ -2,7 +2,7 @@
 // Licensed under the MoPub SDK License Agreement
 // http://www.mopub.com/legal/sdk-license-agreement/
 
-package com.taurusx.ads.demo.activitys;
+package com.taurusx.ads.demo.activitys.adapter_ads;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,6 +19,7 @@ import com.taurusx.ads.core.api.model.AdType;
 import com.taurusx.ads.core.api.stream.AdapterAdParams;
 import com.taurusx.ads.core.api.stream.TaurusXAdAdapter;
 import com.taurusx.ads.demo.R;
+import com.taurusx.ads.demo.activitys.base.BaseActivity;
 
 public class ListViewActivity extends BaseActivity {
 

@@ -1,4 +1,4 @@
-package com.taurusx.ads.demo.activitys;
+package com.taurusx.ads.demo.activitys.base;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -23,5 +23,4 @@ public class BaseActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

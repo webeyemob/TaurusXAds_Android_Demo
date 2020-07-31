@@ -1,4 +1,4 @@
-package com.taurusx.ads.demo.application;
+package com.taurusx.ads.demo;
 
 import android.app.Application;
 
@@ -8,7 +8,7 @@ import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.constant.DownloadNetwork;
 import com.taurusx.ads.core.api.segment.Segment;
-import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.mediation.networkconfig.AdMobGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.BaiduGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.DFPGlobalConfig;
@@ -73,7 +73,7 @@ public class TaurusApplication extends Application {
 
         // 初始化
         TaurusXAds.getDefault().setTestMode(true);
-        TaurusXAds.getDefault().init(this, Constance.APP_ID);
+        TaurusXAds.getDefault().init(this, Constant.APP_ID);
     }
 
     private AdMobGlobalConfig createAdMobConfig() {

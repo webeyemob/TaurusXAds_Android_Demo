@@ -1,4 +1,4 @@
-package com.taurusx.ads.demo.activitys;
+package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.google.android.gms.ads.AdSize;
-import com.inmobi.ads.InMobiBanner;
 import com.taurusx.ads.core.api.ad.BannerAdView;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
@@ -15,7 +14,8 @@ import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
-import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.demo.activitys.base.BaseActivity;
+import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.mediation.networkconfig.AdMobBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.DFPBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.InMobiBannerConfig;
@@ -37,10 +37,11 @@ public class BannerActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().setTitle("BannerAdView");
+
+        getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_banner);
 
-        mBannerId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_BANNER);
+        mBannerId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initBannerAdView();
 
         mContainer = findViewById(R.id.layout_banner);

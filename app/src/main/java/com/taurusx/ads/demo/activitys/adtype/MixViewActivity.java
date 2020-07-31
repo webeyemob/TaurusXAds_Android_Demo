@@ -1,4 +1,4 @@
-package com.taurusx.ads.demo.mixad;
+package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -13,8 +13,8 @@ import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.demo.R;
-import com.taurusx.ads.demo.activitys.BaseActivity;
-import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.demo.activitys.base.BaseActivity;
+import com.taurusx.ads.demo.utils.Constant;
 
 public class MixViewActivity extends BaseActivity {
 
@@ -30,10 +30,11 @@ public class MixViewActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().setTitle("MixViewAd");
+
+        getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_mixview);
 
-        mMixViewId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_MIXVIEW);
+        mMixViewId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initMixView();
 
         mLoadButton = findViewById(R.id.mxiview_load);

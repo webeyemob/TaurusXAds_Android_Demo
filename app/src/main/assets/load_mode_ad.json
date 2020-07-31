@@ -1,7 +1,7 @@
 {
   "mediation": [
     {
-      "adName": "Serial",
+      "adName": "Serial Mode",
       "banner": {
         "Banner": "19364f08-f5a9-4cd5-90ad-7ca8a7eb5f96"
       },
@@ -16,7 +16,7 @@
       }
     },
     {
-      "adName": "Parallel",
+      "adName": "Parallel Mode",
       "banner": {
         "Banner": "27f949d5-b898-4857-a861-5a50a386e0c9"
       },
@@ -31,7 +31,7 @@
       }
     },
     {
-      "adName": "Shuffle",
+      "adName": "Shuffle Mode",
       "banner": {
         "Banner": "85a50861-d5bd-4306-9a66-d4fb919389a3"
       },

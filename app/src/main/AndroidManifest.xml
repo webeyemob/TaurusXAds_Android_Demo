@@ -7,13 +7,11 @@
         tools:remove="android:maxSdkVersion" />
 
     <application
-        android:name=".application.TaurusApplication"
-        android:allowBackup="true"
+        android:name=".TaurusApplication"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
         <activity
@@ -27,69 +25,60 @@
         </activity>
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.MediationListActivity"
+            android:name="com.taurusx.ads.demo.activitys.home.NetworkActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.LoadModeActivity"
+            android:name="com.taurusx.ads.demo.activitys.home.LoadModeActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.MediationActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:name="com.taurusx.ads.demo.activitys.adtype.AdTypeActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.BannerActivity"
+            android:name="com.taurusx.ads.demo.activitys.adtype.BannerActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.NativeActivity"
+            android:name="com.taurusx.ads.demo.activitys.adtype.NativeActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.InterstitialActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:name="com.taurusx.ads.demo.activitys.adtype.InterstitialActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.RewardedVideoActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:name="com.taurusx.ads.demo.activitys.adtype.RewardedVideoActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.FeedListActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:name="com.taurusx.ads.demo.activitys.adtype.FeedListActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.SplashActivity"
+            android:name="com.taurusx.ads.demo.activitys.adtype.SplashActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
 
         <activity
-            android:name="com.taurusx.ads.demo.mixad.MixViewActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.taurusx.ads.demo.mixad.MixFullScreenActivity"
+            android:name="com.taurusx.ads.demo.activitys.adtype.MixViewActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.AdContainerActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:name="com.taurusx.ads.demo.activitys.adtype.MixFullScreenActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.AdapterTestActivity"
+            android:name="com.taurusx.ads.demo.activitys.home.AdapterTestActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.ListViewActivity"
+            android:name="com.taurusx.ads.demo.activitys.adapter_ads.ListViewActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.taurusx.ads.demo.activitys.RecyclerViewActivity"
+            android:name="com.taurusx.ads.demo.activitys.adapter_ads.RecyclerViewActivity"
             android:screenOrientation="portrait" />
 
         <provider

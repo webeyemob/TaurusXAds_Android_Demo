@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">TaurusXDemo</string>
     <string name="base_test">Base Test</string>
-    <string name="stratege_test">Strategy Test</string>
-    <string name="networks_test">Networks Test</string>
+    <string name="stratege_test">LoadMode Test</string>
+    <string name="networks_test">Network Test</string>
 
     <string name="listview_test">List Adapter Test</string>
     <string name="recyclerview_test">Recycler Adapter Test</string>
 
-    <string name="mode_serial">Serial</string>
-    <string name="mode_parallel">Parallel</string>
-    <string name="mode_shuffle">Shuffle</string>
+    <string name="mode_serial">Serial Mode</string>
+    <string name="mode_parallel">Parallel Mode</string>
+    <string name="mode_shuffle">Shuffle Mode</string>
 </resources>

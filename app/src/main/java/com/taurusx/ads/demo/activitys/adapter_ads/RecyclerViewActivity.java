@@ -1,4 +1,4 @@
-package com.taurusx.ads.demo.activitys;
+package com.taurusx.ads.demo.activitys.adapter_ads;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,6 +23,7 @@ import com.taurusx.ads.core.api.stream.TaurusXRecyclerAdapter;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.core.api.utils.ScreenUtil;
 import com.taurusx.ads.demo.R;
+import com.taurusx.ads.demo.activitys.base.BaseActivity;
 
 import java.util.Locale;
 

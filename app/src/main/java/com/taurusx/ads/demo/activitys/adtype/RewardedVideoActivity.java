@@ -1,4 +1,4 @@
-package com.taurusx.ads.demo.activitys;
+package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +10,8 @@ import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleRewardedVideoAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
-import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.demo.activitys.base.BaseActivity;
+import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouRewardedVideoConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokRewardedVideoConfig;
@@ -29,10 +30,11 @@ public class RewardedVideoActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().setTitle("RewardedVideoAd");
+
+        getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_rewardedvideo);
 
-        mRewardedId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_REWARDED);
+        mRewardedId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initRewardedVideoAd();
 
         mLoadButton = findViewById(R.id.rewardedvideo_load);

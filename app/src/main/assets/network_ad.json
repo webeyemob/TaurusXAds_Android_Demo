@@ -48,10 +48,10 @@
     {
       "adName": "AdGeneration",
       "banner": {
-        "320*50": "58c2da4c-4337-4749-8328-b28c488313a7",
-        "320*100": "886bbfb4-2614-4c71-9f0e-06826c5cf0fc",
-        "300*250": "5c04a050-3181-406f-8aca-e9013d5f761f",
-        "728*90": "cb3d15c7-5212-454c-9e8f-cdc3d02f9313"
+        "Banner 320*50": "58c2da4c-4337-4749-8328-b28c488313a7",
+        "Banner 320*100": "886bbfb4-2614-4c71-9f0e-06826c5cf0fc",
+        "Banner 300*250": "5c04a050-3181-406f-8aca-e9013d5f761f",
+        "Banner 728*90": "cb3d15c7-5212-454c-9e8f-cdc3d02f9313"
       },
       "interstitial": {
         "Interstitial": "d3e8ccbb-66cf-4419-ae4a-8ed482237556"
@@ -130,8 +130,8 @@
     {
       "adName": "AppNexus",
       "banner": {
-        "320*50": "896248a8-a6e0-4f70-9133-8347ef1b967f",
-        "300*250": "1c022fde-ddf6-4e39-adbb-ccc832ff3a4b"
+        "Banner 320*50": "896248a8-a6e0-4f70-9133-8347ef1b967f",
+        "Banner 300*250": "1c022fde-ddf6-4e39-adbb-ccc832ff3a4b"
       },
       "interstitial": {
         "Interstitial": "eff10b4c-6ab0-483e-8709-55d5a837cba6"
@@ -318,6 +318,18 @@
       }
     },
     {
+      "adName": "ironSource",
+      "banner": {
+        "Banner": "1f472d1e-cffc-44a4-8683-955d6bf50de0"
+      },
+      "interstitial": {
+        "Interstitial": "a49b31d2-168b-4e2c-8588-6d8b85199bc1"
+      },
+      "rewarded": {
+        "RewardedVideo": "2a4d4aa0-9b72-432e-a87b-187c23d9e50f"
+      }
+    },
+    {
       "adName": "IFly",
       "banner": {
         "Banner": "d6a0f450-793d-49f1-98fd-5377ad77c321"
@@ -359,18 +371,6 @@
       },
       "splash": {
         "Splash": "00ad49dc-6e31-434e-9442-1a6df6b8428a"
-      }
-    },
-    {
-      "adName": "ironSource",
-      "banner": {
-        "Banner": "1f472d1e-cffc-44a4-8683-955d6bf50de0"
-      },
-      "interstitial": {
-        "Interstitial": "a49b31d2-168b-4e2c-8588-6d8b85199bc1"
-      },
-      "rewarded": {
-        "RewardedVideo": "2a4d4aa0-9b72-432e-a87b-187c23d9e50f"
       }
     },
     {

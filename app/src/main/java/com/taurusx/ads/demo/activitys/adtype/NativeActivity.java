@@ -1,4 +1,4 @@
-package com.taurusx.ads.demo.activitys;
+package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +15,8 @@ import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
+import com.taurusx.ads.demo.activitys.base.BaseActivity;
+import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0NativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
@@ -37,10 +39,11 @@ public class NativeActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().setTitle("NativeAd");
+
+        getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_native);
 
-        mNativeId = getIntent().getStringExtra("native");
+        mNativeId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initNativeAd();
 
         mLoadButton = findViewById(R.id.native_load);

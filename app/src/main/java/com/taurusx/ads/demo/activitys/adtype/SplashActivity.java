@@ -1,10 +1,8 @@
-package com.taurusx.ads.demo.activitys;
+package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.FrameLayout;
 
 import androidx.fragment.app.FragmentActivity;
@@ -15,7 +13,7 @@ import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
-import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.mediation.networkconfig.SigmobSplashConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokSplashConfig;
@@ -33,9 +31,10 @@ public class SplashActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_splash);
 
-        mSplashId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_SPLASH);
+        mSplashId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         mContainer = findViewById(R.id.layout_container);
 
         initSplash();

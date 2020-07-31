@@ -1,4 +1,4 @@
-package com.taurusx.ads.demo.activitys;
+package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -20,7 +20,8 @@ import com.taurusx.ads.core.api.listener.SimpleFeedAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.core.api.utils.ViewUtil;
 import com.taurusx.ads.demo.R;
-import com.taurusx.ads.demo.constance.Constance;
+import com.taurusx.ads.demo.activitys.base.BaseActivity;
+import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpress2_0FeedListConfig;
@@ -51,10 +52,11 @@ public class FeedListActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().setTitle("FeedList");
+
+        getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_feedlist);
 
-        mFeedListId = getIntent().getStringExtra(Constance.BUNDLE_TYPE_FEEDLIST);
+        mFeedListId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initFeedList();
 
         mLoadButton = findViewById(R.id.feedList_load);
