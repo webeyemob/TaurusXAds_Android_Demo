@@ -68,10 +68,10 @@ public class AdTypeActivity extends BaseActivity {
     private void addButtons() {
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_BANNER), AdType.Banner);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_INTERSTITIAL), AdType.Interstitial);
-        addButton(mMediation.optJSONObject(Constant.JSON_KEY_NATIVE), AdType.Native);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_REWARDED), AdType.RewardedVideo);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_SPLASH), AdType.Splash);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_FEEDLIST), AdType.FeedList);
+        addButton(mMediation.optJSONObject(Constant.JSON_KEY_NATIVE), AdType.Native);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXVIEW), AdType.MixView);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXFULLSCREEN), AdType.MixFullScreen);
     }
