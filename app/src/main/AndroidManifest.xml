@@ -33,6 +33,18 @@
             android:screenOrientation="portrait" />
 
         <activity
+            android:name="com.taurusx.ads.demo.activitys.home.AdapterTestActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.adapter_ads.ListViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.taurusx.ads.demo.activitys.adapter_ads.RecyclerViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
             android:name="com.taurusx.ads.demo.activitys.adtype.AdTypeActivity"
             android:screenOrientation="portrait" />
 
@@ -67,18 +79,6 @@
 
         <activity
             android:name="com.taurusx.ads.demo.activitys.adtype.MixFullScreenActivity"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name="com.taurusx.ads.demo.activitys.home.AdapterTestActivity"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name="com.taurusx.ads.demo.activitys.adapter_ads.ListViewActivity"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name="com.taurusx.ads.demo.activitys.adapter_ads.RecyclerViewActivity"
             android:screenOrientation="portrait" />
 
         <provider
