@@ -85,7 +85,7 @@ public class AdTypeActivity extends BaseActivity {
             } else {
                 title.setText(adType.getName());
             }
-            title.setBackgroundColor(Color.parseColor("#cccccc"));
+            title.setBackgroundColor(Color.parseColor("#BBDEFB"));
             title.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
             title.setGravity(Gravity.CENTER_VERTICAL);
             title.setPadding(ScreenUtil.dp2px(this, 12),
@@ -102,7 +102,7 @@ public class AdTypeActivity extends BaseActivity {
 
                 // add AdType
                 TextView adTypeTextView = new TextView(this);
-                adTypeTextView.setBackgroundResource(R.drawable.ripple_white_mask);
+                adTypeTextView.setBackgroundResource(R.drawable.press_bg);
                 adTypeTextView.setText(name);
                 adTypeTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 18);
                 adTypeTextView.setGravity(Gravity.CENTER);
@@ -119,7 +119,7 @@ public class AdTypeActivity extends BaseActivity {
                 // add line
                 View line = new View(this);
                 line.setBackgroundColor(Color.parseColor("#cccccc"));
-                line.setMinimumHeight(2);
+                line.setMinimumHeight(1);
                 mContainer.addView(line);
             }
         }
