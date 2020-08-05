@@ -112,7 +112,7 @@ public class BannerActivity extends BaseActivity {
         // 或者，如果你想预加载，可以指定期望的屏幕方向。
 //        return AdMobBannerConfig.Builder()
 //                .setAnchoredAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
-//                .setInlineAdaptiveBannerSize(AdSize.getLandscapeAnchoredAdaptiveBannerAdSize(this, 728))
+//                .setInlineAdaptiveBannerSize(AdSize.getLandscapeInlineAdaptiveBannerAdSize(this, 728))
 //                .build();
     }
 
@@ -126,7 +126,7 @@ public class BannerActivity extends BaseActivity {
         // 或者，如果你想预加载，可以指定期望的屏幕方向。
 //        return DFPBannerConfig.Builder()
 //                .setAnchoredAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
-//                .setInlineAdaptiveBannerSize(AdSize.getLandscapeAnchoredAdaptiveBannerAdSize(this, 728))
+//                .setInlineAdaptiveBannerSize(AdSize.getLandscapeInlineAdaptiveBannerAdSize(this, 728))
 //                .build();
     }
 
