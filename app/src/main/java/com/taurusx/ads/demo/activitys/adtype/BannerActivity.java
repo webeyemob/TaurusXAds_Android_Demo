@@ -77,7 +77,7 @@ public class BannerActivity extends BaseActivity {
             public void onAdLoaded() {
                 Log.d(TAG, "BannerAdView onAdLoaded");
                 ILineItem lineItem = mBannerAdView.getReadyLineItem();
-                Log.d(TAG, "BannerAdView Ready LineItem: "+lineItem);
+                Log.d(TAG, "BannerAdView Ready LineItem: " + lineItem);
             }
 
             @Override
@@ -103,28 +103,30 @@ public class BannerActivity extends BaseActivity {
     }
 
     private AdMobBannerConfig createAdMobBannerConfig() {
-        // 根据当前屏幕的方向设置尺寸。
+        // 根据当前屏幕的方向设置 Adaptive Banner 的尺寸
         return AdMobBannerConfig.Builder()
-                .setAdaptiveBannerSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 320))
+                // .setAnchoredAdaptiveBannerSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 320))
+                // .setInlineAdaptiveBannerSize(AdSize.getCurrentOrientationInlineAdaptiveBannerAdSize(this, 300))
                 .build();
 
         // 或者，如果你想预加载，可以指定期望的屏幕方向。
 //        return AdMobBannerConfig.Builder()
-//                .setAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
-//                // .setAdaptiveBannerSize(AdSize.getLandscapeAnchoredAdaptiveBannerAdSize(this, 320))
+//                .setAnchoredAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
+//                .setInlineAdaptiveBannerSize(AdSize.getLandscapeAnchoredAdaptiveBannerAdSize(this, 728))
 //                .build();
     }
 
     private DFPBannerConfig createDFPBannerConfig() {
-        // 根据当前屏幕的方向设置尺寸。
+        // 根据当前屏幕的方向设置 Adaptive Banner 的尺寸
         return DFPBannerConfig.Builder()
-                .setAdaptiveBannerSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 320))
+                // .setAnchoredAdaptiveBannerSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 320))
+                // .setInlineAdaptiveBannerSize(AdSize.getCurrentOrientationInlineAdaptiveBannerAdSize(this, 300))
                 .build();
 
         // 或者，如果你想预加载，可以指定期望的屏幕方向。
 //        return DFPBannerConfig.Builder()
-//                .setAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
-//                // .setAdaptiveBannerSize(AdSize.getLandscapeAnchoredAdaptiveBannerAdSize(this, 320))
+//                .setAnchoredAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
+//                .setInlineAdaptiveBannerSize(AdSize.getLandscapeAnchoredAdaptiveBannerAdSize(this, 728))
 //                .build();
     }
 

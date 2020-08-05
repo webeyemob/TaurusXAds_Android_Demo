@@ -66,8 +66,13 @@
     {
       "adName": "AdMob",
       "banner": {
-        "Banner": "dbc15c66-6e4e-4a3f-85a2-a02276d695d4",
-        "Adaptive Banner": "138c96cf-d5a5-4484-b470-b0a5241ed2c9"
+        "Banner 320*50": "dbc15c66-6e4e-4a3f-85a2-a02276d695d4",
+        "Banner 320*100": "f6946477-845b-45eb-8751-5f65ea8b2ba3",
+        "Banner 300*250": "63f36108-9f14-4a99-bc1d-451fa1f5566e",
+        "Banner 728*90": "906aa5a1-c831-4b10-81bd-98aebe1c661b",
+        "Banner 468*60": "25257b39-45f2-441d-ac7f-62bae313cd9b",
+        "Anchored Adaptive Banner": "138c96cf-d5a5-4484-b470-b0a5241ed2c9",
+        "Inline Adaptive Banner": "2dfbc4fa-ef00-426f-ae13-171568a42eb1"
       },
       "interstitial": {
         "Interstitial": "15148bdb-cffd-426b-aa4f-d37db3906df2"
@@ -80,6 +85,10 @@
       },
       "rewarded": {
         "RewardedVideo": "cc426990-b2e7-4dc2-b0bd-30941cafc67e"
+      },
+      "splash": {
+        "App Open Ads Portrait": "f90f5afe-e56f-41f4-b813-5a12a532e44d",
+        "App Open Ads Landscape": "757052e4-e09d-4b97-86fe-13736927979d"
       }
     },
     {
@@ -284,8 +293,13 @@
     {
       "adName": "Google Ad Manager",
       "banner": {
-        "Banner": "ade5efab-fbd0-422d-b0b4-401738a744eb",
-        "Adaptive Banner": "dea4c923-ab6f-4700-8fba-be351e7f961e"
+        "Banner 320*50": "ade5efab-fbd0-422d-b0b4-401738a744eb",
+        "Banner 320*100": "fc316ec2-6f58-4936-b2bd-70e9ffa6778b",
+        "Banner 300*250": "63ab63ae-9d85-4909-8126-0f028f0b413b",
+        "Banner 728*90": "7b4786f5-af69-404b-b9d5-a1044c079133",
+        "Banner 468*60": "c29abe8b-6817-4cc6-8325-41ba59e4dc60",
+        "Anchored Adaptive Banner": "dea4c923-ab6f-4700-8fba-be351e7f961e",
+        "Inline Adaptive Banner": "4f37d88d-724e-4015-84a2-20fcfb2c04ae"
       },
       "interstitial": {
         "Interstitial": "772053d7-09f8-4a8b-9a5a-9ded5739f5da"
@@ -298,6 +312,10 @@
       },
       "rewarded": {
         "RewardedVideo": "2f7d3967-d6f2-4978-bf9c-25a470b53ba7"
+      },
+      "splash": {
+        "App Open Ads Portrait": "a571c11c-23d3-42ab-892b-3e730bf28ec3",
+        "App Open Ads Landscape": "1d7b06bd-197d-4d62-b520-90860d49e4ab"
       }
     },
     {

@@ -46,7 +46,13 @@ public class SplashActivity extends FragmentActivity {
             public void run() {
                 finish();
             }
-        }, 3000);
+        }, 5000);
+    }
+
+    @Override
+    public void onBackPressed() {
+        // 开屏广告禁止返回
+        // super.onBackPressed();
     }
 
     private void initSplash() {
