@@ -20,12 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
-#Adcolony
--dontwarn com.adcolony.sdk.ADCLogEvent
-
-#Mopub
--dontwarn com.google.android.exoplayer2.**
--keep class com.google.android.exoplayer2.util.Util { *; }
-
 # GDT TBS
 #-optimizations !method/propagation/*
+
+-dontoptimize

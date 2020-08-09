@@ -1,7 +1,6 @@
 package com.taurusx.ads.demo;
 
 import android.app.Application;
-
 import com.bytedance.sdk.openadsdk.TTAdConstant;
 import com.mintegral.msdk.MIntegralUser;
 import com.taurusx.ads.core.api.TaurusXAds;
@@ -67,7 +66,7 @@ public class TaurusApplication extends Application {
         // 为某个 Network 开启测试模式
         // TaurusXAds.getDefault().setNetworkTestMode(Network.Xxx, true);
 
-        // 点击广告下载 App 时，需要用户二次确认的网络（目前仅用于穿山甲、优量汇）
+        // 点击广告下载 App 时，需要用户二次确认的网络（目前仅用于穿山甲、优量汇<横幅、信息流>）
         // 默认为 DownloadNetwork.NONE，不需要用户二次确认
         TaurusXAds.getDefault().setDownloadConfirmNetwork(DownloadNetwork.NONE);
 

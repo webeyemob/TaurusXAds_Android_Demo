@@ -1,5 +1,6 @@
 package com.taurusx.ads.demo.activitys.adtype;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,6 +19,7 @@ import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleFeedAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
+import com.taurusx.ads.core.api.utils.ScreenUtil;
 import com.taurusx.ads.core.api.utils.ViewUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
@@ -81,6 +83,11 @@ public class FeedListActivity extends BaseActivity {
                         if (adView != null) {
                             ViewUtil.removeFromParent(adView);
                             mContainer.addView(adView);
+                            View line = new View(FeedListActivity.this);
+                            line.setBackgroundColor(Color.parseColor("#BBDEFB"));
+                            mContainer.addView(line,
+                                    LinearLayout.LayoutParams.MATCH_PARENT,
+                                    ScreenUtil.dp2px(FeedListActivity.this, 8));
                         }
                     }
                 }
@@ -250,22 +257,22 @@ public class FeedListActivity extends BaseActivity {
                 .setAppDownloadListener(new KuaiShouAppDownloadListener() {
                     @Override
                     public void onIdle() {
-                        LogUtil.d(TAG ,"KuaiShou onIdle");
+                        LogUtil.d(TAG, "KuaiShou onIdle");
                     }
 
                     @Override
                     public void onProgressUpdate(int i) {
-                        LogUtil.d(TAG ,"KuaiShou onProgressUpdate: " + i);
+                        LogUtil.d(TAG, "KuaiShou onProgressUpdate: " + i);
                     }
 
                     @Override
                     public void onDownloadFinished() {
-                        LogUtil.d(TAG ,"KuaiShou onDownloadFinished");
+                        LogUtil.d(TAG, "KuaiShou onDownloadFinished");
                     }
 
                     @Override
                     public void onInstalled() {
-                        LogUtil.d(TAG ,"KuaiShou onInstalled");
+                        LogUtil.d(TAG, "KuaiShou onInstalled");
                     }
                 })
                 .build();
@@ -327,7 +334,8 @@ public class FeedListActivity extends BaseActivity {
     private TikTokExpressFeedListConfig createTikTokExpressFeedListConfig() {
         return TikTokExpressFeedListConfig.Builder()
                 // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+                .setAppDownloadListener(new TikTokAppDownloadListener() {
+                })
                 // 使用默认的 Dislike Dialog 样式，仅需设置 Dislike 回调
                 // .setDislikeCallback(new TikTokGetDislikeCallback() {})
                 // 或自定义 Dislike Dialog
@@ -346,7 +354,8 @@ public class FeedListActivity extends BaseActivity {
                 // 设置图标大小，单位 dp；默认为 50dp
                 .setPauseIconSize(50)
                 // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+                .setAppDownloadListener(new TikTokAppDownloadListener() {
+                })
                 .build();
     }
 
@@ -355,7 +364,8 @@ public class FeedListActivity extends BaseActivity {
                 // 点击视频是否可以控制暂停/播放；默认不可控制
                 .setCanInterruptVideoPlay(true)
                 // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+                .setAppDownloadListener(new TikTokAppDownloadListener() {
+                })
                 .build();
     }
 }
