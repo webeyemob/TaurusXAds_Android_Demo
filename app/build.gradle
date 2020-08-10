@@ -7,14 +7,21 @@ android {
         defaultConfig {
 
             applicationId "com.taurusx.ads.demo"
-            // for Vungle
-//        applicationId "com.publisher.vungle.sample"
-            // for Amazon
-//        applicationId "com.amazon.sample.simplead"
-            // for Mintegral
-//        applicationId "com.mintegral.sdk.demo"
-            // for OPPO
-//        applicationId "com.opos.mobaddemo"
+
+            // Amazon
+            // applicationId "com.amazon.sample.simplead"
+
+            // KuaiShou
+            // applicationId "com.kwad.kwadsdk"
+
+            // Mintegral
+            // applicationId "com.mintegral.sdk.demo"
+
+            // OPPO
+            // applicationId "com.opos.mobaddemo"
+
+            // Vungle
+            // applicationId "com.publisher.vungle.sample"
 
             minSdkVersion 19
             targetSdkVersion 28
@@ -152,7 +159,7 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // InMobi
-    if(inmobi_oversea) {
+    if (inmobi_oversea) {
         implementation "com.taurusx.ads:mediation_inmobi_oversea:9.0.7.0"
         implementation "com.inmobi.monetization:inmobi-ads:9.0.7"
         implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
@@ -191,8 +198,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.1.0.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.1.0"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.2.1.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.2.1"
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
