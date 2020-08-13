@@ -1,6 +1,7 @@
 package com.taurusx.ads.demo;
 
 import android.app.Application;
+
 import com.bytedance.sdk.openadsdk.TTAdConstant;
 import com.mintegral.msdk.MIntegralUser;
 import com.taurusx.ads.core.api.TaurusXAds;

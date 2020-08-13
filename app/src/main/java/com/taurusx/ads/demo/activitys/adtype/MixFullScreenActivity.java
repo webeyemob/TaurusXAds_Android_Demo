@@ -1,7 +1,6 @@
 package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -10,7 +9,9 @@ import com.taurusx.ads.core.api.ad.mixfull.MixFullScreenAd;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
-import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.listener.newapi.AdListener;
+import com.taurusx.ads.core.api.model.ILineItem;
+import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
@@ -19,7 +20,7 @@ public class MixFullScreenActivity extends BaseActivity {
 
     private final String TAG = "MixFullScreenActivity";
 
-    private String mMixFulSscreenId;
+    private String mMixFulScreenAdUnitId;
     private MixFullScreenAd mMixFullScreenAd;
 
     private Button mLoadButton;
@@ -32,7 +33,7 @@ public class MixFullScreenActivity extends BaseActivity {
         getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_mixfullscreen);
 
-        mMixFulSscreenId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
+        mMixFulScreenAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initMixFullScreenAd();
 
         mLoadButton = findViewById(R.id.mixfullscreen_load);
@@ -58,7 +59,7 @@ public class MixFullScreenActivity extends BaseActivity {
     private void initMixFullScreenAd() {
         // Create MixFullScreenAd
         mMixFullScreenAd = new MixFullScreenAd(this);
-        mMixFullScreenAd.setAdUnitId(mMixFulSscreenId);
+        mMixFullScreenAd.setAdUnitId(mMixFulScreenAdUnitId);
 
         // Set Custom NativeAdLayout To Render Ad
 //        mMixFullScreenAd.setNativeAdLayout(NativeAdLayout.Builder()
@@ -108,31 +109,31 @@ public class MixFullScreenActivity extends BaseActivity {
                 .build());
 
         // Set MixFullScreenAd Load Event
-        mMixFullScreenAd.setAdListener(new SimpleAdListener() {
+        mMixFullScreenAd.setAdListener(new AdListener() {
             @Override
-            public void onAdLoaded() {
-                Log.d(TAG, "MixFullScreenAd onAdLoaded");
+            public void onAdLoaded(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
                 mShowButton.setEnabled(true);
             }
 
             @Override
+            public void onAdShown(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
+            }
+
+            @Override
+            public void onAdClicked(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName());
+            }
+
+            @Override
+            public void onAdClosed(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
+            }
+
+            @Override
             public void onAdFailedToLoad(AdError adError) {
-                Log.d(TAG, "MixFullScreenAd onAdFailedToLoad: " + adError.toString());
-            }
-
-            @Override
-            public void onAdShown() {
-                Log.d(TAG, "MixFullScreenAd onAdShown");
-            }
-
-            @Override
-            public void onAdClicked() {
-                Log.d(TAG, "MixFullScreenAd onAdClicked");
-            }
-
-            @Override
-            public void onAdClosed() {
-                Log.d(TAG, "MixFullScreenAd onAdClosed");
+                LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
             }
         });
     }

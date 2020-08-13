@@ -9,9 +9,9 @@ import androidx.annotation.Nullable;
 
 import com.taurusx.ads.core.api.model.AdType;
 import com.taurusx.ads.demo.R;
-import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.activitys.adapter_ads.ListViewActivity;
 import com.taurusx.ads.demo.activitys.adapter_ads.RecyclerViewActivity;
+import com.taurusx.ads.demo.activitys.base.BaseActivity;
 
 public class AdapterTestActivity extends BaseActivity {
 

@@ -1,7 +1,6 @@
 package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -12,7 +11,8 @@ import com.taurusx.ads.core.api.ad.nativead.NativeAd;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
-import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.listener.newapi.AdListener;
+import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
@@ -24,12 +24,12 @@ import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.MintegralNativeConfig;
 
-
+@Deprecated
 public class NativeActivity extends BaseActivity {
 
     private final String TAG = "NativeActivity";
 
-    private String mNativeId;
+    private String mNativeAdUnitId;
     private NativeAd mNativeAd;
 
     private Button mLoadButton;
@@ -43,7 +43,7 @@ public class NativeActivity extends BaseActivity {
         getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_native);
 
-        mNativeId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
+        mNativeAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initNativeAd();
 
         mLoadButton = findViewById(R.id.native_load);
@@ -74,7 +74,7 @@ public class NativeActivity extends BaseActivity {
     private void initNativeAd() {
         // Create NativeAd
         mNativeAd = new NativeAd(this);
-        mNativeAd.setAdUnitId(mNativeId);
+        mNativeAd.setAdUnitId(mNativeAdUnitId);
 
         // Set Custom NativeAdLayout To Render Ad
 //        mNativeAd.setNativeAdLayout(NativeAdLayout.Builder()
@@ -117,31 +117,31 @@ public class NativeActivity extends BaseActivity {
                 .build());
 
         // Listen Ad load result
-        mNativeAd.setAdListener(new SimpleAdListener() {
+        mNativeAd.setAdListener(new AdListener() {
             @Override
-            public void onAdLoaded() {
-                Log.d(TAG, "NativeAd onAdLoaded");
+            public void onAdLoaded(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
                 mShowButton.setEnabled(true);
             }
 
             @Override
-            public void onAdShown() {
-                Log.d(TAG, "NativeAd onAdShown");
+            public void onAdShown(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClicked() {
-                Log.d(TAG, "NativeAd onAdClicked");
+            public void onAdClicked(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClosed() {
-                Log.d(TAG, "NativeAd onAdClosed");
+            public void onAdClosed(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
             }
 
             @Override
             public void onAdFailedToLoad(AdError adError) {
-                Log.d(TAG, "NativeAd onAdFailedToLoad: " + adError);
+                LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
             }
         });
     }

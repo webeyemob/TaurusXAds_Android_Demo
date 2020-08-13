@@ -1,7 +1,6 @@
 package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -11,7 +10,9 @@ import com.taurusx.ads.core.api.ad.config.AdSize;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
-import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.listener.newapi.AdListener;
+import com.taurusx.ads.core.api.model.ILineItem;
+import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
@@ -20,7 +21,7 @@ public class MixViewActivity extends BaseActivity {
 
     private final String TAG = "MixViewActivity";
 
-    private String mMixViewId;
+    private String mMixViewAdUnitId;
     private MixViewAd mMixViewAd;
 
     private Button mLoadButton;
@@ -34,7 +35,7 @@ public class MixViewActivity extends BaseActivity {
         getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_mixview);
 
-        mMixViewId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
+        mMixViewAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initMixView();
 
         mLoadButton = findViewById(R.id.mxiview_load);
@@ -66,7 +67,7 @@ public class MixViewActivity extends BaseActivity {
     private void initMixView() {
         // Create MixViewAd
         mMixViewAd = new MixViewAd(this);
-        mMixViewAd.setAdUnitId(mMixViewId);
+        mMixViewAd.setAdUnitId(mMixViewAdUnitId);
 
         // Set Custom NativeAdLayout To Render Ad
 //        mMixViewAd.setNativeAdLayout(NativeAdLayout.Builder()
@@ -110,31 +111,31 @@ public class MixViewActivity extends BaseActivity {
                 .build());
 
         // Set MixView Load Event
-        mMixViewAd.setAdListener(new SimpleAdListener() {
+        mMixViewAd.setAdListener(new AdListener() {
             @Override
-            public void onAdLoaded() {
-                Log.d(TAG, "MixViewAd onAdLoaded");
+            public void onAdLoaded(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
                 mShowButton.setEnabled(true);
             }
 
             @Override
+            public void onAdShown(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
+            }
+
+            @Override
+            public void onAdClicked(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName());
+            }
+
+            @Override
+            public void onAdClosed(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
+            }
+
+            @Override
             public void onAdFailedToLoad(AdError adError) {
-                Log.d(TAG, "MixViewAd onAdFailedToLoad: " + adError.toString());
-            }
-
-            @Override
-            public void onAdShown() {
-                Log.d(TAG, "MixViewAd onAdShown");
-            }
-
-            @Override
-            public void onAdClicked() {
-                Log.d(TAG, "MixViewAd onAdClicked");
-            }
-
-            @Override
-            public void onAdClosed() {
-                Log.d(TAG, "MixViewAd onAdClosed");
+                LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
             }
         });
     }

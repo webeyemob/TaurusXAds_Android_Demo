@@ -1,16 +1,14 @@
 package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.google.android.gms.ads.AdSize;
 import com.taurusx.ads.core.api.ad.BannerAdView;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
-import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.listener.newapi.AdListener;
 import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
@@ -28,7 +26,7 @@ public class BannerActivity extends BaseActivity {
 
     private final String TAG = "BannerActivity";
 
-    private String mBannerId;
+    private String mBannerAdUnitId;
     private BannerAdView mBannerAdView;
 
     private Button mLoadButton;
@@ -41,7 +39,7 @@ public class BannerActivity extends BaseActivity {
         getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_banner);
 
-        mBannerId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
+        mBannerAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initBannerAdView();
 
         mContainer = findViewById(R.id.layout_banner);
@@ -60,7 +58,7 @@ public class BannerActivity extends BaseActivity {
     private void initBannerAdView() {
         // Create BannerAdView
         mBannerAdView = new BannerAdView(this);
-        mBannerAdView.setAdUnitId(mBannerId);
+        mBannerAdView.setAdUnitId(mBannerAdUnitId);
 
         // (Optional) Set Network special Config
         mBannerAdView.setNetworkConfigs(NetworkConfigs.Builder()
@@ -72,32 +70,30 @@ public class BannerActivity extends BaseActivity {
                 .build());
 
         // Listen Ad load result
-        mBannerAdView.setAdListener(new SimpleAdListener() {
+        mBannerAdView.setAdListener(new AdListener() {
             @Override
-            public void onAdLoaded() {
-                Log.d(TAG, "BannerAdView onAdLoaded");
-                ILineItem lineItem = mBannerAdView.getReadyLineItem();
-                Log.d(TAG, "BannerAdView Ready LineItem: " + lineItem);
+            public void onAdLoaded(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdShown() {
-                Log.d(TAG, "BannerAdView onAdShown");
+            public void onAdShown(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClicked() {
-                Log.d(TAG, "BannerAdView onAdClicked");
+            public void onAdClicked(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClosed() {
-                Log.d(TAG, "BannerAdView onAdClosed");
+            public void onAdClosed(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
             }
 
             @Override
             public void onAdFailedToLoad(AdError adError) {
-                Log.d(TAG, "BannerAdView onAdFailedToLoad: " + adError.toString());
+                LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
             }
         });
     }

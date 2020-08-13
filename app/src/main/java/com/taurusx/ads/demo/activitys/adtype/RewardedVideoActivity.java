@@ -7,7 +7,8 @@ import android.widget.Button;
 import com.taurusx.ads.core.api.ad.RewardedVideoAd;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
-import com.taurusx.ads.core.api.listener.SimpleRewardedVideoAdListener;
+import com.taurusx.ads.core.api.listener.newapi.RewardedVideoAdListener;
+import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
@@ -21,7 +22,7 @@ public class RewardedVideoActivity extends BaseActivity {
 
     private final String TAG = "RewardedVideoActivity";
 
-    private String mRewardedId;
+    private String mRewardedVideoAdUnitId;
     private RewardedVideoAd mRewardedVideoAd;
 
     private Button mLoadButton;
@@ -34,7 +35,7 @@ public class RewardedVideoActivity extends BaseActivity {
         getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_rewardedvideo);
 
-        mRewardedId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
+        mRewardedVideoAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initRewardedVideoAd();
 
         mLoadButton = findViewById(R.id.rewardedvideo_load);
@@ -59,7 +60,7 @@ public class RewardedVideoActivity extends BaseActivity {
     private void initRewardedVideoAd() {
         // Create RewardedVideoAd
         mRewardedVideoAd = new RewardedVideoAd(this);
-        mRewardedVideoAd.setAdUnitId(mRewardedId);
+        mRewardedVideoAd.setAdUnitId(mRewardedVideoAdUnitId);
 
         // Set Video Muted, default is sound
         // mRewardedVideoAd.setMuted(false);
@@ -71,51 +72,51 @@ public class RewardedVideoActivity extends BaseActivity {
                 .build());
 
         // Listen Ad load result
-        mRewardedVideoAd.setAdListener(new SimpleRewardedVideoAdListener() {
+        mRewardedVideoAd.setAdListener(new RewardedVideoAdListener() {
             @Override
-            public void onAdLoaded() {
-                LogUtil.d(TAG, "RewardedVideoAd onAdLoaded");
+            public void onAdLoaded(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
                 mShowButton.setEnabled(true);
             }
 
             @Override
-            public void onAdShown() {
-                LogUtil.d(TAG, "RewardedVideoAd onAdShown");
+            public void onAdShown(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClicked() {
-                LogUtil.d(TAG, "RewardedVideoAd onAdClicked");
+            public void onAdClicked(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClosed() {
-                LogUtil.d(TAG, "RewardedVideoAd onAdClosed");
+            public void onAdClosed(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
             }
 
             @Override
             public void onAdFailedToLoad(AdError adError) {
-                LogUtil.d(TAG, "RewardedVideoAd onAdFailedToLoad: " + adError);
+                LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
             }
 
             @Override
-            public void onVideoStarted() {
-                LogUtil.d(TAG, "RewardedVideoAd onVideoStarted");
+            public void onVideoStarted(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onVideoStarted: " + iLineItem.getName());
             }
 
             @Override
-            public void onVideoCompleted() {
-                LogUtil.d(TAG, "RewardedVideoAd onVideoCompleted");
+            public void onVideoCompleted(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onVideoCompleted: " + iLineItem.getName());
             }
 
             @Override
-            public void onRewarded(RewardedVideoAd.RewardItem rewardItem) {
-                LogUtil.d(TAG, "RewardedVideoAd onRewarded: " + rewardItem);
+            public void onRewarded(ILineItem iLineItem, RewardedVideoAd.RewardItem rewardItem) {
+                LogUtil.d(TAG, "onRewarded: " + iLineItem.getName() + ", rewardItem: " + rewardItem);
             }
 
             @Override
-            public void onRewardFailed() {
-                LogUtil.d(TAG, "RewardedVideoAd onRewardFailed");
+            public void onRewardFailed(ILineItem iLineItem) {
+                LogUtil.e(TAG, "onRewardFailed: " + iLineItem.getName());
             }
         });
     }

@@ -2,7 +2,6 @@ package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.widget.FrameLayout;
 
 import androidx.fragment.app.FragmentActivity;
@@ -10,7 +9,8 @@ import androidx.fragment.app.FragmentActivity;
 import com.taurusx.ads.core.api.ad.SplashAd;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
-import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.listener.newapi.SplashAdListener;
+import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.utils.Constant;
@@ -22,7 +22,7 @@ public class SplashActivity extends FragmentActivity {
 
     private final String TAG = "SplashActivity";
 
-    private String mSplashId;
+    private String mSplashAdUnitId;
     private SplashAd mSplashAd;
 
     private FrameLayout mContainer;
@@ -34,7 +34,7 @@ public class SplashActivity extends FragmentActivity {
 
         setContentView(R.layout.activity_splash);
 
-        mSplashId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
+        mSplashAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         mContainer = findViewById(R.id.layout_container);
 
         initSplash();
@@ -58,7 +58,7 @@ public class SplashActivity extends FragmentActivity {
     private void initSplash() {
         // Create SplashAd
         mSplashAd = new SplashAd(this);
-        mSplashAd.setAdUnitId(mSplashId);
+        mSplashAd.setAdUnitId(mSplashAdUnitId);
 
         // Set container to show SplashAd
         mSplashAd.setContainer(mContainer);
@@ -77,32 +77,37 @@ public class SplashActivity extends FragmentActivity {
         // mSplashAd.setBottomView(bottomArea);
 
         // Set SplashAd Load Event
-        mSplashAd.setAdListener(new SimpleAdListener() {
+        mSplashAd.setAdListener(new SplashAdListener() {
             @Override
-            public void onAdLoaded() {
-                Log.d(TAG, "SplashAd onAdLoaded");
+            public void onAdLoaded(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
                 mExitHandler.removeCallbacksAndMessages(null);
             }
 
             @Override
-            public void onAdFailedToLoad(AdError adError) {
-                Log.d(TAG, "SplashAd onAdFailedToLoad: " + adError.toString());
+            public void onAdShown(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdShown() {
-                Log.d(TAG, "SplashAd onAdShown");
+            public void onAdClicked(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClicked() {
-                Log.d(TAG, "SplashAd onAdClicked");
+            public void onAdSkipped(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdSkipped: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClosed() {
-                Log.d(TAG, "SplashAd onAdClosed");
+            public void onAdClosed(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
                 finish();
+            }
+
+            @Override
+            public void onAdFailedToLoad(AdError adError) {
+                LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
             }
         });
 

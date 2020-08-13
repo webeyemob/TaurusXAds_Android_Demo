@@ -2,7 +2,6 @@ package com.taurusx.ads.demo.activitys.adtype;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -17,7 +16,8 @@ import com.taurusx.ads.core.api.ad.feedlist.FeedList;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
-import com.taurusx.ads.core.api.listener.SimpleFeedAdListener;
+import com.taurusx.ads.core.api.listener.newapi.FeedAdListener;
+import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.core.api.utils.ScreenUtil;
 import com.taurusx.ads.core.api.utils.ViewUtil;
@@ -44,7 +44,7 @@ public class FeedListActivity extends BaseActivity {
 
     private final String TAG = "FeedListActivity";
 
-    private String mFeedListId;
+    private String mFeedListAdUnitId;
     private FeedList mFeedList;
 
     private Button mLoadButton;
@@ -58,7 +58,7 @@ public class FeedListActivity extends BaseActivity {
         getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_feedlist);
 
-        mFeedListId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
+        mFeedListAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initFeedList();
 
         mLoadButton = findViewById(R.id.feedList_load);
@@ -100,7 +100,7 @@ public class FeedListActivity extends BaseActivity {
     private void initFeedList() {
         // Create FeedList
         mFeedList = new FeedList(this);
-        mFeedList.setAdUnitId(mFeedListId);
+        mFeedList.setAdUnitId(mFeedListAdUnitId);
 
         // Set Ad Count You Want To Load
         mFeedList.setCount(3);
@@ -151,31 +151,37 @@ public class FeedListActivity extends BaseActivity {
                 .build());
 
         // Set FeedList Load Event
-        mFeedList.setAdListener(new SimpleFeedAdListener() {
+        mFeedList.setAdListener(new FeedAdListener() {
             @Override
-            public void onAdLoaded() {
-                Log.d(TAG, "FeedList onAdLoaded");
+            public void onAdLoaded(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
                 mShowButton.setEnabled(true);
             }
 
             @Override
+            public void onAdShown(ILineItem iLineItem, @Nullable Feed feed) {
+                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName() + getFeedDesc(feed));
+            }
+
+            @Override
+            public void onAdClicked(ILineItem iLineItem, @Nullable Feed feed) {
+                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName() + getFeedDesc(feed));
+            }
+
+            @Override
+            public void onAdClosed(ILineItem iLineItem, @Nullable Feed feed) {
+                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName() + getFeedDesc(feed));
+            }
+
+            @Override
             public void onAdFailedToLoad(AdError adError) {
-                Log.d(TAG, "FeedList onAdFailedToLoad: " + adError.toString());
+                LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
             }
 
-            @Override
-            public void onAdShown(@Nullable Feed feed) {
-                Log.d(TAG, "FeedList onAdShown");
-            }
-
-            @Override
-            public void onAdClicked(@Nullable Feed feed) {
-                Log.d(TAG, "FeedList onAdClicked");
-            }
-
-            @Override
-            public void onAdClosed(@Nullable Feed feed) {
-                Log.d(TAG, "FeedList onAdClosed");
+            private String getFeedDesc(Feed feed) {
+                return feed != null
+                        ? ", Feed Title: " + feed.getFeedData().getTitle() + ", Body: " + feed.getFeedData().getBody()
+                        : ", Feed is null";
             }
         });
     }

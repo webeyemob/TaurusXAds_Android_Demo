@@ -1,15 +1,14 @@
 package com.taurusx.ads.demo.activitys.adtype;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.qq.e.ads.cfg.VideoOption;
 import com.taurusx.ads.core.api.ad.InterstitialAd;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
-import com.taurusx.ads.core.api.listener.SimpleAdListener;
+import com.taurusx.ads.core.api.listener.newapi.AdListener;
+import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
@@ -24,7 +23,7 @@ public class InterstitialActivity extends BaseActivity {
 
     private final String TAG = "InterstitialActivity";
 
-    private String mInterstitialId;
+    private String mInterstitialAdUnitId;
     private InterstitialAd mInterstitialAd;
 
     private Button mLoadButton;
@@ -37,7 +36,7 @@ public class InterstitialActivity extends BaseActivity {
         getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
         setContentView(R.layout.activity_interstitial);
 
-        mInterstitialId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
+        mInterstitialAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initInterstitialAd();
 
         mLoadButton = findViewById(R.id.interstitial_load);
@@ -63,7 +62,7 @@ public class InterstitialActivity extends BaseActivity {
     private void initInterstitialAd() {
         // Create InterstitialAd
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId(mInterstitialId);
+        mInterstitialAd.setAdUnitId(mInterstitialAdUnitId);
 
         // Set Video Muted, default is sound
         // mInterstitialAd.setMuted(false);
@@ -77,31 +76,31 @@ public class InterstitialActivity extends BaseActivity {
                 .build());
 
         // Listen Ad load result
-        mInterstitialAd.setAdListener(new SimpleAdListener() {
+        mInterstitialAd.setAdListener(new AdListener() {
             @Override
-            public void onAdLoaded() {
-                Log.d(TAG, "InterstitialAd onAdLoaded");
+            public void onAdLoaded(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
                 mShowButton.setEnabled(true);
             }
 
             @Override
-            public void onAdShown() {
-                Log.d(TAG, "InterstitialAd onAdShown");
+            public void onAdShown(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClicked() {
-                Log.d(TAG, "InterstitialAd onAdClicked");
+            public void onAdClicked(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName());
             }
 
             @Override
-            public void onAdClosed() {
-                Log.d(TAG, "InterstitialAd onAdClosed");
+            public void onAdClosed(ILineItem iLineItem) {
+                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
             }
 
             @Override
             public void onAdFailedToLoad(AdError adError) {
-                Log.d(TAG, "InterstitialAd onAdFailedToLoad: " + adError);
+                LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
             }
         });
     }
@@ -168,7 +167,8 @@ public class InterstitialActivity extends BaseActivity {
     private TikTokFullScreenVideoConfig createTikTokFullScreenVideoConfig() {
         return TikTokFullScreenVideoConfig.Builder()
                 // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+                .setAppDownloadListener(new TikTokAppDownloadListener() {
+                })
                 .build();
     }
 }
