@@ -17,6 +17,7 @@ import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
+import com.taurusx.ads.demo.utils.Utils;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0NativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
@@ -142,6 +143,7 @@ public class NativeActivity extends BaseActivity {
             @Override
             public void onAdFailedToLoad(AdError adError) {
                 LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
+                Utils.toast(NativeActivity.this, adError.toString());
             }
         });
     }

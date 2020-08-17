@@ -14,6 +14,7 @@ import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.utils.Constant;
+import com.taurusx.ads.demo.utils.Utils;
 import com.taurusx.ads.mediation.networkconfig.SigmobSplashConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokSplashConfig;
@@ -108,6 +109,7 @@ public class SplashActivity extends FragmentActivity {
             @Override
             public void onAdFailedToLoad(AdError adError) {
                 LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
+                Utils.toast(SplashActivity.this, adError.toString());
             }
         });
 

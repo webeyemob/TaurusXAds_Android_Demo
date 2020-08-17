@@ -15,6 +15,7 @@ import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
+import com.taurusx.ads.demo.utils.Utils;
 
 public class MixFullScreenActivity extends BaseActivity {
 
@@ -134,6 +135,7 @@ public class MixFullScreenActivity extends BaseActivity {
             @Override
             public void onAdFailedToLoad(AdError adError) {
                 LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
+                Utils.toast(MixFullScreenActivity.this, adError.toString());
             }
         });
     }

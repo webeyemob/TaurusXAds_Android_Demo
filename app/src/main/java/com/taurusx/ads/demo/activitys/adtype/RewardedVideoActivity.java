@@ -13,6 +13,7 @@ import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
+import com.taurusx.ads.demo.utils.Utils;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouRewardedVideoConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokRewardedVideoConfig;
@@ -97,6 +98,7 @@ public class RewardedVideoActivity extends BaseActivity {
             @Override
             public void onAdFailedToLoad(AdError adError) {
                 LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
+                Utils.toast(RewardedVideoActivity.this, adError.toString());
             }
 
             @Override
@@ -117,6 +119,7 @@ public class RewardedVideoActivity extends BaseActivity {
             @Override
             public void onRewardFailed(ILineItem iLineItem) {
                 LogUtil.e(TAG, "onRewardFailed: " + iLineItem.getName());
+                Utils.toast(RewardedVideoActivity.this, "onRewardFailed");
             }
         });
     }

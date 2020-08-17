@@ -24,6 +24,7 @@ import com.taurusx.ads.core.api.utils.ViewUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
+import com.taurusx.ads.demo.utils.Utils;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpress2_0FeedListConfig;
@@ -176,6 +177,7 @@ public class FeedListActivity extends BaseActivity {
             @Override
             public void onAdFailedToLoad(AdError adError) {
                 LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
+                Utils.toast(FeedListActivity.this, adError.toString());
             }
 
             private String getFeedDesc(Feed feed) {

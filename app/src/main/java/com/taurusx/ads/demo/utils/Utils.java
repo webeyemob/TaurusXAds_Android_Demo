@@ -3,6 +3,7 @@ package com.taurusx.ads.demo.utils;
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,5 +53,9 @@ public class Utils {
             e.printStackTrace();
         }
         return mediationList;
+    }
+
+    public static void toast(Context context, String message) {
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
 }

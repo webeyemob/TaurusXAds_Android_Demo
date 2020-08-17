@@ -13,6 +13,7 @@ import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
+import com.taurusx.ads.demo.utils.Utils;
 import com.taurusx.ads.mediation.networkconfig.GDTInterstitial2_0Config;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouInterstitialConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
@@ -101,6 +102,7 @@ public class InterstitialActivity extends BaseActivity {
             @Override
             public void onAdFailedToLoad(AdError adError) {
                 LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
+                Utils.toast(InterstitialActivity.this, adError.toString());
             }
         });
     }
