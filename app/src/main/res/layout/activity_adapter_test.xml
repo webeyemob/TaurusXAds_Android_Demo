@@ -8,35 +8,35 @@
     <Button
         android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_marginBottom="12dp"
         android:text="Banner 320*50" />
 
     <Button
         android:id="@+id/banner_merc"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_marginBottom="12dp"
         android:text="Banner 300*250" />
 
     <Button
-        android:id="@+id/nativead"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:text="Native - [Deprecated, Use FeedList]" />
-
-    <Button
         android:id="@+id/feedlist"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_marginBottom="12dp"
         android:text="FeedList" />
 
     <Button
         android:id="@+id/mixivew"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_marginBottom="12dp"
         android:text="MixViewAd" />
+
+    <Button
+        android:id="@+id/nativead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="12dp"
+        android:text="Native - [Deprecated, Use FeedList]" />
 </LinearLayout>

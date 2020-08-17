@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">TaurusXDemo</string>
-    <string name="base_test">Base Test</string>
-    <string name="stratege_test">LoadMode Test</string>
-    <string name="networks_test">Network Test</string>
 
+    <string name="networks_test">Network Test</string>
+    <string name="stratege_test">LoadMode Test</string>
     <string name="listview_test">List Adapter Test</string>
     <string name="recyclerview_test">Recycler Adapter Test</string>
 

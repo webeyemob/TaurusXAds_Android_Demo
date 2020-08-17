@@ -13,21 +13,21 @@
         <Button
             android:id="@+id/mode_serial"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
             android:layout_marginBottom="12dp"
             android:text="@string/mode_serial" />
 
         <Button
             android:id="@+id/mode_parallel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
             android:layout_marginBottom="12dp"
             android:text="@string/mode_parallel" />
 
         <Button
             android:id="@+id/mode_shuffle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
             android:layout_marginBottom="12dp"
             android:text="@string/mode_shuffle" />
     </LinearLayout>

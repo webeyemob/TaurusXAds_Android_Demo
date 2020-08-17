@@ -110,6 +110,8 @@ public class SplashActivity extends FragmentActivity {
             public void onAdFailedToLoad(AdError adError) {
                 LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
                 Utils.toast(SplashActivity.this, adError.toString());
+                mExitHandler.removeCallbacksAndMessages(null);
+                finish();
             }
         });
 

@@ -7,14 +7,14 @@
     <Button
         android:id="@+id/native_load"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_margin="12dp"
         android:text="Load Native" />
 
     <Button
         android:id="@+id/native_show"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_below="@id/native_load"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"

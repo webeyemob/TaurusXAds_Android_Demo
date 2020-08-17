@@ -8,14 +8,14 @@
     <Button
         android:id="@+id/mixfullscreen_load"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_marginBottom="12dp"
         android:text="Load MixFullScreen" />
 
     <Button
         android:id="@+id/mixfullscreen_show"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:enabled="false"
         android:text="Show MixFullScreen" />
 </LinearLayout>

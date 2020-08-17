@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/textView_title"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:background="@drawable/network_item_bg"
         android:gravity="center"
         android:textColor="#4d4d4d"

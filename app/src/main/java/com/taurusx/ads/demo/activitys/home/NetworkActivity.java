@@ -66,7 +66,7 @@ public class NetworkActivity extends BaseActivity {
             TextViewHolder holder;
             if (convertView == null) {
                 holder = new TextViewHolder();
-                convertView = LayoutInflater.from(mContext).inflate(R.layout.list_textview, null);
+                convertView = LayoutInflater.from(mContext).inflate(R.layout.network_grid_textview, null);
                 holder.mTextView = convertView.findViewById(R.id.textView_title);
                 convertView.setTag(holder);
             } else {

@@ -7,7 +7,7 @@
     <Button
         android:id="@+id/banner_load"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_margin="12dp"
         android:text="Load Banner" />
 

@@ -7,37 +7,34 @@
     android:padding="12dp">
 
     <Button
-        android:id="@+id/base_test"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:text="@string/base_test" />
-
-    <Button
         android:id="@+id/network_test"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginBottom="12dp"
+        android:layout_weight="1"
         android:text="@string/networks_test" />
 
     <Button
         android:id="@+id/loadmode_test"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginBottom="12dp"
+        android:layout_weight="1"
         android:text="@string/stratege_test" />
 
     <Button
         android:id="@+id/listview_test"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginBottom="12dp"
+        android:layout_weight="1"
         android:text="@string/listview_test" />
 
     <Button
         android:id="@+id/recyclerview_test"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginBottom="12dp"
+        android:layout_weight="1"
         android:text="@string/recyclerview_test" />
 </LinearLayout>
