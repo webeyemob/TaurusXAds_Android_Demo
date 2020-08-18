@@ -56,17 +56,27 @@ android {
     }
 }
 
-// TikTok 和 Pangle 只能用一个
+// TaurusX 区分国内、海外版
+boolean taurusX_oversea = false
+
+// 穿山甲区分国内、海外版（Pangle）
 boolean use_pangle = false
-// 是否是 InMobi 海外版
-boolean inmobi_oversea = true
+
+// InMobi 区分国内、海外版
+boolean inmobi_oversea = false
 
 dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.taurusx.ads:core:1.13.5'
+    if (taurusX_oversea) {
+        // 海外版
+        implementation 'com.taurusx.ads:core-oversea:1.13.5'
+    } else {
+        // 国内版
+        implementation 'com.taurusx.ads:core:1.13.5'
+    }
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
