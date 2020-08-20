@@ -211,7 +211,7 @@ dependencies {
     implementation "com.taurusx.ads:mediation_kuaishou:3.2.1.0"
     implementation "com.taurusx.ads:ks_adsdk:3.2.1"
     implementation 'com.google.android.material:material:1.1.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation "com.google.code.gson:gson:2.8.6"
 
@@ -338,7 +338,7 @@ configurations.all {
     resolutionStrategy {
         force 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
         force 'androidx.lifecycle:lifecycle-viewmodel:2.1.0'
-        force 'androidx.appcompat:appcompat:1.1.0'
+        force 'androidx.appcompat:appcompat:1.2.0-alpha02'
         force 'androidx.fragment:fragment:1.1.0'
         force 'androidx.lifecycle:lifecycle-runtime:2.1.0'
         force 'androidx.arch.core:core-common:2.1.0'
