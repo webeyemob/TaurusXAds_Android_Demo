@@ -30,5 +30,12 @@
             android:layout_height="@dimen/button_height"
             android:layout_marginBottom="12dp"
             android:text="@string/mode_shuffle" />
+
+        <Button
+            android:id="@+id/mode_autoload"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="12dp"
+            android:text="@string/mode_autoload" />
     </LinearLayout>
 </ScrollView>

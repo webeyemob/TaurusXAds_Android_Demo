@@ -21,6 +21,7 @@ public class LoadModeActivity extends BaseActivity {
     private Button mSerialButton;
     private Button mParallelButton;
     private Button mShuffleButton;
+    private Button mAutoLoadButton;
 
     private List<JSONObject> mMediationList;
 
@@ -57,6 +58,14 @@ public class LoadModeActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 AdTypeActivity.start(LoadModeActivity.this, mMediationList.get(2));
+            }
+        });
+
+        mAutoLoadButton = findViewById(R.id.mode_autoload);
+        mAutoLoadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AdTypeActivity.start(LoadModeActivity.this, mMediationList.get(3), true);
             }
         });
     }

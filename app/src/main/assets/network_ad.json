@@ -69,8 +69,8 @@
         "Banner 320*50": "dbc15c66-6e4e-4a3f-85a2-a02276d695d4",
         "Banner 320*100": "f6946477-845b-45eb-8751-5f65ea8b2ba3",
         "Banner 300*250": "63f36108-9f14-4a99-bc1d-451fa1f5566e",
-        "Banner 728*90": "906aa5a1-c831-4b10-81bd-98aebe1c661b",
         "Banner 468*60": "25257b39-45f2-441d-ac7f-62bae313cd9b",
+        "Banner 728*90": "906aa5a1-c831-4b10-81bd-98aebe1c661b",
         "Anchored Adaptive Banner": "138c96cf-d5a5-4484-b470-b0a5241ed2c9",
         "Inline Adaptive Banner": "2dfbc4fa-ef00-426f-ae13-171568a42eb1"
       },
@@ -296,8 +296,8 @@
         "Banner 320*50": "ade5efab-fbd0-422d-b0b4-401738a744eb",
         "Banner 320*100": "fc316ec2-6f58-4936-b2bd-70e9ffa6778b",
         "Banner 300*250": "63ab63ae-9d85-4909-8126-0f028f0b413b",
-        "Banner 728*90": "7b4786f5-af69-404b-b9d5-a1044c079133",
         "Banner 468*60": "c29abe8b-6817-4cc6-8325-41ba59e4dc60",
+        "Banner 728*90": "7b4786f5-af69-404b-b9d5-a1044c079133",
         "Anchored Adaptive Banner": "dea4c923-ab6f-4700-8fba-be351e7f961e",
         "Inline Adaptive Banner": "4f37d88d-724e-4015-84a2-20fcfb2c04ae"
       },
@@ -512,8 +512,8 @@
         "Express Banner 320*50": "4177af0c-ecf6-44d0-a01c-29afc0e721f3",
         "Express Banner 320*100": "f2e55fc1-cd49-465a-b963-bf955575df0f",
         "Express Banner 300*250": "8871083b-d236-4b27-98b9-58d1fda38700",
-        "Express Banner 728*90": "190672a3-1936-4d8a-ac99-5dde71ceb2cf",
-        "Express Banner 468*60": "29e16f7c-3776-4ea1-836f-1f062f39367b"
+        "Express Banner 468*60": "29e16f7c-3776-4ea1-836f-1f062f39367b",
+        "Express Banner 728*90": "190672a3-1936-4d8a-ac99-5dde71ceb2cf"
       },
       "interstitial": {
         "Express Interstitial": "24535ba6-52f5-4268-b19f-3b1acf528790",
@@ -613,6 +613,30 @@
       "splash": {
         "Splash": "babbee3a-a9f4-4f00-9baa-f47d625c539c",
         "Express Splash": "d144ecf6-0193-40c3-98ec-67b56d8f676b"
+      }
+    },
+    {
+      "adName": "Tuia",
+      "banner": {
+        "Banner 320*50": "dc0582a8-48f5-43b2-b512-bd742d30a5cb",
+        "Banner 320*100": "2cb34a0a-2c24-4531-b39b-ce0d5affcda0",
+        "Banner 300*250": "3bcdc32d-81f3-460b-a5ec-74d3aa90701e",
+        "Banner 468*60": "2b4100da-5128-466e-a215-2bb8c1eba27b",
+        "Banner 728*90": "9a9411b8-69bf-418d-925c-e26ab50041ac"
+      },
+      "interstitial": {
+        "Dialog": "6c8f8b68-0554-45a3-8849-11299d1862dc",
+        "Native Interstitial": "e573b170-5245-4830-88ea-139520953d84"
+      },
+      "feedlist": {
+        "Template": "8ac84c69-4527-4d91-bbda-3685c213b7f4",
+        "Custom": "a39befcf-933a-4ae4-9fe1-dead0ba30d6e",
+        "ICON": "85538214-c2b6-47a9-b64d-baf35194439d",
+        "Text Link": "640bd3de-38eb-4aa9-8c33-4004ce7234e0",
+        "Native Interstitial": "99efc587-3d14-40c5-8892-525ac5df04a4"
+      },
+      "splash": {
+        "Splash": "d6aed121-f09b-4bc2-8282-8eaa31b5f1c6"
       }
     },
     {

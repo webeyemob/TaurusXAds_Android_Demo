@@ -41,11 +41,14 @@ allprojects {
         // Maio
         maven{ url "https://imobile-maio.github.io/maven" }
 
-        // Vungle
-        maven { url 'https://jitpack.io' }
-
         // Nend
         maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' }
+
+        // Tuia
+        maven { url "https://dl.bintray.com/sunjiangrong/maven" }
+
+        // Vungle
+        maven { url 'https://jitpack.io' }
     }
 }
 

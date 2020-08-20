@@ -9,4 +9,5 @@
     <string name="mode_serial">Serial Mode</string>
     <string name="mode_parallel">Parallel Mode</string>
     <string name="mode_shuffle">Shuffle Mode</string>
+    <string name="mode_autoload">AutoLoad Mode</string>
 </resources>

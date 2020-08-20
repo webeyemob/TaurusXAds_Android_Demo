@@ -6,6 +6,7 @@ public class Constant {
 
     public static final String KEY_TITLE = "title";
     public static final String KEY_ADUNITID = "adunit_id";
+    public static final String KEY_IS_AUTO_LOAD = "is_auto_load";
 
     // assets json
     public static final String JSON_KEY_ADNAME = "adName";

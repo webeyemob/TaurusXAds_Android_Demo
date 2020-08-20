@@ -75,7 +75,7 @@ dependencies {
         implementation 'com.taurusx.ads:core-oversea:1.13.5'
     } else {
         // 国内版
-        implementation 'com.taurusx.ads:core:1.13.5'
+        implementation 'com.taurusx.ads:core:1.13.7'
     }
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
@@ -271,22 +271,6 @@ dependencies {
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.86"
     implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
-    // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.250.1120.2"
-    implementation "com.taurusx.ads:gdtsdk_union:4.250.1120"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-
-    if (use_pangle) {
-        // Pangle
-        implementation "com.taurusx.ads:mediation_pangle:3.1.0.1.0"
-        implementation "com.taurusx.ads:pangle_open_ad_sdk:3.1.0.1"
-    } else {
-        // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:3.1.0.3.1"
-        implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.1.0.3"
-        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    }
-
     // Mintegral
     implementation "com.taurusx.ads:mediation_mintegral:13.1.11.0"
     implementation "com.mintegral.msdk:videojs:13.1.11"
@@ -317,6 +301,32 @@ dependencies {
 //    implementation "com.squareup.wire:wire-runtime:2.2.0"
 //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
 
+    // Sigmob
+    implementation 'com.taurusx.ads:mediation_sigmob:2.15.4.3'
+    implementation 'com.taurusx.ads:windAd:2.15.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Tencent GDT
+    implementation "com.taurusx.ads:mediation_gdt:4.250.1120.2"
+    implementation "com.taurusx.ads:gdtsdk_union:4.250.1120"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    if (use_pangle) {
+        // pangle
+        implementation "com.taurusx.ads:mediation_pangle:3.1.0.1.0"
+        implementation "com.taurusx.ads:pangle_open_ad_sdk:3.1.0.1"
+    } else {
+        // TikTok
+        implementation "com.taurusx.ads:mediation_toutiao:3.1.0.3.1"
+        implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.1.0.3"
+        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    }
+
+    // Tuia
+    implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.0"
+    implementation "com.tuia:sdk:2.8.0.0"
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
+
     // Vivo
 //    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.7"
 
@@ -326,11 +336,6 @@ dependencies {
 //    implementation "com.android.support:appcompat-v7:28.0.0"
 //    implementation "com.android.support:support-v4:28.0.0"
 //    implementation "com.google.code.gson:gson:2.8.5"
-
-    // Sigmob
-    implementation 'com.taurusx.ads:mediation_sigmob:2.15.4.3'
-    implementation 'com.taurusx.ads:windAd:2.15.4'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
 
 

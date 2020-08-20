@@ -19,6 +19,7 @@ import com.taurusx.ads.mediation.networkconfig.MintegralGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.PrebidConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokGlobalConfig;
+import com.taurusx.ads.mediation.networkconfig.TuiaGlobalConfig;
 
 import org.prebid.mobile.Host;
 
@@ -55,6 +56,7 @@ public class TaurusApplication extends Application {
                         .addConfig(createMintegralConfig())
                         .addConfig(createPrebidConfig())
                         .addConfig(createTikTokConfig())
+                        .addConfig(createTuiaConfig())
                         .build());
 
         // 开启 Network 调试模式
@@ -241,5 +243,11 @@ public class TaurusApplication extends Application {
                 // 安装完成
             }
         };
+    }
+
+    private TuiaGlobalConfig createTuiaConfig() {
+        return TuiaGlobalConfig.Builder()
+                .setUserId("test-userid-123456")
+                .build();
     }
 }

@@ -5,11 +5,11 @@
       "banner": {
         "Banner": "19364f08-f5a9-4cd5-90ad-7ca8a7eb5f96"
       },
-      "rewarded": {
-        "RewardedVideo": "8ee65a58-5d40-49e5-b0e2-74cb3a8f8994"
-      },
       "interstitial": {
         "Interstitial": "43caccf2-e543-41d6-9eac-15a00b1e987d"
+      },
+      "rewarded": {
+        "RewardedVideo": "8ee65a58-5d40-49e5-b0e2-74cb3a8f8994"
       },
       "native": {
         "Native": "4370b131-ce02-47ac-b127-c200207e1473"
@@ -20,11 +20,11 @@
       "banner": {
         "Banner": "27f949d5-b898-4857-a861-5a50a386e0c9"
       },
-      "rewarded": {
-        "RewardedVideo": "5e216843-2352-4d26-a87f-5b23b0cb30b3"
-      },
       "interstitial": {
         "Interstitial": "aead71f0-245a-4e60-ac55-f12b1bdee297"
+      },
+      "rewarded": {
+        "RewardedVideo": "5e216843-2352-4d26-a87f-5b23b0cb30b3"
       },
       "native": {
         "Native": "73a300ed-6d15-448a-ae54-3d06dd182d6a"
@@ -35,14 +35,23 @@
       "banner": {
         "Banner": "85a50861-d5bd-4306-9a66-d4fb919389a3"
       },
-      "rewarded": {
-        "RewardedVideo": "f8515dd7-5e61-4d9b-abc2-7d9e0dd198ab"
-      },
       "interstitial": {
         "Interstitial": "25b370ef-df02-4dd3-bdd8-fe198e82b89d"
       },
+      "rewarded": {
+        "RewardedVideo": "f8515dd7-5e61-4d9b-abc2-7d9e0dd198ab"
+      },
       "native": {
         "Native": "9b0c1021-3664-49ce-82a8-7a9ec0cd15e8"
+      }
+    },
+    {
+      "adName": "AutoLoad Mode",
+      "interstitial": {
+        "Interstitial": "23c305ad-1423-4923-968a-9ec152be9bf3"
+      },
+      "rewarded": {
+        "RewardedVideo": "f25f071a-64f9-4985-b3fb-830178069bbf"
       }
     }
   ]
