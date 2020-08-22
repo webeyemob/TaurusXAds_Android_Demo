@@ -3,7 +3,7 @@ package com.taurusx.ads.demo.activitys.adtype;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 import com.taurusx.ads.core.api.ad.MixViewAd;
 import com.taurusx.ads.core.api.ad.config.AdSize;
@@ -27,7 +27,7 @@ public class MixViewActivity extends BaseActivity {
 
     private Button mLoadButton;
     private Button mShowButton;
-    private FrameLayout mContainer;
+    private LinearLayout mContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

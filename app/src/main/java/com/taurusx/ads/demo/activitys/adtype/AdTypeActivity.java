@@ -80,9 +80,9 @@ public class AdTypeActivity extends BaseActivity {
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_REWARDED), AdType.RewardedVideo);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_SPLASH), AdType.Splash);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_FEEDLIST), AdType.FeedList);
-        addButton(mMediation.optJSONObject(Constant.JSON_KEY_NATIVE), AdType.Native);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXVIEW), AdType.MixView);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXFULLSCREEN), AdType.MixFullScreen);
+        addButton(mMediation.optJSONObject(Constant.JSON_KEY_NATIVE), AdType.Native);
     }
 
     private void addButton(JSONObject object, AdType adType) {
@@ -91,10 +91,15 @@ public class AdTypeActivity extends BaseActivity {
             TextView title = new TextView(this);
             if (adType == AdType.Native) {
                 title.setText(adType.getName().concat(" - [Deprecated, Use FeedList]"));
+                title.setBackgroundColor(Color.parseColor("#aaaaaa"));
             } else {
                 title.setText(adType.getName());
+                if (adType == AdType.MixView || adType == AdType.MixFullScreen) {
+                    title.setBackgroundColor(Color.parseColor("#FFCC80"));
+                } else {
+                    title.setBackgroundColor(Color.parseColor("#BBDEFB"));
+                }
             }
-            title.setBackgroundColor(Color.parseColor("#BBDEFB"));
             title.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
             title.setGravity(Gravity.CENTER_VERTICAL);
             title.setPadding(ScreenUtil.dp2px(this, 12),
@@ -111,7 +116,11 @@ public class AdTypeActivity extends BaseActivity {
 
                 // add AdType
                 TextView adTypeTextView = new TextView(this);
-                adTypeTextView.setBackgroundResource(R.drawable.press_bg);
+                if (adType == AdType.MixView || adType == AdType.MixFullScreen) {
+                    adTypeTextView.setBackgroundResource(R.drawable.mix_press_bg);
+                } else {
+                    adTypeTextView.setBackgroundResource(R.drawable.press_bg);
+                }
                 adTypeTextView.setText(name);
                 adTypeTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 18);
                 adTypeTextView.setGravity(Gravity.CENTER);

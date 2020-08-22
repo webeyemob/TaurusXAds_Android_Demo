@@ -5,4 +5,6 @@
     <color name="divider_gray">#444242</color>
     <color name="ripple_white">#FFFFFF</color>
     <color name="blue_pressed">#64B5F6</color>
+
+    <color name="orange_pressed">#FFB74D</color>
 </resources>

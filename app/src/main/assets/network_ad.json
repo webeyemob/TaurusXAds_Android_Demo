@@ -589,12 +589,20 @@
     {
       "adName": "Tiktok",
       "banner": {
-        "Express Banner": "a8cdf8b3-9de4-43cf-8d5d-624eb2d92c65"
+        "Express Banner 320*50": "a8cdf8b3-9de4-43cf-8d5d-624eb2d92c65",
+        "Express Banner 320*100": "8f6b025f-7d58-4ddd-b242-11ac7f4b7ec3",
+        "Express Banner 300*250": "0d3ddb1a-b52b-48bc-9b75-d9611e1278cd",
+        "Express Banner 468*60": "acd4d1c5-3d55-4dbb-b4c6-108081e2f6c1",
+        "Express Banner 728*90": "242bc449-678d-47a6-a9ac-3260060a06cf"
       },
       "interstitial": {
-        "Express Interstitial": "f592c95c-51ce-44d1-8296-5161211f95bb",
-        "FullScreen Video": "5e065a2f-f319-42c8-a5dd-cd4f636b0f7f",
-        "Express FullScreen Video": "63983dd4-0cfe-467a-be68-d9364a94615c"
+        "Express Interstitial 2:3": "f592c95c-51ce-44d1-8296-5161211f95bb",
+        "Express Interstitial 3:2": "bf1ec646-da20-435d-b61c-ecd4bee20365",
+        "Express Interstitial 1:1": "409216f3-bb28-43f2-9163-5088b6d737f1",
+        "FullScreen Video Vertical": "5e065a2f-f319-42c8-a5dd-cd4f636b0f7f",
+        "FullScreen Video Horizontal": "8b16ba0e-2e21-4121-8504-86ca92ef8eb7",
+        "Express FullScreen Video Vertical": "63983dd4-0cfe-467a-be68-d9364a94615c",
+        "Express FullScreen Video Horizontal": "ab816ef6-c256-4f5e-9dcd-a75a5281b779"
       },
       "native": {
         "Custom Banner": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b",
@@ -609,12 +617,20 @@
         "Custom Interstitial": "f9ce3aec-9298-4591-8bcd-645276a8ae16"
       },
       "rewarded": {
-        "RewardedVideo": "cfc3aafd-5bff-4803-99d0-de3b5a4286ca",
-        "Express RewardedVideo": "2d642eb9-5f61-4534-a190-5f46349bab83"
+        "RewardedVideo Vertical": "cfc3aafd-5bff-4803-99d0-de3b5a4286ca",
+        "RewardedVideo Horizontal": "038c2f20-51f1-4190-b709-891558b52613",
+        "Express RewardedVideo Vertical": "2d642eb9-5f61-4534-a190-5f46349bab83",
+        "Express RewardedVideo Horizontal": "4d70e79a-a041-421d-8786-dd8ee82faa5b"
       },
       "splash": {
         "Splash": "babbee3a-a9f4-4f00-9baa-f47d625c539c",
         "Express Splash": "d144ecf6-0193-40c3-98ec-67b56d8f676b"
+      },
+      "mixview": {
+        "MixView": "7b72c74c-8b8c-4105-a59c-6a297c3366fa"
+      },
+      "mixfull": {
+        "MixFullScreen": "7f9c1906-2b48-49a2-8276-17e7f683919b"
       }
     },
     {
