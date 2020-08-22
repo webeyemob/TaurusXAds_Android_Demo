@@ -30,9 +30,7 @@ android {
             testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
             multiDexEnabled = true
 
-            ndk {
-                abiFilters 'armeabi'
-            }
+            ndk { abiFilters 'armeabi-v7a' }
         }
         config {
             storeFile file('../debug.jks')
@@ -307,8 +305,8 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.250.1120.2"
-    implementation "com.taurusx.ads:gdtsdk_union:4.250.1120"
+    implementation "com.taurusx.ads:mediation_gdt:4.251.1121.0"
+    implementation "com.taurusx.ads:gdtsdk_union:4.251.1121"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     if (use_pangle) {
