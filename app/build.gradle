@@ -305,8 +305,9 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.251.1121.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.251.1121.1"
     implementation "com.taurusx.ads:gdtsdk_union:4.251.1121"
+    // compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     if (use_pangle) {
