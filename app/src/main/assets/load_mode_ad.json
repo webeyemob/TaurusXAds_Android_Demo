@@ -8,11 +8,23 @@
       "interstitial": {
         "Interstitial": "43caccf2-e543-41d6-9eac-15a00b1e987d"
       },
+      "native": {
+        "Native": "4370b131-ce02-47ac-b127-c200207e1473"
+      },
+      "feedlist": {
+        "FeedList": "1585a722-4490-4b54-b72b-a7d2d5c5fcaa"
+      },
       "rewarded": {
         "RewardedVideo": "8ee65a58-5d40-49e5-b0e2-74cb3a8f8994"
       },
-      "native": {
-        "Native": "4370b131-ce02-47ac-b127-c200207e1473"
+      "splash": {
+        "Splash": "e3b26d9f-2ded-4dc8-9e54-87ff6809a0c2"
+      },
+      "mixview": {
+        "MixView": "20175f44-d662-4869-98ba-fa7011d03b1a"
+      },
+      "mixfull": {
+        "MixFullScreen": "3f3ef4b1-dcc3-4472-8a80-4cd194d694c6"
       }
     },
     {
@@ -23,11 +35,23 @@
       "interstitial": {
         "Interstitial": "aead71f0-245a-4e60-ac55-f12b1bdee297"
       },
+      "native": {
+        "Native": "73a300ed-6d15-448a-ae54-3d06dd182d6a"
+      },
+      "feedlist": {
+        "FeedList": "22e648ec-982f-449f-a537-a2c1aa2cafcb"
+      },
       "rewarded": {
         "RewardedVideo": "5e216843-2352-4d26-a87f-5b23b0cb30b3"
       },
-      "native": {
-        "Native": "73a300ed-6d15-448a-ae54-3d06dd182d6a"
+      "splash": {
+        "Splash": "9ccf5f46-c0cb-4f57-b491-cd60dbd296e0"
+      },
+      "mixview": {
+        "MixView": "af1d637e-168b-469b-844f-e7b5d986c11b"
+      },
+      "mixfull": {
+        "MixFullScreen": "df9477b3-b643-4518-b5f5-711e06719408"
       }
     },
     {

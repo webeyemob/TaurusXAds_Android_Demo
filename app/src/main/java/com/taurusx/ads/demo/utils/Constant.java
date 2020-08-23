@@ -17,5 +17,5 @@ public class Constant {
     public static final String JSON_KEY_SPLASH = "splash";
     public static final String JSON_KEY_FEEDLIST = "feedlist";
     public static final String JSON_KEY_MIXVIEW = "mixview";
-    public static final String JSON_KEY_MIXFULLSCREEN = "mixfullscreen";
+    public static final String JSON_KEY_MIXFULLSCREEN = "mixfull";
 }
