@@ -118,7 +118,7 @@ public class NativeActivity extends BaseActivity {
                 .build());
 
         // Listen Ad load result
-        mNativeAd.setAdListener(new AdListener() {
+        mNativeAd.setADListener(new AdListener() {
             @Override
             public void onAdLoaded(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());

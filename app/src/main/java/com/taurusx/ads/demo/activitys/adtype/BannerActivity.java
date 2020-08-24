@@ -71,7 +71,7 @@ public class BannerActivity extends BaseActivity {
                 .build());
 
         // Listen Ad load result
-        mBannerAdView.setAdListener(new AdListener() {
+        mBannerAdView.setADListener(new AdListener() {
             @Override
             public void onAdLoaded(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());

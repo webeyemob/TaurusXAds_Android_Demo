@@ -86,7 +86,7 @@ public class InterstitialActivity extends BaseActivity {
                 .build());
 
         // Listen Ad load result
-        mInterstitialAd.setAdListener(new AdListener() {
+        mInterstitialAd.setADListener(new AdListener() {
             @Override
             public void onAdLoaded(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());

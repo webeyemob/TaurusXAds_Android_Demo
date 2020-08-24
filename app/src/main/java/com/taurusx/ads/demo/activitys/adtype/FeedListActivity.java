@@ -152,7 +152,7 @@ public class FeedListActivity extends BaseActivity {
                 .build());
 
         // Set FeedList Load Event
-        mFeedList.setAdListener(new FeedAdListener() {
+        mFeedList.setADListener(new FeedAdListener() {
             @Override
             public void onAdLoaded(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());

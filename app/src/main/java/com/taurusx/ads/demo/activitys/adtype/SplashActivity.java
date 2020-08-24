@@ -78,7 +78,7 @@ public class SplashActivity extends FragmentActivity {
         // mSplashAd.setBottomView(bottomArea);
 
         // Set SplashAd Load Event
-        mSplashAd.setAdListener(new SplashAdListener() {
+        mSplashAd.setADListener(new SplashAdListener() {
             @Override
             public void onAdLoaded(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());

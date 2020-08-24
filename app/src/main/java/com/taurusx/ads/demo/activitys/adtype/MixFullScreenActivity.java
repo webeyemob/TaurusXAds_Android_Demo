@@ -110,7 +110,7 @@ public class MixFullScreenActivity extends BaseActivity {
                 .build());
 
         // Set MixFullScreenAd Load Event
-        mMixFullScreenAd.setAdListener(new AdListener() {
+        mMixFullScreenAd.setADListener(new AdListener() {
             @Override
             public void onAdLoaded(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());

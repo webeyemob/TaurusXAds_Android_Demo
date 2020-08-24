@@ -73,7 +73,7 @@ dependencies {
         implementation 'com.taurusx.ads:core-oversea:1.13.5'
     } else {
         // 国内版
-        implementation 'com.taurusx.ads:core:1.13.7'
+        implementation 'com.taurusx.ads:core:1.14.0'
     }
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'

@@ -112,7 +112,7 @@ public class MixViewActivity extends BaseActivity {
                 .build());
 
         // Set MixView Load Event
-        mMixViewAd.setAdListener(new AdListener() {
+        mMixViewAd.setADListener(new AdListener() {
             @Override
             public void onAdLoaded(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());

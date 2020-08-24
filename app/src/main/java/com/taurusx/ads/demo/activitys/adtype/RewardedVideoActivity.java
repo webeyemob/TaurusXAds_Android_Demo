@@ -83,7 +83,7 @@ public class RewardedVideoActivity extends BaseActivity {
                 .build());
 
         // Listen Ad load result
-        mRewardedVideoAd.setAdListener(new RewardedVideoAdListener() {
+        mRewardedVideoAd.setADListener(new RewardedVideoAdListener() {
             @Override
             public void onAdLoaded(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
