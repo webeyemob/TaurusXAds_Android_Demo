@@ -62,11 +62,23 @@
       "interstitial": {
         "Interstitial": "25b370ef-df02-4dd3-bdd8-fe198e82b89d"
       },
+      "native": {
+        "Native": "9b0c1021-3664-49ce-82a8-7a9ec0cd15e8"
+      },
+      "feedlist": {
+        "FeedList": "329ee0f3-8f2e-4710-a836-3f7f52c6bf54"
+      },
       "rewarded": {
         "RewardedVideo": "f8515dd7-5e61-4d9b-abc2-7d9e0dd198ab"
       },
-      "native": {
-        "Native": "9b0c1021-3664-49ce-82a8-7a9ec0cd15e8"
+      "splash": {
+        "Splash": "d5781ecc-3733-4669-9b1a-b7f0f75bd893"
+      },
+      "mixview": {
+        "MixView": "5299f5f2-8ba3-4d17-999f-dff9dbc0029d"
+      },
+      "mixfull": {
+        "MixFullScreen": "92aff526-8438-40c4-afa0-92474a0896f1"
       }
     },
     {
