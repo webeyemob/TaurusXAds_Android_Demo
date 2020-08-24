@@ -206,8 +206,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.2.1.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.2.1"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.0.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.0"
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'

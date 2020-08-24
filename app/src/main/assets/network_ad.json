@@ -394,7 +394,8 @@
     {
       "adName": "KuaiShou",
       "interstitial": {
-        "Interstitial": "d9f24feb-2dd3-4e48-b26b-b15fe74b72be"
+        "Interstitial Portrait": "d9f24feb-2dd3-4e48-b26b-b15fe74b72be",
+        "Interstitial Landscape": "7cdd7103-aeaf-4753-83ab-1f82b0f7fef5"
       },
       "feedlist": {
         "Custom FeedList": "90bc8844-ec4e-4058-82b3-f645106811aa",
@@ -402,7 +403,8 @@
         "Draw FeedList": "dc45260d-be49-45ae-aa12-38da8d732a01"
       },
       "rewarded": {
-        "RewardedVideo": "24e29410-8e32-4dd5-8a52-ab0b4f46af5b"
+        "RewardedVideo Portrait": "24e29410-8e32-4dd5-8a52-ab0b4f46af5b",
+        "RewardedVideo Landscape": "63668f6c-1b9c-4180-bb06-b541deb908ca"
       },
       "splash": {
         "Splash": "12207f7c-804c-451a-a8be-11f99eb537ca"
