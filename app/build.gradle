@@ -300,7 +300,7 @@ dependencies {
 //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
 
     // Sigmob
-    implementation 'com.taurusx.ads:mediation_sigmob:2.15.4.3'
+    implementation 'com.taurusx.ads:mediation_sigmob:2.15.4.4'
     implementation 'com.taurusx.ads:windAd:2.15.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
