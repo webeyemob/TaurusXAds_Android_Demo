@@ -63,6 +63,9 @@ boolean use_pangle = false
 // InMobi 区分国内、海外版
 boolean inmobi_oversea = false
 
+// Mintegral 区分国内、海外版
+boolean mintegral_oversea = false
+
 dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
@@ -75,19 +78,175 @@ dependencies {
         // 国内版
         implementation 'com.taurusx.ads:core:1.14.0'
     }
-
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
-    // AdColony
-    implementation "com.taurusx.ads:mediation_adcolony:4.2.2.0"
-    implementation "com.adcolony:sdk:4.2.2"
-    implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 
+    // ####################################### China Network #######################################
+    if (use_pangle) {
+        // pangle
+        implementation "com.taurusx.ads:mediation_pangle:3.1.0.1.0"
+        implementation "com.taurusx.ads:pangle_open_ad_sdk:3.1.0.1"
+    } else {
+        // TikTok
+        implementation "com.taurusx.ads:mediation_toutiao:3.1.0.3.2"
+        implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.1.0.3"
+        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    }
+
+    // Tencent GDT
+    implementation "com.taurusx.ads:mediation_gdt:4.251.1121.1"
+    implementation "com.taurusx.ads:gdtsdk_union:4.251.1121"
+    // compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Baidu
+    implementation "com.taurusx.ads:mediation_baidu:5.89.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:5.89"
+    implementation "com.taurusx.ads:miit_mdid:1.0.13"
+
+    // KuaiShou
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.0.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.0"
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation "com.google.code.gson:gson:2.8.6"
+
+    // Sigmob
+    implementation 'com.taurusx.ads:mediation_sigmob:2.15.4.4'
+    implementation 'com.taurusx.ads:windAd:2.15.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // 360
+    //    implementation "com.taurusx.ads:mediation_360:1.4.1036.2"
+    //    implementation "com.taurusx.ads:torch_game-adcore:1.4.1036"
+
+    // 4399
+    //    implementation "com.taurusx.ads:mediation_4399:1.1.8.2"
+    //    implementation "com.taurusx.ads:au4399-sdk-release:1.1.8"
+    //    implementation "com.taurusx.ads:baidu_mobads_sdk:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mintegral_alphab:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mintegral_chinacommon:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mintegral_interstitialvideo:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mintegral_mtgdownloads:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mintegral_mtgjscommon:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mintegral_playercommon:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mintegral_reward:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mintegral_videocommon:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mintegral_videojs:4399_1.1.8"
+    //    implementation "com.taurusx.ads:mobgiads-generic-release:4.5.1"
+    //    implementation "com.taurusx.ads:oneway-plugin:2.1.3"
+    //    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4399_1.1.8"
+    //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
+
+    // Aligames
+    //    implementation "com.taurusx.ads:mediation_aligames:2.5.45.3"
+    //    implementation "com.taurusx.ads:aligames_ngad_release_sdk:2.5.45"
+
+    // OPPO (不能与穿山甲、优量汇同时使用)
+    //    implementation "com.taurusx.ads:mediation_oppo:3.2.9.4"
+    //    implementation "com.taurusx.ads:oppo_mobad_sdk:3.2.9"
+    //    implementation "com.android.support:appcompat-v7:26.1.0"
+    //    implementation "com.squareup.wire:wire-runtime:2.2.0"
+    //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
+
+    // Vivo
+    //    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.7"
+
+    // Xiaomi
+    //    implementation "com.taurusx.ads:mediation_mimo:1.5.0.1"
+    //    implementation "com.taurusx.ads:mimo_sdk:1.5.0"
+    //    implementation "com.android.support:appcompat-v7:28.0.0"
+    //    implementation "com.android.support:support-v4:28.0.0"
+    //    implementation "com.google.code.gson:gson:2.8.5"
+
+    // IFly
+    implementation "com.taurusx.ads:ifly_ad:4.4.4"
+    implementation "com.taurusx.ads:mediation_ifly:4.4.4.1"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+
+    // InMobi
+    if (inmobi_oversea) {
+        // InMobi 海外版
+        implementation "com.taurusx.ads:mediation_inmobi_oversea:9.0.7.0"
+        implementation "com.inmobi.monetization:inmobi-ads:9.0.7"
+        implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
+        implementation "com.android.support:customtabs:28.0.0"
+        implementation "com.squareup.picasso:picasso:2.71828"
+        implementation "androidx.legacy:legacy-support-v4:1.0.0"
+        implementation "androidx.recyclerview:recyclerview:1.0.0"
+        // optional dependency for better targeting
+        implementation "com.google.android.gms:play-services-location:16.0.0"
+    } else {
+        // InMobi 国内版
+        implementation "com.taurusx.ads:mediation_inmobi:7.4.4.1"
+        implementation "com.squareup.picasso:picasso:2.71828"
+        implementation "androidx.legacy:legacy-support-v4:1.0.0"
+        implementation "androidx.recyclerview:recyclerview:1.0.0"
+        implementation "com.taurusx.ads:miit_mdid:1.0.13"
+    }
+
+    // Mintegral
+    implementation "com.taurusx.ads:mediation_mintegral:13.1.11.0"
+    implementation "com.mintegral.msdk:videojs:13.1.11"
+    implementation "com.mintegral.msdk:mtgjscommon:13.1.11"
+    implementation "com.mintegral.msdk:playercommon:13.1.11"
+    implementation "com.mintegral.msdk:reward:13.1.11"
+    implementation "com.mintegral.msdk:videocommon:13.1.11"
+    implementation "com.mintegral.msdk:common:13.1.11"
+    implementation "com.mintegral.msdk:alphab:13.1.11"
+    implementation "com.mintegral.msdk:interstitialvideo:13.1.11"
+    implementation "com.mintegral.msdk:mtgnative:13.1.11"
+    implementation "com.mintegral.msdk:nativeex:13.1.11"
+    implementation "com.mintegral.msdk:mtgsplash:13.1.11"
+    implementation "com.mintegral.msdk:interactiveads:13.1.11"
+    implementation "com.mintegral.msdk:mtgbanner:13.1.11"
+    implementation "com.mintegral.msdk:interstitial:13.1.11"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    if (!mintegral_oversea) {
+        // Mintegral 国内版本须添加
+        implementation "com.mintegral.msdk:optimizedata:13.1.11"
+        implementation "com.mintegral.msdk:mtgdownloads:13.1.11"
+    }
+    // Head Bidding
+    implementation "com.mintegral.msdk:mtgbid:13.1.11"
+
+    // Tuia
+    implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.0"
+    implementation "com.tuia:sdk:2.8.0.0"
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
+
+
+    // ####################################### Japan Network #######################################
     // AdGeneration
     implementation "com.taurusx.ads:mediation_adgeneration:2.18.1.0"
     implementation "com.socdm.d.adgeneration:adg:2.18.1"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-ads:17.1.2"
+
+    // Five
+    implementation "com.taurusx.ads:mediation_five:20200610.1"
+    implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
+
+    // i-mobile
+    implementation "com.taurusx.ads:mediation_imobile:2.0.21.1"
+    implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
+
+    // Maio
+    implementation "com.taurusx.ads:mediation_maio:1.1.11.0"
+    implementation "com.maio:android-sdk:1.1.11@aar"
+    implementation "com.google.android.gms:play-services-ads:17.2.1"
+
+    // Nend
+    implementation "com.taurusx.ads:mediation_nend:5.4.2.6"
+    implementation "net.nend.android:nend-sdk:5.4.2"
+
+
+    // ####################################### Other Network #######################################
+    // AdColony
+    implementation "com.taurusx.ads:mediation_adcolony:4.1.4.1"
+    implementation "com.adcolony:sdk:4.1.4"
+    implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 
     // AdMob & DFP
     implementation "com.taurusx.ads:mediation_admob:19.3.0.0"
@@ -134,10 +293,6 @@ dependencies {
     // 使用 Header Bidding 需要 headerbiddingkit
     implementation "com.taurusx.ads:headerbiddingkit:0.4.1"
 
-    // Five
-    implementation "com.taurusx.ads:mediation_five:20200610.1"
-    implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
-
     // Flurry
     implementation "com.taurusx.ads:mediation_flurry:11.4.0.3"
     implementation "com.flurry.android:analytics:11.4.0@aar"
@@ -157,45 +312,12 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
-    // i-mobile
-    implementation "com.taurusx.ads:mediation_imobile:2.0.21.1"
-    implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
-
-    // IFly
-    implementation "com.taurusx.ads:ifly_ad:4.4.4"
-    implementation "com.taurusx.ads:mediation_ifly:4.4.4.1"
-    implementation "androidx.legacy:legacy-support-v4:1.0.0"
-
-    // InMobi
-    if (inmobi_oversea) {
-        implementation "com.taurusx.ads:mediation_inmobi_oversea:9.0.7.0"
-        implementation "com.inmobi.monetization:inmobi-ads:9.0.7"
-        implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
-        implementation "com.android.support:customtabs:28.0.0"
-        implementation "com.squareup.picasso:picasso:2.71828"
-        implementation "androidx.legacy:legacy-support-v4:1.0.0"
-        implementation "androidx.recyclerview:recyclerview:1.0.0"
-        // optional dependency for better targeting
-        implementation "com.google.android.gms:play-services-location:16.0.0"
-    } else {
-        implementation "com.taurusx.ads:mediation_inmobi:7.4.4.1"
-        implementation "com.squareup.picasso:picasso:2.71828"
-        implementation "androidx.legacy:legacy-support-v4:1.0.0"
-        implementation "androidx.recyclerview:recyclerview:1.0.0"
-        implementation "com.taurusx.ads:miit_mdid:1.0.13"
-    }
-
     // ironSource
     implementation "com.taurusx.ads:mediation_ironsource:6.15.0.1.0"
     implementation "com.ironsource.sdk:mediationsdk:6.15.0.1@jar"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-location:16.0.0"
-
-    // Maio
-    implementation "com.taurusx.ads:mediation_maio:1.1.11.0"
-    implementation "com.maio:android-sdk:1.1.11@aar"
-    implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // MoPub
     implementation "com.taurusx.ads:mediation_mopub:5.13.0.0"
@@ -204,18 +326,6 @@ dependencies {
     }
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-base:16.1.0"
-
-    // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.0.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.0"
-    implementation 'com.google.android.material:material:1.1.0'
-    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation "com.google.code.gson:gson:2.8.6"
-
-    // Nend
-    implementation "com.taurusx.ads:mediation_nend:5.4.2.6"
-    implementation "net.nend.android:nend-sdk:5.4.2"
 
     // Prebid
     implementation "com.taurusx.ads:mediation_prebid:1.5.1"
@@ -237,104 +347,6 @@ dependencies {
     // Recommended for SDK to be able to get Android Advertising ID
     implementation "com.google.android.gms:play-services-basement:17.0.0"
     implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
-
-    // 360
-//    implementation "com.taurusx.ads:mediation_360:1.4.1036.2"
-//    implementation "com.taurusx.ads:torch_game-adcore:1.4.1036"
-
-    // 4399
-//    implementation "com.taurusx.ads:mediation_4399:1.1.8.2"
-//    implementation "com.taurusx.ads:au4399-sdk-release:1.1.8"
-//    implementation "com.taurusx.ads:baidu_mobads_sdk:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_alphab:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_chinacommon:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_interstitialvideo:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_mtgdownloads:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_mtgjscommon:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_playercommon:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_reward:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_videocommon:4399_1.1.8"
-//    implementation "com.taurusx.ads:mintegral_videojs:4399_1.1.8"
-//    implementation "com.taurusx.ads:mobgiads-generic-release:4.5.1"
-//    implementation "com.taurusx.ads:oneway-plugin:2.1.3"
-//    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4399_1.1.8"
-//    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
-
-    // Aligames
-//    implementation "com.taurusx.ads:mediation_aligames:2.5.45.3"
-//    implementation "com.taurusx.ads:aligames_ngad_release_sdk:2.5.45"
-
-    // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.86.1"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:5.86"
-    implementation "com.taurusx.ads:miit_mdid:1.0.13"
-
-    // Mintegral
-    implementation "com.taurusx.ads:mediation_mintegral:13.1.11.0"
-    implementation "com.mintegral.msdk:videojs:13.1.11"
-    implementation "com.mintegral.msdk:mtgjscommon:13.1.11"
-    implementation "com.mintegral.msdk:playercommon:13.1.11"
-    implementation "com.mintegral.msdk:reward:13.1.11"
-    implementation "com.mintegral.msdk:videocommon:13.1.11"
-    implementation "com.mintegral.msdk:common:13.1.11"
-    implementation "com.mintegral.msdk:alphab:13.1.11"
-    implementation "com.mintegral.msdk:interstitialvideo:13.1.11"
-    implementation "com.mintegral.msdk:mtgnative:13.1.11"
-    implementation "com.mintegral.msdk:nativeex:13.1.11"
-    implementation "com.mintegral.msdk:mtgsplash:13.1.11"
-    implementation "com.mintegral.msdk:interactiveads:13.1.11"
-    implementation "com.mintegral.msdk:mtgbanner:13.1.11"
-    implementation "com.mintegral.msdk:interstitial:13.1.11"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    // 国内产品必须添加
-//    implementation "com.mintegral.msdk:optimizedata:13.1.11"
-//    implementation "com.mintegral.msdk:mtgdownloads:13.1.11"
-    // Head Bidding
-    implementation "com.mintegral.msdk:mtgbid:13.1.11"
-
-    // OPPO (不能与穿山甲、优量汇同时使用)
-//    implementation "com.taurusx.ads:mediation_oppo:3.2.9.4"
-//    implementation "com.taurusx.ads:oppo_mobad_sdk:3.2.9"
-//    implementation "com.android.support:appcompat-v7:26.1.0"
-//    implementation "com.squareup.wire:wire-runtime:2.2.0"
-//    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
-
-    // Sigmob
-    implementation 'com.taurusx.ads:mediation_sigmob:2.15.4.4'
-    implementation 'com.taurusx.ads:windAd:2.15.4'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-
-    // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.251.1121.1"
-    implementation "com.taurusx.ads:gdtsdk_union:4.251.1121"
-    // compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-
-    if (use_pangle) {
-        // pangle
-        implementation "com.taurusx.ads:mediation_pangle:3.1.0.1.0"
-        implementation "com.taurusx.ads:pangle_open_ad_sdk:3.1.0.1"
-    } else {
-        // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:3.1.0.3.2"
-        implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.1.0.3"
-        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    }
-
-    // Tuia
-    implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.0"
-    implementation "com.tuia:sdk:2.8.0.0"
-    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
-
-    // Vivo
-//    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.7"
-
-    // Xiaomi
-//    implementation "com.taurusx.ads:mediation_mimo:1.5.0.1"
-//    implementation "com.taurusx.ads:mimo_sdk:1.5.0"
-//    implementation "com.android.support:appcompat-v7:28.0.0"
-//    implementation "com.android.support:support-v4:28.0.0"
-//    implementation "com.google.code.gson:gson:2.8.5"
 }
 
 

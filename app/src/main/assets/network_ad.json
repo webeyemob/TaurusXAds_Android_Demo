@@ -190,6 +190,12 @@
       },
       "splash": {
         "Splash": "d1487093-a161-454c-aa29-391903065358"
+      },
+      "mixview": {
+        "MixView": "97b0f7af-81c9-434d-8a0c-792680caf01b"
+      },
+      "mixfull": {
+        "MixFullScreen": "3eff97de-f995-4ebc-99e1-ed2b818c9352"
       }
     },
     {

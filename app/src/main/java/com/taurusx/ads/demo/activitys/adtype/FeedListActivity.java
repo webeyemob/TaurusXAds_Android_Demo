@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
+import com.baidu.mobad.feeds.ArticleInfo;
 import com.qq.e.ads.cfg.VideoOption;
 import com.qq.e.ads.nativ.express2.VideoOption2;
 import com.taurusx.ads.core.api.ad.config.AdSize;
@@ -25,6 +26,7 @@ import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.demo.utils.Utils;
+import com.taurusx.ads.mediation.networkconfig.BaiduFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpress2_0FeedListConfig;
@@ -38,7 +40,9 @@ import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressDrawFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressFeedListConfig;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class FeedListActivity extends BaseActivity {
@@ -140,6 +144,7 @@ public class FeedListActivity extends BaseActivity {
 
         // (Optional) Set Network special Config
         mFeedList.setNetworkConfigs(NetworkConfigs.Builder()
+                .addConfig(createBaiduFeedListConfig())
                 .addConfig(createGDTCustom2_0FeedListConfig())
                 .addConfig(createGDTExpressFeedListConfig())
                 .addConfig(createGDTExpress2_0FeedListConfig())
@@ -186,6 +191,26 @@ public class FeedListActivity extends BaseActivity {
                         : ", Feed is null";
             }
         });
+    }
+
+    private BaiduFeedListConfig createBaiduFeedListConfig() {
+        Map<String, String> extra = new HashMap<>();
+        // 用户维度：用户性别，取值：0-unknown，1-male，2-female
+        extra.put(ArticleInfo.USER_SEX, "1");
+        // 用户维度：收藏的小说 ID，最多五个 ID，且不同 ID 用 '/' 分隔
+        extra.put(ArticleInfo.FAVORITE_BOOK, "这是小说的名称1/这是小说的名称2/这是小说的名称3");
+        // 内容维度：小说、文章的名称
+        extra.put(ArticleInfo.PAGE_TITLE, "测试书名");
+        // 内容维度：小说、文章的ID
+        extra.put(ArticleInfo.PAGE_ID, "1234567");
+        // 内容维度：小说分类，一级分类和二级分类用 '/' 分隔
+        extra.put(ArticleInfo.CONTENT_CATEGORY, "一级分类/二级分类");
+        // 内容维度：小说、文章的标签，最多 10 个，且不同标签用 '/' 分隔
+        extra.put(ArticleInfo.CONTENT_LABEL, "标签1/标签2/标签3");
+
+        return BaiduFeedListConfig.Builder()
+                .setRequestParametersExtra(extra)
+                .build();
     }
 
     private GDTCustom2_0FeedListConfig createGDTCustom2_0FeedListConfig() {
