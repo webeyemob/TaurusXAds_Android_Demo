@@ -6,6 +6,12 @@
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:remove="android:maxSdkVersion" />
 
+    <!-- AdColony Optional Permission -->
+    <!-- 此权限用于某些允许用户将屏幕截图保存到手机的广告。-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 此权限用于在播放过程中振动的某些广告。 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name=".TaurusApplication"
         android:hardwareAccelerated="true"

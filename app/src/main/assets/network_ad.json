@@ -36,13 +36,21 @@
     {
       "adName": "AdColony",
       "banner": {
-        "Banner": "fb6c8e20-bd62-4f3a-8927-2081e19f5114"
+        "Banner 320*50": "fb6c8e20-bd62-4f3a-8927-2081e19f5114",
+        "Banner 300*250": "b628f089-65a7-495b-b956-a2ad25ff5214",
+        "Banner 728*90": "9bbbae01-10bc-40dd-82d7-f2a4c5771642"
       },
       "interstitial": {
         "Interstitial": "d3d6ca79-fd86-458c-8fda-05896e2534c8"
       },
       "rewarded": {
         "RewardedVideo": "a0e7f1f4-b228-4567-875d-83771ac04dfa"
+      },
+      "mixview": {
+        "MixView": "adc7cfea-0cd2-4270-9fc1-ce4bd4cf3c22"
+      },
+      "mixfull": {
+        "MixFullScreen": "e85fd9d8-044c-4429-92c0-34921c60c248"
       }
     },
     {

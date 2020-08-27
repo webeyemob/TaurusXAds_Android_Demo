@@ -79,8 +79,8 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     // AdColony
-    implementation "com.taurusx.ads:mediation_adcolony:4.1.4.1"
-    implementation "com.adcolony:sdk:4.1.4"
+    implementation "com.taurusx.ads:mediation_adcolony:4.2.2.0"
+    implementation "com.adcolony:sdk:4.2.2"
     implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 
     // AdGeneration
