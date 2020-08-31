@@ -60,10 +60,10 @@ public class RewardedVideoActivity extends BaseActivity {
         mShowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mShowButton.setEnabled(false);
                 if (mRewardedVideoAd.isReady()) {
                     mRewardedVideoAd.show(RewardedVideoActivity.this);
                 }
-                mShowButton.setEnabled(false);
             }
         });
     }

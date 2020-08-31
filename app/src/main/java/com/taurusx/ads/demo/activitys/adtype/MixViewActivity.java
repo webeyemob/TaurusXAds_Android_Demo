@@ -23,6 +23,8 @@ public class MixViewActivity extends BaseActivity {
     private final String TAG = "MixViewActivity";
 
     private String mMixViewAdUnitId;
+    private boolean mIsAutoLoad;
+
     private MixViewAd mMixViewAd;
 
     private Button mLoadButton;
@@ -37,16 +39,23 @@ public class MixViewActivity extends BaseActivity {
         setContentView(R.layout.activity_mixview);
 
         mMixViewAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
+        mIsAutoLoad = getIntent().getBooleanExtra(Constant.KEY_IS_AUTO_LOAD, false);
+
         initMixView();
 
         mLoadButton = findViewById(R.id.mxiview_load);
-        mLoadButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Load MixViewAd
-                mMixViewAd.loadAd();
-            }
-        });
+        if (!mIsAutoLoad) {
+            mLoadButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Load MixViewAd
+                    mMixViewAd.loadAd();
+                }
+            });
+        } else {
+            mLoadButton.setVisibility(View.GONE);
+            mMixViewAd.loadAd();
+        }
 
         mShowButton = findViewById(R.id.mxiview_show);
         mShowButton.setOnClickListener(new View.OnClickListener() {
@@ -122,6 +131,11 @@ public class MixViewActivity extends BaseActivity {
             @Override
             public void onAdShown(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
+                if (mIsAutoLoad) {
+                    if (mMixViewAd.isReady()) {
+                        mShowButton.setEnabled(true);
+                    }
+                }
             }
 
             @Override

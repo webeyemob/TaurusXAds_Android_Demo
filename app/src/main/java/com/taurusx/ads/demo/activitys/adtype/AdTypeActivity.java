@@ -178,7 +178,8 @@ public class AdTypeActivity extends BaseActivity {
                     case MixView:
                         startActivity(new Intent(AdTypeActivity.this, MixViewActivity.class)
                                 .putExtra(Constant.KEY_TITLE, title)
-                                .putExtra(Constant.KEY_ADUNITID, adUnitId));
+                                .putExtra(Constant.KEY_ADUNITID, adUnitId)
+                                .putExtra(Constant.KEY_IS_AUTO_LOAD, mIsAutoLoad));
                         break;
                     case MixFullScreen:
                         startActivity(new Intent(AdTypeActivity.this, MixFullScreenActivity.class)

@@ -25,9 +25,9 @@ import com.taurusx.ads.mediation.networkconfig.TuiaGlobalConfig;
 
 import org.prebid.mobile.Host;
 
-public class TaurusApplication extends Application {
+public class TaurusXApplication extends Application {
 
-    private final String TAG = "TaurusApplication";
+    private final String TAG = "TaurusXApplication";
 
     @Override
     public void onCreate() {
@@ -76,7 +76,6 @@ public class TaurusApplication extends Application {
         TaurusXAds.getDefault().setDownloadConfirmNetwork(DownloadNetwork.NONE);
 
         // 初始化
-        TaurusXAds.getDefault().setTestMode(true);
         TaurusXAds.getDefault().init(this, Constant.APP_ID);
     }
 

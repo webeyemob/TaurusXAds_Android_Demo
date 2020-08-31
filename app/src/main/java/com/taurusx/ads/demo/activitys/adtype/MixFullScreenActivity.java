@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.taurusx.ads.core.api.ad.config.AdSize;
 import com.taurusx.ads.core.api.ad.mixfull.MixFullScreenAd;
 import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
@@ -89,7 +88,7 @@ public class MixFullScreenActivity extends BaseActivity {
 //                .build());
 
         // Set Express Native Size
-        mMixFullScreenAd.setExpressAdSize(new AdSize(360, 250));
+        // mMixFullScreenAd.setExpressAdSize(new AdSize(360, 250));
 
         // Set Video Muted, default is sound
         // mMixFullScreenAd.setMuted(false);
