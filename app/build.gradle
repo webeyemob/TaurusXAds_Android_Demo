@@ -54,13 +54,16 @@ android {
     }
 }
 
-// TaurusX 区分国内、海外版
+// TaurusX 区分国内版、海外版
 boolean taurusX_oversea = false
 
-// 穿山甲区分国内、海外版（Pangle）
+// 穿山甲区分国内版、海外版（Pangle）
 boolean use_pangle = false
 
-// InMobi 区分国内、海外版
+// 优量汇分为标准版本、X5 内核加强版
+boolean gdt_tbs = false
+
+// InMobi 区分国内版、海外版
 boolean inmobi_oversea = false
 
 // Mintegral 区分国内、海外版
@@ -94,8 +97,13 @@ dependencies {
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.251.1121.1"
-    implementation "com.taurusx.ads:gdtsdk_union:4.251.1121"
+    implementation "com.taurusx.ads:mediation_gdt:4.251.1121.2"
+    if (gdt_tbs) {
+        implementation "com.taurusx.ads:gdtsdk_tbs:4.251.1121"
+    } else {
+        implementation "com.taurusx.ads:gdtsdk_union:4.251.1121"
+    }
+    // 如果打包 release 版本出错，请添加 gdt_tbs_sdk_thirdapp
     // compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
