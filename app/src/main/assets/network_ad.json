@@ -422,6 +422,12 @@
       },
       "splash": {
         "Splash": "12207f7c-804c-451a-a8be-11f99eb537ca"
+      },
+      "mixview": {
+        "MixView": "0f5e68bd-b27a-4d5a-a55c-a8a7b7c3d5bb"
+      },
+      "mixfull": {
+        "MixFullScreen": "6367401a-05e7-4695-b25a-bafecafaa553"
       }
     },
     {
