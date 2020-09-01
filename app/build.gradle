@@ -321,8 +321,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // ironSource
-    implementation "com.taurusx.ads:mediation_ironsource:6.15.0.1.0"
-    implementation "com.ironsource.sdk:mediationsdk:6.15.0.1@jar"
+    implementation "com.taurusx.ads:mediation_ironsource:7.0.0.0"
+    implementation "com.ironsource.sdk:mediationsdk:7.0.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-location:16.0.0"

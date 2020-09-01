@@ -352,7 +352,11 @@
     {
       "adName": "ironSource",
       "banner": {
-        "Banner": "1f472d1e-cffc-44a4-8683-955d6bf50de0"
+        "Banner 320*50": "1f472d1e-cffc-44a4-8683-955d6bf50de0",
+        "Banner 320*100": "ae58a2d8-adfa-4432-bbcc-6c404cc1f970",
+        "Banner 300*250": "fbc86ce6-c7d9-40fe-8ac0-d71900cedbe9",
+        "Banner 468*60": "fa508b55-1e42-4a40-b910-242b8dfd8173",
+        "Banner 728*90": "442c51c8-6c59-4c42-9a30-9e17adef5742"
       },
       "interstitial": {
         "Interstitial": "a49b31d2-168b-4e2c-8588-6d8b85199bc1"
