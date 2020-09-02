@@ -2,6 +2,7 @@ package com.taurusx.ads.demo.activitys.adtype;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -49,6 +50,7 @@ public class FeedListActivity extends BaseActivity {
 
     private final String TAG = "FeedListActivity";
 
+    private boolean mIsDrawFeedList;
     private String mFeedListAdUnitId;
     private FeedList mFeedList;
 
@@ -60,9 +62,11 @@ public class FeedListActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
+        String title = getIntent().getStringExtra(Constant.KEY_TITLE);
+        getActionBar().setTitle(title);
         setContentView(R.layout.activity_feedlist);
 
+        mIsDrawFeedList = title.toLowerCase().contains("draw");
         mFeedListAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         initFeedList();
 
@@ -137,7 +141,9 @@ public class FeedListActivity extends BaseActivity {
 //                .build());
 
         // Set Express FeedList Size
-        mFeedList.setExpressAdSize(new AdSize(360, 240));
+        if (!mIsDrawFeedList) {
+            mFeedList.setExpressAdSize(new AdSize(360, 240));
+        }
 
         // Set Video Muted, default is muted
         // mFeedList.setMuted(false);
