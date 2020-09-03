@@ -789,6 +789,28 @@
       }
     },
     {
+      "adName": "YouDao",
+      "interstitial": {
+        "Interstitial": "2d83b6ff-c582-4e1a-96a2-e45f6341a5d0"
+      },
+      "feedlist": {
+        "FeedList": "468f50a1-9777-4cf6-ae9d-57cf808671a9"
+      },
+      "rewarded": {
+        "RewardedVideo": "a62809ae-6c46-4138-b88b-9926bf425eac"
+      },
+      "splash": {
+        "Brand Splash": "1ffe49a6-86bf-4c72-8a69-c061f153f8a9",
+        "Interstitial Splash": "22f4d522-6a22-476f-9318-c56628d02d43"
+      },
+      "mixview": {
+        "MixView": "83ce6dac-11f4-4ee1-8c78-6cbbcba45665"
+      },
+      "mixfull": {
+        "MixFullScreen": "86e99046-807b-40b6-a41d-4642ffd0564d"
+      }
+    },
+    {
       "adName": "Meishu",
       "rewarded": {
         "RewardedVideo(OpenUrl)": "8de275a1-40be-4760-aeef-514de9d3caa9",
