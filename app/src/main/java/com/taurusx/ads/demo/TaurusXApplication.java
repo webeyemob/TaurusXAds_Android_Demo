@@ -197,8 +197,6 @@ public class TaurusXApplication extends Application {
                 .setTitleBarTheme(TTAdConstant.TITLE_BAR_THEME_LIGHT)
                 // 设置是否允许 SDK 弹出通知
                 .setAllowShowNotify(true)
-                // 设置是否允许落地页出现在锁屏上面
-                .setAllowShowPageWhenScreenLock(true)
                 // 设置是否支持多进程
                 .setSupportMultiProcess(false)
                 .setCustomController(new TTCustomController() {
