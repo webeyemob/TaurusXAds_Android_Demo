@@ -79,7 +79,7 @@ dependencies {
         implementation 'com.taurusx.ads:core-oversea:1.14.2'
     } else {
         // 国内版
-        implementation 'com.taurusx.ads:core:1.14.4'
+        implementation 'com.taurusx.ads:core:1.14.5'
     }
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -220,7 +220,7 @@ dependencies {
     implementation "com.mintegral.msdk:mtgbid:13.1.11"
 
     // Tuia
-    implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.0"
+    implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.2"
     implementation "com.tuia:sdk:2.8.0.0"
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
 

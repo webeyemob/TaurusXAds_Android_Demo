@@ -311,7 +311,7 @@ public class TaurusXApplication extends Application {
 
     private TuiaGlobalConfig createTuiaConfig() {
         return TuiaGlobalConfig.Builder()
-                .setUserId("test-userid-123456")
+                // .setUserId("test-userid-123456")
                 .build();
     }
 }

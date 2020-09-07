@@ -686,6 +686,12 @@
       },
       "splash": {
         "Splash": "d6aed121-f09b-4bc2-8282-8eaa31b5f1c6"
+      },
+      "mixview": {
+        "MixView": "8b479150-ad1e-4839-a837-f192e625bb28"
+      },
+      "mixfull": {
+        "MixFullScreen": "bd0dd6cd-7410-4dc4-920c-902b5522a98d"
       }
     },
     {
