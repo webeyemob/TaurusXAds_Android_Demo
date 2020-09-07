@@ -869,6 +869,22 @@
         "nath_ad_splash_android_video": "2d6fc53e-1908-454e-991b-e2015e1cbc40",
         "nath_ad_splash_android": "abf3139b-af0e-4d15-a8b9-67fac33d0a98"
       }
+    },
+
+    {
+      "adName": "Nath_Youdao",
+      "rewarded": {
+        "youdao_api_rewarded": "31af9dae-87fc-4cc1-a7bd-8e905f814f90"
+      },
+      "interstitial": {
+        "youdao_api_interstitial": "e178b984-6d45-4936-91b5-dd33c7aafd3f"
+      },
+      "feedlist": {
+        "youdao_api_feedlist": "e7662998-d0dc-4dd5-8fc2-79583326b736"
+      },
+      "splash": {
+        "youdao_api_splash": "8bf9b84e-ada8-4e1c-9c74-96593110c5c1"
+      }
     }
   ]
 }
