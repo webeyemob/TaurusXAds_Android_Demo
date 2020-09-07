@@ -31,6 +31,9 @@ public class BannerActivity extends BaseActivity {
     private BannerAdView mBannerAdView;
 
     private Button mLoadButton;
+    private Button mShowButton;
+    private Button mHideButton;
+
     private LinearLayout mContainer;
 
     @Override
@@ -46,12 +49,33 @@ public class BannerActivity extends BaseActivity {
         mContainer = findViewById(R.id.layout_banner);
         // Add Banner to UI
         mContainer.addView(mBannerAdView);
+        mContainer.setVisibility(View.INVISIBLE);
 
         mLoadButton = findViewById(R.id.banner_load);
         mLoadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mBannerAdView.loadAd();
+            }
+        });
+
+        mShowButton = findViewById(R.id.banner_show);
+        mShowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mShowButton.setEnabled(false);
+                mHideButton.setEnabled(true);
+                mContainer.setVisibility(View.VISIBLE);
+            }
+        });
+
+        mHideButton = findViewById(R.id.banner_hide);
+        mHideButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mShowButton.setEnabled(true);
+                mHideButton.setEnabled(false);
+                mContainer.setVisibility(View.INVISIBLE);
             }
         });
     }
@@ -75,6 +99,10 @@ public class BannerActivity extends BaseActivity {
             @Override
             public void onAdLoaded(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
+                if (mContainer.getVisibility() == View.INVISIBLE) {
+                    mShowButton.setEnabled(true);
+                    mHideButton.setEnabled(false);
+                }
             }
 
             @Override
