@@ -541,15 +541,7 @@
     },
     {
       "adName": "Pangle",
-      "banner": {
-        "Express Banner 320*50": "4177af0c-ecf6-44d0-a01c-29afc0e721f3",
-        "Express Banner 320*100": "f2e55fc1-cd49-465a-b963-bf955575df0f",
-        "Express Banner 300*250": "8871083b-d236-4b27-98b9-58d1fda38700",
-        "Express Banner 468*60": "29e16f7c-3776-4ea1-836f-1f062f39367b",
-        "Express Banner 728*90": "190672a3-1936-4d8a-ac99-5dde71ceb2cf"
-      },
       "interstitial": {
-        "Express Interstitial": "24535ba6-52f5-4268-b19f-3b1acf528790",
         "FullScreenVideo Vertical": "c4a9a9ea-8ed6-4ff8-8f21-5afee92c4cd4",
         "FullScreenVideo Horizontal": "14eee7bc-59b2-40d0-ac20-413ff1c6dc43",
         "Express FullScreenVideo Vertical": "868c9bd8-0baa-4cf7-923f-4c98d3cdd477",
@@ -561,15 +553,19 @@
       },
       "feedlist": {
         "Custom FeedList": "354e15b8-9168-4a15-a419-c775f9325fb5",
-        "Express FeedList": "88529901-1668-4e9d-8d6b-1ffd43e92ad4",
-        "Draw FeedList": "7ba7f7ae-185f-4c12-a3ac-259f3040066a",
-        "Express Draw FeedList": "7e9c7b3f-d63b-41f1-8798-2be38d132e72"
+        "Express FeedList": "88529901-1668-4e9d-8d6b-1ffd43e92ad4"
       },
       "rewarded": {
         "RewardedVideo Vertical": "7ef22fb6-1b63-4dce-914a-943f1fb0914f",
         "RewardedVideo Horizontal": "acab7142-4ec0-4867-a02e-50f674538d26",
         "Express RewardedVideo Vertical": "4e587912-9123-4e2e-a808-82dc28892704",
         "Express RewardedVideo Horizontal": "f16b7b4c-d796-4857-9f0f-3b49d469f923"
+      },
+      "mixview": {
+        "MixView": "8e6ca69d-7497-4900-ba7f-744e36f431a4"
+      },
+      "mixfull": {
+        "MixFullScreen": "f2fe9f50-8751-421a-a1b9-313ad2851add"
       }
     },
     {
