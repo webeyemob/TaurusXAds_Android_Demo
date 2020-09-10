@@ -54,28 +54,19 @@ android {
     }
 }
 
-// TaurusX 区分国内版、海外版
-boolean taurusX_oversea = false
-
-// 穿山甲区分国内版、海外版（Pangle）
-boolean use_pangle = false
+// TaurusX、穿山甲、InMobi、Mintegral 区分国内、海外版
+boolean oversea = false
 
 // 优量汇分为标准版本、X5 内核加强版
 boolean gdt_tbs = false
-
-// InMobi 区分国内版、海外版
-boolean inmobi_oversea = false
-
-// Mintegral 区分国内、海外版
-boolean mintegral_oversea = false
 
 dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    if (taurusX_oversea) {
+    if (oversea) {
         // 海外版
-        implementation 'com.taurusx.ads:core-oversea:1.14.2'
+        implementation 'com.taurusx.ads:core-oversea:1.14.5'
     } else {
         // 国内版
         implementation 'com.taurusx.ads:core:1.14.5'
@@ -84,7 +75,7 @@ dependencies {
 
 
     // ####################################### China Network #######################################
-    if (use_pangle) {
+    if (oversea) {
         // pangle
         implementation "com.taurusx.ads:mediation_pangle:3.1.5.3.0"
         implementation "com.bytedance.sdk:pangle-sdk:3.1.5.3"
@@ -173,7 +164,7 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // InMobi
-    if (inmobi_oversea) {
+    if (oversea) {
         // InMobi 海外版
         implementation "com.taurusx.ads:mediation_inmobi_oversea:9.0.7.0"
         implementation "com.inmobi.monetization:inmobi-ads:9.0.7"
@@ -210,7 +201,7 @@ dependencies {
     implementation "com.mintegral.msdk:mtgbanner:13.1.11"
     implementation "com.mintegral.msdk:interstitial:13.1.11"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    if (!mintegral_oversea) {
+    if (!oversea) {
         // Mintegral 国内版本须添加
         implementation "com.mintegral.msdk:optimizedata:13.1.11"
         implementation "com.mintegral.msdk:mtgdownloads:13.1.11"
@@ -269,8 +260,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // AppLovin
-    implementation "com.taurusx.ads:mediation_applovin:9.12.8.0"
-    implementation "com.applovin:applovin-sdk:9.12.8"
+    implementation "com.taurusx.ads:mediation_applovin:9.14.1.0"
+    implementation "com.applovin:applovin-sdk:9.14.1"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
     // 使用 Header Bidding 需要 headerbiddingkit
     implementation "com.taurusx.ads:headerbiddingkit:0.4.1"

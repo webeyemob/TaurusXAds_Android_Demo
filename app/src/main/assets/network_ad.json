@@ -129,7 +129,9 @@
     {
       "adName": "AppLovin",
       "banner": {
-        "Banner": "8d2b9e68-e6be-4b59-be2e-f94bd9785c93"
+        "Banner 320*50": "8d2b9e68-e6be-4b59-be2e-f94bd9785c93",
+        "Banner 300*250": "9c3c02b8-ae4a-4c1f-bb75-83ee5b5be39a",
+        "Banner 728*90": "17b3c687-e63c-4ac8-99a0-8012d9839137"
       },
       "interstitial": {
         "Interstitial": "c2e68604-d662-4501-952c-0201c41125ea"
@@ -142,6 +144,12 @@
       },
       "rewarded": {
         "RewardedVideo": "96a061df-d6cb-4e1a-aede-69b20c9337dd"
+      },
+      "mixview": {
+        "MixView": "b89f177a-d9e3-4348-ad1e-0a557a619cac"
+      },
+      "mixfull": {
+        "MixFullScreen": "949a8db6-4ba8-42c6-a6f2-18b134b71388"
       }
     },
     {
