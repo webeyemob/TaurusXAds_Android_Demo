@@ -25,8 +25,6 @@ public class InterstitialActivity extends BaseActivity {
     private final String TAG = "InterstitialActivity";
 
     private String mInterstitialAdUnitId;
-    private boolean mIsAutoLoad;
-
     private InterstitialAd mInterstitialAd;
 
     private Button mLoadButton;
@@ -40,22 +38,15 @@ public class InterstitialActivity extends BaseActivity {
         setContentView(R.layout.activity_interstitial);
 
         mInterstitialAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
-        mIsAutoLoad = getIntent().getBooleanExtra(Constant.KEY_IS_AUTO_LOAD, false);
-
         initInterstitialAd();
 
         mLoadButton = findViewById(R.id.interstitial_load);
-        if (!mIsAutoLoad) {
-            mLoadButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    mInterstitialAd.loadAd();
-                }
-            });
-        } else {
-            mLoadButton.setVisibility(View.GONE);
-            mInterstitialAd.loadAd();
-        }
+        mLoadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mInterstitialAd.loadAd();
+            }
+        });
 
         mShowButton = findViewById(R.id.interstitial_show);
         mShowButton.setOnClickListener(new View.OnClickListener() {
@@ -106,11 +97,6 @@ public class InterstitialActivity extends BaseActivity {
             @Override
             public void onAdClosed(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
-                if (mIsAutoLoad) {
-                    if (mInterstitialAd.isReady()) {
-                        mShowButton.setEnabled(true);
-                    }
-                }
             }
 
             @Override

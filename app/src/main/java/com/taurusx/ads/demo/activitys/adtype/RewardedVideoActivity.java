@@ -24,8 +24,6 @@ public class RewardedVideoActivity extends BaseActivity {
     private final String TAG = "RewardedVideoActivity";
 
     private String mRewardedVideoAdUnitId;
-    private boolean mIsAutoLoad;
-
     private RewardedVideoAd mRewardedVideoAd;
 
     private Button mLoadButton;
@@ -39,22 +37,15 @@ public class RewardedVideoActivity extends BaseActivity {
         setContentView(R.layout.activity_rewardedvideo);
 
         mRewardedVideoAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
-        mIsAutoLoad = getIntent().getBooleanExtra(Constant.KEY_IS_AUTO_LOAD, false);
-
         initRewardedVideoAd();
 
         mLoadButton = findViewById(R.id.rewardedvideo_load);
-        if (!mIsAutoLoad) {
-            mLoadButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    mRewardedVideoAd.loadAd();
-                }
-            });
-        } else {
-            mLoadButton.setVisibility(View.GONE);
-            mRewardedVideoAd.loadAd();
-        }
+        mLoadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mRewardedVideoAd.loadAd();
+            }
+        });
 
         mShowButton = findViewById(R.id.rewardedvideo_show);
         mShowButton.setOnClickListener(new View.OnClickListener() {
@@ -103,11 +94,6 @@ public class RewardedVideoActivity extends BaseActivity {
             @Override
             public void onAdClosed(ILineItem iLineItem) {
                 LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
-                if (mIsAutoLoad) {
-                    if (mRewardedVideoAd.isReady()) {
-                        mShowButton.setEnabled(true);
-                    }
-                }
             }
 
             @Override

@@ -29,26 +29,19 @@ public class AdTypeActivity extends BaseActivity {
     private final String TAG = "AdTypeActivity";
 
     private static final String EXTRA_KEY_MEDIATION = "extra_mediation";
-    private static final String EXTRA_KEY_IS_AUTO_LOAD = "extra_is_auto_load";
 
     public static void start(Context context, @Nullable JSONObject mediation) {
-        start(context, mediation, false);
-    }
-
-    public static void start(Context context, @Nullable JSONObject mediation, boolean isAutoLoad) {
         if (mediation == null) {
             return;
         }
         Intent intent = new Intent(context, AdTypeActivity.class);
         intent.putExtra(EXTRA_KEY_MEDIATION, mediation.toString());
-        intent.putExtra(EXTRA_KEY_IS_AUTO_LOAD, isAutoLoad);
         context.startActivity(intent);
     }
 
     private String mTitle;
 
     private JSONObject mMediation;
-    private boolean mIsAutoLoad;
 
     private LinearLayout mContainer;
 
@@ -60,7 +53,6 @@ public class AdTypeActivity extends BaseActivity {
 
         try {
             mMediation = new JSONObject(getIntent().getStringExtra(EXTRA_KEY_MEDIATION));
-            mIsAutoLoad = getIntent().getBooleanExtra(EXTRA_KEY_IS_AUTO_LOAD, false);
             mTitle = mMediation.optString(Constant.JSON_KEY_ADNAME);
         } catch (JSONException e) {
             e.printStackTrace();
@@ -157,14 +149,12 @@ public class AdTypeActivity extends BaseActivity {
                     case Interstitial:
                         startActivity(new Intent(AdTypeActivity.this, InterstitialActivity.class)
                                 .putExtra(Constant.KEY_TITLE, title)
-                                .putExtra(Constant.KEY_ADUNITID, adUnitId)
-                                .putExtra(Constant.KEY_IS_AUTO_LOAD, mIsAutoLoad));
+                                .putExtra(Constant.KEY_ADUNITID, adUnitId));
                         break;
                     case RewardedVideo:
                         startActivity(new Intent(AdTypeActivity.this, RewardedVideoActivity.class)
                                 .putExtra(Constant.KEY_TITLE, title)
-                                .putExtra(Constant.KEY_ADUNITID, adUnitId)
-                                .putExtra(Constant.KEY_IS_AUTO_LOAD, mIsAutoLoad));
+                                .putExtra(Constant.KEY_ADUNITID, adUnitId));
                         break;
                     case Splash:
                         startActivity(new Intent(AdTypeActivity.this, SplashActivity.class)
@@ -178,8 +168,7 @@ public class AdTypeActivity extends BaseActivity {
                     case MixView:
                         startActivity(new Intent(AdTypeActivity.this, MixViewActivity.class)
                                 .putExtra(Constant.KEY_TITLE, title)
-                                .putExtra(Constant.KEY_ADUNITID, adUnitId)
-                                .putExtra(Constant.KEY_IS_AUTO_LOAD, mIsAutoLoad));
+                                .putExtra(Constant.KEY_ADUNITID, adUnitId));
                         break;
                     case MixFullScreen:
                         startActivity(new Intent(AdTypeActivity.this, MixFullScreenActivity.class)

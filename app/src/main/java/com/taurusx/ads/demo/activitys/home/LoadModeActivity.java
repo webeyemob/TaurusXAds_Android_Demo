@@ -65,7 +65,7 @@ public class LoadModeActivity extends BaseActivity {
         mAutoLoadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AdTypeActivity.start(LoadModeActivity.this, mMediationList.get(3), true);
+                AdTypeActivity.start(LoadModeActivity.this, mMediationList.get(3));
             }
         });
     }

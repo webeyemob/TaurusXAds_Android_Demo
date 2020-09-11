@@ -89,6 +89,9 @@
       "rewarded": {
         "RewardedVideo": "f25f071a-64f9-4985-b3fb-830178069bbf"
       },
+      "feedlist": {
+        "FeedList": "3b58b14a-b729-4850-b6d9-78b1003d7c73"
+      },
       "mixview": {
         "MixView": "240f821f-4ea1-430f-a80b-4eb811274046"
       }
