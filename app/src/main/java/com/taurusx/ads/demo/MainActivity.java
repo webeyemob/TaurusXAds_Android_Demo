@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.demo.activitys.home.AdapterTestActivity;
 import com.taurusx.ads.demo.activitys.home.LoadModeActivity;
 import com.taurusx.ads.demo.activitys.home.NetworkActivity;
@@ -16,6 +17,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getActionBar().setTitle("TaurusX " + TaurusXAds.SDK_VERSION_NAME);
 
         initView();
     }
