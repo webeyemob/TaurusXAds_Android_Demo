@@ -856,12 +856,14 @@
       "adName": "Nath",
       "rewarded": {
         "nath_ad_no_template": "f80918cc-005e-4266-8442-eee0df9b8352",
-        "nath_ad_rewarded_android": "87a18763-9ee5-4666-be0f-38ede551fae7"
+        "nath_ad_rewarded_android": "87a18763-9ee5-4666-be0f-38ede551fae7",
+        "youdao_api_rewarded": "31af9dae-87fc-4cc1-a7bd-8e905f814f90"
       },
       "interstitial": {
         "nath_ad_interstitial_android": "d29e1646-56aa-4e84-9fa0-3994b5b4718a",
         "nath_ad_interstitial_android_video": "e1f3d21a-3a01-48a5-ad2f-aae06ed583aa",
-        "nath_ad_interstitial_video_no_template": "76752a6c-0965-42a9-a1e6-195c25178fef"
+        "nath_ad_interstitial_video_no_template": "76752a6c-0965-42a9-a1e6-195c25178fef",
+        "youdao_api_interstitial": "e178b984-6d45-4936-91b5-dd33c7aafd3f"
       },
       "banner": {
         "nath_ad_banner_android_video": "6bc707e0-1aa5-4e39-b518-1f7f42e79d21",
@@ -873,26 +875,12 @@
       },
       "feedlist": {
         "nath_ad_feedlist_android_video": "283a474c-bc29-47b0-8aec-918dced32e80",
-        "nath_ad_feedlist_android": "7a22ab7e-8a42-4b3e-9d35-18d034ed3a65"
-      },
-      "splash": {
-        "nath_ad_splash_android_video": "2d6fc53e-1908-454e-991b-e2015e1cbc40",
-        "nath_ad_splash_android": "abf3139b-af0e-4d15-a8b9-67fac33d0a98"
-      }
-    },
-
-    {
-      "adName": "Nath_Youdao",
-      "rewarded": {
-        "youdao_api_rewarded": "31af9dae-87fc-4cc1-a7bd-8e905f814f90"
-      },
-      "interstitial": {
-        "youdao_api_interstitial": "e178b984-6d45-4936-91b5-dd33c7aafd3f"
-      },
-      "feedlist": {
+        "nath_ad_feedlist_android": "7a22ab7e-8a42-4b3e-9d35-18d034ed3a65",
         "youdao_api_feedlist": "e7662998-d0dc-4dd5-8fc2-79583326b736"
       },
       "splash": {
+        "nath_ad_splash_android_video": "2d6fc53e-1908-454e-991b-e2015e1cbc40",
+        "nath_ad_splash_android": "abf3139b-af0e-4d15-a8b9-67fac33d0a98",
         "youdao_api_splash": "8bf9b84e-ada8-4e1c-9c74-96593110c5c1"
       }
     }
