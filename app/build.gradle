@@ -66,10 +66,10 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation 'com.taurusx.ads:core-oversea:1.14.5'
+        implementation 'com.taurusx.ads:core-oversea:1.14.7'
     } else {
         // 国内版
-        implementation 'com.taurusx.ads:core:1.14.6'
+        implementation 'com.taurusx.ads:core:1.14.7'
     }
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -265,6 +265,11 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.2.1"
     // 使用 Header Bidding 需要 headerbiddingkit
     implementation "com.taurusx.ads:headerbiddingkit:0.4.1"
+
+    // AppLovin Max
+    implementation "com.taurusx.ads:mediation_applovinmax:9.14.1.0"
+    implementation "com.applovin:applovin-sdk:9.14.1"
+    implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // AppNexus
     implementation "com.taurusx.ads:mediation_appnexus:7.3.1.2"

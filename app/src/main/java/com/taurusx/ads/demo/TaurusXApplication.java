@@ -3,8 +3,6 @@ package com.taurusx.ads.demo;
 import android.app.Application;
 
 import com.bytedance.sdk.openadsdk.TTAdConstant;
-import com.bytedance.sdk.openadsdk.TTCustomController;
-import com.bytedance.sdk.openadsdk.TTLocation;
 import com.mintegral.msdk.MIntegralUser;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
@@ -199,71 +197,71 @@ public class TaurusXApplication extends Application {
                 .setAllowShowNotify(true)
                 // 设置是否支持多进程
                 .setSupportMultiProcess(false)
-                .setCustomController(new TTCustomController() {
-                    /**
-                     * 是否允许穿山甲主动使用地理位置信息
-                     * @return true 可以获取，false 禁止获取。默认为 true
-                     */
-                    @Override
-                    public boolean isCanUseLocation() {
-                        return super.isCanUseLocation();
-                    }
-
-                    /**
-                     * 当 isCanUseLocation=false 时，可传入地理位置信息，穿山甲使用传入的地理位置信息
-                     * @return 地理位置参数
-                     */
-                    @Override
-                    public TTLocation getTTLocation() {
-                        return super.getTTLocation();
-                    }
-
-                    /**
-                     * 是否允许穿山甲主动使用手机硬件参数，如：imei
-                     * @return true 可以使用，false 禁止使用。默认为 true
-                     */
-                    @Override
-                    public boolean isCanUsePhoneState() {
-                        return super.isCanUsePhoneState();
-                    }
-
-                    /**
-                     * 当isCanUsePhoneState=false 时，可传入 imei 信息，穿山甲使用传入的 imei 信息
-                     * @return imei 信息
-                     */
-                    @Override
-                    public String getDevImei() {
-                        return super.getDevImei();
-                    }
-
-                    /**
-                     * 是否允许穿山甲主动使用 ACCESS_WIFI_STATE 权限
-                     * @return true 可以使用，false 禁止使用。默认为 true
-                     */
-                    @Override
-                    public boolean isCanUseWifiState() {
-                        return super.isCanUseWifiState();
-                    }
-
-                    /**
-                     * 是否允许穿山甲主动使用 WRITE_EXTERNAL_STORAGE 权限
-                     * @return true 可以使用，false 禁止使用。默认为 true
-                     */
-                    @Override
-                    public boolean isCanUseWriteExternal() {
-                        return super.isCanUseWriteExternal();
-                    }
-
-                    /**
-                     * 开发者可以传入 Oaid。
-                     *
-                     * @return oaid
-                     */
-                    @Override
-                    public String getDevOaid() {
-                        return super.getDevOaid();
-                    }
-                })
+//                .setCustomController(new TTCustomController() {
+//                    /**
+//                     * 是否允许穿山甲主动使用地理位置信息
+//                     * @return true 可以获取，false 禁止获取。默认为 true
+//                     */
+//                    @Override
+//                    public boolean isCanUseLocation() {
+//                        return super.isCanUseLocation();
+//                    }
+//
+//                    /**
+//                     * 当 isCanUseLocation=false 时，可传入地理位置信息，穿山甲使用传入的地理位置信息
+//                     * @return 地理位置参数
+//                     */
+//                    @Override
+//                    public TTLocation getTTLocation() {
+//                        return super.getTTLocation();
+//                    }
+//
+//                    /**
+//                     * 是否允许穿山甲主动使用手机硬件参数，如：imei
+//                     * @return true 可以使用，false 禁止使用。默认为 true
+//                     */
+//                    @Override
+//                    public boolean isCanUsePhoneState() {
+//                        return super.isCanUsePhoneState();
+//                    }
+//
+//                    /**
+//                     * 当isCanUsePhoneState=false 时，可传入 imei 信息，穿山甲使用传入的 imei 信息
+//                     * @return imei 信息
+//                     */
+//                    @Override
+//                    public String getDevImei() {
+//                        return super.getDevImei();
+//                    }
+//
+//                    /**
+//                     * 是否允许穿山甲主动使用 ACCESS_WIFI_STATE 权限
+//                     * @return true 可以使用，false 禁止使用。默认为 true
+//                     */
+//                    @Override
+//                    public boolean isCanUseWifiState() {
+//                        return super.isCanUseWifiState();
+//                    }
+//
+//                    /**
+//                     * 是否允许穿山甲主动使用 WRITE_EXTERNAL_STORAGE 权限
+//                     * @return true 可以使用，false 禁止使用。默认为 true
+//                     */
+//                    @Override
+//                    public boolean isCanUseWriteExternal() {
+//                        return super.isCanUseWriteExternal();
+//                    }
+//
+//                    /**
+//                     * 开发者可以传入 Oaid。
+//                     *
+//                     * @return oaid
+//                     */
+//                    @Override
+//                    public String getDevOaid() {
+//                        return super.getDevOaid();
+//                    }
+//                })
                 // 监听应用类广告下载
                 .setAppDownloadListener(createTikTokAppDownloadListener())
                 .build();

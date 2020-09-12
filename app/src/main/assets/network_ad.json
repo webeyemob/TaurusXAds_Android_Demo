@@ -153,6 +153,26 @@
       }
     },
     {
+      "adName": "AppLovin Max",
+      "banner": {
+        "Banner 320*50": "7dcbbc26-3da0-44c6-b9f2-4337288e3134",
+        "Banner 300*250": "50aa790a-f523-466d-80a7-9ca0aea35096",
+        "Banner 728*90": "f6b85d4d-ace9-4bc4-8496-b903824ebb74"
+      },
+      "interstitial": {
+        "Interstitial": "a418ef9d-5c7c-48e2-accb-1ce265dcc47b"
+      },
+      "rewarded": {
+        "RewardedVideo": "24d68f11-367a-49d8-9994-5d2725545026"
+      },
+      "mixview": {
+        "MixView": "42c51f66-32fc-41fe-93a2-e446b4434b74"
+      },
+      "mixfull": {
+        "MixFullScreen": "43be1745-2f56-466c-8936-ec963420577a"
+      }
+    },
+    {
       "adName": "AppNexus",
       "banner": {
         "Banner 320*50": "896248a8-a6e0-4f70-9133-8347ef1b967f",
