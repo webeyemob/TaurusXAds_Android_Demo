@@ -210,7 +210,7 @@ dependencies {
     implementation "com.mintegral.msdk:mtgbid:13.1.11"
 
     // Tuia
-    implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.3"
+    implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.4"
     implementation "com.tuia:sdk:2.8.0.0"
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
 
