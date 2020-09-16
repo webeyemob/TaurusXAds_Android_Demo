@@ -32,6 +32,9 @@ allprojects {
         // AdGeneration
         maven { url 'https://adgeneration.github.io/ADG-Android-SDK/repository' }
 
+        // Chartboost
+        maven { url "https://chartboostmobile.bintray.com/Chartboost" }
+
         // Display
         maven { url "http://maven.display.io/" }
 

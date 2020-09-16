@@ -66,10 +66,10 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation 'com.taurusx.ads:core-oversea:1.14.7'
+        implementation 'com.taurusx.ads:core-oversea:1.14.8'
     } else {
         // 国内版
-        implementation 'com.taurusx.ads:core:1.14.7'
+        implementation 'com.taurusx.ads:core:1.14.8'
     }
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -277,7 +277,8 @@ dependencies {
     implementation "com.appnexus.opensdk:appnexus-instreamvideo:7.3.1-1.19"
 
     // Chartboost
-    implementation "com.taurusx.ads:mediation_chartboost:7.3.1.9"
+    implementation "com.taurusx.ads:mediation_chartboost:8.1.0.0"
+    implementation "com.chartboost:chartboost-sdk:8.1.0"
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 

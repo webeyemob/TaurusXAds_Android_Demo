@@ -227,7 +227,12 @@
       }
     },
     {
-      "adName": "ChartBoost",
+      "adName": "Chartboost",
+      "banner": {
+        "Banner 320*50": "14497a6b-d944-415b-b9a5-5a5c51f70ff4",
+        "Banner 300*250": "2120a81e-bef5-42cd-9746-aed17ed5904f",
+        "Banner 728*90": "4352dd7d-d9a9-44e3-815d-0c480c7d54bf"
+      },
       "interstitial": {
         "Interstitial": "4cbf2b8a-37d6-4dfb-9eee-e68c6966abb6"
       },
