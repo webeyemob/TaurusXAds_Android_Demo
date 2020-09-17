@@ -238,6 +238,12 @@
       },
       "rewarded": {
         "RewardedVideo": "2f91459c-1e03-4c84-94c2-e1b95f9bb374"
+      },
+      "mixview": {
+        "MixView": "122012cb-17d1-4873-ad74-193a138c1d71"
+      },
+      "mixfull": {
+        "MixFullScreen": "fd5087bf-bc24-4f12-b550-6c321a465207"
       }
     },
     {
@@ -273,23 +279,29 @@
     {
       "adName": "Facebook",
       "banner": {
-        "Banner": "8e4352fb-954b-41e4-9290-ba42bc32708f"
+        "Banner 320*50": "8e4352fb-954b-41e4-9290-ba42bc32708f",
+        "Banner 320*90": "dcfd9534-9bca-407a-b0de-e9249d801773",
+        "Banner 300*250": "90b83502-6f01-44c1-bd05-6786575bf451"
       },
       "interstitial": {
         "Interstitial": "441cc5ce-768d-48a9-8835-8f8b73117666"
       },
       "native": {
         "Native": "7256db90-59b9-4197-8a63-c2feb87a8823",
-        "Native Banner": "2ff0eda5-791e-4456-9b34-a773c051c661",
-        "In-Stream Video": "e608be57-568c-4428-a1fb-1ce3c4f7a95d"
+        "Native Banner": "2ff0eda5-791e-4456-9b34-a773c051c661"
       },
       "feedlist": {
         "Native": "5ef12d72-ce71-4fc5-a8e2-c287784b6c34",
-        "Native Banner": "7b8473b3-c4a4-4e2c-ac72-e812f2d3a6c5",
-        "In-Stream Video": "0b2e87b0-c007-4c97-ba41-dd93f945f66b"
+        "Native Banner": "7b8473b3-c4a4-4e2c-ac72-e812f2d3a6c5"
       },
       "rewarded": {
         "RewardedVideo": "bb187db4-fe72-4760-9dfc-4ca74f3592b2"
+      },
+      "mixview": {
+        "MixView": "155f3db2-a64a-405d-9ff9-e84cd4f4bb17"
+      },
+      "mixfull": {
+        "MixFullScreen": "4d7ca32e-dd19-4ac2-a08e-10423b1efb52"
       }
     },
     {
