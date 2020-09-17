@@ -69,7 +69,7 @@ dependencies {
         implementation 'com.taurusx.ads:core-oversea:1.14.8'
     } else {
         // 国内版
-        implementation 'com.taurusx.ads:core:1.14.8'
+        implementation 'com.taurusx.ads:core:1.14.9'
     }
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -252,8 +252,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 
     // AdMob & DFP
-    implementation "com.taurusx.ads:mediation_admob:19.3.0.0"
-    implementation "com.google.android.gms:play-services-ads:19.3.0"
+    implementation "com.taurusx.ads:mediation_admob:19.4.0.0"
+    implementation "com.google.android.gms:play-services-ads:19.4.0"
 
     // Amazon
     implementation "com.taurusx.ads:mediation_amazon:5.9.0.3"

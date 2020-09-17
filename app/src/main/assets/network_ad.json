@@ -97,6 +97,12 @@
       "splash": {
         "App Open Ads Portrait": "f90f5afe-e56f-41f4-b813-5a12a532e44d",
         "App Open Ads Landscape": "757052e4-e09d-4b97-86fe-13736927979d"
+      },
+      "mixview": {
+        "MixView": "df8b007d-4a5e-45df-9653-69b973c75e6b"
+      },
+      "mixfull": {
+        "MixFullScreen": "28c67b8d-08ff-4481-bb8c-5168a9ea593c"
       }
     },
     {
@@ -375,6 +381,12 @@
       "splash": {
         "App Open Ads Portrait": "a571c11c-23d3-42ab-892b-3e730bf28ec3",
         "App Open Ads Landscape": "1d7b06bd-197d-4d62-b520-90860d49e4ab"
+      },
+      "mixview": {
+        "MixView": "3ea4b580-3eb9-4d24-ba05-0ea9019a74da"
+      },
+      "mixfull": {
+        "MixFullScreen": "7ba9d8d9-1d04-4891-bd95-7fa0016a8d1c"
       }
     },
     {
