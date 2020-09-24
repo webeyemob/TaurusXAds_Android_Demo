@@ -2,7 +2,6 @@ package com.taurusx.ads.demo.activitys.adtype;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -375,6 +374,8 @@ public class FeedListActivity extends BaseActivity {
 
     private TikTokExpressFeedListConfig createTikTokExpressFeedListConfig() {
         return TikTokExpressFeedListConfig.Builder()
+                // 点击视频是否可以控制暂停/播放；默认不可控制
+                // .setCanInterruptVideoPlay(true)
                 // 监听应用类广告下载
                 .setAppDownloadListener(new TikTokAppDownloadListener() {
                 })
@@ -388,7 +389,7 @@ public class FeedListActivity extends BaseActivity {
     private TikTokDrawFeedListConfig createTikTokDrawFeedListConfig() {
         return TikTokDrawFeedListConfig.Builder()
                 // 点击视频是否可以控制暂停/播放；默认不可控制
-                .setCanInterruptVideoPlay(true)
+                // .setCanInterruptVideoPlay(true)
                 // 暂停时显示的图标；默认为 R.drawable.ic_toutiao_pause_icon
                 // .setPauseIcon(R.drawable.ic_toutiao_pause_icon)
                 // .setPauseIcon(bitmap)
@@ -404,7 +405,7 @@ public class FeedListActivity extends BaseActivity {
     private TikTokExpressDrawFeedListConfig createTikTokExpressDrawFeedListConfig() {
         return TikTokExpressDrawFeedListConfig.Builder()
                 // 点击视频是否可以控制暂停/播放；默认不可控制
-                .setCanInterruptVideoPlay(true)
+                // .setCanInterruptVideoPlay(true)
                 // 监听应用类广告下载
                 .setAppDownloadListener(new TikTokAppDownloadListener() {
                 })

@@ -262,6 +262,27 @@ public class TaurusXApplication extends Application {
 //                        return super.getDevOaid();
 //                    }
 //                })
+//                .setTTSecAbs(new TTSecAbs() {
+//                    @Override
+//                    public String NM_pullSg() {
+//                        return null;
+//                    }
+//
+//                    @Override
+//                    public String NM_pullVer(String s) {
+//                        return null;
+//                    }
+//
+//                    @Override
+//                    public void NM_setParams(String s) {
+//
+//                    }
+//
+//                    @Override
+//                    public void NM_reportNow(String s) {
+//
+//                    }
+//                })
                 // 监听应用类广告下载
                 .setAppDownloadListener(createTikTokAppDownloadListener())
                 .build();
