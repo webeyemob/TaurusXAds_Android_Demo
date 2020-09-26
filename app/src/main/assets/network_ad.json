@@ -671,6 +671,37 @@
       }
     },
     {
+      "adName": "Tencent GDT",
+      "banner": {
+        "Banner 2.0": "609dfe92-58f2-4cf6-8237-cbfae3a38764"
+      },
+      "interstitial": {
+        "Interstitial 2.0": "49e1628d-3d50-4fcd-aea6-d0177b22a1f7",
+        "Interstitial 2.0 FullScreenVideo": "9802de6d-d6df-418a-9545-105217e0b518"
+      },
+      "native": {
+        "Custom 2.0": "3ec30809-8260-4b37-add6-7458b327705e",
+        "Express": "98b900eb-1da9-4a86-a182-9383728a1439"
+      },
+      "feedlist": {
+        "Custom 2.0": "3afab72a-df0d-4fd8-9757-ada1b9c042da",
+        "Express": "748648ed-b564-4139-9df6-e758f298c8d8",
+        "Express 2.0": "3bd11058-b2e5-4a74-a348-462461d4494d"
+      },
+      "rewarded": {
+        "RewardedVideo": "82641cd3-acff-4654-846c-d90c287e903b"
+      },
+      "splash": {
+        "Splash": "78be1ab8-3f07-4b50-9b7b-19daa703c4dd"
+      },
+      "mixview": {
+        "MixView": "eabce57c-7a57-4bf5-a418-bfbe2c76c12f"
+      },
+      "mixfull": {
+        "MixFullScreen": "0a92f63e-0c06-4954-af4c-ace4cbd966fb"
+      }
+    },
+    {
       "adName": "Tiktok",
       "banner": {
         "Express Banner 320*50": "a8cdf8b3-9de4-43cf-8d5d-624eb2d92c65",
@@ -814,37 +845,6 @@
       "splash": {
         "Vertical": "159b29f6-daa9-44a4-91ee-6987d87fa6e2",
         "Horizontal": "a7804e67-63c4-421c-8445-cd4fb28db2e3"
-      }
-    },
-    {
-      "adName": "YLH",
-      "banner": {
-        "Banner 2.0": "609dfe92-58f2-4cf6-8237-cbfae3a38764"
-      },
-      "interstitial": {
-        "Interstitial 2.0": "49e1628d-3d50-4fcd-aea6-d0177b22a1f7",
-        "Interstitial 2.0 FullScreenVideo": "9802de6d-d6df-418a-9545-105217e0b518"
-      },
-      "native": {
-        "Custom 2.0": "3ec30809-8260-4b37-add6-7458b327705e",
-        "Express": "98b900eb-1da9-4a86-a182-9383728a1439"
-      },
-      "feedlist": {
-        "Custom 2.0": "3afab72a-df0d-4fd8-9757-ada1b9c042da",
-        "Express": "748648ed-b564-4139-9df6-e758f298c8d8",
-        "Express 2.0": "3bd11058-b2e5-4a74-a348-462461d4494d"
-      },
-      "rewarded": {
-        "RewardedVideo": "82641cd3-acff-4654-846c-d90c287e903b"
-      },
-      "splash": {
-        "Splash": "78be1ab8-3f07-4b50-9b7b-19daa703c4dd"
-      },
-      "mixview": {
-        "MixView": "eabce57c-7a57-4bf5-a418-bfbe2c76c12f"
-      },
-      "mixfull": {
-        "MixFullScreen": "0a92f63e-0c06-4954-af4c-ace4cbd966fb"
       }
     },
     {

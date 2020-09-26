@@ -224,9 +224,9 @@ public class FeedListActivity extends BaseActivity {
     private GDTCustom2_0FeedListConfig createGDTCustom2_0FeedListConfig() {
         return GDTCustom2_0FeedListConfig.Builder()
                 // 视频播放配置
-                .setVideoOption(new VideoOption.Builder()
-                        // .setXxx(Xxx)
-                        .build())
+                // .setVideoOption(new VideoOption.Builder()
+                //         .setXxx(Xxx)
+                //         .build())
                 // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
                 // 此设置会影响广告填充，请谨慎设置。
                 .setMinVideoDuration(5)
