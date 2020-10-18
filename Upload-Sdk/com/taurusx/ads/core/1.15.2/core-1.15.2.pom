@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.taurusx.ads</groupId>
   <artifactId>core</artifactId>
-  <version>1.12.5</version>
+  <version>1.15.2</version>
   <packaging>aar</packaging>
   <name>TaurusXAds</name>
   <dependencies>
@@ -35,19 +35,19 @@
     <dependency>
       <groupId>com.taurusx.ads</groupId>
       <artifactId>dataflyer</artifactId>
-      <version>1.0.8</version>
+      <version>1.1.2</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.taurusx.ads</groupId>
       <artifactId>mediation_nath</artifactId>
-      <version>1.11.1.0</version>
+      <version>1.11.4.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.nath.ads</groupId>
       <artifactId>nath</artifactId>
-      <version>1.11.3</version>
+      <version>1.11.9</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
