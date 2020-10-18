@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     signingConfigs {
         defaultConfig {
@@ -60,7 +60,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.taurusx.ads:core:1.11.8'
+    implementation 'com.taurusx.ads:core:1.15.2'
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -96,7 +96,7 @@ dependencies {
     implementation "com.appnexus.opensdk:appnexus-instreamvideo:7.3.1-1.19"
 
     // Chartboost
-    implementation "com.taurusx.ads:mediation_chartboost:7.3.1.8"
+//    implementation "com.taurusx.ads:mediation_chartboost:7.3.1.8"
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
@@ -167,7 +167,7 @@ dependencies {
     }
 
     // ironSource
-    implementation "com.taurusx.ads:mediation_ironsource:6.15.0.1.0"
+//    implementation "com.taurusx.ads:mediation_ironsource:6.15.0.1.0"
     implementation "com.ironsource.sdk:mediationsdk:6.15.0.1@jar"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
@@ -187,8 +187,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:2.7.2.1"
-    implementation "com.taurusx.ads:ks_adsdk:2.7.2"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.4.1"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.4"
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
