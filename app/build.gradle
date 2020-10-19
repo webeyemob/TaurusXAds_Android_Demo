@@ -11,6 +11,9 @@ android {
             // Amazon
             // applicationId "com.amazon.sample.simplead"
 
+            // ironSource
+            // applicationId "com.ironsource.ironsourcesdkdemo"
+
             // KuaiShou
             // applicationId "com.kwad.kwadsdk"
 
@@ -66,7 +69,7 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation 'com.taurusx.ads:core-oversea:1.15.0'
+        implementation 'com.taurusx.ads:core-oversea:1.15.2'
     } else {
         // 国内版
         implementation 'com.taurusx.ads:core:1.15.2'
@@ -322,8 +325,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // ironSource
-    implementation "com.taurusx.ads:mediation_ironsource:7.0.0.0"
-    implementation "com.ironsource.sdk:mediationsdk:7.0.0"
+    implementation "com.taurusx.ads:mediation_ironsource:7.0.3.0"
+    implementation "com.ironsource.sdk:mediationsdk:7.0.3"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-location:16.0.0"
