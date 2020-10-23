@@ -75,7 +75,7 @@ public class FeedListActivity extends BaseActivity {
 
     private void initFeedList() {
         // Create FeedList
-        mFeedList = new FeedList(this);
+        mFeedList = new FeedList(this.getApplicationContext());
         mFeedList.setAdUnitId(mFeedListId);
 
         // Set Ad Count You Want To Load

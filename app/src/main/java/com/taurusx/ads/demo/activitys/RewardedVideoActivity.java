@@ -54,7 +54,7 @@ public class RewardedVideoActivity extends BaseActivity {
 
     private void initRewardedVideoAd() {
         // Create RewardedVideoAd
-        mRewardedVideoAd = new RewardedVideoAd(this);
+        mRewardedVideoAd = new RewardedVideoAd(this.getApplicationContext());
         mRewardedVideoAd.setAdUnitId(mRewardedId);
 
         // Set Video Muted, default is sound

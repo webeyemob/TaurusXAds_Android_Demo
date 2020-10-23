@@ -424,6 +424,12 @@
       "splash": {
         "Splash Vertical": "932b3c05-21ce-46e8-ab04-3c6b2b255cad",
         "Splash Horizontal": "14109e68-67d0-47b2-bd20-ca787d96b759"
+      },
+      "mixview": {
+        "MixView": "8285da79-a2f3-41d4-a261-962fc85f2538"
+      },
+      "mixfullscreen": {
+        "MixFullScreen": "7408dfa8-a934-41db-980c-0962f162312b"
       }
     },
     {
