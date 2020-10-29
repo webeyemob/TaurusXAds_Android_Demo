@@ -9,12 +9,8 @@ import com.taurusx.ads.core.api.ad.InterstitialAd;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
-import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouInterstitialConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TikTokExpressInterstitialConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokFullScreenVideoConfig;
 
 public class InterstitialActivity extends BaseActivity {
 
@@ -67,8 +63,8 @@ public class InterstitialActivity extends BaseActivity {
         mInterstitialAd.setNetworkConfigs(NetworkConfigs.Builder()
 //                .addConfig(createGDTInterstitial2_0Config())
                 .addConfig(createKuaiShouInterstitialConfig())
-                .addConfig(createTikTokExpressInterstitialConfig())
-                .addConfig(createTikTokFullScreenVideoConfig())
+//                .addConfig(createTikTokExpressInterstitialConfig())
+//                .addConfig(createTikTokFullScreenVideoConfig())
                 .build());
 
         // Listen Ad load result
@@ -123,47 +119,47 @@ public class InterstitialActivity extends BaseActivity {
                 .build();
     }
 
-    private TikTokExpressInterstitialConfig createTikTokExpressInterstitialConfig() {
-        return TikTokExpressInterstitialConfig.Builder()
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                    }
-
-                    @Override
-                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                    }
-                })
-                .build();
-    }
-
-    private TikTokFullScreenVideoConfig createTikTokFullScreenVideoConfig() {
-        return TikTokFullScreenVideoConfig.Builder()
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
-                .build();
-    }
+//    private TikTokExpressInterstitialConfig createTikTokExpressInterstitialConfig() {
+//        return TikTokExpressInterstitialConfig.Builder()
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {
+//                    @Override
+//                    public void onIdle() {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+//                    }
+//
+//                    @Override
+//                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onInstalled(String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+//                    }
+//                })
+//                .build();
+//    }
+//
+//    private TikTokFullScreenVideoConfig createTikTokFullScreenVideoConfig() {
+//        return TikTokFullScreenVideoConfig.Builder()
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+//                .build();
+//    }
 }

@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     signingConfigs {
         defaultConfig {
@@ -61,7 +61,14 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.taurusx.ads:core:1.12.5'
+    implementation 'com.taurusx.ads:core:1.15.4'
+
+    // Vivo
+    implementation "com.taurusx.ads:mediation_vivo:4.2.0.0.0"
+    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
+    implementation "com.taurusx.ads:vivo_extend_ad_sdk:3.2.6.2"
+    implementation "com.taurusx.ads:gdtsdk_union:4.211.1081"
+    implementation('androidx.legacy:legacy-support-v4:1.0.0')
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -97,7 +104,7 @@ dependencies {
     implementation "com.appnexus.opensdk:appnexus-instreamvideo:7.3.1-1.19"
 
     // Chartboost
-    implementation "com.taurusx.ads:mediation_chartboost:7.3.1.8"
+    implementation "com.taurusx.ads:mediation_chartboost:8.1.0.0"
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
@@ -149,15 +156,15 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
 
     // InMobi
-    implementation "com.taurusx.ads:mediation_inmobi:7.4.1.0"
+    implementation "com.taurusx.ads:mediation_inmobi:7.4.4.1"
     implementation("com.squareup.picasso:picasso:2.71828")
     implementation('androidx.legacy:legacy-support-v4:1.0.0')
     implementation('androidx.recyclerview:recyclerview:1.0.0')
     implementation("com.taurusx.ads:miit_mdid:1.0.10")
 
     // ironSource
-    implementation "com.taurusx.ads:mediation_ironsource:6.15.0.1.0"
-    implementation "com.ironsource.sdk:mediationsdk:6.15.0.1@jar"
+    implementation "com.taurusx.ads:mediation_ironsource:7.0.3.0"
+//    implementation "com.ironsource.sdk:mediationsdk:6.15.0.1@jar"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-location:16.0.0"
@@ -178,8 +185,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:2.6.8.0"
-    implementation "com.taurusx.ads:ks_adsdk:2.6.8"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.4.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.4"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -249,8 +256,8 @@ dependencies {
         implementation "com.taurusx.ads:pangle_open_ad_sdk:2.9.0.3"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:2.9.5.8.1"
-        implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.9.5.8"
+//        implementation "com.taurusx.ads:mediation_toutiao:2.9.5.8.1"
+//        implementation "com.taurusx.ads:toutiao_open_ad_sdk:2.9.5.8"
         implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     }
 
@@ -283,9 +290,6 @@ dependencies {
 //    implementation "com.android.support:appcompat-v7:26.1.0"
 //    implementation "com.squareup.wire:wire-runtime:2.2.0"
 //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
-
-    // Vivo
-    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.7"
 
     // Xiaomi
 //    implementation "com.taurusx.ads:mediation_mimo:V2019_01_18_17_00.4"

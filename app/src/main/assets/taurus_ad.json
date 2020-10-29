@@ -595,6 +595,21 @@
       }
     },
     {
+      "adName": "vivo Test",
+      "banner": {
+        "Banner": "039e732f-d84f-40f5-b5d3-84314d6b8ef1"
+      },
+      "interstitial": {
+        "Interstitial": "f73dac5d-02f6-46d9-9ecd-2f962933bee6"
+      },
+      "rewarded": {
+        "RewardedVideo": "8b592dbd-160c-4d85-8fa3-243bd4c8a0d7"
+      },
+      "splash": {
+        "Splash": "1d23ca6b-5410-400e-b303-0c292c3e970e"
+      }
+    },
+    {
       "adName": "XiaoMi",
       "banner": {
         "Banner": "14ac3b4a-857f-4481-abde-d8cb770f902b"

@@ -22,11 +22,6 @@ import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.MintegralFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TikTokCustomFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokExpressDrawFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokExpressFeedListConfig;
 
 import java.util.List;
 
@@ -128,10 +123,10 @@ public class FeedListActivity extends BaseActivity {
 //                .addConfig(createGDTExpressFeedListConfig())
                 .addConfig(createKuaiShouCustomFeedListConfig())
                 .addConfig(createMintegralFeedListConfig())
-                .addConfig(createTikTokCustomFeedListConfig())
-                .addConfig(createTikTokExpressFeedListConfig())
-                .addConfig(createTikTokDrawFeedListConfig())
-                .addConfig(createTikTokExpressDrawFeedListConfig())
+//                .addConfig(createTikTokCustomFeedListConfig())
+//                .addConfig(createTikTokExpressFeedListConfig())
+//                .addConfig(createTikTokDrawFeedListConfig())
+//                .addConfig(createTikTokExpressDrawFeedListConfig())
                 .build());
 
         // Set FeedList Load Event
@@ -266,74 +261,74 @@ public class FeedListActivity extends BaseActivity {
                 .build();
     }
 
-    private TikTokCustomFeedListConfig createTikTokCustomFeedListConfig() {
-        return TikTokCustomFeedListConfig.Builder()
-                .setAppDownloadListener(new TikTokAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                    }
-
-                    @Override
-                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                    }
-                })
-                .build();
-    }
-
-    private TikTokExpressFeedListConfig createTikTokExpressFeedListConfig() {
-        return TikTokExpressFeedListConfig.Builder()
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
-                // 使用默认的 Dislike Dialog 样式，仅需设置 Dislike 回调
-                // .setDislikeCallback(new TikTokGetDislikeCallback() {})
-                // 或自定义 Dislike Dialog
-                // .setDislikeDialog(new TikTokGetDislikeDialog() {})
-                .build();
-    }
-
-    private TikTokDrawFeedListConfig createTikTokDrawFeedListConfig() {
-        return TikTokDrawFeedListConfig.Builder()
-                // 点击视频是否可以控制暂停/播放；默认不可控制
-                .setCanInterruptVideoPlay(true)
-                // 暂停时显示的图标；默认为 R.drawable.ic_toutiao_pause_icon
-                // .setPauseIcon(R.drawable.ic_toutiao_pause_icon)
-                // .setPauseIcon(bitmap)
-                // .setPauseIcon(drawable)
-                // 设置图标大小，单位 dp；默认为 50dp
-                .setPauseIconSize(50)
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
-                .build();
-    }
-
-    private TikTokExpressDrawFeedListConfig createTikTokExpressDrawFeedListConfig() {
-        return TikTokExpressDrawFeedListConfig.Builder()
-                // 点击视频是否可以控制暂停/播放；默认不可控制
-                .setCanInterruptVideoPlay(true)
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {})
-                .build();
-    }
+//    private TikTokCustomFeedListConfig createTikTokCustomFeedListConfig() {
+//        return TikTokCustomFeedListConfig.Builder()
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {
+//                    @Override
+//                    public void onIdle() {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+//                    }
+//
+//                    @Override
+//                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onInstalled(String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+//                    }
+//                })
+//                .build();
+//    }
+//
+//    private TikTokExpressFeedListConfig createTikTokExpressFeedListConfig() {
+//        return TikTokExpressFeedListConfig.Builder()
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+//                // 使用默认的 Dislike Dialog 样式，仅需设置 Dislike 回调
+//                // .setDislikeCallback(new TikTokGetDislikeCallback() {})
+//                // 或自定义 Dislike Dialog
+//                // .setDislikeDialog(new TikTokGetDislikeDialog() {})
+//                .build();
+//    }
+//
+//    private TikTokDrawFeedListConfig createTikTokDrawFeedListConfig() {
+//        return TikTokDrawFeedListConfig.Builder()
+//                // 点击视频是否可以控制暂停/播放；默认不可控制
+//                .setCanInterruptVideoPlay(true)
+//                // 暂停时显示的图标；默认为 R.drawable.ic_toutiao_pause_icon
+//                // .setPauseIcon(R.drawable.ic_toutiao_pause_icon)
+//                // .setPauseIcon(bitmap)
+//                // .setPauseIcon(drawable)
+//                // 设置图标大小，单位 dp；默认为 50dp
+//                .setPauseIconSize(50)
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+//                .build();
+//    }
+//
+//    private TikTokExpressDrawFeedListConfig createTikTokExpressDrawFeedListConfig() {
+//        return TikTokExpressDrawFeedListConfig.Builder()
+//                // 点击视频是否可以控制暂停/播放；默认不可控制
+//                .setCanInterruptVideoPlay(true)
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {})
+//                .build();
+//    }
 }

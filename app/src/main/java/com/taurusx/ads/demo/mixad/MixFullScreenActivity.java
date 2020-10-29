@@ -58,7 +58,7 @@ public class MixFullScreenActivity extends BaseActivity {
     private void initMixFullScreenAd() {
         // Create MixFullScreenAd
         mMixFullScreenAd = new MixFullScreenAd(this);
-        mMixFullScreenAd.setAdUnitId(mMixFulSscreenId);
+        mMixFullScreenAd.setAdUnitId("330df99c-e174-4781-ab76-573a3533a9de");
 
         // Set Custom NativeAdLayout To Render Ad
 //        mMixFullScreenAd.setNativeAdLayout(NativeAdLayout.Builder()

@@ -20,8 +20,6 @@ import com.taurusx.ads.mediation.networkconfig.AdMobBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.DFPBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.InMobiBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.MintegralBannerConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TikTokExpressBannerConfig;
 
 
 public class BannerActivity extends BaseActivity {
@@ -67,7 +65,7 @@ public class BannerActivity extends BaseActivity {
                 .addConfig(createDFPBannerConfig())
                 .addConfig(createInMobiBannerConfig())
                 .addConfig(createMintegralBannerConfig())
-                .addConfig(createTikTokExpressBannerConfig())
+//                .addConfig(createTikTokExpressBannerConfig())
                 .build());
 
         // Listen Ad load result
@@ -143,44 +141,44 @@ public class BannerActivity extends BaseActivity {
                 .build();
     }
 
-    private TikTokExpressBannerConfig createTikTokExpressBannerConfig() {
-        return TikTokExpressBannerConfig.Builder()
-                // 使用默认的 Dislike Dialog 样式，仅需设置 Dislike 回调
-                // .setDislikeCallback(new TikTokGetDislikeCallback() {})
-                // 或自定义 Dislike Dialog
-                // .setDislikeDialog(new TikTokGetDislikeDialog() {})
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                    }
-
-                    @Override
-                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                    }
-                })
-                .build();
-    }
+//    private TikTokExpressBannerConfig createTikTokExpressBannerConfig() {
+//        return TikTokExpressBannerConfig.Builder()
+//                // 使用默认的 Dislike Dialog 样式，仅需设置 Dislike 回调
+//                // .setDislikeCallback(new TikTokGetDislikeCallback() {})
+//                // 或自定义 Dislike Dialog
+//                // .setDislikeDialog(new TikTokGetDislikeDialog() {})
+//                // 监听应用类广告下载
+//                .setAppDownloadListener(new TikTokAppDownloadListener() {
+//                    @Override
+//                    public void onIdle() {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
+//                    }
+//
+//                    @Override
+//                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
+//                    }
+//
+//                    @Override
+//                    public void onInstalled(String fileName, String appName) {
+//                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
+//                    }
+//                })
+//                .build();
+//    }
 }
