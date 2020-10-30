@@ -90,11 +90,11 @@ dependencies {
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.270.1140.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.290.1160.0"
     if (gdt_tbs) {
-        implementation "com.taurusx.ads:gdtsdk_tbs:4.270.1140"
+        implementation "com.taurusx.ads:gdtsdk_tbs:4.290.1160"
     } else {
-        implementation "com.taurusx.ads:gdtsdk_union:4.270.1140"
+        implementation "com.taurusx.ads:gdtsdk_union:4.290.1160"
     }
     // 如果打包 release 版本出错，请添加 gdt_tbs_sdk_thirdapp
     // compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"

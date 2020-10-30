@@ -696,7 +696,8 @@
         "Express 2.0": "3bd11058-b2e5-4a74-a348-462461d4494d"
       },
       "rewarded": {
-        "RewardedVideo": "82641cd3-acff-4654-846c-d90c287e903b"
+        "RewardedVideo": "82641cd3-acff-4654-846c-d90c287e903b",
+        "Express RewardedVideo": "c3517ede-51e9-48fd-8581-2a72714704a0"
       },
       "splash": {
         "Splash": "78be1ab8-3f07-4b50-9b7b-19daa703c4dd"
