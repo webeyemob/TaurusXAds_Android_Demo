@@ -2,14 +2,10 @@ package com.taurusx.ads.demo.application;
 
 import android.app.Application;
 
-import com.bytedance.sdk.openadsdk.TTAdConstant;
-import com.bytedance.sdk.openadsdk.TTCustomController;
-import com.bytedance.sdk.openadsdk.TTLocation;
 import com.mintegral.msdk.MIntegralUser;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.constant.DownloadNetwork;
-import com.taurusx.ads.core.api.model.Network;
 import com.taurusx.ads.core.api.segment.Segment;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.AdMobGlobalConfig;
@@ -20,8 +16,6 @@ import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.MintegralGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.PrebidConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TikTokGlobalConfig;
 
 import org.prebid.mobile.Host;
 
@@ -57,7 +51,6 @@ public class TaurusApplication extends Application {
                         .addConfig(createKuaiShouConfig())
                         .addConfig(createMintegralConfig())
                         .addConfig(createPrebidConfig())
-                        .addConfig(createTikTokConfig())
                         .build());
 
         // 开启 Network 调试模式
@@ -183,126 +176,5 @@ public class TaurusApplication extends Application {
                 // 设置用户唯一 Id
                 // .setBuyerId("user id")
                 .build();
-    }
-
-    private TikTokGlobalConfig createTikTokConfig() {
-        return TikTokGlobalConfig.Builder()
-                // 设置是否为计费用户
-                .setIsPaid(false)
-                // 设置用户画像的关键词列表，不能超过为 1000 个字符
-                // .setKeywords("")
-                // 设置额外的用户信息，不能超过为 1000 个字符
-                // .setData("")
-                // 设置落地页主题，默认为 TTAdConstant.TITLE_BAR_THEME_LIGHT
-                .setTitleBarTheme(TTAdConstant.TITLE_BAR_THEME_LIGHT)
-                // 设置是否允许 SDK 弹出通知
-                .setAllowShowNotify(true)
-                // 设置是否允许落地页出现在锁屏上面
-                .setAllowShowPageWhenScreenLock(true)
-                // 设置是否支持多进程
-                .setSupportMultiProcess(false)
-                // 可以设置隐私信息控制开关
-                .setCustomController(createTTCustomController())
-                // 监听应用类广告下载
-                .setAppDownloadListener(createTikTokAppDownloadListener())
-                .build();
-    }
-
-    private TTCustomController createTTCustomController() {
-        return new TTCustomController() {
-            /**
-             * 是否允许穿山甲主动使用地理位置信息
-             * @return true 可以获取，false 禁止获取。默认为 true
-             */
-            @Override
-            public boolean isCanUseLocation() {
-                return super.isCanUseLocation();
-            }
-
-            /**
-             * 当 isCanUseLocation=false 时，可传入地理位置信息，穿山甲使用传入的地理位置信息
-             * @return 地理位置参数
-             */
-            @Override
-            public TTLocation getTTLocation() {
-                return super.getTTLocation();
-            }
-
-            /**
-             * 是否允许穿山甲主动使用手机硬件参数，如：imei
-             * @return true 可以使用，false 禁止使用。默认为 true
-             */
-            @Override
-            public boolean isCanUsePhoneState() {
-                return super.isCanUsePhoneState();
-            }
-
-            /**
-             * 当isCanUsePhoneState=false 时，可传入 imei 信息，穿山甲使用传入的 imei 信息
-             * @return imei 信息
-             */
-            @Override
-            public String getDevImei() {
-                return super.getDevImei();
-            }
-
-            /**
-             * 是否允许穿山甲主动使用 ACCESS_WIFI_STATE 权限
-             * @return true 可以使用，false 禁止使用。默认为 true
-             */
-            @Override
-            public boolean isCanUseWifiState() {
-                return super.isCanUseWifiState();
-            }
-
-            /**
-             * 是否允许穿山甲主动使用 WRITE_EXTERNAL_STORAGE 权限
-             * @return true 可以使用，false 禁止使用。默认为 true
-             */
-            @Override
-            public boolean isCanUseWriteExternal() {
-                return super.isCanUseWriteExternal();
-            }
-        };
-    }
-
-    private TikTokAppDownloadListener createTikTokAppDownloadListener() {
-        return new TikTokAppDownloadListener() {
-            @Override
-            public void onIdle() {
-                // 空闲状态
-            }
-
-            /**
-             * @param totalBytes 安装包总字节数 -1 ：未知
-             * @param currBytes 当前已下载的字节数
-             * @param fileName 下载文件路径
-             * @param appName 当前下载的应用名称
-             */
-            @Override
-            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                // 下载中，会调用多次
-            }
-
-            @Override
-            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                // 下载暂停
-            }
-
-            @Override
-            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                // 下载失败
-            }
-
-            @Override
-            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                // 下载完成
-            }
-
-            @Override
-            public void onInstalled(String fileName, String appName) {
-                // 安装完成
-            }
-        };
     }
 }
