@@ -17,9 +17,6 @@ android {
             // KuaiShou
             // applicationId "com.kwad.kwadsdk"
 
-            // Mintegral
-            // applicationId "com.mintegral.sdk.demo"
-
             // OPPO
             // applicationId "com.opos.mobaddemo"
 
@@ -57,14 +54,14 @@ android {
     }
 }
 
-// TaurusX、穿山甲、InMobi、Mintegral 区分国内、海外版
+// TaurusX、穿山甲、InMobi 区分国内、海外版
 boolean oversea = false
 
 // 优量汇分为标准版本、X5 内核加强版
 boolean gdt_tbs = false
 
 dependencies {
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.multidex:multidex:2.0.1'
 
     if (oversea) {
@@ -72,7 +69,11 @@ dependencies {
         implementation 'com.taurusx.ads:core-oversea:1.15.4'
     } else {
         // 国内版
-        implementation 'com.taurusx.ads:core:1.15.5'
+        implementation 'com.taurusx.ads:core:1.16.1'
+        implementation "com.taurusx.ads:miit_mdid:1.0.13"
+        implementation "com.satori.sdk:eventio-go:1.1.4.0"
+        implementation 'com.satori.sdk:eventio-openudid:1.0.2'
+        implementation "com.satori.sdk:eventio-crashlytics:1.0.5"
     }
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -86,7 +87,7 @@ dependencies {
         // TikTok
         implementation "com.taurusx.ads:mediation_toutiao:3.3.0.1.0"
         implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.3.0.1"
-        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+        implementation "androidx.legacy:legacy-support-v4:1.0.0"
     }
 
     // Tencent GDT
@@ -108,7 +109,7 @@ dependencies {
     // KuaiShou
     implementation "com.taurusx.ads:mediation_kuaishou:3.3.5.0"
     implementation "com.taurusx.ads:ks_adsdk:3.3.5"
-    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation "com.google.code.gson:gson:2.8.6"

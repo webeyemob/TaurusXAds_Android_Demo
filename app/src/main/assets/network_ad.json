@@ -501,29 +501,6 @@
       }
     },
     {
-      "adName": "Mintegral",
-      "banner": {
-        "Banner": "89e6dff0-0431-4267-a1f2-fdd60d0dc3bc"
-      },
-      "interstitial": {
-        "Static Interstitial": "903ad939-bb84-40d8-8929-7b53e2cfc61a",
-        "Interstitial Video": "9052a544-3e30-425e-a033-6ce11cc334b7"
-      },
-      "native": {
-        "Native": "80f4e069-2958-4c45-9418-b20ca87fa3ae"
-      },
-      "feedlist": {
-        "FeedList": "feb5a072-72c3-44c4-876f-56b33bda91ab"
-      },
-      "rewarded": {
-        "RewardedVideo": "55919798-14b6-4cbb-a857-3af830e2b6b4",
-        "Interactive Video": "0d407cfa-f19f-402c-bb66-c979407cdbc6"
-      },
-      "splash": {
-        "Splash": "21945645-a4f7-47b8-b9b4-bb5f16fdea43"
-      }
-    },
-    {
       "adName": "MoPub",
       "banner": {
         "Banner 320*50": "560365c2-55e6-43a2-ae6b-2d74a7539f4e",
