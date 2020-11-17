@@ -18,7 +18,6 @@ import com.taurusx.ads.demo.utils.Utils;
 import com.taurusx.ads.mediation.networkconfig.AdMobBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.DFPBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.InMobiBannerConfig;
-import com.taurusx.ads.mediation.networkconfig.MintegralBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressBannerConfig;
 
@@ -90,7 +89,6 @@ public class BannerActivity extends BaseActivity {
                 .addConfig(createAdMobBannerConfig())
                 .addConfig(createDFPBannerConfig())
                 .addConfig(createInMobiBannerConfig())
-                .addConfig(createMintegralBannerConfig())
                 .addConfig(createTikTokExpressBannerConfig())
                 .build());
 
@@ -160,13 +158,6 @@ public class BannerActivity extends BaseActivity {
         return InMobiBannerConfig.Builder()
                 // 设置刷新动画；默认为 InMobiBanner.AnimationType.ANIMATION_OFF
                 // .setAnimationType(InMobiBanner.AnimationType.ANIMATION_OFF)
-                .build();
-    }
-
-    private MintegralBannerConfig createMintegralBannerConfig() {
-        return MintegralBannerConfig.Builder()
-                // 是否显示关闭按钮
-                .setAllowShowCloseBtn(false)
                 .build();
     }
 

@@ -90,11 +90,11 @@ dependencies {
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.291.1161.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.294.1164.0"
     if (gdt_tbs) {
-        implementation "com.qq.e.union:tbs:4.291.1161"
+        implementation "com.qq.e.union:tbs:4.294.1164"
     } else {
-        implementation "com.qq.e.union:union:4.291.1161"
+        implementation "com.qq.e.union:union:4.294.1164"
     }
     // 如果打包 release 版本出错，请添加 gdt_tbs_sdk_thirdapp
     // compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
@@ -186,31 +186,6 @@ dependencies {
         implementation "androidx.recyclerview:recyclerview:1.0.0"
         implementation "com.taurusx.ads:miit_mdid:1.0.13"
     }
-
-    // Mintegral
-    implementation "com.taurusx.ads:mediation_mintegral:13.1.11.0"
-    implementation "com.mintegral.msdk:videojs:13.1.11"
-    implementation "com.mintegral.msdk:mtgjscommon:13.1.11"
-    implementation "com.mintegral.msdk:playercommon:13.1.11"
-    implementation "com.mintegral.msdk:reward:13.1.11"
-    implementation "com.mintegral.msdk:videocommon:13.1.11"
-    implementation "com.mintegral.msdk:common:13.1.11"
-    implementation "com.mintegral.msdk:alphab:13.1.11"
-    implementation "com.mintegral.msdk:interstitialvideo:13.1.11"
-    implementation "com.mintegral.msdk:mtgnative:13.1.11"
-    implementation "com.mintegral.msdk:nativeex:13.1.11"
-    implementation "com.mintegral.msdk:mtgsplash:13.1.11"
-    implementation "com.mintegral.msdk:interactiveads:13.1.11"
-    implementation "com.mintegral.msdk:mtgbanner:13.1.11"
-    implementation "com.mintegral.msdk:interstitial:13.1.11"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    if (!oversea) {
-        // Mintegral 国内版本须添加
-        implementation "com.mintegral.msdk:optimizedata:13.1.11"
-        implementation "com.mintegral.msdk:mtgdownloads:13.1.11"
-    }
-    // Head Bidding
-    implementation "com.mintegral.msdk:mtgbid:13.1.11"
 
     // Tuia
     implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.4"

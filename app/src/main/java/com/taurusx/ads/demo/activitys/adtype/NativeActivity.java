@@ -23,7 +23,6 @@ import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0NativeConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressNativeConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomNativeConfig;
-import com.taurusx.ads.mediation.networkconfig.MintegralNativeConfig;
 
 @Deprecated
 public class NativeActivity extends BaseActivity {
@@ -114,7 +113,6 @@ public class NativeActivity extends BaseActivity {
                 .addConfig(createGDTCustom2_0NativeConfig())
                 .addConfig(createGDTExpressNativeConfig())
                 .addConfig(createKuaiShouCustomNativeConfig())
-                .addConfig(createMintegralNativeConfig())
                 .build());
 
         // Listen Ad load result
@@ -230,23 +228,6 @@ public class NativeActivity extends BaseActivity {
                         LogUtil.d(TAG ,"KuaiShou onInstalled");
                     }
                 })
-                .build();
-    }
-
-    private MintegralNativeConfig createMintegralNativeConfig() {
-        return MintegralNativeConfig.Builder()
-                // 是否循环播放视频
-                .setAllowLoopPlay(false)
-                // 屏幕方向改变时是否重新加载视频
-                .setAllowScreenChange(false)
-                // 在视频未准备好播放之前是否显示图片
-                .setAllowVideoRefresh(false)
-                // 是否显示进度
-                .setProgressVisibility(true)
-                // 是否允许全屏显示
-                .setIsAllowFullScreen(false)
-                // 是否显示音量按钮
-                .setSoundIndicatorVisibility(true)
                 .build();
     }
 }

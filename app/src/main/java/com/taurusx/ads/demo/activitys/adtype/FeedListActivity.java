@@ -33,7 +33,6 @@ import com.taurusx.ads.mediation.networkconfig.GDTExpress2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.MintegralFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
@@ -157,7 +156,6 @@ public class FeedListActivity extends BaseActivity {
                 .addConfig(createGDTExpressFeedListConfig())
                 .addConfig(createGDTExpress2_0FeedListConfig())
                 .addConfig(createKuaiShouCustomFeedListConfig())
-                .addConfig(createMintegralFeedListConfig())
                 .addConfig(createTikTokCustomFeedListConfig())
                 .addConfig(createTikTokExpressFeedListConfig())
                 .addConfig(createTikTokDrawFeedListConfig())
@@ -316,23 +314,6 @@ public class FeedListActivity extends BaseActivity {
                         LogUtil.d(TAG, "KuaiShou onInstalled");
                     }
                 })
-                .build();
-    }
-
-    private MintegralFeedListConfig createMintegralFeedListConfig() {
-        return MintegralFeedListConfig.Builder()
-                // 是否循环播放视频
-                .setAllowLoopPlay(false)
-                // 屏幕方向改变时是否重新加载视频
-                .setAllowScreenChange(false)
-                // 在视频未准备好播放之前是否显示图片
-                .setAllowVideoRefresh(false)
-                // 是否显示进度
-                .setProgressVisibility(true)
-                // 是否允许全屏显示
-                .setIsAllowFullScreen(false)
-                // 是否显示音量按钮
-                .setSoundIndicatorVisibility(true)
                 .build();
     }
 
