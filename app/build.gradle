@@ -162,11 +162,6 @@ dependencies {
     //    implementation "com.android.support:support-v4:28.0.0"
     //    implementation "com.google.code.gson:gson:2.8.5"
 
-    // IFly
-    implementation "com.taurusx.ads:ifly_ad:4.4.4"
-    implementation "com.taurusx.ads:mediation_ifly:4.4.4.1"
-    implementation "androidx.legacy:legacy-support-v4:1.0.0"
-
     // InMobi
     if (oversea) {
         // InMobi 海外版
@@ -187,16 +182,6 @@ dependencies {
         implementation "androidx.recyclerview:recyclerview:1.0.0"
         implementation "com.taurusx.ads:miit_mdid:1.0.13"
     }
-
-    // Tuia
-    implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.4"
-    implementation "com.tuia:sdk:2.8.0.0"
-    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
-
-    // YouDao
-    implementation "com.taurusx.ads:mediation_youdao:4.1.8.1.0"
-    implementation "com.taurusx.ads:youdaosdk:4.1.8.1"
-    implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
 
     // ####################################### Japan Network #######################################
@@ -244,11 +229,6 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.2.1"
     // 使用 Header Bidding 需要 headerbiddingkit
     implementation "com.taurusx.ads:headerbiddingkit:0.4.1"
-
-    // AppLovin Max
-    implementation "com.taurusx.ads:mediation_applovinmax:9.14.1.0"
-    implementation "com.applovin:applovin-sdk:9.14.1"
-    implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // AppNexus
     implementation "com.taurusx.ads:mediation_appnexus:7.3.1.2"
@@ -314,9 +294,6 @@ dependencies {
     }
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-base:16.1.0"
-
-    // Prebid
-    implementation "com.taurusx.ads:mediation_prebid:1.5.1"
 
     // Tapjoy
     implementation "com.taurusx.ads:mediation_tapjoy:12.2.0.2"

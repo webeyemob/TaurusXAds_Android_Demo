@@ -159,26 +159,6 @@
       }
     },
     {
-      "adName": "AppLovin Max",
-      "banner": {
-        "Banner 320*50": "7dcbbc26-3da0-44c6-b9f2-4337288e3134",
-        "Banner 300*250": "50aa790a-f523-466d-80a7-9ca0aea35096",
-        "Banner 728*90": "f6b85d4d-ace9-4bc4-8496-b903824ebb74"
-      },
-      "interstitial": {
-        "Interstitial": "a418ef9d-5c7c-48e2-accb-1ce265dcc47b"
-      },
-      "rewarded": {
-        "RewardedVideo": "24d68f11-367a-49d8-9994-5d2725545026"
-      },
-      "mixview": {
-        "MixView": "42c51f66-32fc-41fe-93a2-e446b4434b74"
-      },
-      "mixfull": {
-        "MixFullScreen": "43be1745-2f56-466c-8936-ec963420577a"
-      }
-    },
-    {
       "adName": "AppNexus",
       "banner": {
         "Banner 320*50": "896248a8-a6e0-4f70-9133-8347ef1b967f",
@@ -423,29 +403,6 @@
       }
     },
     {
-      "adName": "IFly",
-      "banner": {
-        "Banner": "d6a0f450-793d-49f1-98fd-5377ad77c321"
-      },
-      "interstitial": {
-        "Interstitial": "f90dec1c-8d1e-42f7-8657-0a83df4279dc",
-        "FullScreenVideo Portrait": "d36c0ba4-4eb1-479c-976d-32d1a4fd1a97",
-        "FullScreenVideo Landscape": "dd5f9bb1-1fe8-49f9-95ca-9c68bef50cb6"
-      },
-      "feedlist": {
-        "Custom": "cc5bf8a4-faf0-4c78-9e10-cf7667fe7e7d",
-        "Video": "64e3dc06-fb93-4592-8118-39cc35b58ea4",
-        "Audio": "642b93d9-b12e-4a32-9626-8767b58be343"
-      },
-      "rewarded": {
-        "RewardedVideo Portrait": "18609e6b-7bd1-4e02-838d-bb0fd0c60709",
-        "RewardedVideo Landscape": "9cbf9cfa-d9d9-486d-a98c-25e0cc674c4b"
-      },
-      "splash": {
-        "Splash": "798860d3-8d64-46ea-829c-25daf55ac84a"
-      }
-    },
-    {
       "adName": "InMobi",
       "banner": {
         "Banner": "0f8803af-a1f0-49b5-95b0-73daec28b19e"
@@ -610,30 +567,6 @@
       }
     },
     {
-      "adName": "Prebid",
-      "banner": {
-        "Google Ad Manager 320*50": "26348c2d-7816-4086-8648-74e847a74ca3",
-        "Google Ad Manager 300*250": "6e8eea20-1bb4-42c6-a7a3-49d51a44bb07",
-        "Google Ad Manager 300*250 Video": "1ca6caa6-6de3-4ce1-b806-39dccaf9c72d",
-        "Banner MoPub 320*50": "fba158d3-6946-4525-9ccb-06fd2be57175",
-        "Banner MoPub 300*250": "dc267771-6d5f-4155-abea-eca52f904dc0"
-      },
-      "interstitial": {
-        "Google Ad Manager": "29901bb0-a2e9-422d-9d54-31b79373ca50",
-        "Google Ad Manager Video": "da3ce54a-0bc5-49c4-8eb1-bab077adfa82",
-        "MoPub": "c51322f2-b6f3-4ca6-9ee4-f46aff8f5213",
-        "MoPub Video": "04c294c2-0acb-4af8-9574-df66487b8cde"
-      },
-      "native": {
-        "Google Ad Manager": "f061e793-4c5c-4b0d-a489-cc4e63c0b274",
-        "MoPub": "24bcf166-9340-4a94-86fb-cd536c1b0e8f"
-      },
-      "feedlist": {
-        "Google Ad Manager": "6d2c19cf-f235-4132-89c1-c476c5221097",
-        "MoPub": "f4fbdb21-53a8-4a9d-bcc2-9ec706167466"
-      }
-    },
-    {
       "adName": "Sigmob",
       "interstitial": {
         "Interstitial": "62948afa-16cf-46cc-b6da-c024820c4f42"
@@ -734,36 +667,6 @@
       }
     },
     {
-      "adName": "Tuia",
-      "banner": {
-        "Banner 320*50": "dc0582a8-48f5-43b2-b512-bd742d30a5cb",
-        "Banner 320*100": "2cb34a0a-2c24-4531-b39b-ce0d5affcda0",
-        "Banner 300*250": "3bcdc32d-81f3-460b-a5ec-74d3aa90701e",
-        "Banner 468*60": "2b4100da-5128-466e-a215-2bb8c1eba27b",
-        "Banner 728*90": "9a9411b8-69bf-418d-925c-e26ab50041ac"
-      },
-      "interstitial": {
-        "Dialog": "6c8f8b68-0554-45a3-8849-11299d1862dc",
-        "Native Interstitial": "e573b170-5245-4830-88ea-139520953d84"
-      },
-      "feedlist": {
-        "Template": "8ac84c69-4527-4d91-bbda-3685c213b7f4",
-        "Custom": "a39befcf-933a-4ae4-9fe1-dead0ba30d6e",
-        "ICON": "85538214-c2b6-47a9-b64d-baf35194439d",
-        "Text Link": "640bd3de-38eb-4aa9-8c33-4004ce7234e0",
-        "Native Interstitial": "99efc587-3d14-40c5-8892-525ac5df04a4"
-      },
-      "splash": {
-        "Splash": "d6aed121-f09b-4bc2-8282-8eaa31b5f1c6"
-      },
-      "mixview": {
-        "MixView": "8b479150-ad1e-4839-a837-f192e625bb28"
-      },
-      "mixfull": {
-        "MixFullScreen": "bd0dd6cd-7410-4dc4-920c-902b5522a98d"
-      }
-    },
-    {
       "adName": "Unity Ads",
       "banner": {
         "Banner": "a92176d2-cf15-40fa-96ed-0b6c9b2312ce"
@@ -830,92 +733,6 @@
       "splash": {
         "Vertical": "159b29f6-daa9-44a4-91ee-6987d87fa6e2",
         "Horizontal": "a7804e67-63c4-421c-8445-cd4fb28db2e3"
-      }
-    },
-    {
-      "adName": "YouDao",
-      "interstitial": {
-        "Interstitial": "2d83b6ff-c582-4e1a-96a2-e45f6341a5d0"
-      },
-      "feedlist": {
-        "FeedList": "468f50a1-9777-4cf6-ae9d-57cf808671a9"
-      },
-      "rewarded": {
-        "RewardedVideo": "a62809ae-6c46-4138-b88b-9926bf425eac"
-      },
-      "splash": {
-        "Brand Splash": "1ffe49a6-86bf-4c72-8a69-c061f153f8a9",
-        "Interstitial Splash": "22f4d522-6a22-476f-9318-c56628d02d43"
-      },
-      "mixview": {
-        "MixView": "83ce6dac-11f4-4ee1-8c78-6cbbcba45665"
-      },
-      "mixfull": {
-        "MixFullScreen": "86e99046-807b-40b6-a41d-4642ffd0564d"
-      }
-    },
-    {
-      "adName": "Meishu",
-      "rewarded": {
-        "RewardedVideo(OpenUrl)": "8de275a1-40be-4760-aeef-514de9d3caa9",
-        "RewardedVideo(DownloadApp)": "d4f035af-100b-4932-ba75-9aa4ea9f76ec",
-        "RewardedVideo(DownloadApp with icon)": "b9c9075c-8973-455a-abf3-49971bcf35d5"
-      },
-      "interstitial": {
-        "Image Interstitial(OpenUrl)": "c6b4f3db-30c9-403c-b777-27430dbd3abb",
-        "Image Interstitial(DownloadApp)": "455d5604-1eb2-4899-bdc9-02fdd387fe2b",
-        "Video Interstitial(OpenUrl)": "bdeab0a4-9572-4575-8781-16d92267b420",
-        "Video Interstitial(DownloadApp)": "90bcbd44-a684-4fe9-9756-6be88f7b7f18"
-      },
-      "banner": {
-        "Image Banner(OpenUrl)": "af0d3000-114d-447e-9064-1980aaae86c3",
-        "Image Banner(DownloadApp)": "6803698f-0b4f-4bce-b49e-72355686fce9"
-      },
-      "native": {
-        "Image Native(OpenUrl)": "8462fb2a-44f1-48cc-9380-9c63de74bc31",
-        "Image Native(DownloadApp)": "1fa91053-10c8-437a-8445-59cdc6064d24",
-        "Video Native(OpenUrl)": "f6df78e2-5095-4a44-9f20-f92e12c623b1",
-        "Video Native(DownloadApp)": "fdcca2d8-9127-41f3-9741-b652236fdc07"
-      },
-      "feedlist": {
-        "Image FeedList": "af299e12-5b98-464f-8cc1-72f3d2cd7385",
-        "Video FeedList": "e98d3199-960c-42ba-9b2c-68b431d04fb5"
-      },
-      "splash": {
-        "Image Splash": "d3e36b18-94ce-4b76-80f4-1be95bd670d9",
-        "Video Splash": "c49a0abd-0898-42f5-997b-a1ab25955d03"
-      }
-    },
-    {
-      "adName": "Nath",
-      "rewarded": {
-        "nath_ad_no_template": "f80918cc-005e-4266-8442-eee0df9b8352",
-        "nath_ad_rewarded_android": "87a18763-9ee5-4666-be0f-38ede551fae7",
-        "youdao_api_rewarded": "31af9dae-87fc-4cc1-a7bd-8e905f814f90"
-      },
-      "interstitial": {
-        "nath_ad_interstitial_android": "d29e1646-56aa-4e84-9fa0-3994b5b4718a",
-        "nath_ad_interstitial_android_video": "e1f3d21a-3a01-48a5-ad2f-aae06ed583aa",
-        "nath_ad_interstitial_video_no_template": "76752a6c-0965-42a9-a1e6-195c25178fef",
-        "youdao_api_interstitial": "e178b984-6d45-4936-91b5-dd33c7aafd3f"
-      },
-      "banner": {
-        "nath_ad_banner_android_video": "6bc707e0-1aa5-4e39-b518-1f7f42e79d21",
-        "nath_ad_banner_android": "f22bbb86-da44-4f9c-b2e7-4a39dc5bd6d0"
-      },
-      "native": {
-        "nath_ad_native_android": "1aa737c6-f627-4003-ad8c-5f983753f503",
-        "nath_ad_native_android_video": "a6e5475d-e02a-4d17-901f-575142c42d7c"
-      },
-      "feedlist": {
-        "nath_ad_feedlist_android_video": "283a474c-bc29-47b0-8aec-918dced32e80",
-        "nath_ad_feedlist_android": "7a22ab7e-8a42-4b3e-9d35-18d034ed3a65",
-        "youdao_api_feedlist": "e7662998-d0dc-4dd5-8fc2-79583326b736"
-      },
-      "splash": {
-        "nath_ad_splash_android_video": "2d6fc53e-1908-454e-991b-e2015e1cbc40",
-        "nath_ad_splash_android": "abf3139b-af0e-4d15-a8b9-67fac33d0a98",
-        "youdao_api_splash": "8bf9b84e-ada8-4e1c-9c74-96593110c5c1"
       }
     }
   ]

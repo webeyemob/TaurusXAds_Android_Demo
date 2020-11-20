@@ -14,12 +14,8 @@ import com.taurusx.ads.mediation.networkconfig.DFPGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouGlobalConfig;
-import com.taurusx.ads.mediation.networkconfig.PrebidConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokGlobalConfig;
-import com.taurusx.ads.mediation.networkconfig.TuiaGlobalConfig;
-
-import org.prebid.mobile.Host;
 
 public class TaurusXApplication extends Application {
 
@@ -51,9 +47,7 @@ public class TaurusXApplication extends Application {
                         .addConfig(createDFPConfig())
                         .addConfig(createGDTConfig())
                         .addConfig(createKuaiShouConfig())
-                        .addConfig(createPrebidConfig())
                         .addConfig(createTikTokConfig())
-                        .addConfig(createTuiaConfig())
                         .build());
 
         // 开启 Network 调试模式
@@ -141,20 +135,6 @@ public class TaurusXApplication extends Application {
         return KuaiShouGlobalConfig.Builder()
                 // Apk 下载时，是否在通知栏中提示
                 .showNotification(true)
-                .build();
-    }
-
-    private PrebidConfig createPrebidConfig() {
-        return PrebidConfig.Builder()
-                // 设置部署 Prebid 服务的 host，可以使用 AppNexus、Rubicon 提供的服务，也可以自己部署 Prebid 服务
-                // 测试 Demo 中的 Video 广告时，必须使用 Host.RUBICON；测试其余广告位必须使用 Host.APPNEXUS。
-                .setPrebidServerHost(Host.APPNEXUS)
-                // 设置 Prebid 的超时时间，默认 2_000
-                // .setTimeoutMillis(2_000)
-                // 是否允许使用地理位置信息，默认 false
-                // .setShareGeoLocation(true)
-                // 设置用户唯一 Id
-                // .setBuyerId("user id")
                 .build();
     }
 
@@ -301,11 +281,5 @@ public class TaurusXApplication extends Application {
                 // 安装完成
             }
         };
-    }
-
-    private TuiaGlobalConfig createTuiaConfig() {
-        return TuiaGlobalConfig.Builder()
-                // .setUserId("test-userid-123456")
-                .build();
     }
 }
