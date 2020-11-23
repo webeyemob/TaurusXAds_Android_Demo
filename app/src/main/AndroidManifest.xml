@@ -120,14 +120,6 @@
         <meta-data
             android:name="i-mobile_DebugLogging"
             android:value="true" />
-
-        <!-- Tuia App key、App Secret -->
-        <meta-data
-            android:name="TUIA_APPKEY"
-            android:value="4UycwwZv41rwzne1ZXgtQBgDSnPH" />
-        <meta-data
-            android:name="TUIA_APPSECRET"
-            android:value="3WpyTLfifQyGhvgivxtUjvzXxtkzdceETBU2n5g" />
-
+        
     </application>
 </manifest>

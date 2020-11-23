@@ -66,7 +66,8 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation 'com.taurusx.ads:core-oversea:1.15.4'
+        implementation 'com.taurusx.ads:core-oversea:1.16.1'
+        implementation 'com.satori.sdk:eventio-openudid:1.0.2'
     } else {
         // 国内版
         implementation 'com.taurusx.ads:core:1.16.1'
@@ -98,7 +99,7 @@ dependencies {
         implementation "com.qq.e.union:union:4.294.1164"
     }
     // 如果打包 release 版本出错，请添加 gdt_tbs_sdk_thirdapp
-    // compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
+    compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
