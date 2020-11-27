@@ -60,7 +60,8 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.taurusx.ads:core:1.15.4'
+    implementation "com.taurusx.ads:core-oversea:1.16.6"
+    implementation "com.satori.sdk:eventio-openudid:1.0.3"
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -266,29 +267,6 @@ dependencies {
 //        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 //    }
 
-    // Mintegral
-    implementation "com.taurusx.ads:mediation_mintegral:13.1.11.0"
-    implementation "com.mintegral.msdk:videojs:13.1.11"
-    implementation "com.mintegral.msdk:mtgjscommon:13.1.11"
-    implementation "com.mintegral.msdk:playercommon:13.1.11"
-    implementation "com.mintegral.msdk:reward:13.1.11"
-    implementation "com.mintegral.msdk:videocommon:13.1.11"
-    implementation "com.mintegral.msdk:common:13.1.11"
-    implementation "com.mintegral.msdk:alphab:13.1.11"
-    implementation "com.mintegral.msdk:interstitialvideo:13.1.11"
-    implementation "com.mintegral.msdk:mtgnative:13.1.11"
-    implementation "com.mintegral.msdk:nativeex:13.1.11"
-    implementation "com.mintegral.msdk:mtgsplash:13.1.11"
-    implementation "com.mintegral.msdk:interactiveads:13.1.11"
-    implementation "com.mintegral.msdk:mtgbanner:13.1.11"
-    implementation "com.mintegral.msdk:interstitial:13.1.11"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    // 国内产品必须添加
-//    implementation "com.mintegral.msdk:optimizedata:13.1.11"
-//    implementation "com.mintegral.msdk:mtgdownloads:13.1.11"
-    // Head Bidding
-    implementation "com.mintegral.msdk:mtgbid:13.1.11"
-
     // OPPO (不能与穿山甲、优量汇同时使用)
 //    implementation "com.taurusx.ads:mediation_oppo:3.2.9.3"
 //    implementation "com.taurusx.ads:oppo_mobad_sdk:3.2.9"
@@ -300,7 +278,7 @@ dependencies {
 //    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.6"
 
     // Xiaomi
-    implementation "com.taurusx.ads:mediation_mimo:1.5.6.0"
+    implementation "com.taurusx.ads:mediation_mimo:1.5.6.1"
     implementation "com.taurusx.ads:mimo_sdk:1.5.6"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

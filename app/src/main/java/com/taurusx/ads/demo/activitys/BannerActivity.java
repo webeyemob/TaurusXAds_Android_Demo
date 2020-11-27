@@ -7,19 +7,16 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.google.android.gms.ads.AdSize;
-import com.inmobi.ads.InMobiBanner;
 import com.taurusx.ads.core.api.ad.BannerAdView;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.core.api.model.ILineItem;
-import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
 import com.taurusx.ads.mediation.networkconfig.AdMobBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.DFPBannerConfig;
 import com.taurusx.ads.mediation.networkconfig.InMobiBannerConfig;
-import com.taurusx.ads.mediation.networkconfig.MintegralBannerConfig;
 
 public class BannerActivity extends BaseActivity {
 
@@ -63,7 +60,6 @@ public class BannerActivity extends BaseActivity {
                 .addConfig(createAdMobBannerConfig())
                 .addConfig(createDFPBannerConfig())
                 .addConfig(createInMobiBannerConfig())
-                .addConfig(createMintegralBannerConfig())
 //                .addConfig(createTikTokExpressBannerConfig())
                 .build());
 
@@ -128,13 +124,6 @@ public class BannerActivity extends BaseActivity {
         return InMobiBannerConfig.Builder()
                 // 设置刷新动画；默认为 InMobiBanner.AnimationType.ANIMATION_OFF
                 // .setAnimationType(InMobiBanner.AnimationType.ANIMATION_OFF)
-                .build();
-    }
-
-    private MintegralBannerConfig createMintegralBannerConfig() {
-        return MintegralBannerConfig.Builder()
-                // 是否显示关闭按钮
-                .setAllowShowCloseBtn(false)
                 .build();
     }
 

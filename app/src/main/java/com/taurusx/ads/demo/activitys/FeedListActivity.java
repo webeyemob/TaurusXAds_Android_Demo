@@ -25,7 +25,6 @@ import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.MintegralFeedListConfig;
 
 import java.util.List;
 
@@ -126,7 +125,6 @@ public class FeedListActivity extends BaseActivity {
                 .addConfig(createGDTCustom2_0FeedListConfig())
                 .addConfig(createGDTExpressFeedListConfig())
                 .addConfig(createKuaiShouCustomFeedListConfig())
-                .addConfig(createMintegralFeedListConfig())
                 .build());
 
         // Set FeedList Load Event
@@ -223,42 +221,24 @@ public class FeedListActivity extends BaseActivity {
                 .setAppDownloadListener(new KuaiShouAppDownloadListener() {
                     @Override
                     public void onIdle() {
-                        LogUtil.d(TAG ,"KuaiShou onIdle");
+                        LogUtil.d(TAG, "KuaiShou onIdle");
                     }
 
                     @Override
                     public void onProgressUpdate(int i) {
-                        LogUtil.d(TAG ,"KuaiShou onProgressUpdate: " + i);
+                        LogUtil.d(TAG, "KuaiShou onProgressUpdate: " + i);
                     }
 
                     @Override
                     public void onDownloadFinished() {
-                        LogUtil.d(TAG ,"KuaiShou onDownloadFinished");
+                        LogUtil.d(TAG, "KuaiShou onDownloadFinished");
                     }
 
                     @Override
                     public void onInstalled() {
-                        LogUtil.d(TAG ,"KuaiShou onInstalled");
+                        LogUtil.d(TAG, "KuaiShou onInstalled");
                     }
                 })
                 .build();
     }
-
-    private MintegralFeedListConfig createMintegralFeedListConfig() {
-        return MintegralFeedListConfig.Builder()
-                // 是否循环播放视频
-                .setAllowLoopPlay(false)
-                // 屏幕方向改变时是否重新加载视频
-                .setAllowScreenChange(false)
-                // 在视频未准备好播放之前是否显示图片
-                .setAllowVideoRefresh(false)
-                // 是否显示进度
-                .setProgressVisibility(true)
-                // 是否允许全屏显示
-                .setIsAllowFullScreen(false)
-                // 是否显示音量按钮
-                .setSoundIndicatorVisibility(true)
-                .build();
-    }
-
 }

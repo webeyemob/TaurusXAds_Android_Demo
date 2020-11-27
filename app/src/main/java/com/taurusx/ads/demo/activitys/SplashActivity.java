@@ -116,10 +116,6 @@ public class SplashActivity extends FragmentActivity {
 
     private SigmobSplashConfig createSigmobSplashConfig() {
         return SigmobSplashConfig.Builder()
-                // 设置开屏底部显示的标题，一般为应用名称
-                .setTitle("App Name")
-                // 设置开屏底部显示的描述
-                .setDescription("App Desc")
                 /**
                  * 广告结束，广告内容是否自动隐藏；默认 false。
                  * 若开屏和应用共用 Activity，建议 false。

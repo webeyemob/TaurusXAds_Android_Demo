@@ -2,7 +2,6 @@ package com.taurusx.ads.demo.application;
 
 import android.app.Application;
 
-import com.mintegral.msdk.MIntegralUser;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.constant.DownloadNetwork;
@@ -14,7 +13,6 @@ import com.taurusx.ads.mediation.networkconfig.DFPGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouGlobalConfig;
-import com.taurusx.ads.mediation.networkconfig.MintegralGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.PrebidConfig;
 
 import org.prebid.mobile.Host;
@@ -49,7 +47,6 @@ public class TaurusApplication extends Application {
                         .addConfig(createDFPConfig())
                         .addConfig(createGDTConfig())
                         .addConfig(createKuaiShouConfig())
-                        .addConfig(createMintegralConfig())
                         .addConfig(createPrebidConfig())
                         .build());
 
@@ -139,28 +136,6 @@ public class TaurusApplication extends Application {
         return KuaiShouGlobalConfig.Builder()
                 // Apk 下载时，是否在通知栏中提示
                 .showNotification(true)
-                .build();
-    }
-
-    private MintegralGlobalConfig createMintegralConfig() {
-        MIntegralUser mIntegralUser = new MIntegralUser();
-        // 是否是付费用户，1-付费用户, 0-普通用户
-        // mIntegralUser.setPay(...);
-        // 性别，1-男性, 2-女性
-        // mIntegralUser.setGender(...);
-        // 年龄
-        // mIntegralUser.setAge(...);
-        // 默认用户类型
-        // mIntegralUser.setCustom("Custom parameters");
-        // 经纬度
-        // mIntegralUser.setLng(...);
-        // mIntegralUser.setLat(...);
-
-        return MintegralGlobalConfig.Builder()
-                .setUser(mIntegralUser)
-                // 如果设置为 true，将不会收集用户来展示个性化广告
-                // 默认为 false
-                // .setCCPAStatus(false)
                 .build();
     }
 
