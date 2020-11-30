@@ -14,9 +14,6 @@ import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.demo.utils.Utils;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouRewardedVideoConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TikTokRewardedVideoConfig;
 
 
 public class RewardedVideoActivity extends BaseActivity {
@@ -69,8 +66,6 @@ public class RewardedVideoActivity extends BaseActivity {
 
         // (Optional) Set Network special Config
         mRewardedVideoAd.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(createKuaiShouRewardedVideoConfig())
-                .addConfig(createTikTokRewardedVideoConfig())
                 .build());
 
         // Listen Ad load result
@@ -123,51 +118,5 @@ public class RewardedVideoActivity extends BaseActivity {
                 Utils.toast(RewardedVideoActivity.this, "onRewardFailed");
             }
         });
-    }
-
-    private KuaiShouRewardedVideoConfig createKuaiShouRewardedVideoConfig() {
-        return KuaiShouRewardedVideoConfig.Builder()
-                // 拓展场景参数，可不设置
-                .setShowScene("xx game")
-                // 30 秒后可关闭
-                .setSkipThirtySecond(false)
-                .build();
-    }
-
-    private TikTokRewardedVideoConfig createTikTokRewardedVideoConfig() {
-        return TikTokRewardedVideoConfig.Builder()
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                    }
-
-                    @Override
-                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                    }
-                })
-                .build();
     }
 }
