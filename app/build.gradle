@@ -8,6 +8,9 @@ android {
 
             applicationId "com.taurusx.ads.demo"
 
+            // Jad
+            // applicationId "com.jd.sdkceshiandroid"
+
             minSdkVersion 19
             targetSdkVersion 28
             versionCode 1
@@ -51,7 +54,7 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation 'com.taurusx.ads:core-oversea:1.15.4'
+        implementation 'com.taurusx.ads:core-oversea:1.16.6'
     } else {
         // 国内版
         implementation 'com.taurusx.ads:core:1.16.7'
@@ -79,6 +82,9 @@ dependencies {
     implementation "com.taurusx.ads:youdaosdk:4.1.8.1"
     implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
+    // Jad
+    implementation "com.taurusx.ads:mediation_jad:1.0.12.1"
+    implementation "com.taurusx.ads:jad_yun_sdk:1.0.12"
 
     // ####################################### Other Network #######################################
     // AppLovin Max

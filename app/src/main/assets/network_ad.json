@@ -44,6 +44,28 @@
       }
     },
     {
+      "adName": "Jad",
+      "banner": {
+        "Banner 320*50": "13bd85e3-62bb-4271-b6f2-989ee0c2f40e",
+        "Banner 320*100": "9b8c0ddc-ce6e-4bce-9afb-a613a0a7bcfb"
+      },
+      "interstitial": {
+        "Interstitial": "3b67aadc-e0a5-40ac-a601-cc9708506947"
+      },
+      "feedlist": {
+        "FeedList": "922147fd-c09a-4b95-ab0a-6dc6d4d07ae1"
+      },
+      "splash": {
+        "Splash": "e19d126a-77aa-4acb-9573-45b06f4879c9"
+      },
+      "mixview": {
+        "MixView": "1f4bba70-14ea-4b0f-89bd-65959d52151f"
+      },
+      "mixfull": {
+        "MixFullScreen": "d910d856-1613-4eff-b550-a88aafb3b9a5"
+      }
+    },
+    {
       "adName": "Prebid",
       "banner": {
         "Google Ad Manager 320*50": "26348c2d-7816-4086-8648-74e847a74ca3",
