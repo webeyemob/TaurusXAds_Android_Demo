@@ -83,8 +83,8 @@ dependencies {
     implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
     // Jad
-    implementation "com.taurusx.ads:mediation_jad:1.0.12.1"
-    implementation "com.taurusx.ads:jad_yun_sdk:1.0.12"
+    implementation "com.taurusx.ads:mediation_jad:1.0.14.0"
+    implementation "com.taurusx.ads:jad_yun_sdk:1.0.14"
 
     // ####################################### Other Network #######################################
     // AppLovin Max
