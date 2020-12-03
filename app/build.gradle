@@ -48,6 +48,8 @@ boolean oversea = false
 // 优量汇分为标准版本、X5 内核加强版
 boolean gdt_tbs = false
 
+boolean mobrain = false
+
 dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.multidex:multidex:2.0.1'
@@ -85,6 +87,40 @@ dependencies {
     // Jad
     implementation "com.taurusx.ads:mediation_jad:1.0.14.0"
     implementation "com.taurusx.ads:jad_yun_sdk:1.0.14"
+
+    if (mobrain) {
+        // Mobrain
+        implementation "com.taurusx.ads:mediation_mobrain:2.3.6.0_1.0"
+        implementation "com.taurusx.ads:mobrain:2.3.6.0_1"
+
+        // Mobrain-Toutiao
+        implementation "com.taurusx.ads:mediation_toutiao:3.3.0.3.0"
+        implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.3.0.3"
+        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+        // Mobrain-GDT
+        implementation "com.taurusx.ads:mobrain_adapter_gdt:4.294.1164.0"
+        implementation "com.taurusx.ads:mediation_gdt:4.294.1164.0"
+        implementation "com.qq.e.union:union:4.294.1164"
+        // 如果打包 release 版本出错，请添加 gdt_tbs_sdk_thirdapp
+        // compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
+        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+        // Mobrain-KuaiShou
+        implementation 'com.taurusx.ads:mobrain_adapter_kuaishou:3.3.5.3.0'
+        implementation "com.taurusx.ads:mediation_kuaishou:3.3.5.3.0"
+        implementation "com.taurusx.ads:ks_adsdk:3.3.5.3"
+        implementation 'com.google.android.material:material:1.1.0'
+        implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
+        implementation 'androidx.recyclerview:recyclerview:1.1.0'
+        implementation "com.google.code.gson:gson:2.8.6"
+
+        // Mobrain-Baidu
+        implementation "com.taurusx.ads:mobrain_adapter_baidu:5.95.0"
+        implementation "com.taurusx.ads:mediation_baidu:5.95.1"
+        implementation "com.taurusx.ads:baidu_mobads_sdk:5.95"
+        implementation "com.taurusx.ads:miit_mdid:1.0.13"
+    }
 
     // ####################################### Other Network #######################################
     // AppLovin Max
