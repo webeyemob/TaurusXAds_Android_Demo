@@ -70,10 +70,10 @@ dependencies {
         implementation 'com.satori.sdk:eventio-openudid:1.0.2'
     } else {
         // 国内版
-        implementation 'com.taurusx.ads:core:1.16.7'
+        implementation "com.taurusx.ads:core:1.16.7"
         implementation "com.taurusx.ads:miit_mdid:1.0.13"
-        implementation "com.satori.sdk:eventio-go:1.1.4.0"
-        implementation 'com.satori.sdk:eventio-openudid:1.0.2'
+        implementation "com.satori.sdk:eventio-go:2.0.0.0"
+        implementation "com.satori.sdk:eventio-openudid:1.0.3"
         implementation "com.satori.sdk:eventio-crashlytics:1.0.5"
     }
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
@@ -103,8 +103,8 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.89.0"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:5.89"
+    implementation "com.taurusx.ads:mediation_baidu:5.95.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:5.95"
     implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
     // KuaiShou
