@@ -142,6 +142,63 @@
       }
     },
     {
+      "adName": "Mobrain",
+      "banner": {
+        "Banner 320*50": "7325e51b-a756-4227-bca2-67a8e5efe32f",
+        "Banner 320*100": "945b3e3a-9c35-44da-bba5-7fee17b4d515",
+        "Banner 300*250": "c58d2861-7ff4-40f5-a519-9c1521e7b010",
+        "Banner 468*60": "35db9fbb-4a40-4c9a-accd-d88e00844dbf",
+        "Banner 728*90": "c8ab1ab7-00b8-46b2-b167-625f60e4184e"
+      },
+      "interstitial": {
+        "Express Interstitial": "a188593d-bee2-414b-8298-400650b06f9a",
+        "FullScreenVideo Vertical": "c304ff7e-ea9a-4f72-9028-2ff16447297c",
+        "FullScreenVideo Horizontal": "7f6074cf-927a-4e41-8af4-8ba9861eed61",
+        "Express FullScreenVideo Vertical": "fd51b318-6630-4b09-bbe2-1a205df3a4f1",
+        "Express FullScreenVideo Horizontal": "45b9b9e0-f117-4bbf-bd2c-ac50e08cf20d"
+      },
+      "feedlist": {
+        "Custom FeedList": "32f926bf-064d-419a-b613-085592bf43c7",
+        "Express FeedList": "cb72b837-b185-4751-845f-2ba6148405f8"
+      },
+      "rewarded": {
+        "RewardedVideo Vertical": "8a45c447-9ebf-46aa-b5b8-9a9f9e64b1b7",
+        "RewardedVideo Horizontal": "39e6202b-e15b-48b3-8e2b-2056a3e4304d",
+        "Express RewardedVideo Vertical": "95043439-f814-4619-8f17-8248550189c6",
+        "Express RewardedVideo Horizontal": "643ed77c-4c56-4a8f-82ef-908567ed6a84"
+      },
+      "splash": {
+        "Splash": "74db02da-2673-412d-9680-1934432159b1",
+        "Express Splash": "6491c5ec-63d8-48b8-8cf1-9ad47063423f"
+      },
+      "mixview": {
+        "MixView": "8bd26ab1-aa38-403c-8acd-2c79d1cbce0d"
+      },
+      "mixfull": {
+        "MixFullScreen": "005acceb-5d75-4136-811a-84354ff0c889"
+      }
+    },
+    {
+      "adName": "Mobrain-Network",
+      "banner": {
+        "Banner 320*50": "d6a6c1f7-0f15-4222-aeee-7b3d2d883217"
+      },
+      "interstitial": {
+        "Interstitial": "1d408674-5dbc-4c6f-b634-8532f5596c60",
+        "FullScreenVideo": "a0b45afe-ce60-420f-8773-c12370581bf5"
+      },
+      "feedlist": {
+        "Custom FeedList": "ee66e925-6600-4a86-bc75-a03310e7846b",
+        "Express FeedList": "5c515397-4377-4e8d-8dbc-310299160b11"
+      },
+      "rewarded": {
+        "RewardedVideo": "6dedb91c-709f-4b53-aaa2-b5e142a222ba"
+      },
+      "splash": {
+        "Splash": "2f9cb08b-0a77-4853-9f8e-9ef5a935a1f6"
+      }
+    },
+    {
       "adName": "Meishu",
       "rewarded": {
         "RewardedVideo(OpenUrl)": "8de275a1-40be-4760-aeef-514de9d3caa9",
