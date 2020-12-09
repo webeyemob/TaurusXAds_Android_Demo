@@ -82,17 +82,17 @@ dependencies {
     // ####################################### China Network #######################################
     if (oversea) {
         // pangle
-        implementation "com.taurusx.ads:mediation_pangle:3.1.5.3.0"
+        implementation "com.taurusx.ads:mediation_pangle:3.1.5.3.1"
         implementation "com.bytedance.sdk:pangle-sdk:3.1.5.3"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:3.3.0.3.0"
+        implementation "com.taurusx.ads:mediation_toutiao:3.3.0.3.1"
         implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.3.0.3"
         implementation "androidx.legacy:legacy-support-v4:1.0.0"
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.294.1164.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.294.1164.1"
     if (gdt_tbs) {
         implementation "com.qq.e.union:tbs:4.294.1164"
     } else {
@@ -103,12 +103,12 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.95.0"
+    implementation "com.taurusx.ads:mediation_baidu:5.95.2"
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.95"
     implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.5.3.0"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.5.3.1"
     implementation "com.taurusx.ads:ks_adsdk:3.3.5.3"
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
@@ -147,18 +147,18 @@ dependencies {
     //    implementation "com.taurusx.ads:aligames_ngad_release_sdk:2.5.45"
 
     // OPPO (不能与穿山甲、优量汇同时使用)
-    //    implementation "com.taurusx.ads:mediation_oppo:3.6.5.0"
+    //    implementation "com.taurusx.ads:mediation_oppo:3.6.5.1"
     //    implementation "com.taurusx.ads:oppo_mobad_sdk:3.6.5"
     //    implementation "com.android.support:appcompat-v7:26.1.0"
     //    implementation "com.squareup.wire:wire-runtime:2.2.0"
     //    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.6"
 
     // Vivo
-    //    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.7"
+    //    implementation "com.taurusx.ads:mediation_vivo:4.2.0.0.1"
 
     // Xiaomi
-    //    implementation "com.taurusx.ads:mediation_mimo:1.5.0.1"
-    //    implementation "com.taurusx.ads:mimo_sdk:1.5.0"
+    //    implementation "com.taurusx.ads:mediation_mimo:1.5.6.1"
+    //    implementation "com.taurusx.ads:mimo_sdk:1.5.6"
     //    implementation "com.android.support:appcompat-v7:28.0.0"
     //    implementation "com.android.support:support-v4:28.0.0"
     //    implementation "com.google.code.gson:gson:2.8.5"
