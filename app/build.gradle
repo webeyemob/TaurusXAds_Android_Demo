@@ -278,7 +278,7 @@ dependencies {
 //    implementation "com.taurusx.ads:mediation_vivo:2.9.0.1.6"
 
     // Xiaomi
-    implementation "com.taurusx.ads:mediation_mimo:1.5.6.1"
+    implementation "com.taurusx.ads:mediation_mimo:1.5.6.3"
     implementation "com.taurusx.ads:mimo_sdk:1.5.6"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
