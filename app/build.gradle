@@ -6,7 +6,7 @@ android {
     signingConfigs {
         defaultConfig {
 
-            applicationId "com.lctech.wyidiomin"
+            applicationId "com.taurusx.ads.demo"
 
             // Jad
             // applicationId "com.jd.sdkceshiandroid"
