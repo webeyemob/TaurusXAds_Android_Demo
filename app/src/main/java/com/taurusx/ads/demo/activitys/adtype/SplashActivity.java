@@ -37,8 +37,6 @@ public class SplashActivity extends Activity {
         mSplashAdUnitId = getIntent().getStringExtra(Constant.KEY_ADUNITID);
         mContainer = findViewById(R.id.layout_container);
 
-        initSplash();
-
         // Exit Page When SplashAd Load More Than 3000ms
         mExitHandler = new Handler();
         mExitHandler.postDelayed(new Runnable() {
@@ -47,6 +45,8 @@ public class SplashActivity extends Activity {
                 finish();
             }
         }, 5000);
+
+        initSplash();
     }
 
     @Override
