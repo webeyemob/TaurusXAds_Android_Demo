@@ -539,6 +539,9 @@
     },
     {
       "adName": "Pangle",
+      "banner": {
+        "Banner 300*250": "8871083b-d236-4b27-98b9-58d1fda38700"
+      },
       "interstitial": {
         "FullScreenVideo Vertical": "c4a9a9ea-8ed6-4ff8-8f21-5afee92c4cd4",
         "FullScreenVideo Horizontal": "14eee7bc-59b2-40d0-ac20-413ff1c6dc43",
