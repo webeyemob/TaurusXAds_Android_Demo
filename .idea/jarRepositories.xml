@@ -201,5 +201,35 @@
       <option name="name" value="maven6" />
       <option name="url" value="http://nexus.webeyemobi.com/repository/maven-snapshots" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="file:$PROJECT_DIR$/../Upload-Plugin" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="file:$PROJECT_DIR$/Upload-Plugin/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven19" />
+      <option name="name" value="maven19" />
+      <option name="url" value="http://nexus.webeyemobi.com/repository/maven-public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven22" />
+      <option name="name" value="maven22" />
+      <option name="url" value="http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven17" />
+      <option name="name" value="maven17" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="file:$PROJECT_DIR$/Upload-Plugin" />
+    </remote-repository>
   </component>
 </project>

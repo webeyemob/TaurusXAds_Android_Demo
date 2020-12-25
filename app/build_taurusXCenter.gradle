@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+// TaurusXCenter
+apply plugin: 'com.taurusx.center'
+
+// 仅全局配置
+taurusXCenter {
+    dependencies {
+        taurusXAds true
+        taurusXAds_Oversea false
+
+        taurusXAdsNetwork = [
+                // 国内 Network
+                toutiao          : true,
+                ylh              : true,
+                baidu            : true,
+                kuaishou         : true,
+                sigmob           : true,
+                _360             : false,
+                _4399            : false,
+                aligames         : false,
+                oppo             : false,
+                vivo             : false,
+                xiaomi           : false,
+                inmobi           : true,
+                // 海外 Network
+                adcolony         : true,
+                admob            : true,
+                amazon           : true,
+                applovin         : true,
+                appnexus         : true,
+                chartboost       : true,
+                criteo           : true,
+                google_ad_manager: true,
+                display_io       : true,
+                du_ad_platform   : true,
+                facebook         : true,
+                flurry           : true,
+                fyber            : true,
+                inmobi_oversea   : false,
+                ironsource       : true,
+                mopub            : true,
+                pangle           : false,
+                tapjoy           : true,
+                unity_ads        : true,
+                vungle           : true,
+                // 日本 Network
+                adgeneration     : true,
+                five             : true,
+                i_mobile         : true,
+                maio             : true,
+                nend             : true,
+        ]
+    }
+}
+
+android {
+    compileSdkVersion 29
+
+    signingConfigs {
+        defaultConfig {
+
+            applicationId "com.taurusx.ads.demo"
+
+            // Amazon
+            // applicationId "com.amazon.sample.simplead"
+
+            // ironSource
+            // applicationId "com.ironsource.ironsourcesdkdemo"
+
+            // KuaiShou
+            // applicationId "com.kwad.kwadsdk"
+
+            // OPPO
+            // applicationId "com.opos.mobaddemo"
+
+            // Vungle
+            // applicationId "com.publisher.vungle.sample"
+
+            minSdkVersion 19
+            targetSdkVersion 28
+            versionCode 1
+            versionName "1.0"
+            testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+            multiDexEnabled = true
+
+            ndk { abiFilters 'armeabi-v7a' }
+        }
+        config {
+            storeFile file('../debug.jks')
+            storePassword 'android'
+            keyAlias 'debug'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
+        force 'androidx.lifecycle:lifecycle-viewmodel:2.1.0'
+        force 'androidx.appcompat:appcompat:1.2.0-alpha02'
+        force 'androidx.fragment:fragment:1.1.0'
+        force 'androidx.lifecycle:lifecycle-runtime:2.1.0'
+        force 'androidx.arch.core:core-common:2.1.0'
+        force 'androidx.lifecycle:lifecycle-common:2.1.0'
+        force 'com.google.code.gson:gson:2.8.5'
+    }
+}

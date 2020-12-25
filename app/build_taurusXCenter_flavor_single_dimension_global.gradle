@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+// ModooPlay
+apply plugin: 'com.taurusx.center'
+
+// flavor 单 dimension【有全局配置】
+// 1、flavor 不配置则使用全局配置
+// 2、flavor 中配置 null 覆盖全局配置，表示不接入
+
+// 全局配置
+taurusXCenter {
+    dependencies {
+        taurusXAds true
+        taurusXAdsNetwork = [
+                toutiao : true,
+                ylh     : true,
+                kuaishou: true
+        ]
+    }
+}
+
+android {
+    compileSdkVersion 29
+
+    signingConfigs {
+        defaultConfig {
+            applicationId "com.taurusx.ads.demo"
+            minSdkVersion 19
+            targetSdkVersion 28
+            versionCode 1
+            versionName "1.0"
+            testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+            multiDexEnabled = true
+
+            ndk { abiFilters 'armeabi-v7a' }
+        }
+        config {
+            storeFile file('../debug.jks')
+            storePassword 'android'
+            keyAlias 'debug'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+    flavorDimensions "custom"
+
+    productFlavors {
+        // 不配置则使用全局配置
+        useDefault {
+            dimension "custom"
+        }
+
+        customConfig {
+            dimension "custom"
+            taurusXCenter {
+                dependencies {
+                    taurusXAds true
+                    taurusXAdsNetwork = [
+                            toutiao : true
+                    ]
+                }
+            }
+        }
+        
+        // 不接入（需要设置 null 覆盖全局配置）
+        noTaurusX {
+            dimension "custom"
+            taurusXCenter {
+                dependencies null
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
+        force 'androidx.lifecycle:lifecycle-viewmodel:2.1.0'
+        force 'androidx.appcompat:appcompat:1.2.0-alpha02'
+        force 'androidx.fragment:fragment:1.1.0'
+        force 'androidx.lifecycle:lifecycle-runtime:2.1.0'
+        force 'androidx.arch.core:core-common:2.1.0'
+        force 'androidx.lifecycle:lifecycle-common:2.1.0'
+        force 'com.google.code.gson:gson:2.8.5'
+    }
+}

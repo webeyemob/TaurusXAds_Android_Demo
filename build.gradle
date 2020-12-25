@@ -4,19 +4,24 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        // For local test
+        maven { url "./Upload-Plugin" }
+
+        // TaurusXCenter
+        maven { url "https://dl.bintray.com/taurrusxads/TaurusxAds" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.2'
-        
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+
+        // TaurusXCenter
+        classpath 'com.taurusx.center:plugin:1.0.beta2'
     }
 }
 
 allprojects {
     repositories {
         // For local test
+        maven { url "../Upload-Plugin" }
         maven { url "../Upload-Sdk" }
         maven { url "../Upload-Mediation" }
         maven { url "../Upload-DataFlyer" }
@@ -24,34 +29,26 @@ allprojects {
         google()
         jcenter()
 
+        // ##### 手动添加依赖时，需要添加以下 Repo #####
         // TaurusX
         maven { url "https://dl.bintray.com/taurrusxads/TaurusxAds" }
         maven { url "http://nexus.webeyemobi.com/repository/webeye" }
-
         // AdColony
         maven { url "https://adcolony.bintray.com/AdColony" }
-
         // AdGeneration
         maven { url 'https://adgeneration.github.io/ADG-Android-SDK/repository' }
-
         // Chartboost
         maven { url "https://chartboostmobile.bintray.com/Chartboost" }
-
         // Display
         maven { url "http://maven.display.io" }
-
         // ironSource
         maven { url 'https://dl.bintray.com/ironsource-mobile/android-sdk' }
-
         // Maio
         maven{ url "https://imobile-maio.github.io/maven" }
-
         // Nend
         maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' }
-
         // Tuia
         maven { url "https://dl.bintray.com/sunjiangrong/maven" }
-
         // Vungle
         maven { url 'https://jitpack.io' }
     }
