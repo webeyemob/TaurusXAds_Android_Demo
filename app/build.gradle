@@ -290,9 +290,7 @@ dependencies {
 
     // MoPub
     implementation "com.taurusx.ads:mediation_mopub:5.15.0.0"
-    implementation("com.mopub:mopub-sdk:5.15.0@aar") {
-        transitive = true
-    }
+    implementation "com.mopub:mopub-sdk:5.15.0"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-base:16.1.0"
 
