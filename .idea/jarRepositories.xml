@@ -201,5 +201,20 @@
       <option name="name" value="maven6" />
       <option name="url" value="http://nexus.webeyemobi.com/repository/maven-snapshots" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven16" />
+      <option name="name" value="maven16" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven18" />
+      <option name="name" value="maven18" />
+      <option name="url" value="http://nexus.webeyemobi.com/repository/maven-public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven21" />
+      <option name="name" value="maven21" />
+      <option name="url" value="http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories" />
+    </remote-repository>
   </component>
 </project>
