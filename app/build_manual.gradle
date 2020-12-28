@@ -87,8 +87,8 @@ dependencies {
     implementation "com.taurusx.ads:jad_yun_sdk:1.1.6"
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:2.4.0.0.0"
-    implementation "com.taurusx.ads:mobrain:2.4.0.0"
+    implementation "com.taurusx.ads:mediation_mobrain:2.4.1.1.0"
+    implementation "com.taurusx.ads:mobrain:2.4.1.1"
 
     // Mobrain-Toutiao
     implementation "com.taurusx.ads:mediation_toutiao:3.4.0.2.0"
@@ -96,15 +96,13 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Mobrain-GDT
-    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.294.1164.1"
-    implementation "com.taurusx.ads:mediation_gdt:4.294.1164.3"
-    implementation "com.qq.e.union:union:4.294.1164"
-    // 如果打包 release 版本出错，请添加 gdt_tbs_sdk_thirdapp
-    // compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
+    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.310.1180.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.310.1180.0"
+    implementation "com.qq.e.union:union:4.310.1180"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Mobrain-KuaiShou
-    implementation 'com.taurusx.ads:mobrain_adapter_kuaishou:3.3.5.3.1'
+    implementation 'com.taurusx.ads:mobrain_adapter_kuaishou:3.3.5.3.2'
     implementation "com.taurusx.ads:mediation_kuaishou:3.3.5.3.2"
     implementation "com.taurusx.ads:ks_adsdk:3.3.5.3"
     implementation 'com.google.android.material:material:1.1.0'
@@ -113,7 +111,7 @@ dependencies {
     implementation "com.google.code.gson:gson:2.8.6"
 
     // Mobrain-Baidu
-    implementation "com.taurusx.ads:mobrain_adapter_baidu:5.95.1"
+    implementation "com.taurusx.ads:mobrain_adapter_baidu:5.95.2"
     implementation "com.taurusx.ads:mediation_baidu:5.95.2"
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.95"
     implementation "com.taurusx.ads:miit_mdid:1.0.13"
