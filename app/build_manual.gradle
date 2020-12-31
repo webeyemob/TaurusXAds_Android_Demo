@@ -255,8 +255,8 @@ dependencies {
     implementation "com.taurusx.ads:duadplatform_cw:1.2.2"
 
     // Facebook
-    implementation "com.taurusx.ads:mediation_facebook:6.0.0.0"
-    implementation "com.facebook.android:audience-network-sdk:6.0.0"
+    implementation "com.taurusx.ads:mediation_facebook:6.2.0.0"
+    implementation "com.facebook.android:audience-network-sdk:6.2.0"
     // 5.5.0 及之后的版本需要 support-annotations
     implementation 'androidx.annotation:annotation:1.1.0'
     // 使用 Header Bidding 需要 headerbiddingkit
