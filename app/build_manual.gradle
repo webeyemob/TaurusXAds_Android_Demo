@@ -73,8 +73,8 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Tuia
-    implementation "com.taurusx.ads:mediation_tuia:2.8.0.0.4"
-    implementation "com.tuia:sdk:2.8.0.0"
+    implementation "com.taurusx.ads:mediation_tuia:3.1.0.0.0"
+    implementation "com.tuia:sdk:3.1.0.0"
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
 
     // YouDao
