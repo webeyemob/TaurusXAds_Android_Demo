@@ -4,11 +4,14 @@ buildscript {
     repositories {
         google()
         jcenter()
+        // For local test
+        maven { url "./Upload-Plugin" }
+
         maven { url "https://dl.bintray.com/taurrusxads/TaurusxAds" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.2'
-        classpath 'com.taurusx.center:plugin:1.0.beta2'
+        classpath 'com.taurusx.center:plugin:1.0.beta3'
     }
 }
 
