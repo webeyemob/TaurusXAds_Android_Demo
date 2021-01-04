@@ -206,8 +206,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // Nend
-    implementation "com.taurusx.ads:mediation_nend:5.4.2.6"
-    implementation "net.nend.android:nend-sdk:5.4.2"
+    implementation "com.taurusx.ads:mediation_nend:7.0.1.0"
+    implementation "net.nend.android:nend-sdk:7.0.1"
 
 
     // ####################################### Other Network #######################################

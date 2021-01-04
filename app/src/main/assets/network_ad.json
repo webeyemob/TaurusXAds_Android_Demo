@@ -485,7 +485,10 @@
     {
       "adName": "Nend",
       "banner": {
-        "Banner": "3d8d2500-0890-4e1a-aa48-955d1c3f1dbf"
+        "Banner 320*50": "3d8d2500-0890-4e1a-aa48-955d1c3f1dbf",
+        "Banner 320*100": "bb6f0918-6c37-48ab-99d2-61d80e2f046e",
+        "Banner 300*250": "8d58ed83-0941-4ccc-9583-720f24b39854",
+        "Banner 728*90": "1f91541f-08d8-4d28-9fb3-fdef5102f4b7"
       },
       "interstitial": {
         "Image Interstitial": "eb211297-a8ff-4cca-85b9-b98a6e640346",
@@ -502,6 +505,12 @@
       },
       "rewarded": {
         "RewardedVideo": "869bd5a6-c4f8-40a2-a27a-20e5afd2c88e"
+      },
+      "mixview": {
+        "MixView": "72703781-d055-4e88-873b-1546f01e6101"
+      },
+      "mixfull": {
+        "MixFullScreen": "de6ba574-ad6a-479a-b496-d637fe08414a"
       }
     },
     {
