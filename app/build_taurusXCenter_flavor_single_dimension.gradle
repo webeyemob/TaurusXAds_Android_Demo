@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 // TaurusXCenter
-apply plugin: 'com.taurusx.center'
+apply plugin: 'com.tgcenter.unified'
 
 // flavor 单 dimension
 // 1、flavor 中不配置或配置 null 都表示不接入
@@ -47,7 +47,7 @@ android {
 
     productFlavors {
         toutiao_inner {
-            taurusXCenter {
+            tgCenter {
                 dependencies {
                     taurusXAds true
                     taurusXAdsNetwork = [
@@ -58,7 +58,7 @@ android {
         }
 
         others {
-            taurusXCenter {
+            tgCenter {
                 dependencies {
                     taurusXAds true
                     taurusXAdsNetwork = [

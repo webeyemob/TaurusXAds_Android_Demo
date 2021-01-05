@@ -1,9 +1,9 @@
 apply plugin: 'com.android.application'
 // TaurusXCenter
-apply plugin: 'com.taurusx.center'
+apply plugin: 'com.tgcenter.unified'
 
 // 仅全局配置
-taurusXCenter {
+tgCenter {
     dependencies {
         taurusXAds true
         taurusXAds_Oversea false

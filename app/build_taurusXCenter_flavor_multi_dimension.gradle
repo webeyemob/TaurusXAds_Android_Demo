@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 // TaurusXCenter
-apply plugin: 'com.taurusx.center'
+apply plugin: 'com.tgcenter.unified'
 
 // flavor 多 dimension
 // 1、建议仅在一个 dimension 中 配置
@@ -65,7 +65,7 @@ android {
     productFlavors {
         toutiao_inner {
             dimension "channel"
-            taurusXCenter {
+            tgCenter {
                 dependencies {
                     taurusXAds true
                     taurusXAdsNetwork = [
@@ -77,7 +77,7 @@ android {
 
         nullTaurusX {
             dimension "channel"
-            taurusXCenter {
+            tgCenter {
                 dependencies null
             }
         }
@@ -88,7 +88,7 @@ android {
 
         paid {
             dimension "price"
-            taurusXCenter {
+            tgCenter {
                 dependencies {
                     taurusXAds true
                     taurusXAdsNetwork = [

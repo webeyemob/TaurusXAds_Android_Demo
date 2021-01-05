@@ -8,13 +8,13 @@ buildscript {
         maven { url "./Upload-Plugin" }
 
         // TaurusXCenter
-        maven { url "https://dl.bintray.com/taurrusxads/TaurusxAds" }
+        maven { url "https://dl.bintray.com/tgcenter/Unified" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.2'
 
         // TaurusXCenter
-        classpath 'com.taurusx.center:plugin:1.0.beta3'
+        classpath 'com.tgcenter.unified:plugin:1.0.beta5'
     }
 }
 

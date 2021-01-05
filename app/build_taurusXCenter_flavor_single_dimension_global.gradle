@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 // ModooPlay
-apply plugin: 'com.taurusx.center'
+apply plugin: 'com.tgcenter.unified'
 
 // flavor 单 dimension【有全局配置】
 // 1、flavor 不配置则使用全局配置
 // 2、flavor 中配置 null 覆盖全局配置，表示不接入
 
 // 全局配置
-taurusXCenter {
+tgCenter {
     dependencies {
         taurusXAds true
         taurusXAdsNetwork = [
@@ -66,7 +66,7 @@ android {
 
         customConfig {
             dimension "custom"
-            taurusXCenter {
+            tgCenter {
                 dependencies {
                     taurusXAds true
                     taurusXAdsNetwork = [
@@ -79,7 +79,7 @@ android {
         // 不接入（需要设置 null 覆盖全局配置）
         noTaurusX {
             dimension "custom"
-            taurusXCenter {
+            tgCenter {
                 dependencies null
             }
         }
