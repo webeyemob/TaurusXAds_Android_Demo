@@ -87,22 +87,22 @@ dependencies {
     implementation "com.taurusx.ads:jad_yun_sdk:1.1.6"
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:2.4.0.0.0"
-    implementation "com.taurusx.ads:mobrain:2.4.0.0"
+    implementation "com.taurusx.ads:mediation_mobrain:2.5.0.1.0"
+    implementation "com.taurusx.ads:mobrain:2.5.0.1"
 
     // Mobrain-Toutiao
-    implementation "com.taurusx.ads:mediation_toutiao:3.4.0.2.0"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.4.0.2"
+    implementation "com.taurusx.ads:mediation_toutiao:3.4.1.2.0"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.4.1.2"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Mobrain-GDT
-    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.310.1180.0"
+    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.310.1180.1"
     implementation "com.taurusx.ads:mediation_gdt:4.310.1180.0"
     implementation "com.qq.e.union:union:4.310.1180"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Mobrain-KuaiShou
-    implementation 'com.taurusx.ads:mobrain_adapter_kuaishou:3.3.5.3.2'
+    implementation 'com.taurusx.ads:mobrain_adapter_kuaishou:3.3.5.3.3'
     implementation "com.taurusx.ads:mediation_kuaishou:3.3.5.3.2"
     implementation "com.taurusx.ads:ks_adsdk:3.3.5.3"
     implementation 'com.google.android.material:material:1.1.0'
@@ -111,9 +111,9 @@ dependencies {
     implementation "com.google.code.gson:gson:2.8.6"
 
     // Mobrain-Baidu
-    implementation "com.taurusx.ads:mobrain_adapter_baidu:5.95.2"
-    implementation "com.taurusx.ads:mediation_baidu:5.95.2"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:5.95"
+    implementation "com.taurusx.ads:mobrain_adapter_baidu:5.97.0"
+    implementation "com.taurusx.ads:mediation_baidu:5.97.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:5.97"
     implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
     // ####################################### Other Network #######################################
