@@ -216,5 +216,20 @@
       <option name="name" value="maven21" />
       <option name="url" value="http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven15" />
+      <option name="name" value="maven15" />
+      <option name="url" value="https://dl.bintray.com/tgcenter/Unified" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven20" />
+      <option name="name" value="maven20" />
+      <option name="url" value="https://developer.huawei.com/repo/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven17" />
+      <option name="name" value="maven17" />
+      <option name="url" value="https://dl.bintray.com/umsdk/release" />
+    </remote-repository>
   </component>
 </project>

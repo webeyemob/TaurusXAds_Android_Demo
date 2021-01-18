@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.taurusx.center'
+apply plugin: 'com.tgcenter.unified'
 
-taurusXCenter {
+tgCenter {
     dependencies {
         taurusXAds true
         taurusXAds_Oversea false

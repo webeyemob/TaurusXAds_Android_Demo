@@ -87,8 +87,8 @@ dependencies {
     implementation "com.taurusx.ads:jad_yun_sdk:1.1.6"
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:2.4.1.1.0"
-    implementation "com.taurusx.ads:mobrain:2.4.1.1"
+    implementation "com.taurusx.ads:mediation_mobrain:2.4.0.0.0"
+    implementation "com.taurusx.ads:mobrain:2.4.0.0"
 
     // Mobrain-Toutiao
     implementation "com.taurusx.ads:mediation_toutiao:3.4.0.2.0"
