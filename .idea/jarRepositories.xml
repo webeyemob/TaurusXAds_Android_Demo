@@ -246,5 +246,10 @@
       <option name="name" value="maven18" />
       <option name="url" value="https://dl.bintray.com/umsdk/release" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven24" />
+      <option name="name" value="maven24" />
+      <option name="url" value="https://dl.bintray.com/richox/RichOX" />
+    </remote-repository>
   </component>
 </project>
