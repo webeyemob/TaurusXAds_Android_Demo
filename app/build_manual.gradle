@@ -67,13 +67,13 @@ dependencies {
     if (oversea) {
         // 海外版
         implementation 'com.taurusx.ads:core-oversea:2.0.2'
-        implementation 'com.satori.sdk:eventio-openudid:1.0.4'
+        implementation 'com.satori.sdk:eventio-openudid:1.0.5'
     } else {
         // 国内版
         implementation "com.taurusx.ads:core:2.0.2"
         implementation "com.taurusx.ads:miit_mdid:1.0.13"
-        implementation "com.satori.sdk:eventio-go:2.0.0.0"
-        implementation "com.satori.sdk:eventio-openudid:1.0.4"
+        implementation "com.satori.sdk:eventio-go:2.2.1.0"
+        implementation "com.satori.sdk:eventio-openudid:1.0.5"
         implementation "com.satori.sdk:eventio-crashlytics:1.0.6"
     }
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
@@ -203,7 +203,7 @@ dependencies {
     // Maio
     implementation "com.taurusx.ads:mediation_maio:1.1.11.0"
     implementation "com.maio:android-sdk:1.1.11@aar"
-    implementation "com.google.android.gms:play-services-ads:17.2.1"
+    implementation "com.google.android.gms:play-services-ads:19.7.0"
 
     // Nend
     implementation "com.taurusx.ads:mediation_nend:7.0.1.0"
@@ -217,17 +217,17 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 
     // AdMob & DFP
-    implementation "com.taurusx.ads:mediation_admob:19.4.0.0"
-    implementation "com.google.android.gms:play-services-ads:19.4.0"
+    implementation "com.taurusx.ads:mediation_admob:19.7.0.0"
+    implementation "com.google.android.gms:play-services-ads:19.7.0"
 
     // Amazon
     implementation "com.taurusx.ads:mediation_amazon:5.9.0.3"
-    implementation "com.google.android.gms:play-services-ads:17.2.1"
+    implementation "com.google.android.gms:play-services-ads:19.7.0"
 
     // AppLovin
     implementation "com.taurusx.ads:mediation_applovin:9.14.1.0"
     implementation "com.applovin:applovin-sdk:9.14.1"
-    implementation "com.google.android.gms:play-services-ads:17.2.1"
+    implementation "com.google.android.gms:play-services-ads:19.7.0"
     // 使用 Header Bidding 需要 headerbiddingkit
     implementation "com.taurusx.ads:headerbiddingkit:0.4.1"
 
