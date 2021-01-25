@@ -143,7 +143,7 @@
       }
     },
     {
-      "adName": "Mobrain",
+      "adName": "Mobrain-TikTok",
       "banner": {
         "Banner 320*50": "7325e51b-a756-4227-bca2-67a8e5efe32f",
         "Banner 320*100": "945b3e3a-9c35-44da-bba5-7fee17b4d515",
@@ -193,7 +193,8 @@
         "Express FeedList": "5c515397-4377-4e8d-8dbc-310299160b11"
       },
       "rewarded": {
-        "RewardedVideo": "6dedb91c-709f-4b53-aaa2-b5e142a222ba"
+        "RewardedVideo": "6dedb91c-709f-4b53-aaa2-b5e142a222ba",
+        "Express RewardedVideo": "c92a46b9-c7b1-4433-852d-6d135b48f30f"
       },
       "splash": {
         "Splash": "2f9cb08b-0a77-4853-9f8e-9ef5a935a1f6"

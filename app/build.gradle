@@ -1,2 +1,2 @@
 apply from: 'build_manual.gradle'
-//apply from: 'build_taurusXCenter.gradle
+//apply from: 'build_taurusXCenter.gradle'
