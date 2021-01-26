@@ -66,11 +66,11 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation 'com.taurusx.ads:core-oversea:2.0.2'
+        implementation 'com.taurusx.ads:core-oversea:2.0.4'
         implementation 'com.satori.sdk:eventio-openudid:1.0.5'
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.0.2"
+        implementation "com.taurusx.ads:core:2.0.4"
         implementation "com.taurusx.ads:miit_mdid:1.0.13"
         implementation "com.satori.sdk:eventio-go:2.2.1.0"
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
@@ -108,8 +108,8 @@ dependencies {
     implementation "com.taurusx.ads:miit_mdid:1.0.13"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.5.3.2"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.5.3"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.6"
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
