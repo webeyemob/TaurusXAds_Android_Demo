@@ -54,11 +54,11 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.0.3"
+        implementation "com.taurusx.ads:core-oversea:2.0.4"
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.0.3"
+        implementation "com.taurusx.ads:core:2.0.4"
         implementation "com.taurusx.ads:miit_mdid:1.0.13"
         implementation "com.satori.sdk:eventio-go:2.2.1.0"
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
@@ -88,7 +88,7 @@ dependencies {
     implementation "com.taurusx.ads:jad_yun_sdk:1.1.6"
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:2.5.1.0.0"
+    implementation "com.taurusx.ads:mediation_mobrain:2.5.1.0.1"
     implementation "com.taurusx.ads:mobrain:2.5.1.0"
 
     // Mobrain-Toutiao
