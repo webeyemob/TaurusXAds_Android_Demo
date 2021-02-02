@@ -37,7 +37,7 @@ android {
             // Jad
             // applicationId "com.jd.sdkceshiandroid"
 
-            minSdkVersion 19
+            minSdkVersion 21
             targetSdkVersion 28
             versionCode 1
             versionName "1.0"

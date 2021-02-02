@@ -11,7 +11,7 @@ android {
             // Jad
             // applicationId "com.jd.sdkceshiandroid"
 
-            minSdkVersion 19
+            minSdkVersion 21
             targetSdkVersion 28
             versionCode 1
             versionName "1.0"
@@ -58,9 +58,9 @@ dependencies {
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.0.4"
-        implementation "com.taurusx.ads:miit_mdid:1.0.13"
-        implementation "com.satori.sdk:eventio-go:2.2.1.0"
+        implementation "com.taurusx.ads:core:2.0.5"
+        implementation "com.taurusx.ads:miit_mdid:1.0.23"
+        implementation "com.satori.sdk:eventio-go:2.2.3.0"
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
         implementation "com.satori.sdk:eventio-crashlytics:1.0.6"
     }
@@ -81,7 +81,7 @@ dependencies {
     // YouDao
     implementation "com.taurusx.ads:mediation_youdao:4.1.8.1.0"
     implementation "com.taurusx.ads:youdaosdk:4.1.8.1"
-    implementation "com.taurusx.ads:miit_mdid:1.0.13"
+    implementation "com.taurusx.ads:miit_mdid:1.0.23"
 
     // Jad
     implementation "com.taurusx.ads:mediation_jad:1.1.6.0"
@@ -115,7 +115,7 @@ dependencies {
     implementation "com.taurusx.ads:mobrain_adapter_baidu:5.97.1"
     implementation "com.taurusx.ads:mediation_baidu:5.97.0"
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.97"
-    implementation "com.taurusx.ads:miit_mdid:1.0.13"
+    implementation "com.taurusx.ads:miit_mdid:1.0.23"
 
     // ####################################### Other Network #######################################
     // AppLovin Max
