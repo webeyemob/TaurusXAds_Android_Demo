@@ -66,12 +66,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation 'com.taurusx.ads:core-oversea:2.0.4'
+        implementation 'com.taurusx.ads:core-oversea:2.0.6'
         implementation 'com.satori.sdk:eventio-openudid:1.0.5'
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.0.5"
-        implementation "com.taurusx.ads:miit_mdid:1.0.23"
+        implementation "com.taurusx.ads:core:2.0.6"
+        implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.2.1.0"
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
         implementation "com.satori.sdk:eventio-crashlytics:1.0.6"
