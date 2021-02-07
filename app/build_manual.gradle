@@ -97,25 +97,25 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Mobrain-GDT
-    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.330.1200.0"
-    implementation "com.taurusx.ads:mediation_gdt:4.330.1200.0"
-    implementation "com.qq.e.union:union:4.330.1200"
+    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.332.1202.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.332.1202.0"
+    implementation "com.qq.e.union:union:4.332.1202"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-
-    // Mobrain-KuaiShou
-    implementation 'com.taurusx.ads:mobrain_adapter_kuaishou:3.3.6.0'
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.6"
-    implementation 'com.google.android.material:material:1.1.0'
-    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation "com.google.code.gson:gson:2.8.6"
-
-    // Mobrain-Baidu
-    implementation "com.taurusx.ads:mobrain_adapter_baidu:5.97.1"
-    implementation "com.taurusx.ads:mediation_baidu:5.97.0"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:5.97"
-    implementation "com.taurusx.ads:miit_mdid:1.0.23"
+//
+//    // Mobrain-KuaiShou
+//    implementation 'com.taurusx.ads:mobrain_adapter_kuaishou:3.3.6.0'
+//    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.0"
+//    implementation "com.taurusx.ads:ks_adsdk:3.3.6"
+//    implementation 'com.google.android.material:material:1.1.0'
+//    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
+//    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+//    implementation "com.google.code.gson:gson:2.8.6"
+//
+//    // Mobrain-Baidu
+//    implementation "com.taurusx.ads:mobrain_adapter_baidu:5.97.1"
+//    implementation "com.taurusx.ads:mediation_baidu:5.97.0"
+//    implementation "com.taurusx.ads:baidu_mobads_sdk:5.97"
+//    implementation "com.taurusx.ads:miit_mdid:1.0.23"
 
     // ####################################### Other Network #######################################
     // AppLovin Max
