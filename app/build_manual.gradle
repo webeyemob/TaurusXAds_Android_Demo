@@ -40,6 +40,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
 }
 
 // TaurusX 区分国内、海外版
@@ -49,6 +55,8 @@ boolean oversea = false
 boolean gdt_tbs = false
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.multidex:multidex:2.0.1'
 
@@ -60,7 +68,7 @@ dependencies {
         // 国内版
         implementation "com.taurusx.ads:core:2.0.8"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
-        implementation "com.satori.sdk:eventio-go:2.2.3.0"
+        implementation "com.satori.sdk:eventio-go:2.2.4.0"
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
         implementation "com.satori.sdk:eventio-crashlytics:1.0.6"
     }
