@@ -8,7 +8,6 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
-import com.qq.e.ads.cfg.VideoOption;
 import com.taurusx.ads.core.api.ad.config.AdSize;
 import com.taurusx.ads.core.api.ad.feedlist.Feed;
 import com.taurusx.ads.core.api.ad.feedlist.FeedList;
@@ -16,15 +15,9 @@ import com.taurusx.ads.core.api.ad.nativead.layout.NativeAdLayout;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleFeedAdListener;
-import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.core.api.utils.ViewUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
-import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.GDTExpressFeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
 
 import java.util.List;
 
@@ -122,9 +115,6 @@ public class FeedListActivity extends BaseActivity {
 
         // (Optional) Set Network special Config
         mFeedList.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(createGDTCustom2_0FeedListConfig())
-                .addConfig(createGDTExpressFeedListConfig())
-                .addConfig(createKuaiShouCustomFeedListConfig())
                 .build());
 
         // Set FeedList Load Event
@@ -155,90 +145,5 @@ public class FeedListActivity extends BaseActivity {
                 Log.d(TAG, "FeedList onAdClosed");
             }
         });
-    }
-
-    private GDTCustom2_0FeedListConfig createGDTCustom2_0FeedListConfig() {
-        return GDTCustom2_0FeedListConfig.Builder()
-                // 视频播放配置
-                .setVideoOption(new VideoOption.Builder()
-                        // .setXxx(Xxx)
-                        .build())
-                // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
-                // 此设置会影响广告填充，请谨慎设置。
-                .setMinVideoDuration(5)
-                .setMaxVideoDuration(60)
-                // 监听应用类广告下载
-                .setAppDownloadListener(new GDTAppDownloadListener() {
-                    @Override
-                    public void onIdle(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onIdle: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadActive(String appName, int progress) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadActive: "
-                                + appName + ", " + progress + "%");
-                    }
-
-                    @Override
-                    public void onDownloadPaused(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String appName) {
-                        LogUtil.d(TAG, "GDTAppDownloadListener: onInstalled: " + appName);
-                    }
-                })
-                .build();
-    }
-
-    private GDTExpressFeedListConfig createGDTExpressFeedListConfig() {
-        return GDTExpressFeedListConfig.Builder()
-                // 视频播放配置
-                .setVideoOption(new VideoOption.Builder()
-                        // .setXxx(Xxx)
-                        .build())
-                // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
-                // 此设置会影响广告填充，请谨慎设置。
-                // .setMinVideoDuration(5)
-                // .setMaxVideoDuration(60)
-                .build();
-    }
-
-    private KuaiShouCustomFeedListConfig createKuaiShouCustomFeedListConfig() {
-        return KuaiShouCustomFeedListConfig.Builder()
-                .setAppDownloadListener(new KuaiShouAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG, "KuaiShou onIdle");
-                    }
-
-                    @Override
-                    public void onProgressUpdate(int i) {
-                        LogUtil.d(TAG, "KuaiShou onProgressUpdate: " + i);
-                    }
-
-                    @Override
-                    public void onDownloadFinished() {
-                        LogUtil.d(TAG, "KuaiShou onDownloadFinished");
-                    }
-
-                    @Override
-                    public void onInstalled() {
-                        LogUtil.d(TAG, "KuaiShou onInstalled");
-                    }
-                })
-                .build();
     }
 }

@@ -13,7 +13,6 @@ import com.taurusx.ads.core.api.listener.AdError;
 import com.taurusx.ads.core.api.listener.SimpleAdListener;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
-import com.taurusx.ads.mediation.networkconfig.SigmobSplashConfig;
 
 public class SplashActivity extends FragmentActivity {
 
@@ -55,9 +54,6 @@ public class SplashActivity extends FragmentActivity {
 
         // (Optional) Set Network special Config
         mSplashAd.setNetworkConfigs(NetworkConfigs.Builder()
-                // .addConfig(createOPPOSplashConfig())
-                .addConfig(createSigmobSplashConfig())
-                // .addConfig(createVivoSplashConfig())
                 .build());
 
         // Set SplashAd Load Event
@@ -93,48 +89,4 @@ public class SplashActivity extends FragmentActivity {
         // Load SplashAd
         mSplashAd.loadAd();
     }
-
-//    private OPPOSplashConfig createOPPOSplashConfig() {
-//        // 配置开屏广告底部的布局，可以设置 View 或标题和描述。
-//
-////        View bottomArea = LayoutInflater.from(this).inflate(R.layout.layout_splash_oppo_bottom_area, null);
-////        return OPPOSplashConfig.Builder()
-////                .setBottomArea(bottomArea)
-////                .build();
-//
-////        return OPPOSplashConfig.Builder()
-////                // 设置标题 id
-////                .setTitle(R.string.app_name)
-////                // 设置描述 id
-////                .setDesc(R.string.app_desc)
-////                // 设置标题
-////                // .setTitle("App Name")
-////                // 设置描述
-////                // .setDesc("App Desc")
-////                .build();
-//    }
-
-    private SigmobSplashConfig createSigmobSplashConfig() {
-        return SigmobSplashConfig.Builder()
-                /**
-                 * 广告结束，广告内容是否自动隐藏；默认 false。
-                 * 若开屏和应用共用 Activity，建议 false。
-                 * 若开屏是单独 Activity，建议true。
-                 */
-                .setDisableAutoHideAd(true)
-                .build();
-    }
-
-//    private VivoSplashConfig createVivoSplashConfig() {
-//        return VivoSplashConfig.Builder()
-//                // 设置标题 id
-//                .setTitle(R.string.app_name)
-//                // 设置描述 id
-//                .setDesc(R.string.app_desc)
-//                // 设置标题
-//                // .setTitle("App Name")
-//                // 设置描述
-//                // .setDesc("App Desc")
-//                .build();
-//    }
 }

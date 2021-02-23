@@ -612,8 +612,10 @@
         "Banner": "14ac3b4a-857f-4481-abde-d8cb770f902b"
       },
       "interstitial": {
-        "Vertical": "eb6b92bb-4553-4c6a-9c75-84bc9f955acf",
-        "Horizontal": "d2de0192-e7fc-427b-9a63-554e8b4913e2"
+        "Interstitial Vertical": "eb6b92bb-4553-4c6a-9c75-84bc9f955acf",
+        "Interstitial Horizontal": "d2de0192-e7fc-427b-9a63-554e8b4913e2",
+        "FullScreenVideo Vertical": "37e3d77a-f74b-45eb-a941-1111266f19dd",
+        "FullScreenVideo Horizontal": "c2160268-2d8c-44bd-b24e-591e4a84b64d"
       },
       "native": {
         "Template": "9917c6b1-ca6c-45d5-bd2f-f9949785e891",

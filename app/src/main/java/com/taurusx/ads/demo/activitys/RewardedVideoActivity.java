@@ -11,7 +11,6 @@ import com.taurusx.ads.core.api.listener.SimpleRewardedVideoAdListener;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.constance.Constance;
-import com.taurusx.ads.mediation.networkconfig.KuaiShouRewardedVideoConfig;
 
 
 public class RewardedVideoActivity extends BaseActivity {
@@ -62,7 +61,6 @@ public class RewardedVideoActivity extends BaseActivity {
 
         // (Optional) Set Network special Config
         mRewardedVideoAd.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(createKuaiShouRewardedVideoConfig())
                 .build());
 
         // Listen Ad load result
@@ -113,14 +111,5 @@ public class RewardedVideoActivity extends BaseActivity {
                 LogUtil.d(TAG, "RewardedVideoAd onRewardFailed");
             }
         });
-    }
-
-    private KuaiShouRewardedVideoConfig createKuaiShouRewardedVideoConfig() {
-        return KuaiShouRewardedVideoConfig.Builder()
-                // 拓展场景参数，可不设置
-                .setShowScene("xx game")
-                // 30 秒后可关闭
-                .setSkipThirtySecond(false)
-                .build();
     }
 }

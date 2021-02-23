@@ -91,16 +91,6 @@
             android:name="com.taurusx.ads.demo.activitys.RecyclerViewActivity"
             android:screenOrientation="portrait"/>
 
-        <provider
-            android:name="com.sigmob.sdk.SigmobXFileProvider"
-            android:authorities="${applicationId}.sigprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/sigmob_provider_paths" />
-        </provider>
-
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
