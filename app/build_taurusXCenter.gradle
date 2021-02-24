@@ -7,20 +7,21 @@ tgCenter {
         taurusXAds_Oversea false
         taurusXAdsNetwork = [
                 // China Network
-                ifly            : true,
-                tuia            : true,
-                youdao          : true,
-                jad             : true,
-                mobrain         : true,
-                mobrain_toutiao : true,
-                mobrain_ylh     : true,
-                mobrain_ylh_tbs : false,
-                mobrain_kuaishou: true,
-                mobrain_baidu   : true,
+                ifly             : true,
+                tuia             : true,
+                youdao           : true,
+                jad              : true,
+                mobrain          : true,
+                mobrain_toutiao  : true,
+                mobrain_ylh      : true,
+                mobrain_ylh_tbs  : false,
+                mobrain_kuaishou : true,
+                mobrain_baidu    : true,
+                mobrain_mintegral: true,
 
                 // Other Network
-                applovin_max    : true,
-                prebid          : true
+                applovin_max     : true,
+                prebid           : true
 
         ]
     }
