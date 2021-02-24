@@ -143,6 +143,26 @@
       }
     },
     {
+      "adName": "Mintegral",
+      "banner": {
+        "Banner": "89e6dff0-0431-4267-a1f2-fdd60d0dc3bc"
+      },
+      "interstitial": {
+        "Interstitial": "903ad939-bb84-40d8-8929-7b53e2cfc61a",
+        "FullScreenVideo": "9052a544-3e30-425e-a033-6ce11cc334b7"
+      },
+      "feedlist": {
+        "FeedList": "feb5a072-72c3-44c4-876f-56b33bda91ab"
+      },
+      "rewarded": {
+        "RewardedVideo": "55919798-14b6-4cbb-a857-3af830e2b6b4",
+        "Interactive": "0d407cfa-f19f-402c-bb66-c979407cdbc6"
+      },
+      "splash": {
+        "Splash": "21945645-a4f7-47b8-b9b4-bb5f16fdea43"
+      }
+    },
+    {
       "adName": "Mobrain-TikTok",
       "banner": {
         "Banner 320*50": "7325e51b-a756-4227-bca2-67a8e5efe32f",
