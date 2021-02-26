@@ -131,7 +131,7 @@ dependencies {
 
     // Mobrain-Mintegral
     implementation "com.taurusx.ads:mobrain_adapter_mintegral:10.9.02.0"
-    implementation "com.taurusx.ads:mediation_mintegral:10.9.02.0"
+    implementation "com.taurusx.ads:mediation_mintegral:10.9.02.1"
     implementation 'com.mintegral.msdk.china.support:videojs:10.9.02'
     implementation 'com.mintegral.msdk.china.support:mtgjscommon:10.9.02'
     implementation 'com.mintegral.msdk.china.support:playercommon:10.9.02'

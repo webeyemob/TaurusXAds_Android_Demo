@@ -152,7 +152,8 @@
         "FullScreenVideo": "9052a544-3e30-425e-a033-6ce11cc334b7"
       },
       "feedlist": {
-        "FeedList": "feb5a072-72c3-44c4-876f-56b33bda91ab"
+        "Custom Rending": "feb5a072-72c3-44c4-876f-56b33bda91ab",
+        "Automatic Rending": "a4bf1bf6-22fa-49cf-8070-192f6b982517"
       },
       "rewarded": {
         "RewardedVideo": "55919798-14b6-4cbb-a857-3af830e2b6b4",
