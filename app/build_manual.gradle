@@ -131,22 +131,41 @@ dependencies {
 
     // Mobrain-Mintegral
     implementation "com.taurusx.ads:mobrain_adapter_mintegral:10.9.02.0"
-    implementation "com.taurusx.ads:mediation_mintegral:10.9.02.1"
-    implementation 'com.mintegral.msdk.china.support:videojs:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:mtgjscommon:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:playercommon:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:reward:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:videocommon:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:interstitialvideo:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:chinacommon:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:mtgnative:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:nativeex:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:interstitial:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:mtgsplash:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:mtgnativeadvanced:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:mtgbanner:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:interactiveads:10.9.02'
-    implementation 'com.mintegral.msdk.china.support:mtgbid:10.9.02'
+    if (oversea) {
+        implementation "com.taurusx.ads:mediation_mintegral:15.4.51.0"
+        implementation "com.mintegral.msdk.oversea:videojs:15.4.51"
+        implementation "com.mintegral.msdk.oversea:mtgjscommon:15.4.51"
+        implementation "com.mintegral.msdk.oversea:playercommon:15.4.51"
+        implementation "com.mintegral.msdk.oversea:reward:15.4.51"
+        implementation "com.mintegral.msdk.oversea:videocommon:15.4.51"
+        implementation "com.mintegral.msdk.oversea:common:15.4.51"
+        implementation "com.mintegral.msdk.oversea:interstitialvideo:15.4.51"
+        implementation "com.mintegral.msdk.oversea:mtgnative:15.4.51"
+        implementation "com.mintegral.msdk.oversea:nativeex:15.4.51"
+        implementation "com.mintegral.msdk.oversea:interstitial:15.4.51"
+        implementation "com.mintegral.msdk.oversea:mtgsplash:15.4.51"
+        implementation "com.mintegral.msdk.oversea:mtgnativeadvanced:15.4.51"
+        implementation "com.mintegral.msdk.oversea:mtgbanner:15.4.51"
+        implementation "com.mintegral.msdk.oversea:interactiveads:15.4.51"
+        implementation "com.mintegral.msdk.oversea:mtgbid:15.4.31"
+    } else {
+        implementation "com.taurusx.ads:mediation_mintegral:10.9.02.1"
+        implementation 'com.mintegral.msdk.china.support:videojs:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:mtgjscommon:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:playercommon:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:reward:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:videocommon:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:interstitialvideo:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:chinacommon:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:mtgnative:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:nativeex:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:interstitial:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:mtgsplash:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:mtgnativeadvanced:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:mtgbanner:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:interactiveads:10.9.02'
+        implementation 'com.mintegral.msdk.china.support:mtgbid:10.9.02'        
+    }
 
     // ####################################### Other Network #######################################
     // AppLovin Max

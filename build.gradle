@@ -44,6 +44,9 @@ allprojects {
         maven{ url "https://imobile-maio.github.io/maven" }
         // Mintegral
         maven { url "https://dl.bintray.com/mintegral-official/Andorid_ad_SDK_for_china_support" }
+        maven { url "https://dl.bintray.com/mintegral-official/Andorid_ad_SDK_for_china" }
+        maven { url "https://dl.bintray.com/mintegral-official/mintegral_ad_sdk_android_for_oversea" }
+
         // Nend
         maven { url "http://fan-adn.github.io/nendSDK-Android-lib/library" }
         // Tuia
