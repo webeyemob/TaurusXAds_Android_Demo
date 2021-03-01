@@ -100,7 +100,7 @@ dependencies {
     implementation "com.taurusx.ads:mobrain:2.5.1.0"
 
     // Mobrain-Toutiao
-    implementation "com.taurusx.ads:mediation_toutiao:3.4.1.2.0"
+    implementation "com.taurusx.ads:mediation_toutiao:3.4.1.2.1"
     implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.4.1.2"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
