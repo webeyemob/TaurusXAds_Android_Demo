@@ -11,6 +11,9 @@ android {
             // Amazon
             // applicationId "com.amazon.sample.simplead"
 
+            // Baidu
+            // applicationId "com.baidu.mobads.demo.main"
+
             // ironSource
             // applicationId "com.ironsource.ironsourcesdkdemo"
 
