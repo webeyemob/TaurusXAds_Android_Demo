@@ -90,17 +90,17 @@ dependencies {
         implementation "com.bytedance.sdk:pangle-sdk:3.4.1.1"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:3.4.1.2.2"
-        implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.4.1.2"
+        implementation "com.taurusx.ads:mediation_toutiao:3.4.5.6.0"
+        implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.4.5.6"
         implementation "androidx.legacy:legacy-support-v4:1.0.0"
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.332.1202.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.333.1203.0"
     if (gdt_tbs) {
-        implementation "com.qq.e.union:tbs:4.332.1202"
+        implementation "com.qq.e.union:tbs:4.333.1203"
     } else {
-        implementation "com.qq.e.union:union:4.332.1202"
+        implementation "com.qq.e.union:union:4.333.1203"
     }
     // 如果打包 release 版本出错，请添加 gdt_tbs_sdk_thirdapp
     compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
@@ -112,8 +112,8 @@ dependencies {
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.6"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.5.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.6.5"
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
