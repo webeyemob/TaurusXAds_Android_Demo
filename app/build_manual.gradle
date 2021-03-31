@@ -126,7 +126,7 @@ dependencies {
 
     // Mobrain-Baidu
     implementation "com.taurusx.ads:mobrain_adapter_baidu:5.97.2"
-    implementation "com.taurusx.ads:mediation_baidu:5.97.0"
+    implementation "com.taurusx.ads:mediation_baidu:5.97.1"
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.97"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
