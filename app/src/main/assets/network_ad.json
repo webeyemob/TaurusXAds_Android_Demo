@@ -180,7 +180,8 @@
     {
       "adName": "Baidu",
       "interstitial": {
-        "Interstitial": "0aa0d5e3-8b1d-45e5-90dc-b73dd906c765"
+        "Interstitial": "0aa0d5e3-8b1d-45e5-90dc-b73dd906c765",
+        "FullScreenVideo": "baac1cce-aa40-4dba-998c-94c74af4d076"
       },
       "native": {
         "Custom": "958c8c7e-9620-4874-89db-7939ad1599f3",
