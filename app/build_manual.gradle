@@ -97,41 +97,41 @@ dependencies {
     implementation "com.taurusx.ads:jad_yun_sdk:1.1.8"
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:2.5.1.0.2"
-    implementation "com.taurusx.ads:mobrain:2.5.1.0"
+    implementation "com.taurusx.ads:mediation_mobrain:2.6.1.0.0"
+    implementation "com.taurusx.ads:mobrain:2.6.1.0"
 
     // Mobrain-Toutiao
-    implementation "com.taurusx.ads:mediation_toutiao:3.4.1.2.1"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.4.1.2"
+    implementation "com.taurusx.ads:mediation_toutiao:3.4.5.6.0"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.4.5.6"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Mobrain-GDT
-    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.332.1202.0"
-    implementation "com.taurusx.ads:mediation_gdt:4.332.1202.0"
+    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.333.1203.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.333.1203.0"
     if (gdt_tbs) {
-        implementation "com.qq.e.union:tbs:4.332.1202"
+        implementation "com.qq.e.union:tbs:4.333.1203"
     } else {
-        implementation "com.qq.e.union:union:4.332.1202"
+        implementation "com.qq.e.union:union:4.333.1203"
     }
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Mobrain-KuaiShou
-    implementation "com.taurusx.ads:mobrain_adapter_kuaishou:3.3.6.0"
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.6"
+    implementation "com.taurusx.ads:mobrain_adapter_kuaishou:3.3.6.5.0"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.5.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.6.5"
     implementation "com.google.android.material:material:1.1.0"
     implementation "androidx.appcompat:appcompat:1.2.0-alpha02"
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation "com.google.code.gson:gson:2.8.6"
 
     // Mobrain-Baidu
-    implementation "com.taurusx.ads:mobrain_adapter_baidu:5.97.1"
+    implementation "com.taurusx.ads:mobrain_adapter_baidu:5.97.2"
     implementation "com.taurusx.ads:mediation_baidu:5.97.0"
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.97"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // Mobrain-Mintegral
-    implementation "com.taurusx.ads:mobrain_adapter_mintegral:10.9.02.0"
+    implementation "com.taurusx.ads:mobrain_adapter_mintegral:10.9.02.1"
     if (oversea) {
         implementation "com.taurusx.ads:mediation_mintegral:15.4.51.0"
         implementation "com.mintegral.msdk.oversea:videojs:15.4.51"
