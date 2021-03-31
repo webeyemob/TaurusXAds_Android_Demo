@@ -266,5 +266,25 @@
       <option name="name" value="maven3" />
       <option name="url" value="file:/$PROJECT_DIR$/Upload-Mediation/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven34" />
+      <option name="name" value="maven34" />
+      <option name="url" value="https://dl.bintray.com/mintegral-official/Andorid_ad_SDK_for_china_support" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven36" />
+      <option name="name" value="maven36" />
+      <option name="url" value="https://dl.bintray.com/mintegral-official/mintegral_ad_sdk_android_for_oversea" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven35" />
+      <option name="name" value="maven35" />
+      <option name="url" value="https://dl.bintray.com/mintegral-official/Andorid_ad_SDK_for_china" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven37" />
+      <option name="name" value="maven37" />
+      <option name="url" value="https://dl.bintray.com/wesdk/Modoosdk" />
+    </remote-repository>
   </component>
 </project>

@@ -107,7 +107,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:5.97.0"
+    implementation "com.taurusx.ads:mediation_baidu:5.97.1"
     implementation "com.taurusx.ads:baidu_mobads_sdk:5.97"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
