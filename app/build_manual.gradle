@@ -70,13 +70,14 @@ dependencies {
     if (oversea) {
         // 海外版
         implementation "com.taurusx.ads:core-oversea:2.1.1"
-        implementation "com.satori.sdk:eventio-go-oversea:2.2.6.0"
+        implementation "com.satori.sdk:eventio-go-oversea:2.2.6.1"
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
+        implementation "com.google.android.gms:play-services-cronet:17.0.0"
     } else {
         // 国内版
         implementation "com.taurusx.ads:core:2.1.1"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
-        implementation "com.satori.sdk:eventio-go:2.2.6.0"
+        implementation "com.satori.sdk:eventio-go:2.2.6.1"
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
         implementation "com.satori.sdk:eventio-crashlytics:1.0.6"
     }
