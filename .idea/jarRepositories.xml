@@ -311,5 +311,10 @@
       <option name="name" value="maven7" />
       <option name="url" value="file:$PROJECT_DIR$/Upload-Go-Oversea" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="https://bitbucket.org/sdkcenter/sdkcenter/raw/release" />
+    </remote-repository>
   </component>
 </project>
