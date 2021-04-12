@@ -31,7 +31,7 @@ allprojects {
 
         // ##### 手动添加依赖时，需要添加以下 Repo #####
         // TaurusX
-        maven { url "https://dl.bintray.com/taurrusxads/TaurusxAds" }
+        maven { url "https://bitbucket.org/sdkcenter/sdkcenter/raw/release" }
         maven { url "http://nexus.webeyemobi.com/repository/webeye" }
         // AdColony
         maven { url "https://adcolony.bintray.com/AdColony" }

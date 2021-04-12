@@ -286,5 +286,10 @@
       <option name="name" value="maven37" />
       <option name="url" value="https://dl.bintray.com/wesdk/Modoosdk" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven5" />
+      <option name="name" value="maven5" />
+      <option name="url" value="https://bitbucket.org/sdkcenter/sdkcenter/raw/release" />
+    </remote-repository>
   </component>
 </project>
