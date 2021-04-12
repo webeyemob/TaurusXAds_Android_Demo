@@ -284,6 +284,22 @@
         "nath_ad_splash_android": "abf3139b-af0e-4d15-a8b9-67fac33d0a98",
         "youdao_api_splash": "8bf9b84e-ada8-4e1c-9c74-96593110c5c1"
       }
+    },
+    {
+      "adName": "YLHM",
+      "interstitial": {
+        "Interstitial": "e0edf1f6-2904-418c-a952-f75b65e4255b",
+        "Interstitial_normal": "75cbaa12-9132-411e-9a07-430d193951b7"
+      },
+      "feedlist": {
+        "FeedList": "c893de7a-ccfa-4aa9-800a-13fe6adb56ac"
+      },
+      "rewarded": {
+        "RewardedVideo": "a85982d9-0497-433e-9749-87aadca46939"
+      },
+      "splash": {
+        "Splash": "5f7168de-7088-4791-be1b-2c41be8dd983"
+      }
     }
   ]
 }

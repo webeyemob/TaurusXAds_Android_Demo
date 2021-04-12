@@ -168,6 +168,24 @@ dependencies {
         implementation "com.mintegral.msdk.china.support:mtgbid:10.9.02"
     }
 
+    // YLHM-Base
+    implementation "com.taurusx.ads:ylhm_adapter_base:1.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.333.1203.0"
+    implementation "com.qq.e.union:union:4.333.1203"
+    // 如果打包 release 版本出错，请添加 gdt_tbs_sdk_thirdapp
+    compileOnly "com.taurusx.ads:gdt_tbs_sdk_thirdapp:4.3.0.0"
+
+    // YLHM-KuaiShou
+
+    implementation "com.taurusx.ads:ylhm_adapter_kuaishou:3.3.6.5.0"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.5.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.6.5"
+
+    // YLHM-TouTiao
+    implementation "com.taurusx.ads:ylhm_adapter_toutiao:3.4.5.6.0"
+    implementation "com.taurusx.ads:mediation_toutiao:3.4.5.6.0"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.4.5.6"
+
     // ####################################### Other Network #######################################
     // AppLovin Max
     implementation "com.taurusx.ads:mediation_applovinmax:9.14.1.1"
