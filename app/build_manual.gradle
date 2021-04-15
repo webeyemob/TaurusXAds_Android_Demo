@@ -67,7 +67,7 @@ dependencies {
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.1.1"
+        implementation "com.taurusx.ads:core:2.1.2"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.2.6.0"
         implementation "com.satori.sdk:eventio-openudid:1.0.5"
