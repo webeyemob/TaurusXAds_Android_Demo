@@ -27,7 +27,7 @@ allprojects {
 
         // ##### 用于手动添加依赖 #####
         // TaurusX
-        maven { url "https://bitbucket.org/sdkcenter/sdkcenter/raw/release" }
+        maven { url "https://bitbucket.org/maven-taurusxads/taurusxads/raw/release" }
         maven { url "http://nexus.webeyemobi.com/repository/webeye" }
         maven { url "http://nexus.webeyemobi.com/repository/maven-snapshots/" }
         // AdColony

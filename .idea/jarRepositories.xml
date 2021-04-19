@@ -316,5 +316,10 @@
       <option name="name" value="maven4" />
       <option name="url" value="https://bitbucket.org/sdkcenter/sdkcenter/raw/release" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="https://bitbucket.org/maven-taurusxads/taurusxads/raw/release" />
+    </remote-repository>
   </component>
 </project>
