@@ -43,6 +43,10 @@ allprojects {
         // Maio
         maven{ url "https://imobile-maio.github.io/maven" }
         // Mintegral
+        maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_support" }
+        maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_china" }
+        maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea" }
+        // 老版本 Mintegral
         maven { url "https://dl.bintray.com/mintegral-official/Andorid_ad_SDK_for_china_support" }
         maven { url "https://dl.bintray.com/mintegral-official/Andorid_ad_SDK_for_china" }
         maven { url "https://dl.bintray.com/mintegral-official/mintegral_ad_sdk_android_for_oversea" }
