@@ -41,7 +41,8 @@ allprojects {
         // ironSource
         maven { url "https://dl.bintray.com/ironsource-mobile/android-sdk" }
         // Maio
-        maven{ url "https://imobile-maio.github.io/maven" }
+        maven { url "https://imobile-maio.github.io/maven" }
+        
         // Mintegral
         maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_support" }
         maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_china" }
@@ -53,8 +54,6 @@ allprojects {
 
         // Nend
         maven { url "http://fan-adn.github.io/nendSDK-Android-lib/library" }
-        // Tuia
-        maven { url "https://dl.bintray.com/sunjiangrong/maven" }
         // Vungle
         maven { url "https://jitpack.io" }
     }
