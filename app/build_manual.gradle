@@ -188,16 +188,16 @@ dependencies {
 
     // YLHM-Base
     implementation "com.taurusx.ads:ylhm_adapter_base:1.0"
-    implementation "com.taurusx.ads:mediation_gdt:4.333.1203.0"
-    implementation "com.qq.e.union:union:4.333.1203"
+    implementation "com.taurusx.ads:mediation_gdt:4.351.1221.0"
+    implementation "com.qq.e.union:union:4.351.1221"
 
     // YLHM-KuaiShou
-    implementation "com.taurusx.ads:ylhm_adapter_kuaishou:3.3.6.5.0"
+    implementation "com.taurusx.ads:ylhm_adapter_kuaishou:3.3.6.5.1"
     implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.5.0"
     implementation "com.taurusx.ads:ks_adsdk:3.3.6.5"
 
     // YLHM-TouTiao
-    implementation "com.taurusx.ads:ylhm_adapter_toutiao:3.4.5.6.0"
+    implementation "com.taurusx.ads:ylhm_adapter_toutiao:3.4.5.6.1"
     implementation "com.taurusx.ads:mediation_toutiao:3.4.5.6.0"
     implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.4.5.6"
 
