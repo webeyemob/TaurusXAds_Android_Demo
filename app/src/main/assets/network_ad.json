@@ -609,7 +609,13 @@
       },
       "interstitial": {
         "Interstitial 2.0": "49e1628d-3d50-4fcd-aea6-d0177b22a1f7",
-        "Interstitial 2.0 FullScreenVideo": "9802de6d-d6df-418a-9545-105217e0b518"
+        "Interstitial 2.0 FullScreenVideo": "9802de6d-d6df-418a-9545-105217e0b518",
+        "Express Interstitial FullScreenVideo horizontal": "bf41e1a2-31e4-4b9b-a45d-cdb3b2caf67d",
+        "Express Interstitial FullScreenVideo vertical": "6eb7a686-0029-4955-9724-189a8ee518a0",
+        "Express Interstitial video horizontal": "e94e0dbb-57f6-4d4e-a622-8af2aea043ff",
+        "Express Interstitial img horizontal": "2ba00f05-b358-4a97-8232-2add0fc80eb2",
+        "Express Interstitial img vertical": "1ae6a552-67f5-4d66-b82d-5d5dd03d4639",
+        "Express Interstitial video vertical": "4d489b92-657a-4c39-9658-74ebce3285cc"
       },
       "native": {
         "Custom 2.0": "3ec30809-8260-4b37-add6-7458b327705e",
