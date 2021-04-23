@@ -124,12 +124,12 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Mobrain-GDT
-    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.333.1203.0"
-    implementation "com.taurusx.ads:mediation_gdt:4.333.1203.0"
+    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.351.1221.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.351.1221"
     if (gdt_tbs) {
-        implementation "com.qq.e.union:tbs:4.333.1203"
+        implementation "com.qq.e.union:tbs:4.351.1221"
     } else {
-        implementation "com.qq.e.union:union:4.333.1203"
+        implementation "com.qq.e.union:union:4.351.1221"
     }
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
