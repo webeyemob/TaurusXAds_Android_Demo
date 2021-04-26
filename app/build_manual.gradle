@@ -111,7 +111,7 @@ dependencies {
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.5.1"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.6.5.2"
     implementation "com.taurusx.ads:ks_adsdk:3.3.6.5"
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
