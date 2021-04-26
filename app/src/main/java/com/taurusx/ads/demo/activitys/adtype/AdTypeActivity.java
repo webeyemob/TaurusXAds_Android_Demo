@@ -157,7 +157,7 @@ public class AdTypeActivity extends BaseActivity {
                                 .putExtra(Constant.KEY_ADUNITID, adUnitId));
                         break;
                     case Splash:
-                        startActivity(new Intent(AdTypeActivity.this, SplashActivity.class)
+                        startActivity(new Intent(AdTypeActivity.this, ChooseSplashActivity.class)
                                 .putExtra(Constant.KEY_ADUNITID, adUnitId));
                         break;
                     case FeedList:
