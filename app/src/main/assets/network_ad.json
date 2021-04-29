@@ -300,6 +300,18 @@
       "splash": {
         "Splash": "5f7168de-7088-4791-be1b-2c41be8dd983"
       }
+    },
+    {
+      "adName": "YKY",
+      "interstitial": {
+        "Interstitial": "b0a63069-b019-46b7-8512-75d7ed000b80"
+      },
+      "rewarded": {
+        "RewardedVideo": "7d702178-b22f-4888-92f2-a5b8da74b3a1"
+      },
+      "splash": {
+        "Splash": "5cce416c-316a-4e87-a883-d6fae5e0d0bd"
+      }
     }
   ]
 }
