@@ -35,13 +35,11 @@ allprojects {
         maven { url "https://bitbucket.org/maven-taurusxads/taurusxads/raw/release" }
         maven { url "http://nexus.webeyemobi.com/repository/webeye" }
         // AdGeneration
-        maven { url 'https://adgeneration.github.io/ADG-Android-SDK/repository' }
-        // Chartboost
-        maven { url "https://chartboostmobile.bintray.com/Chartboost" }
+        maven { url "https://adgeneration.github.io/ADG-Android-SDK/repository" }
         // Display
         maven { url "http://maven.display.io" }
         // ironSource
-        maven { url 'https://dl.bintray.com/ironsource-mobile/android-sdk' }
+        maven { url "https://android-sdk.is.com/" }
         // Maio
         maven{ url "https://imobile-maio.github.io/maven" }
         // Nend
@@ -49,7 +47,7 @@ allprojects {
         // Tapjoy
         maven { url "https://sdk.tapjoy.com/" }
         // Vungle
-        maven { url 'https://jitpack.io' }
+        maven { url "https://jitpack.io" }
     }
 }
 

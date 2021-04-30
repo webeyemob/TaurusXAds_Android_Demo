@@ -301,5 +301,10 @@
       <option name="name" value="maven5" />
       <option name="url" value="https://sdk.tapjoy.com/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven9" />
+      <option name="name" value="maven9" />
+      <option name="url" value="https://android-sdk.is.com/" />
+    </remote-repository>
   </component>
 </project>
