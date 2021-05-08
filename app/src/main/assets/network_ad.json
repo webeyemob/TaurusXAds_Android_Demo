@@ -429,8 +429,9 @@
     {
       "adName": "KuaiShou",
       "interstitial": {
-        "Interstitial Portrait": "d9f24feb-2dd3-4e48-b26b-b15fe74b72be",
-        "Interstitial Landscape": "7cdd7103-aeaf-4753-83ab-1f82b0f7fef5"
+        "Interstitial FullScreen Portrait": "d9f24feb-2dd3-4e48-b26b-b15fe74b72be",
+        "Interstitial FullScreen Landscape": "7cdd7103-aeaf-4753-83ab-1f82b0f7fef5",
+        "Interstitial Normal": "68358806-3f59-4a55-99b7-cc1c429e211d"
       },
       "feedlist": {
         "Custom FeedList": "90bc8844-ec4e-4058-82b3-f645106811aa",
