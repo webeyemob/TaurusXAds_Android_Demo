@@ -50,6 +50,8 @@ public class InterstitialActivity extends BaseActivity {
                 mShowButton.setEnabled(false);
                 if (mInterstitialAd.isReady()) {
                     mInterstitialAd.show(InterstitialActivity.this);
+                } else {
+                    LogUtil.d(TAG, "mInterstitialAd is not ready");
                 }
             }
         });
