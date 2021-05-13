@@ -97,11 +97,11 @@ dependencies {
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.351.1221.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.360.1230.0"
     if (gdt_tbs) {
-        implementation "com.qq.e.union:tbs:4.351.1221"
+        implementation "com.qq.e.union:tbs:4.360.1230"
     } else {
-        implementation "com.qq.e.union:union:4.351.1221"
+        implementation "com.qq.e.union:union:4.360.1230"
     }
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
