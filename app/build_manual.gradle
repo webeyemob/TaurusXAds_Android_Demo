@@ -69,16 +69,16 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.1.6"
-        implementation "com.satori.sdk:eventio-go-oversea:2.2.6.1"
-        implementation "com.satori.sdk:eventio-openudid:1.0.5"
+        implementation "com.taurusx.ads:core-oversea:2.1.7"
+        implementation "com.satori.sdk:eventio-go-oversea:2.3.1.1"
+        implementation "com.satori.sdk:eventio-openudid:1.1.1"
         implementation "com.google.android.gms:play-services-cronet:17.0.0"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.1.6"
+        implementation "com.taurusx.ads:core:2.1.7"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
-        implementation "com.satori.sdk:eventio-go:2.2.6.1"
-        implementation "com.satori.sdk:eventio-openudid:1.0.5"
+        implementation "com.satori.sdk:eventio-go:2.3.1.1"
+        implementation "com.satori.sdk:eventio-openudid:1.1.1"
         implementation "com.satori.sdk:eventio-crashlytics:1.0.6"
     }
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
@@ -220,7 +220,7 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 
     // AdMob & DFP
-    implementation "com.taurusx.ads:mediation_admob:19.7.0.0"
+    implementation "com.taurusx.ads:mediation_admob:19.7.0.1"
     implementation "com.google.android.gms:play-services-ads:19.7.0"
 
     // Amazon
