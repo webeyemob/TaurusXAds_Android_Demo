@@ -21,6 +21,8 @@ allprojects {
         maven { url "../Upload-Sdk" }
         maven { url "../Upload-Mediation" }
         maven { url "../Upload-DataFlyer" }
+        maven { url "../Upload-Go" }
+        maven { url "../Upload-Core" }
 
         google()
         jcenter()
