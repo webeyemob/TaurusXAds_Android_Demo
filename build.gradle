@@ -32,6 +32,9 @@ allprojects {
         maven { url "https://bitbucket.org/maven-taurusxads/taurusxads/raw/release" }
         maven { url "http://nexus.webeyemobi.com/repository/webeye" }
 
+        // Alibc
+        maven { url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/" }
+
         // Mintegral
         maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_support" }
         maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_china" }

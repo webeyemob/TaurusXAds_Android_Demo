@@ -312,6 +312,24 @@
       "splash": {
         "Splash": "5cce416c-316a-4e87-a883-d6fae5e0d0bd"
       }
+    },
+    {
+      "adName": "AliBC",
+      "banner": {
+        "Banner": "16beea09-2546-4b47-84fe-3cad4d774142"
+      },
+      "interstitial": {
+        "interstitial": "0761b39f-77ed-4446-a960-e7da584275f0"
+      },
+      "feedlist": {
+        "feedlist": "58f84bc0-66a7-44c3-b7f4-26f1aeb57858"
+      },
+      "rewarded": {
+        "rewarded": "8161c606-293b-461c-be30-c6c264f1fc12"
+      },
+      "splash": {
+        "splash": "bbfe398a-c595-443c-822d-3ffb73145309"
+      }
     }
   ]
 }
