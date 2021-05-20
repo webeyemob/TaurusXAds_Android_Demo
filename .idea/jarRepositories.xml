@@ -336,5 +336,10 @@
       <option name="name" value="maven13" />
       <option name="url" value="https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_support" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven8" />
+      <option name="name" value="maven8" />
+      <option name="url" value="http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/" />
+    </remote-repository>
   </component>
 </project>
