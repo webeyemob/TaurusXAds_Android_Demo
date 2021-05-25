@@ -14,7 +14,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:4.0.2'
 
         // TaurusXCenter
-        classpath 'com.tgcenter.unified:plugin:1.5'
+        classpath 'com.tgcenter.unified:plugin:1.6'
     }
 }
 
