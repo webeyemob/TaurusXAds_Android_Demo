@@ -11,7 +11,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.2'
-        classpath "com.tgcenter.unified:plugin:1.5"
+        classpath "com.tgcenter.unified:plugin:1.6"
     }
 }
 
@@ -26,6 +26,7 @@ allprojects {
 
         google()
         jcenter()
+        mavenCentral()
 
         // ##### 用于手动添加依赖 #####
         // TaurusX
@@ -39,6 +40,9 @@ allprojects {
         maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_support" }
         maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_china" }
         maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea" }
+
+        // Tuia
+        maven { url "https://maven.aliyun.com/repository/public" }
     }
 }
 
