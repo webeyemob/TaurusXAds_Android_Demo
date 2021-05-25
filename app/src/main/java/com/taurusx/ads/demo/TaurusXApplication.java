@@ -9,6 +9,7 @@ import com.taurusx.ads.core.api.segment.Segment;
 import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.mediation.networkconfig.MobrainGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.PrebidConfig;
+import com.taurusx.ads.mediation.networkconfig.TopOnInterstitialConfig;
 import com.taurusx.ads.mediation.networkconfig.TuiaGlobalConfig;
 
 import org.prebid.mobile.Host;
@@ -41,6 +42,7 @@ public class TaurusXApplication extends Application {
                         .addConfig(createMobrainConfig())
                         .addConfig(createPrebidConfig())
                         .addConfig(createTuiaConfig())
+                        .addConfig(createTopOnConfig())
                         .build());
 
         // 开启 Network 调试模式
@@ -91,6 +93,11 @@ public class TaurusXApplication extends Application {
     private TuiaGlobalConfig createTuiaConfig() {
         return TuiaGlobalConfig.Builder()
                 // .setUserId("test-userid-123456")
+                .build();
+    }
+
+    private TopOnInterstitialConfig createTopOnConfig() {
+        return TopOnInterstitialConfig.Builder().setIsUseRewardVideoAsInterstitialInSigmob(true)
                 .build();
     }
 }
