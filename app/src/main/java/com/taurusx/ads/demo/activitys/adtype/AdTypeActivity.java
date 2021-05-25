@@ -74,7 +74,8 @@ public class AdTypeActivity extends BaseActivity {
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_FEEDLIST), AdType.FeedList);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXVIEW), AdType.MixView);
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXFULLSCREEN), AdType.MixFullScreen);
-        addButton(mMediation.optJSONObject(Constant.JSON_KEY_NATIVE), AdType.Native);
+        // 不在 UI 上显示弃用的 Native 入口
+        // addButton(mMediation.optJSONObject(Constant.JSON_KEY_NATIVE), AdType.Native);
     }
 
     private void addButton(JSONObject object, AdType adType) {

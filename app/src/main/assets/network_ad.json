@@ -711,12 +711,6 @@
       "interstitial": {
         "Interstitial": "217f6a9b-ee18-44e1-89ff-87a2b42659b4"
       },
-      "native": {
-        "Native": "37777cf5-1b2b-414b-a636-4077130b5c1a"
-      },
-      "feedlist": {
-        "Native": "21412afe-f35d-4a1c-9014-5da31abb0d8a"
-      },
       "rewarded": {
         "RewardedVideo": "6ddece3b-9abc-4640-9fd9-797cce32b622"
       }

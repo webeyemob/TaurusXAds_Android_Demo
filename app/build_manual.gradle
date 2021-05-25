@@ -307,12 +307,12 @@ dependencies {
     implementation "com.unity3d.ads:unity-ads:3.7.1"
 
     // Vungle
-    implementation "com.taurusx.ads:mediation_vungle:6.5.3.1"
-    implementation "com.vungle:publisher-sdk-android:6.5.3"
-    implementation "androidx.core:core:1.2.0"
+    implementation "com.taurusx.ads:mediation_vungle:6.9.1.0"
+    implementation "com.vungle:publisher-sdk-android:6.9.1"
+    implementation "androidx.core:core:1.3.2"
     implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
     // Recommended for SDK to be able to get Android Advertising ID
-    implementation "com.google.android.gms:play-services-basement:17.0.0"
+    implementation "com.google.android.gms:play-services-basement:17.5.0"
     implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 }
 
