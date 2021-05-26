@@ -33,6 +33,7 @@ import com.taurusx.ads.mediation.networkconfig.GDTExpress2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
+import com.taurusx.ads.mediation.networkconfig.MoPubFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
@@ -156,6 +157,7 @@ public class FeedListActivity extends BaseActivity {
                 .addConfig(createGDTExpressFeedListConfig())
                 .addConfig(createGDTExpress2_0FeedListConfig())
                 .addConfig(createKuaiShouCustomFeedListConfig())
+                .addConfig(createMoPubFeedListConfig())
                 .addConfig(createTikTokCustomFeedListConfig())
                 .addConfig(createTikTokExpressFeedListConfig())
                 .addConfig(createTikTokDrawFeedListConfig())
@@ -288,6 +290,14 @@ public class FeedListActivity extends BaseActivity {
                         // .setMinVideoDuration(5)
                         // .setMaxVideoDuration(60)
                         .build())
+                .build();
+    }
+
+    private MoPubFeedListConfig createMoPubFeedListConfig() {
+        return MoPubFeedListConfig.Builder()
+                // 注册 Facebook、AdMob、Pangle 等 Network 的 Renderer
+                // 参考：https://github.com/mopub/mopub-android-sdk/blob/master/mopub-sample/src/main/java/com/mopub/simpleadsdemo/NativeManualFragment.kt
+                // .registerAdRenderer()
                 .build();
     }
 
