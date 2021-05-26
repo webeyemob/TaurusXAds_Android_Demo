@@ -306,5 +306,10 @@
       <option name="name" value="maven9" />
       <option name="url" value="https://android-sdk.is.com/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven13" />
+      <option name="name" value="maven13" />
+      <option name="url" value="https://artifact.bytedance.com/repository/pangle" />
+    </remote-repository>
   </component>
 </project>

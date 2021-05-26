@@ -69,13 +69,13 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.1.9"
+        implementation "com.taurusx.ads:core-oversea:2.2.0"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.1"
         implementation "com.google.android.gms:play-services-cronet:17.0.0"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.1.9"
+        implementation "com.taurusx.ads:core:2.2.0"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.2.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.1"
@@ -87,8 +87,8 @@ dependencies {
     // ####################################### China Network #######################################
     if (oversea) {
         // Pangle
-        implementation "com.taurusx.ads:mediation_pangle:3.4.1.1.0"
-        implementation "com.bytedance.sdk:pangle-sdk:3.4.1.1"
+        implementation "com.taurusx.ads:mediation_pangle:3.6.0.2.0"
+        implementation "com.pangle.global:ads-sdk:3.6.0.2"
     } else {
         // TikTok
         implementation "com.taurusx.ads:mediation_toutiao:3.6.1.4.0"
