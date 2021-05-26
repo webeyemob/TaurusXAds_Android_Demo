@@ -219,9 +219,9 @@ dependencies {
     implementation "com.adcolony:sdk:4.2.2"
     implementation "com.google.android.gms:play-services-ads-identifier:17.0.0"
 
-    // AdMob & DFP
-    implementation "com.taurusx.ads:mediation_admob:19.7.0.1"
-    implementation "com.google.android.gms:play-services-ads:19.7.0"
+    // AdMob & Google Ad Manager
+    implementation "com.taurusx.ads:mediation_admob:20.1.0.0"
+    implementation "com.google.android.gms:play-services-ads:20.1.0"
 
     // Amazon
     implementation "com.taurusx.ads:mediation_amazon:5.9.0.3"
