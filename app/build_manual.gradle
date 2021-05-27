@@ -114,52 +114,53 @@ dependencies {
     implementation "androidx.appcompat:appcompat:1.2.0-alpha02"
 
     // TopOn
-    implementation "com.taurusx.ads:mediation_topon:5.7.27.0"
-    implementation "com.taurusx.ads:topon_banner_sdk:5.7.27"
-    implementation "com.taurusx.ads:topon_china_core:5.7.27"
-    implementation "com.taurusx.ads:topon_core:5.7.27"
-    implementation "com.taurusx.ads:topon_interstitial_sdk:5.7.27"
-    implementation "com.taurusx.ads:topon_native_sdk:5.7.27"
-    implementation "com.taurusx.ads:topon_rewardvideo_sdk:5.7.27"
-    implementation "com.taurusx.ads:topon_splash_sdk:5.7.27"
-    implementation "com.taurusx.ads:topon_tramini_sdk:5.7.27"
+    implementation "com.taurusx.ads:mediation_topon:5.7.45.0"
+    implementation "com.taurusx.ads:topon_banner_sdk:5.7.45"
+    implementation "com.taurusx.ads:topon_china_core:5.7.45"
+    implementation "com.taurusx.ads:topon_core:5.7.45"
+    implementation "com.taurusx.ads:topon_interstitial_sdk:5.7.45"
+    implementation "com.taurusx.ads:topon_native_sdk:5.7.45"
+    implementation "com.taurusx.ads:topon_rewardvideo_sdk:5.7.45"
+    implementation "com.taurusx.ads:topon_splash_sdk:5.7.45"
+    implementation "com.taurusx.ads:topon_tramini_sdk:5.7.45"
 
     // TopOn_Baidu
     implementation "com.taurusx.ads:topon_adapter_baidu:9.1.0"
     implementation "com.taurusx.ads:baidu_mobads_sdk:9.1"
 
     // TopOn_Toutiao
-    implementation "com.taurusx.ads:topon_adapter_csj_china:3.5.0.8.0"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.5.0.8"
+    implementation "com.taurusx.ads:topon_adapter_csj_china:3.6.1.4.0"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.6.1.4"
 
     //TopOn_GDT
-    implementation "com.taurusx.ads:topon_adapter_gdt:4.351.1221.0"
-    implementation "com.qq.e.union:union:4.351.1221"
+    implementation "com.taurusx.ads:topon_adapter_gdt:4.362.1232.0"
+    implementation "com.qq.e.union:union:4.362.1232"
 
     //TopOn_Kuaishou
     implementation "com.taurusx.ads:topon_adapter_kuaishou:3.3.9.0"
     implementation "com.taurusx.ads:ks_adsdk:3.3.9"
 
     //TopOn_Mintegral_China
-    implementation "com.taurusx.ads:topon_adapter_mintegral_china:10.9.0.0"
-//    implementation "com.taurusx.ads:mintegral_videojs:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_mtgjscommon:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_playercommon:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_reward:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_videocommon:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_interstitialvideo:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_chinacommon:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_mtgnative:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_nativeex:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_interstitial:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_mtgsplash:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_mtgnativeadvanced:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_mtgbanner:10.9.0_china"
-//    implementation "com.taurusx.ads:mintegral_mtgbid:10.9.0_china"
+    implementation "com.taurusx.ads:topon_adapter_mintegral_china:15.5.17.0"
+//    implementation "com.mbridge.msdk.support:videojs:15.5.17"
+//    implementation "com.mbridge.msdk.support:mbjscommon:15.5.17"
+//    implementation "com.mbridge.msdk.support:playercommon:15.5.17"
+//    implementation "com.mbridge.msdk.support:reward:15.5.17"
+//    implementation "com.mbridge.msdk.support:videocommon:15.5.17"
+//    implementation "com.mbridge.msdk.support:chinasame:15.5.17"
+//    implementation "com.mbridge.msdk.support:interstitialvideo:15.5.17"
+//    implementation "com.mbridge.msdk.support:mbnative:15.5.17"
+//    implementation "com.mbridge.msdk.support:nativeex:15.5.17"
+//    implementation "com.mbridge.msdk.support:mbnativeadvanced:15.5.17"
+//    implementation "com.mbridge.msdk.support:mbsplash:15.5.17"
+//    implementation "com.mbridge.msdk.support:interstitial:15.5.17"
+//    implementation "com.mbridge.msdk.support:mbbanner:15.5.17"
+//    implementation "com.mbridge.msdk.support:interactiveads:15.5.17"
+//    implementation "com.mbridge.msdk.support:mbbid:15.5.17"
 
     //TopOn_Sigmob
-    implementation "com.taurusx.ads:topon_adapter_sigmob:2.25.2.0"
-    implementation "com.taurusx.ads:windAd:2.25.2"
+    implementation "com.taurusx.ads:topon_adapter_sigmob:3.0.1.0"
+    implementation "com.taurusx.ads:windAd:3.0.1"
 
     // YouDao
     implementation "com.taurusx.ads:mediation_youdao:4.1.8.1.0"
