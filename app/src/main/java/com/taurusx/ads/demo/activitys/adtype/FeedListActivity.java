@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
-import com.baidu.mobad.feeds.ArticleInfo;
+import com.baidu.mobads.sdk.api.ArticleInfo;
 import com.qq.e.ads.cfg.VideoOption;
 import com.qq.e.ads.nativ.express2.VideoOption2;
 import com.taurusx.ads.core.api.ad.config.AdSize;
