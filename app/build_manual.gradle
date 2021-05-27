@@ -290,8 +290,8 @@ dependencies {
 
     // ####################################### Other Network #######################################
     // AppLovin Max
-    implementation "com.taurusx.ads:mediation_applovinmax:9.14.1.2"
-    implementation "com.applovin:applovin-sdk:9.14.1"
+    implementation "com.taurusx.ads:mediation_applovinmax:10.3.0.0"
+    implementation "com.applovin:applovin-sdk:10.3.0"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // Prebid
