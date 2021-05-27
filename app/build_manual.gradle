@@ -228,8 +228,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:19.7.0"
 
     // AppLovin
-    implementation "com.taurusx.ads:mediation_applovin:9.14.1.0"
-    implementation "com.applovin:applovin-sdk:9.14.1"
+    implementation "com.taurusx.ads:mediation_applovin:10.3.0.0"
+    implementation "com.applovin:applovin-sdk:10.3.0"
     implementation "com.google.android.gms:play-services-ads:19.7.0"
     // 使用 Header Bidding 需要 headerbiddingkit
     implementation "com.taurusx.ads:headerbiddingkit:0.4.1"
