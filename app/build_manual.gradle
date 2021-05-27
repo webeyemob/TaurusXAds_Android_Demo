@@ -186,22 +186,22 @@ dependencies {
         implementation "com.mintegral.msdk.oversea:interactiveads:15.4.51"
         implementation "com.mintegral.msdk.oversea:mtgbid:15.4.31"
     } else {
-        implementation "com.taurusx.ads:mediation_mintegral:15.5.07.1"
-        implementation "com.mbridge.msdk.support:videojs:15.5.07"
-        implementation "com.mbridge.msdk.support:mbjscommon:15.5.07"
-        implementation "com.mbridge.msdk.support:playercommon:15.5.07"
-        implementation "com.mbridge.msdk.support:reward:15.5.07"
-        implementation "com.mbridge.msdk.support:videocommon:15.5.07"
-        implementation "com.mbridge.msdk.support:chinasame:15.5.07"
-        implementation "com.mbridge.msdk.support:interstitialvideo:15.5.07"
-        implementation "com.mbridge.msdk.support:mbnative:15.5.07"
-        implementation "com.mbridge.msdk.support:nativeex:15.5.07"
-        implementation "com.mbridge.msdk.support:mbnativeadvanced:15.5.07"
-        implementation "com.mbridge.msdk.support:mbsplash:15.5.07"
-        implementation "com.mbridge.msdk.support:interstitial:15.5.07"
-        implementation "com.mbridge.msdk.support:mbbanner:15.5.07"
-        implementation "com.mbridge.msdk.support:interactiveads:15.5.07"
-        implementation "com.mbridge.msdk.support:mbbid:15.5.07"
+//        implementation "com.taurusx.ads:mediation_mintegral:15.5.07.1"
+//        implementation "com.mbridge.msdk.support:videojs:15.5.07"
+//        implementation "com.mbridge.msdk.support:mbjscommon:15.5.07"
+//        implementation "com.mbridge.msdk.support:playercommon:15.5.07"
+//        implementation "com.mbridge.msdk.support:reward:15.5.07"
+//        implementation "com.mbridge.msdk.support:videocommon:15.5.07"
+//        implementation "com.mbridge.msdk.support:chinasame:15.5.07"
+//        implementation "com.mbridge.msdk.support:interstitialvideo:15.5.07"
+//        implementation "com.mbridge.msdk.support:mbnative:15.5.07"
+//        implementation "com.mbridge.msdk.support:nativeex:15.5.07"
+//        implementation "com.mbridge.msdk.support:mbnativeadvanced:15.5.07"
+//        implementation "com.mbridge.msdk.support:mbsplash:15.5.07"
+//        implementation "com.mbridge.msdk.support:interstitial:15.5.07"
+//        implementation "com.mbridge.msdk.support:mbbanner:15.5.07"
+//        implementation "com.mbridge.msdk.support:interactiveads:15.5.07"
+//        implementation "com.mbridge.msdk.support:mbbid:15.5.07"
     }
 
     // Mobrain
@@ -214,12 +214,12 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Mobrain-GDT
-    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.351.1221.3"
-    implementation "com.taurusx.ads:mediation_gdt:4.351.1221.0"
+    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.362.1232.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.362.1232.0"
     if (gdt_tbs) {
-        implementation "com.qq.e.union:tbs:4.351.1221"
+        implementation "com.qq.e.union:tbs:4.362.1232"
     } else {
-        implementation "com.qq.e.union:union:4.351.1221"
+        implementation "com.qq.e.union:union:4.362.1232"
     }
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
