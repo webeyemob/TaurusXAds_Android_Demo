@@ -139,6 +139,10 @@ dependencies {
     //TopOn_Kuaishou
     implementation "com.taurusx.ads:topon_adapter_kuaishou:3.3.9.0"
     implementation "com.taurusx.ads:ks_adsdk:3.3.9"
+    implementation "com.android.support:design:27.1.1"
+    implementation "com.android.support:appcompat-v7:27.1.1"
+    implementation "com.android.support:recyclerview-v7:27.1.1"
+    implementation "com.google.code.gson:gson:2.8.6"
 
     //TopOn_Mintegral_China
     implementation "com.taurusx.ads:topon_adapter_mintegral_china:15.5.17.0"
