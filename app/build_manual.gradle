@@ -293,13 +293,9 @@ dependencies {
     implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.6.1.4"
 
     // YKY
-    implementation "com.taurusx.ads:mediation_yky:1.3.1.9.0"
-    implementation "com.taurusx.ads:klevin:1.3.1.9"
-    implementation "com.android.support:appcompat-v7:26.1.0"
-    implementation "com.squareup.retrofit2:retrofit:2.4.0"
-    implementation "com.google.code.gson:gson:2.8.5"
-    implementation "com.squareup.okhttp3:okhttp:3.12.0"
-    implementation "com.squareup.wire:wire-runtime:3.6.0"
+    implementation "com.taurusx.ads:mediation_yky:1.5.0.16.0"
+    implementation "com.taurusx.ads:klevin:1.5.0.16"
+    implementation "com.android.support:appcompat-v7:28.0.0"
 
     // ####################################### Other Network #######################################
     // AppLovin Max
