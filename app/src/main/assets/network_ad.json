@@ -289,13 +289,15 @@
       "adName": "YLHM",
       "interstitial": {
         "Interstitial": "e0edf1f6-2904-418c-a952-f75b65e4255b",
+        "Express_Interstitial": "769b597d-1480-4253-ac71-f3085f97a42a",
         "Interstitial_normal": "75cbaa12-9132-411e-9a07-430d193951b7"
       },
       "feedlist": {
         "FeedList": "c893de7a-ccfa-4aa9-800a-13fe6adb56ac"
       },
       "rewarded": {
-        "RewardedVideo": "a85982d9-0497-433e-9749-87aadca46939"
+        "RewardedVideo": "a85982d9-0497-433e-9749-87aadca46939",
+        "Express_Reward": "6f36cb22-5126-4e43-9374-77b14ddbd9cb"
       },
       "splash": {
         "Splash": "5f7168de-7088-4791-be1b-2c41be8dd983"

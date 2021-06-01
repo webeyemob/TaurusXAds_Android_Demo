@@ -125,8 +125,8 @@ dependencies {
     implementation "com.taurusx.ads:topon_tramini_sdk:5.7.45"
 
     // TopOn_Baidu
-    implementation "com.taurusx.ads:topon_adapter_baidu:9.1.0"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:9.1"
+//    implementation "com.taurusx.ads:topon_adapter_baidu:9.1.0"
+//    implementation "com.taurusx.ads:baidu_mobads_sdk:9.1"
 
     // TopOn_Toutiao
     implementation "com.taurusx.ads:topon_adapter_csj_china:3.6.1.4.0"
@@ -274,18 +274,23 @@ dependencies {
 
     // YLHM-Base
     implementation "com.taurusx.ads:ylhm_adapter_base:1.0"
-    implementation "com.taurusx.ads:mediation_gdt:4.351.1221.0"
-    implementation "com.qq.e.union:union:4.351.1221"
+    implementation "com.taurusx.ads:mediation_gdt:4.362.1232.0"
+    implementation "com.qq.e.union:union:4.362.1232"
+
+    // YLHM-Baidu
+    implementation "com.taurusx.ads:ylhm_adapter_baidu:5.98.0"
+    implementation "com.taurusx.ads:mediation_baidu:5.98.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:5.98"
 
     // YLHM-KuaiShou
-    implementation "com.taurusx.ads:ylhm_adapter_kuaishou:3.3.9.0"
+    implementation "com.taurusx.ads:ylhm_adapter_kuaishou:3.3.9.1"
     implementation "com.taurusx.ads:mediation_kuaishou:3.3.9.0"
     implementation "com.taurusx.ads:ks_adsdk:3.3.9"
 
     // YLHM-TouTiao
-    implementation "com.taurusx.ads:ylhm_adapter_toutiao:3.5.5.0.0"
-    implementation "com.taurusx.ads:mediation_toutiao:3.5.5.0.0"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.5.5.0"
+    implementation "com.taurusx.ads:ylhm_adapter_toutiao:3.6.1.4.0"
+    implementation "com.taurusx.ads:mediation_toutiao:3.6.1.4.0"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.6.1.4"
 
     // YKY
     implementation "com.taurusx.ads:mediation_yky:1.3.1.9.0"
