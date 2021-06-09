@@ -311,5 +311,10 @@
       <option name="name" value="maven13" />
       <option name="url" value="https://artifact.bytedance.com/repository/pangle" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="file:$PROJECT_DIR$/Upload-DataFlyer/" />
+    </remote-repository>
   </component>
 </project>
