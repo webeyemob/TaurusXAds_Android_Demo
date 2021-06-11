@@ -292,10 +292,37 @@ dependencies {
     implementation "com.google.android.gms:play-services-location:16.0.0"
 
     // MoPub
-    implementation "com.taurusx.ads:mediation_mopub:5.17.0.0"
+    implementation "com.taurusx.ads:mediation_mopub:5.17.0.2"
     implementation "com.mopub:mopub-sdk:5.17.0"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-base:16.1.0"
+    // MoPub-Facebook
+    implementation "com.facebook.android:audience-network-sdk:6.5.0"
+    implementation "com.mopub.mediation:facebookaudiencenetwork:6.5.0.0"
+    // MoPub-Google
+    implementation "com.google.android.gms:play-services-ads:20.1.0"
+    implementation "com.mopub.mediation:admob:20.1.0.0"
+    // MoPub-Mintegral
+    implementation "com.mbridge.msdk.oversea:videojs:15.5.21"
+    implementation "com.mbridge.msdk.oversea:mbjscommon:15.5.21"
+    implementation "com.mbridge.msdk.oversea:playercommon:15.5.21"
+    implementation "com.mbridge.msdk.oversea:reward:15.5.21"
+    implementation "com.mbridge.msdk.oversea:videocommon:15.5.21"
+    implementation "com.mbridge.msdk.oversea:same:15.5.21"
+    implementation "com.mbridge.msdk.oversea:interstitialvideo:15.5.21"
+    implementation "com.mbridge.msdk.oversea:mbnative:15.5.21"
+    implementation "com.mbridge.msdk.oversea:nativeex:15.5.21"
+    implementation "com.mbridge.msdk.oversea:mbbanner:15.5.21"
+    implementation "com.mbridge.msdk.oversea:mbbid:15.5.21"
+    implementation "com.mopub.mediation:mintegral:15.5.21.0"
+    // MoPub-Pangle
+    if (oversea) {
+        implementation "com.pangle.global:ads-sdk:3.6.0.4"
+        implementation "com.mopub.mediation:pangle:3.6.0.4.0"
+    }
+    // MoPub-Verizon
+    implementation "com.verizon.ads:android-vas-standard-edition:1.13.0"
+    implementation "com.mopub.mediation:verizon:1.13.0.0"
 
     // Tapjoy
     implementation "com.taurusx.ads:mediation_tapjoy:12.2.0.2"

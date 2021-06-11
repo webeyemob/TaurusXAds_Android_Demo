@@ -316,5 +316,15 @@
       <option name="name" value="maven4" />
       <option name="url" value="file:$PROJECT_DIR$/Upload-DataFlyer/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven14" />
+      <option name="name" value="maven14" />
+      <option name="url" value="https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven15" />
+      <option name="name" value="maven15" />
+      <option name="url" value="https://artifactory.verizonmedia.com/artifactory/maven" />
+    </remote-repository>
   </component>
 </project>
