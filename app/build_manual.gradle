@@ -91,8 +91,8 @@ dependencies {
         implementation "com.pangle.global:ads-sdk:3.6.0.2"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:3.6.1.4.0"
-        implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.6.1.4"
+        implementation "com.taurusx.ads:mediation_toutiao:3.7.0.2.0"
+        implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.7.0.2"
         implementation "androidx.legacy:legacy-support-v4:1.0.0"
     }
 
