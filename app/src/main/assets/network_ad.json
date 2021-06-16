@@ -663,7 +663,8 @@
         "Draw FeedList": "c007b3e5-d66e-4569-9021-33e1d60a48a5",
         "Express Draw FeedList": "5d611e41-8a55-4755-a817-d0ae13d4bbb1",
         "Custom Banner": "527548c4-be69-45a0-ad67-68e62475f80b",
-        "Custom Interstitial": "f9ce3aec-9298-4591-8bcd-645276a8ae16"
+        "Custom Interstitial": "f9ce3aec-9298-4591-8bcd-645276a8ae16",
+        "Custom Patch": "0a7fb774-d2f0-4768-99ad-29e204a67ec4"
       },
       "rewarded": {
         "RewardedVideo Vertical": "cfc3aafd-5bff-4803-99d0-de3b5a4286ca",

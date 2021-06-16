@@ -3,6 +3,7 @@ package com.taurusx.ads.demo;
 import android.app.Application;
 
 import com.bytedance.sdk.openadsdk.TTAdConstant;
+import com.mopub.common.SdkConfiguration;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.constant.DownloadNetwork;
@@ -14,6 +15,7 @@ import com.taurusx.ads.mediation.networkconfig.DFPGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouGlobalConfig;
+import com.taurusx.ads.mediation.networkconfig.MoPubGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.TikTokGlobalConfig;
 
@@ -47,6 +49,7 @@ public class TaurusXApplication extends Application {
                         .addConfig(createDFPConfig())
                         .addConfig(createGDTConfig())
                         .addConfig(createKuaiShouConfig())
+                        .addConfig(createMoPubConfig())
                         .addConfig(createTikTokConfig())
                         .build());
 
@@ -135,6 +138,15 @@ public class TaurusXApplication extends Application {
         return KuaiShouGlobalConfig.Builder()
                 // Apk 下载时，是否在通知栏中提示
                 .showNotification(true)
+                .build();
+    }
+
+    private MoPubGlobalConfig createMoPubConfig() {
+        return MoPubGlobalConfig.Builder()
+                .setSdkConfigurationBuilder(new SdkConfiguration.Builder("Any Valid MoPub AdUnitId In Your App")
+                        // .withAdditionalNetwork(...)
+                        // .withMediatedNetworkConfiguration(...)
+                )
                 .build();
     }
 
