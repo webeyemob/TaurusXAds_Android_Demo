@@ -38,6 +38,7 @@ import com.taurusx.ads.mediation.networkconfig.TikTokCustomFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokDrawFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressDrawFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.TikTokExpressFeedListConfig;
+import com.taurusx.ads.mediation.networkconfig.TikTokFeedListConfig;
 
 import java.util.HashMap;
 import java.util.List;
@@ -160,6 +161,7 @@ public class FeedListActivity extends BaseActivity {
                 .addConfig(createTikTokExpressFeedListConfig())
                 .addConfig(createTikTokDrawFeedListConfig())
                 .addConfig(createTikTokExpressDrawFeedListConfig())
+                .addConfig(createTikTokFeedListConfig())
                 .build());
 
         // Set FeedList Load Event
@@ -391,5 +393,39 @@ public class FeedListActivity extends BaseActivity {
                 .setAppDownloadListener(new TikTokAppDownloadListener() {
                 })
                 .build();
+    }
+
+    private TikTokFeedListConfig createTikTokFeedListConfig() {
+        return TikTokFeedListConfig.Builder().setAppDownloadListener(new TikTokAppDownloadListener() {
+            @Override
+            public void onIdle() {
+                LogUtil.d(TAG, "TikTokFeedListConfig: onIdle");
+            }
+
+            @Override
+            public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
+                LogUtil.d(TAG, "TikTokFeedListConfig: onDownloadActive: " + appName);
+            }
+
+            @Override
+            public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
+                LogUtil.d(TAG, "TikTokFeedListConfig: onDownloadPaused: " + appName);
+            }
+
+            @Override
+            public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
+                LogUtil.d(TAG, "TikTokFeedListConfig: onDownloadFailed: " + appName);
+            }
+
+            @Override
+            public void onDownloadFinished(long totalBytes, String fileName, String appName) {
+                LogUtil.d(TAG, "TikTokFeedListConfig: onDownloadFinished: " + appName);
+            }
+
+            @Override
+            public void onInstalled(String fileName, String appName) {
+                LogUtil.d(TAG, "TikTokFeedListConfig: onInstalled");
+            }
+        }).build();
     }
 }
