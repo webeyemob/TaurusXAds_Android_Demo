@@ -122,8 +122,6 @@ public class InterstitialActivity extends BaseActivity {
 
     private KuaiShouInterstitialConfig createKuaiShouInterstitialConfig() {
         return KuaiShouInterstitialConfig.Builder()
-                // 拓展场景参数，可不设置
-                .setShowScene("xx game")
                 // 30 秒后可关闭
                 .setSkipThirtySecond(false)
                 .build();

@@ -127,8 +127,6 @@ public class RewardedVideoActivity extends BaseActivity {
 
     private KuaiShouRewardedVideoConfig createKuaiShouRewardedVideoConfig() {
         return KuaiShouRewardedVideoConfig.Builder()
-                // 拓展场景参数，可不设置
-                .setShowScene("xx game")
                 // 30 秒后可关闭
                 .setSkipThirtySecond(false)
                 .build();
