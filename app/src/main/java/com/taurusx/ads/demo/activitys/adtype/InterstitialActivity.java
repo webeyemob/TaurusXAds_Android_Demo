@@ -7,7 +7,7 @@ import android.widget.Button;
 import com.taurusx.ads.core.api.ad.InterstitialAd;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.listener.AdError;
-import com.taurusx.ads.core.api.listener.newapi.AdListener;
+import com.taurusx.ads.core.api.listener.newapi.InterstitialAdListener;
 import com.taurusx.ads.core.api.model.ILineItem;
 import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
@@ -70,32 +70,42 @@ public class InterstitialActivity extends BaseActivity {
                 .build());
 
         // Listen Ad load result
-        mInterstitialAd.setADListener(new AdListener() {
+        mInterstitialAd.setADListener(new InterstitialAdListener() {
             @Override
-            public void onAdLoaded(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
+            public void onAdLoaded(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + lineItem.getName());
                 mShowButton.setEnabled(true);
             }
 
             @Override
-            public void onAdShown(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
+            public void onAdShown(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdShown: " + lineItem.getName());
             }
 
             @Override
-            public void onAdClicked(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName());
+            public void onAdClicked(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdClicked: " + lineItem.getName());
             }
 
             @Override
-            public void onAdClosed(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
+            public void onAdClosed(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdClosed: " + lineItem.getName());
             }
 
             @Override
             public void onAdFailedToLoad(AdError adError) {
                 LogUtil.e(TAG, "onAdFailedToLoad: " + adError);
                 Utils.toast(InterstitialActivity.this, adError.toString());
+            }
+
+            @Override
+            public void onVideoStarted(ILineItem lineItem) {
+                LogUtil.d(TAG, "onVideoStarted: " + lineItem.getName());
+            }
+
+            @Override
+            public void onVideoCompleted(ILineItem lineItem) {
+                LogUtil.d(TAG, "onVideoCompleted: " + lineItem.getName());
             }
         });
     }

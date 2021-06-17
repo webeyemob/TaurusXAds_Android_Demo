@@ -139,24 +139,24 @@ public class FeedListActivity extends BaseActivity {
         // Set FeedList Load Event
         mFeedList.setADListener(new FeedAdListener() {
             @Override
-            public void onAdLoaded(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
+            public void onAdLoaded(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + lineItem.getName());
                 mShowButton.setEnabled(true);
             }
 
             @Override
-            public void onAdShown(ILineItem iLineItem, @Nullable Feed feed) {
-                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName() + getFeedDesc(feed));
+            public void onAdShown(ILineItem lineItem, @Nullable Feed feed) {
+                LogUtil.d(TAG, "onAdShown: " + lineItem.getName() + getFeedDesc(feed));
             }
 
             @Override
-            public void onAdClicked(ILineItem iLineItem, @Nullable Feed feed) {
-                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName() + getFeedDesc(feed));
+            public void onAdClicked(ILineItem lineItem, @Nullable Feed feed) {
+                LogUtil.d(TAG, "onAdClicked: " + lineItem.getName() + getFeedDesc(feed));
             }
 
             @Override
-            public void onAdClosed(ILineItem iLineItem, @Nullable Feed feed) {
-                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName() + getFeedDesc(feed));
+            public void onAdClosed(ILineItem lineItem, @Nullable Feed feed) {
+                LogUtil.d(TAG, "onAdClosed: " + lineItem.getName() + getFeedDesc(feed));
             }
 
             @Override

@@ -74,29 +74,29 @@ public class SplashActivity extends Activity {
         // Set SplashAd Load Event
         mSplashAd.setADListener(new SplashAdListener() {
             @Override
-            public void onAdLoaded(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdLoaded: " + iLineItem.getName());
+            public void onAdLoaded(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdLoaded: " + lineItem.getName());
                 mExitHandler.removeCallbacksAndMessages(null);
             }
 
             @Override
-            public void onAdShown(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdShown: " + iLineItem.getName());
+            public void onAdShown(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdShown: " + lineItem.getName());
             }
 
             @Override
-            public void onAdClicked(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdClicked: " + iLineItem.getName());
+            public void onAdClicked(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdClicked: " + lineItem.getName());
             }
 
             @Override
-            public void onAdSkipped(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdSkipped: " + iLineItem.getName());
+            public void onAdSkipped(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdSkipped: " + lineItem.getName());
             }
 
             @Override
-            public void onAdClosed(ILineItem iLineItem) {
-                LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
+            public void onAdClosed(ILineItem lineItem) {
+                LogUtil.d(TAG, "onAdClosed: " + lineItem.getName());
                 finish();
             }
 
