@@ -69,13 +69,13 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.2.2"
+        implementation "com.taurusx.ads:core-oversea:2.2.5"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.1"
         implementation "com.google.android.gms:play-services-cronet:17.0.0"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.2.2"
+        implementation "com.taurusx.ads:core:2.2.5"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.1"
@@ -97,11 +97,11 @@ dependencies {
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.360.1230.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.371.1241.0"
     if (gdt_tbs) {
-        implementation "com.qq.e.union:tbs:4.360.1230"
+        implementation "com.qq.e.union:tbs:4.371.1241"
     } else {
-        implementation "com.qq.e.union:union:4.360.1230"
+        implementation "com.qq.e.union:union:4.371.1241"
     }
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
