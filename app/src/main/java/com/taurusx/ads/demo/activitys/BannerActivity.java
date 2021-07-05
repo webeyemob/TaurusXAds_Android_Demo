@@ -22,6 +22,9 @@ public class BannerActivity extends BaseActivity {
     private BannerAdView mBannerAdView;
 
     private Button mLoadButton;
+    private Button mShowButton;
+    private Button mHideButton;
+
     private LinearLayout mContainer;
 
     @Override
@@ -35,6 +38,7 @@ public class BannerActivity extends BaseActivity {
 
         mContainer = findViewById(R.id.layout_banner);
         // Add Banner to UI
+        mContainer.setVisibility(View.GONE);
         mContainer.addView(mBannerAdView);
 
         mLoadButton = findViewById(R.id.banner_load);
@@ -42,6 +46,21 @@ public class BannerActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 mBannerAdView.loadAd();
+            }
+        });
+
+        mShowButton = findViewById(R.id.banner_show);
+        mShowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mContainer.setVisibility(View.VISIBLE);
+            }
+        });
+        mHideButton = findViewById(R.id.banner_hide);
+        mHideButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mContainer.setVisibility(View.GONE);
             }
         });
     }
@@ -61,7 +80,7 @@ public class BannerActivity extends BaseActivity {
             public void onAdLoaded() {
                 Log.d(TAG, "BannerAdView onAdLoaded");
                 ILineItem lineItem = mBannerAdView.getReadyLineItem();
-                Log.d(TAG, "BannerAdView Ready LineItem: "+lineItem);
+                Log.d(TAG, "BannerAdView Ready LineItem: " + lineItem);
             }
 
             @Override

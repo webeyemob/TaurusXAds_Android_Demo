@@ -21,7 +21,7 @@ allprojects {
 
         maven { url "../Upload-Sdk" }
         maven { url "../Upload-Mediation" }
-        maven { url "https://dl.bintray.com/taurrusxads/TaurusxAds/" }
+        maven { url "https://bitbucket.org/maven-taurusxads/taurusxads/raw/release" }
 
         // EventIO
         maven { url "http://nexus.webeyemobi.com/repository/webeye/" }

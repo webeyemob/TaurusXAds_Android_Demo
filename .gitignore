@@ -8,6 +8,8 @@
 # Java class files
 *.class
 
+/Upload-Mediation
+
 # Generated files
 bin/
 gen/

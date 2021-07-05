@@ -60,14 +60,14 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation "com.taurusx.ads:core-oversea:2.0.8"
-    implementation "com.satori.sdk:eventio-openudid:1.0.5"
+    implementation "com.taurusx.ads:core:2.2.8"
+    implementation "com.satori.sdk:eventio-openudid:1.1.3"
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     // Xiaomi
-    implementation "com.taurusx.ads:mediation_mimo:1.5.8.0"
-    implementation "com.taurusx.ads:mimo_sdk:1.5.8"
+    implementation "com.taurusx.ads:mediation_mimo:1.6.2.0"
+    implementation "com.taurusx.ads:mimo_sdk:1.6.2"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.google.code.gson:gson:2.8.5"

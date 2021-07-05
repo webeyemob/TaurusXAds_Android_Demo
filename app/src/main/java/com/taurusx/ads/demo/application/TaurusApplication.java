@@ -47,7 +47,7 @@ public class TaurusApplication extends Application {
 
         // 点击广告下载 App 时，需要用户二次确认的网络（目前仅用于穿山甲、优量汇）
         // 默认为 DownloadNetwork.NONE，不需要用户二次确认
-        TaurusXAds.getDefault().setDownloadConfirmNetwork(DownloadNetwork.NONE);
+        TaurusXAds.getDefault().setDownloadConfirmNetwork(DownloadNetwork.ALL);
 
         // 初始化
         TaurusXAds.getDefault().setTestMode(true);

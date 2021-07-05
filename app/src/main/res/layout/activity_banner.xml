@@ -10,12 +10,28 @@
         android:layout_margin="12dp"
         android:text="Load Banner" />
 
+    <Button
+        android:id="@+id/banner_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_load"
+        android:layout_margin="12dp"
+        android:text="Show Banner" />
+
+    <Button
+        android:id="@+id/banner_hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_show"
+        android:layout_margin="12dp"
+        android:text="Hide Banner" />
+
     <LinearLayout
         android:id="@+id/layout_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
         android:layout_alignParentBottom="true"
-        android:background="#dddddd" />
+        android:background="#dddddd"
+        android:gravity="center"
+        android:orientation="horizontal" />
 </RelativeLayout>

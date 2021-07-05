@@ -2,11 +2,14 @@ package com.taurusx.ads.demo;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.bytedance.sdk.openadsdk.TTAdSdk;
+import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.demo.activitys.AdapterTestActivity;
 import com.taurusx.ads.demo.activitys.LoadModeActivity;
 import com.taurusx.ads.demo.activitys.MediationActivity;

@@ -116,5 +116,10 @@
       <option name="name" value="maven5" />
       <option name="url" value="http://nexus.webeyemobi.com/repository/maven-snapshots/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven3" />
+      <option name="name" value="maven3" />
+      <option name="url" value="https://bitbucket.org/maven-taurusxads/taurusxads/raw/release" />
+    </remote-repository>
   </component>
 </project>
