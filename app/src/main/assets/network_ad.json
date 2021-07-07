@@ -352,6 +352,21 @@
         "Native_Splash": "ccd97da6-298b-4d8a-8f85-6797ced93db5",
         "Normal_splash": "2e8dc76f-04f0-40df-8a80-97ee1c166636"
       }
+    },
+    {
+      "adName": "TMS",
+      "banner": {
+        "Banner_320*50": "8a0afec2-b043-419a-86ef-44cd907e7dd8"
+      },
+      "interstitial": {
+        "interstitial": "d69d3807-3f87-43ac-8445-2e3efeb40a7a"
+      },
+      "feedlist": {
+        "feedlist": "c1e3283b-c45c-4a5f-ba55-ae81295327f3"
+      },
+      "splash": {
+        "Splash": "6758e9c8-d3b7-4156-926c-954b4995a88f"
+      }
     }
   ]
 }

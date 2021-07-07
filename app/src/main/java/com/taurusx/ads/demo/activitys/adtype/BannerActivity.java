@@ -15,6 +15,11 @@ import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.demo.utils.Utils;
+import com.taurusx.ads.mediation.networkconfig.TMSBannerConfig;
+import com.taurusx.ads.mediation.networkconfig.TMSRewardCallback;
+import com.tz.sdk.coral.task.TaskResult;
+
+import java.util.List;
 
 
 public class BannerActivity extends BaseActivity {
@@ -79,8 +84,17 @@ public class BannerActivity extends BaseActivity {
         mBannerAdView = new BannerAdView(this);
         mBannerAdView.setAdUnitId(mBannerAdUnitId);
 
+        TMSRewardCallback callback = new TMSRewardCallback() {
+            @Override
+            public void onTaskRewardSuccess(List<TaskResult> list) {
+                LogUtil.d(TAG, "onTaskRewardSuccess");
+                super.onTaskRewardSuccess(list);
+            }
+        };
+
         // (Optional) Set Network special Config
         mBannerAdView.setNetworkConfigs(NetworkConfigs.Builder()
+                .addConfig(createTMSBannerConfig(callback))
                 .build());
 
         // Listen Ad load result
@@ -115,5 +129,10 @@ public class BannerActivity extends BaseActivity {
                 Utils.toast(BannerActivity.this, adError.toString());
             }
         });
+    }
+
+    private TMSBannerConfig createTMSBannerConfig(TMSRewardCallback callback) {
+        return TMSBannerConfig.Builder()
+                .setRewardCallback(callback).build();
     }
 }

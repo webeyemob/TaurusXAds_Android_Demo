@@ -21,6 +21,11 @@ android {
             testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
             multiDexEnabled = true
 
+            //SDK所需的占位符
+//            manifestPlaceholders = [
+//                    "APPLICATION_ID": applicationId,
+//            ]
+
             ndk { abiFilters 'armeabi-v7a' }
         }
         config {
@@ -65,12 +70,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.2.0"
+        implementation "com.taurusx.ads:core-oversea:2.2.8"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.1"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.2.2"
+        implementation "com.taurusx.ads:core:2.2.8"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.2.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.1"
@@ -112,6 +117,18 @@ dependencies {
     implementation "com.taurusx.ads:mediation_tuia:3.1.0.0.0"
     implementation "com.tuia:sdk:3.1.0.0"
     implementation "androidx.appcompat:appcompat:1.2.0-alpha02"
+
+    // TMS
+    implementation "com.taurusx.ads:mediation_tms:2.0.0807.131516.0"
+    implementation "com.taurusx.ads:tms-adapt:1.3.3.1"
+    implementation "com.taurusx.ads:tms-commonbase:1.0.2.1"
+    implementation "com.taurusx.ads:tms-discovery:2.0.14"
+    implementation "com.taurusx.ads:tms-shanhuAD:1.2.0"
+    implementation "com.taurusx.ads:tzsdk_core:3.0.0"
+    implementation "com.taurusx.ads:tzsdk_coral:2.0.0"
+    implementation "com.taurusx.ads:tzsdk_reporter:3.0.0"
+    implementation "com.qq.e.union:union:4.211.1081"
+    implementation "com.android.support:support-v4:26.1.0"
 
     // TopOn
     implementation "com.taurusx.ads:mediation_topon:5.7.45.0"
