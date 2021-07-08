@@ -21,10 +21,10 @@ android {
             testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
             multiDexEnabled = true
 
-            //SDK所需的占位符
-//            manifestPlaceholders = [
-//                    "APPLICATION_ID": applicationId,
-//            ]
+            // SDK 所需的占位符
+            manifestPlaceholders = [
+                    "APPLICATION_ID": applicationId,
+            ]
 
             ndk { abiFilters 'armeabi-v7a' }
         }
@@ -127,7 +127,7 @@ dependencies {
     implementation "com.taurusx.ads:tzsdk_core:3.0.0"
     implementation "com.taurusx.ads:tzsdk_coral:2.0.0"
     implementation "com.taurusx.ads:tzsdk_reporter:3.0.0"
-    implementation "com.qq.e.union:union:4.211.1081"
+    implementation "com.qq.e.union:union:4.371.1241"
     implementation "com.android.support:support-v4:26.1.0"
 
     // TopOn
