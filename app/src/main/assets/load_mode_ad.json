@@ -94,6 +94,9 @@
       },
       "mixview": {
         "MixView": "240f821f-4ea1-430f-a80b-4eb811274046"
+      },
+      "mixfull": {
+        "MixFullScreen": "a2c6b23e-2f2f-48a4-ac5b-ad37f09e4b77"
       }
     }
   ]
