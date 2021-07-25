@@ -111,8 +111,8 @@ dependencies {
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.10.2.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.10.2"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.10.4.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.10.4"
     // 如果要使用 KuaiShou 内容 SDK，请使用 kssdk_all 代替 ks_adsdk
     // implementation "com.taurusx.ads:kssdk_all:3.3.18.1"
     implementation 'com.google.android.material:material:1.2.1'
