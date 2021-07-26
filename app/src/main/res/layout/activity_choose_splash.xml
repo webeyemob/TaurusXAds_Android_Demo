@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/splash_load"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="Load Splash AD And Show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/splash_load_only"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="Load Splash AD Only"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_load" />
+    <Button
+        android:id="@+id/splash_show_ad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:enabled="false"
+        android:text="Show Splash AD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_load_only" />
+
+    <FrameLayout
+        android:id="@+id/splash_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

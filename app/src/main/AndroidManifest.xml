@@ -82,6 +82,10 @@
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
 
         <activity
+            android:name="com.taurusx.ads.demo.activitys.adtype.ChooseSplashActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
             android:name="com.taurusx.ads.demo.activitys.adtype.MixViewActivity"
             android:screenOrientation="portrait" />
 
