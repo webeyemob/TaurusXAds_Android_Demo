@@ -11,6 +11,7 @@ tgCenter {
         taurusXAdsNetwork = [
                 // 国内 Network
                 toutiao          : true,
+                toutiao_plugin   : true,
                 ylh              : true,
                 baidu            : true,
                 kuaishou         : true,
