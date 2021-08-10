@@ -60,9 +60,6 @@ android {
 // TaurusX、穿山甲、InMobi 区分国内、海外版
 boolean oversea = false
 
-// 优量汇分为标准版本、X5 内核加强版
-boolean gdt_tbs = false
-
 // 穿山甲分为普通版和插件版
 boolean csj_plugin = false
 
@@ -105,11 +102,9 @@ dependencies {
 
     // Tencent GDT
     implementation "com.taurusx.ads:mediation_gdt:4.380.1250.0"
-    if (gdt_tbs) {
-        implementation "com.qq.e.union:tbs:4.371.1241"
-    } else {
-        implementation "com.qq.e.union:union:4.380.1250"
-    }
+    implementation "com.qq.e.union:union:4.380.1250"
+    // 如果要使用数据上报 SDK，用 datadetect 代替 union
+    // implementation "com.qq.e.union:datadetect:4.390.1260"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
