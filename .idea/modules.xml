@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TaurusXDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/TaurusXDemo.iml" group="TaurusXDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TaurusXDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/TaurusXDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="TaurusXDemo/app" />
     </modules>
   </component>

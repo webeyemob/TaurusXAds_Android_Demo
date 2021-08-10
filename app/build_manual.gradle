@@ -239,6 +239,8 @@ dependencies {
     implementation "com.taurusx.ads:mobrain_adapter_gdt:4.380.1250.0"
     implementation "com.taurusx.ads:mediation_gdt:4.380.1250.0"
     implementation "com.qq.e.union:union:4.380.1250"
+    // 如果要使用数据上报 SDK，请使用 datadetect 代替 union
+    // implementation "com.qq.e.union:datadetect:4.390.1260"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Mobrain-KuaiShou
