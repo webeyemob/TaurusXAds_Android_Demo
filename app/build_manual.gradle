@@ -67,12 +67,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.4.7"
+        implementation "com.taurusx.ads:core-oversea:2.4.8"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.4"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.4.7"
+        implementation "com.taurusx.ads:core:2.4.8"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.4"
@@ -227,12 +227,12 @@ dependencies {
     }
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:2.9.0.0.1"
+    implementation "com.taurusx.ads:mediation_mobrain:2.9.0.0.2"
     implementation "com.taurusx.ads:mobrain:2.9.0.0"
 
     // Mobrain-Toutiao
-    implementation "com.taurusx.ads:mediation_toutiao:3.8.0.1.0"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.8.0.1"
+    implementation "com.taurusx.ads:mediation_toutiao:3.8.0.6.2"
+    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.8.0.6"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Mobrain-Toutiao-Plugin
