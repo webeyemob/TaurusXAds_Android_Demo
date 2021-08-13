@@ -310,8 +310,8 @@ dependencies {
     implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.6.1.4"
 
     // YKY
-    implementation "com.taurusx.ads:mediation_yky:2.0.0.15.0"
-    implementation "com.taurusx.ads:klevin:2.0.0.15"
+    implementation "com.taurusx.ads:mediation_yky:2.2.0.21.0"
+    implementation "com.taurusx.ads:klevin:2.2.0.21"
     implementation "com.android.support:appcompat-v7:28.0.0"
 
     // ####################################### Other Network #######################################
