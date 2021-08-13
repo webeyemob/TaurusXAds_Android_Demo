@@ -33,7 +33,7 @@ allprojects {
         // ##### 手动添加依赖时，需要添加以下 Repo #####
         // TaurusX
         maven { url "https://bitbucket.org/maven-taurusxads/taurusxads/raw/release" }
-        maven { url "http://nexus.webeyemobi.com/repository/webeye" }
+        maven { url "https://bitbucket.org/sdkcenter/sdkcenter/raw/release" }
         // AdGeneration
         maven { url "https://adgeneration.github.io/ADG-Android-SDK/repository" }
         // Display
