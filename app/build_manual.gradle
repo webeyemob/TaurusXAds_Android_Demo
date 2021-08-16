@@ -334,8 +334,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // Unity ads
-    implementation "com.taurusx.ads:mediation_unity:3.7.4.0"
-    implementation "com.unity3d.ads:unity-ads:3.7.4"
+    implementation "com.taurusx.ads:mediation_unity:3.7.5.0"
+    implementation "com.unity3d.ads:unity-ads:3.7.5"
 
     // Vungle
     implementation "com.taurusx.ads:mediation_vungle:6.9.1.0"
