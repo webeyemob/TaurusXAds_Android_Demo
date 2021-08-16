@@ -135,5 +135,20 @@
             android:name="TUIA_APPSECRET"
             android:value="3WpyTLfifQyGhvgivxtUjvzXxtkzdceETBU2n5g" />
 
+        <provider
+            android:name="com.tencent.klevin.utils.FileProvider"
+            android:authorities="${applicationId}.klevin.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/klevin_provider_paths" />
+        </provider>
+
+        <!-- YKY AppId-->
+        <meta-data
+            android:name="Klevin.AppId"
+            android:value="30008" />
+
     </application>
 </manifest>
