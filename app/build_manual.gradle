@@ -293,6 +293,11 @@ dependencies {
     implementation "com.taurusx.ads:mobrain_adapter_yky:2.0.0.23.0"
     implementation "com.taurusx.ads:klevin:2.0.0.23"
 
+    // Mobrain-Sigmob
+    implementation "com.taurusx.ads:mobrain_adapter_sigmob:3.3.1.0"
+    implementation "com.taurusx.ads:mediation_sigmob:3.3.1.0"
+    implementation "com.taurusx.ads:windAd:3.3.1"
+
     // YLHM-Base
     implementation "com.taurusx.ads:ylhm_adapter_base:1.0"
     implementation "com.taurusx.ads:mediation_gdt:4.362.1232.0"
