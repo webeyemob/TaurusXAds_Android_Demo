@@ -123,8 +123,8 @@ dependencies {
     implementation "com.google.code.gson:gson:2.8.6"
 
     // Sigmob
-    implementation 'com.taurusx.ads:mediation_sigmob:2.25.2.0'
-    implementation 'com.taurusx.ads:windAd:2.25.2'
+    implementation 'com.taurusx.ads:mediation_sigmob:3.3.1.0'
+    implementation 'com.taurusx.ads:windAd:3.3.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // 360
