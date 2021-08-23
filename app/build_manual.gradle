@@ -105,6 +105,7 @@ dependencies {
     implementation "com.alibaba.sdk.android:AlibcTradeBiz:4.0.0.19@aar"
     implementation "com.alibaba.sdk.android:nb_trade:4.0.0.19@aar"
     implementation "com.alibaba:fastjson:1.2.41@jar"
+
     // IFly
     implementation "com.taurusx.ads:ifly_ad:4.4.4"
     implementation "com.taurusx.ads:mediation_ifly:4.4.4.1"
@@ -325,8 +326,8 @@ dependencies {
 
     // ####################################### Other Network #######################################
     // AppLovin Max
-    implementation "com.taurusx.ads:mediation_applovinmax:10.3.0.1"
-    implementation "com.applovin:applovin-sdk:10.3.0"
+    implementation "com.taurusx.ads:mediation_applovinmax:10.3.2.0"
+    implementation "com.applovin:applovin-sdk:10.3.2"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // Prebid
