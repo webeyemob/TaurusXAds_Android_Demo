@@ -82,7 +82,7 @@ public class BannerActivity extends BaseActivity {
     private void initBannerAdView() {
         // Create BannerAdView
         mBannerAdView = new BannerAdView(this);
-        mBannerAdView.setAdUnitId(mBannerAdUnitId);
+        mBannerAdView.setAdUnitId("1c3bc9a0-3b97-45c9-a288-039a2e34e83d");
 
         // (Optional) Set Network special Config
         mBannerAdView.setNetworkConfigs(NetworkConfigs.Builder()

@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -60,20 +61,36 @@ public class AdTypeActivity extends BaseActivity {
         }
 
         getActionBar().setTitle(mTitle);
+        getActionBar().setDisplayHomeAsUpEnabled(false);
 
         mContainer = findViewById(R.id.layout_container);
 
         addButtons();
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                return true;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+    }
+
     private void addButtons() {
         addButton(mMediation.optJSONObject(Constant.JSON_KEY_BANNER), AdType.Banner);
-        addButton(mMediation.optJSONObject(Constant.JSON_KEY_INTERSTITIAL), AdType.Interstitial);
-        addButton(mMediation.optJSONObject(Constant.JSON_KEY_REWARDED), AdType.RewardedVideo);
-        addButton(mMediation.optJSONObject(Constant.JSON_KEY_SPLASH), AdType.Splash);
-        addButton(mMediation.optJSONObject(Constant.JSON_KEY_FEEDLIST), AdType.FeedList);
-        addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXVIEW), AdType.MixView);
-        addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXFULLSCREEN), AdType.MixFullScreen);
+//        addButton(mMediation.optJSONObject(Constant.JSON_KEY_INTERSTITIAL), AdType.Interstitial);
+//        addButton(mMediation.optJSONObject(Constant.JSON_KEY_REWARDED), AdType.RewardedVideo);
+//        addButton(mMediation.optJSONObject(Constant.JSON_KEY_SPLASH), AdType.Splash);
+//        addButton(mMediation.optJSONObject(Constant.JSON_KEY_FEEDLIST), AdType.FeedList);
+//        addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXVIEW), AdType.MixView);
+//        addButton(mMediation.optJSONObject(Constant.JSON_KEY_MIXFULLSCREEN), AdType.MixFullScreen);
         // 不在 UI 上显示弃用的 Native 入口
         // addButton(mMediation.optJSONObject(Constant.JSON_KEY_NATIVE), AdType.Native);
     }
@@ -143,7 +160,7 @@ public class AdTypeActivity extends BaseActivity {
             public void onClick(View v) {
                 switch (adType) {
                     case Banner:
-                        startActivity(new Intent(AdTypeActivity.this, BannerActivity.class)
+                        startActivity(new Intent(AdTypeActivity.this, MoPubBannerActivity.class)
                                 .putExtra(Constant.KEY_TITLE, title)
                                 .putExtra(Constant.KEY_ADUNITID, adUnitId));
                         break;

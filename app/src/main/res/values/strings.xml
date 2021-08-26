@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TaurusXDemo</string>
+    <string name="app_name">WebEye Test</string>
 
     <string name="networks_test">Network Test</string>
     <string name="stratege_test">LoadMode Test</string>

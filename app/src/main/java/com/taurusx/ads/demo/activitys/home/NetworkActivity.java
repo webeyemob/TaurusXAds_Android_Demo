@@ -33,6 +33,8 @@ public class NetworkActivity extends BaseActivity {
         List<JSONObject> mediationList = Utils.getMediationList(NetworkActivity.this, "network_ad.json");
         NetworkAdapter adapter = new NetworkAdapter(NetworkActivity.this, mediationList);
         listView.setAdapter(adapter);
+
+        AdTypeActivity.start(this, mediationList.get(0));
     }
 
     private static class NetworkAdapter extends BaseAdapter {

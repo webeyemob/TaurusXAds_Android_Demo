@@ -6,7 +6,7 @@ android {
     signingConfigs {
         defaultConfig {
 
-            applicationId "com.taurusx.ads.demo"
+            applicationId "com.mraid.test"
 
             // Amazon
             // applicationId "com.amazon.sample.simplead"
@@ -297,7 +297,10 @@ dependencies {
 
     // MoPub
     implementation "com.taurusx.ads:mediation_mopub:5.18.0.1"
-    implementation "com.mopub:mopub-sdk:5.18.0"
+    implementation("com.mopub:mopub-sdk:5.18.0") {
+        transitive = true
+    }
+    implementation "com.mopub:mopub-sdk-networking:+"
     implementation "com.google.android.gms:play-services-ads-identifier:16.0.0"
     implementation "com.google.android.gms:play-services-base:16.1.0"
     // MoPub-Facebook

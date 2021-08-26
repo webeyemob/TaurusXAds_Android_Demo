@@ -59,5 +59,7 @@ public class MainActivity extends Activity {
                 AdapterTestActivity.start(MainActivity.this, false);
             }
         });
+
+        networks.performClick();
     }
 }
