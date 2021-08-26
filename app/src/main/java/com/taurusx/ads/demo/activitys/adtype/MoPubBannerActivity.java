@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.mopub.common.MoPub;
+import com.mopub.common.SdkInitializationListener;
 import com.mopub.mobileads.AdViewController;
 import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubView;
@@ -31,7 +33,6 @@ import com.taurusx.ads.demo.utils.Utils;
 import com.taurusx.ads.mediation.helper.MoPubHelper;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.lang.reflect.Field;
@@ -52,6 +53,7 @@ public class MoPubBannerActivity extends BaseActivity {
     private String mBody;
 
     private Button mLoadButton;
+    private Button mClearButton;
 
     private RadioGroup mRadioGroup;
 
@@ -77,9 +79,11 @@ public class MoPubBannerActivity extends BaseActivity {
         mLoadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mContainer.removeAllViews();
+
                 mBody = mBodyEditText.getText().toString();
                 if (TextUtils.isEmpty(mBody)) {
-                    mContainer.removeAllViews();
+                    Utils.toast(MoPubBannerActivity.this, "Empty Content");
                     return;
                 }
 
@@ -89,12 +93,8 @@ public class MoPubBannerActivity extends BaseActivity {
                     loadAdImpl();
                 } else if (id == R.id.radiobutton_bidresponse) {
                     try {
-                        JSONObject object = new JSONObject(mBody);
-                        JSONArray seatbidArray = object.optJSONArray("seatbid");
-                        JSONObject bidObject = seatbidArray.optJSONObject(0).optJSONArray("bid").optJSONObject(0);
-                        mBody = bidObject.optString("adm");
-                        loadAdImpl();
-                    } catch (JSONException e) {
+                        loadFromJson(mBody);
+                    } catch (Exception e) {
                         e.printStackTrace();
                         mProgressBar.setVisibility(View.GONE);
                     }
@@ -102,11 +102,15 @@ public class MoPubBannerActivity extends BaseActivity {
                     JsonRequestHelper.get(mBody, null, 5, new JsonRequestHelper.OnRequestListener() {
                         @Override
                         public void onSuccess(String result) {
-                            mBody = result;
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    loadAdImpl();
+                                    try {
+                                        loadFromJson(result);
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                        mProgressBar.setVisibility(View.GONE);
+                                    }
                                 }
                             });
                         }
@@ -124,16 +128,46 @@ public class MoPubBannerActivity extends BaseActivity {
                             });
                         }
                     });
+                } else {
+                    Utils.toast(MoPubBannerActivity.this, "Please Select Content Type");
+                    mProgressBar.setVisibility(View.GONE);
                 }
+            }
+        });
+
+        mClearButton = findViewById(R.id.clear_content);
+        mClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mBodyEditText.setText("");
             }
         });
 
         mRadioGroup = findViewById(R.id.radioGroup);
     }
 
+    private void loadFromJson(String body) throws Exception {
+        JSONObject object = new JSONObject(body);
+        JSONArray seatbidArray = object.optJSONArray("seatbid");
+        JSONObject bidObject = seatbidArray.optJSONObject(0).optJSONArray("bid").optJSONObject(0);
+        mBody = bidObject.optString("adm");
+        loadAdImpl();
+    }
+
     private void loadAdImpl() {
         initBannerAdView();
-        mMoPubView.loadAd();
+
+        if (MoPub.isSdkInitialized()) {
+            mMoPubView.loadAd();
+        } else {
+            LogUtil.d(TAG, "Wait MoPub Init");
+            MoPubHelper.registerInitListener(new SdkInitializationListener() {
+                @Override
+                public void onInitializationFinished() {
+                    mMoPubView.loadAd();
+                }
+            });
+        }
     }
 
     private void initBannerAdView() {
@@ -147,9 +181,19 @@ public class MoPubBannerActivity extends BaseActivity {
 
         Context appContext = this.getApplicationContext();
         mAdContainer = new FrameLayout(appContext);
+
+        BannerAdSize adSize;
+        if (getActionBar().getTitle().toString().contains("320*50")) {
+            adSize = BannerAdSize.BANNER_320_50;
+        } else if (getActionBar().getTitle().toString().contains("300*250")) {
+            adSize = BannerAdSize.BANNER_300_250;
+        } else {
+            adSize = BannerAdSize.BANNER_320_50;
+        }
+
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
-                BannerAdSize.BANNER_300_250.getWidth(appContext),
-                BannerAdSize.BANNER_300_250.getHeight(appContext));
+                adSize.getWidth(appContext),
+                adSize.getHeight(appContext));
         params.gravity = Gravity.CENTER;
         mAdContainer.addView(mMoPubView, params);
 

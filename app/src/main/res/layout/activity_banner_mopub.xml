@@ -12,7 +12,7 @@
         android:layout_weight="1"
         android:background="@android:color/holo_orange_light"
         android:gravity="top"
-        android:hint="Input Your Mraid"
+        android:hint="Input Mraid HTML, JSON, or JSON URL"
         android:padding="12dp"
         android:textColorHint="@android:color/holo_blue_dark" />
 
@@ -36,26 +36,41 @@
                 android:id="@+id/radiobutton_bidresponse"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bid Response" />
+                android:text="Bid Response JSON" />
 
             <RadioButton
                 android:id="@+id/radiobutton_bidresponse_url"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bid Response URL" />
+                android:text="Bid Response JSON URL" />
         </RadioGroup>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/banner_load"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/button_height"
+        android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="Load Banner" />
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/banner_load"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="Load Banner" />
+
+        <Button
+            android:id="@+id/clear_content"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/button_height"
+            android:text="Clear Content" />
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp">
+        android:layout_height="wrap_content"
+        android:minHeight="50dp">
 
         <LinearLayout
             android:id="@+id/layout_banner"
