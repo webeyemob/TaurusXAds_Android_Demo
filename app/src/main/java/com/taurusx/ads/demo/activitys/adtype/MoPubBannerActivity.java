@@ -25,6 +25,7 @@ import com.mopub.network.AdResponse;
 import com.mopub.network.MoPubNetworkError;
 import com.taurusx.ads.core.api.model.BannerAdSize;
 import com.taurusx.ads.core.api.utils.LogUtil;
+import com.taurusx.ads.core.api.utils.ScreenUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.request.JsonRequestHelper;
@@ -67,8 +68,6 @@ public class MoPubBannerActivity extends BaseActivity {
         getActionBar().setTitle(getIntent().getStringExtra(Constant.KEY_TITLE));
 
         setContentView(R.layout.activity_banner_mopub);
-
-        mAdUnitId = "35888ba0b7c64cf8840bde307ef6ee5a";
 
         mContainer = findViewById(R.id.layout_banner);
         mProgressBar = findViewById(R.id.progressBar);
@@ -171,6 +170,18 @@ public class MoPubBannerActivity extends BaseActivity {
     }
 
     private void initBannerAdView() {
+        BannerAdSize adSize;
+        if (getActionBar().getTitle().toString().contains("320*50")) {
+            adSize = BannerAdSize.BANNER_320_50;
+            mAdUnitId = "5b4d99baa2dd4c9a966d1eadfa609e96";
+        } else if (getActionBar().getTitle().toString().contains("300*250")) {
+            adSize = BannerAdSize.BANNER_300_250;
+            mAdUnitId = "35888ba0b7c64cf8840bde307ef6ee5a";
+        } else {
+            adSize = BannerAdSize.BANNER_320_50;
+            mAdUnitId = "5b4d99baa2dd4c9a966d1eadfa609e96";
+        }
+
         MoPubHelper.init(this, mAdUnitId);
 
         mMoPubView = new MoPubView(this);
@@ -181,15 +192,6 @@ public class MoPubBannerActivity extends BaseActivity {
 
         Context appContext = this.getApplicationContext();
         mAdContainer = new FrameLayout(appContext);
-
-        BannerAdSize adSize;
-        if (getActionBar().getTitle().toString().contains("320*50")) {
-            adSize = BannerAdSize.BANNER_320_50;
-        } else if (getActionBar().getTitle().toString().contains("300*250")) {
-            adSize = BannerAdSize.BANNER_300_250;
-        } else {
-            adSize = BannerAdSize.BANNER_320_50;
-        }
 
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
                 adSize.getWidth(appContext),
