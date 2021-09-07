@@ -49,7 +49,9 @@ public class ChooseSplashActivity extends BaseActivity implements View.OnClickLi
         mSplashAd.setNetworkConfigs(NetworkConfigs.Builder()
                 .build());
 
-        mSplashAd.setContainer(mContainer);
+        // If don't setContainer, SDK will start a new Activity to show splash ad
+        // mSplashAd.setContainer(mContainer);
+
         // Bottom area settings (For: OPPO, Sigmob and vivo)
         // Set the title & description displayed at the bottom of the splash ad
         mSplashAd.setBottomText("TaurusX Ads", "Demo for TaurusX Ads Sdk");

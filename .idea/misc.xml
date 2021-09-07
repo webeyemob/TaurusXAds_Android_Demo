@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/mix_press_bg.xml" value="0.171875" />
+        <entry key="app/src/main/res/drawable/network_item_bg.xml" value="0.171875" />
+        <entry key="app/src/main/res/layout/activity_choose_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15353260869565216" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
