@@ -93,7 +93,7 @@ public class FeedListActivity extends BaseActivity {
         mFeedList.setAdUnitId(mFeedListAdUnitId);
 
         // Set Ad Count You Want To Load
-        mFeedList.setCount(3);
+        mFeedList.setCount(5);
 
         // Set Custom NativeAdLayout To Render Ad
 //        mFeedList.setNativeAdLayout(NativeAdLayout.Builder()

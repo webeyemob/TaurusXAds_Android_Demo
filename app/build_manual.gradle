@@ -6,7 +6,7 @@ android {
     signingConfigs {
         defaultConfig {
 
-            applicationId "com.taurusx.ads.demo"
+            applicationId "com.taurusx.ads.demo.inner"
 
             // Jad
             // applicationId "com.jd.sdkceshiandroid"
@@ -67,16 +67,16 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.5.5"
+        implementation "com.taurusx.ads:core-oversea:2.5.8"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.5.5"
+        implementation "com.taurusx.ads:core:2.5.8"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
-        implementation "com.satori.sdk:eventio-go:2.3.2.1"
-        implementation "com.satori.sdk:eventio-openudid:1.1.5"
-        implementation "com.satori.sdk:eventio-crashlytics:1.0.6"
+        implementation "com.satori.sdk:eventio-go:2.3.3.0"
+        implementation "com.satori.sdk:eventio-openudid:1.1.7"
+        implementation "com.satori.sdk:eventio-crashlytics:1.0.7"
     }
     implementation "androidx.recyclerview:recyclerview:1.1.0"
 
@@ -228,7 +228,7 @@ dependencies {
     }
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:2.9.2.0.1"
+    implementation "com.taurusx.ads:mediation_mobrain:2.9.2.0.2"
     implementation "com.taurusx.ads:mobrain:2.9.2.0"
 
     // Mobrain-Toutiao

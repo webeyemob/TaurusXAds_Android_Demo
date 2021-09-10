@@ -27,7 +27,6 @@ public class ChooseSplashActivity extends BaseActivity implements View.OnClickLi
     private Button mLoadAd;
     private Button mLoadAdOnly;
     private Button mShowAd;
-    private FrameLayout mContainer;
 
     private boolean mIsShowing;
 
@@ -49,7 +48,6 @@ public class ChooseSplashActivity extends BaseActivity implements View.OnClickLi
         mSplashAd.setNetworkConfigs(NetworkConfigs.Builder()
                 .build());
 
-        mSplashAd.setContainer(mContainer);
         // Bottom area settings (For: OPPO, Sigmob and vivo)
         // Set the title & description displayed at the bottom of the splash ad
         mSplashAd.setBottomText("TaurusX Ads", "Demo for TaurusX Ads Sdk");
@@ -86,7 +84,6 @@ public class ChooseSplashActivity extends BaseActivity implements View.OnClickLi
                 LogUtil.d(TAG, "onAdClosed: " + iLineItem.getName());
                 mIsShowing = false;
                 getActionBar().show();
-                mContainer.setVisibility(View.GONE);
             }
 
             @Override
@@ -105,7 +102,6 @@ public class ChooseSplashActivity extends BaseActivity implements View.OnClickLi
     }
 
     private void initView() {
-        mContainer = findViewById(R.id.splash_container);
         mLoadAd = findViewById(R.id.splash_load);
         mLoadAdOnly = findViewById(R.id.splash_load_only);
         mShowAd = findViewById(R.id.splash_show_ad);
@@ -127,7 +123,6 @@ public class ChooseSplashActivity extends BaseActivity implements View.OnClickLi
             case R.id.splash_show_ad:
                 mShowAd.setEnabled(false);
                 if (mSplashAd.isReady()) {
-                    mContainer.setVisibility(View.VISIBLE);
                     getActionBar().hide();
                     mSplashAd.showAd();
                 }
