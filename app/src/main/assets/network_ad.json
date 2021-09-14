@@ -651,8 +651,8 @@
         "FullScreen Video Horizontal": "8b16ba0e-2e21-4121-8504-86ca92ef8eb7",
         "Express FullScreen Video Vertical": "63983dd4-0cfe-467a-be68-d9364a94615c",
         "Express FullScreen Video Horizontal": "ab816ef6-c256-4f5e-9dcd-a75a5281b779",
-        "New Interstitial (Interstitial)": "6c30da54-fca1-4b3f-b532-f5cf1b738ebe",
-        "New Interstitial (FullScreenVideo)": "d4709795-e141-4feb-a953-7b64bc727365"
+        "New Interstitial (HalfScreen)": "103d1e05-2889-4ae5-8f08-2ed5c8973370",
+        "New Interstitial (FullScreen)": "c9d38984-a7ed-47f5-8f44-dee2b86ab35c"
       },
       "native": {
         "Custom Banner": "9a12f61d-120c-4aa3-a5ce-c7c4f918fe3b",

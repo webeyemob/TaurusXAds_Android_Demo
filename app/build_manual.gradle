@@ -75,7 +75,7 @@ dependencies {
         implementation "com.google.android.gms:play-services-cronet:17.0.0"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.5.5"
+        implementation "com.taurusx.ads:core:2.5.7"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
@@ -91,11 +91,11 @@ dependencies {
         implementation "com.pangle.global:ads-sdk:3.8.0.2"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:3.9.0.5.0"
+        implementation "com.taurusx.ads:mediation_toutiao:4.0.0.1.0"
         if (csj_plugin) {
             implementation "com.taurusx.ads:toutiao_open_ad_sdk_plugin:3.9.0.5"
         } else {
-            implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.9.0.5"
+            implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.0.0.1"
         }
         implementation "androidx.legacy:legacy-support-v4:1.0.0"
     }
