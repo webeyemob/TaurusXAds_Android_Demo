@@ -60,22 +60,19 @@ android {
 // TaurusX、穿山甲、InMobi 区分国内、海外版
 boolean oversea = false
 
-// 穿山甲分为普通版和插件版
-boolean csj_plugin = false
-
 dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.multidex:multidex:2.0.1'
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.5.5"
+        implementation "com.taurusx.ads:core-oversea:2.6.1"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
         implementation "com.google.android.gms:play-services-cronet:17.0.0"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.5.7"
+        implementation "com.taurusx.ads:core:2.6.1"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
@@ -92,11 +89,7 @@ dependencies {
     } else {
         // TikTok
         implementation "com.taurusx.ads:mediation_toutiao:4.0.0.1.0"
-        if (csj_plugin) {
-            implementation "com.taurusx.ads:toutiao_open_ad_sdk_plugin:3.9.0.5"
-        } else {
-            implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.0.0.1"
-        }
+        implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.0.0.1"
         implementation "androidx.legacy:legacy-support-v4:1.0.0"
     }
 
@@ -108,8 +101,8 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:9.14.0"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:9.14"
+    implementation "com.taurusx.ads:mediation_baidu:9.15.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:9.15"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // KuaiShou
@@ -123,8 +116,8 @@ dependencies {
     implementation "com.google.code.gson:gson:2.8.6"
 
     // Sigmob
-    implementation 'com.taurusx.ads:mediation_sigmob:3.3.1.0'
-    implementation 'com.taurusx.ads:windAd:3.3.1'
+    implementation 'com.taurusx.ads:mediation_sigmob:3.3.3.0'
+    implementation 'com.taurusx.ads:windAd:3.3.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // 360
