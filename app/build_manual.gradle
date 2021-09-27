@@ -64,6 +64,9 @@ boolean oversea = false
 boolean csj_plugin = false
 
 dependencies {
+    implementation 'com.facebook.stetho:stetho:1.6.0'
+    implementation 'com.facebook.stetho:stetho-js-rhino:1.6.0'
+
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.multidex:multidex:2.0.1'
 
@@ -361,5 +364,6 @@ configurations.all {
         force 'androidx.arch.core:core-common:2.1.0'
         force 'androidx.lifecycle:lifecycle-common:2.1.0'
         force 'com.google.code.gson:gson:2.8.5'
+        force 'androidx.core:core:1.3.2'
     }
 }

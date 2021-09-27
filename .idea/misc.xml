@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../layout/custom_preview.xml" value="0.3416666666666667" />
-        <entry key="app/src/main/res/layout/activity_banner.xml" value="0.1887031408308004" />
-        <entry key="app/src/main/res/layout/activity_banner_mopub.xml" value="0.2554347826086957" />
+        <entry key="../../.gradle/caches/transforms-2/files-2.1/81bbc0c555dae701dd94494b0ae64f33/jetified-ylhm_adapter_toutiao-3.6.1.4.0/res/layout/tt_native_insert_ad_layout.xml" value="0.22239583333333332" />
+        <entry key="app/src/main/res/layout/activity_banner_mopub.xml" value="0.2560790273556231" />
+        <entry key="app/src/main/res/layout/activity_choose_splash.xml" value="0.15476190476190477" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.15896739130434784" />
       </map>
     </option>
   </component>

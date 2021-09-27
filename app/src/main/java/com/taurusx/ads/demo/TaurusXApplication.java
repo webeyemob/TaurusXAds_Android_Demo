@@ -3,6 +3,7 @@ package com.taurusx.ads.demo;
 import android.app.Application;
 
 import com.bytedance.sdk.openadsdk.TTAdConstant;
+import com.facebook.stetho.Stetho;
 import com.mopub.common.SdkConfiguration;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
@@ -26,6 +27,8 @@ public class TaurusXApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        Stetho.initializeWithDefaults(this);
 
         // 授权 GDPR；true 表示同意
         TaurusXAds.getDefault().setGdprConsent(true);
