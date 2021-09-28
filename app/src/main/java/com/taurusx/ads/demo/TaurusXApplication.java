@@ -3,6 +3,12 @@ package com.taurusx.ads.demo;
 import android.app.Application;
 
 import com.bytedance.sdk.openadsdk.TTAdConstant;
+import com.facebook.flipper.android.AndroidFlipperClient;
+import com.facebook.flipper.core.FlipperClient;
+import com.facebook.flipper.plugins.inspector.DescriptorMapping;
+import com.facebook.flipper.plugins.inspector.InspectorFlipperPlugin;
+import com.facebook.litho.editor.flipper.LithoFlipperDescriptors;
+import com.facebook.soloader.SoLoader;
 import com.facebook.stetho.Stetho;
 import com.mopub.common.SdkConfiguration;
 import com.taurusx.ads.core.api.TaurusXAds;
@@ -29,6 +35,23 @@ public class TaurusXApplication extends Application {
         super.onCreate();
 
         Stetho.initializeWithDefaults(this);
+
+        SoLoader.init(this, false);
+
+//        if (BuildConfig.DEBUG && FlipperUtils.shouldEnableFlipper(this)) {
+        final FlipperClient client = AndroidFlipperClient.getInstance(this);
+//        client.addPlugin(new InspectorFlipperPlugin(this, DescriptorMapping.withDefaults()));
+
+//        ComponentsConfiguration.isDebugModeEnabled = true;
+
+        final DescriptorMapping descriptorMapping = DescriptorMapping.withDefaults();
+// This adds Litho capabilities to the layout inspector.
+        LithoFlipperDescriptors.add(descriptorMapping);
+
+        client.addPlugin(new InspectorFlipperPlugin(this, descriptorMapping));
+
+        client.start();
+//        }
 
         // 授权 GDPR；true 表示同意
         TaurusXAds.getDefault().setGdprConsent(true);

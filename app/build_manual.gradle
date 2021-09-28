@@ -67,6 +67,14 @@ dependencies {
     implementation 'com.facebook.stetho:stetho:1.6.0'
     implementation 'com.facebook.stetho:stetho-js-rhino:1.6.0'
 
+    debugImplementation 'com.facebook.flipper:flipper:0.112.0'
+    debugImplementation 'com.facebook.soloader:soloader:0.10.1'
+    releaseImplementation 'com.facebook.flipper:flipper-noop:0.112.0'
+
+    debugImplementation 'com.facebook.flipper:flipper-litho-plugin:0.112.0'
+    debugImplementation 'com.facebook.litho:litho-annotations:0.19.0'
+
+
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.multidex:multidex:2.0.1'
 
