@@ -316,9 +316,9 @@ dependencies {
     implementation "com.taurusx.ads:ks_adsdk:3.3.9"
 
     // YLHM-TouTiao
-    implementation "com.taurusx.ads:ylhm_adapter_toutiao:3.6.1.4.0"
-    implementation "com.taurusx.ads:mediation_toutiao:3.6.1.4.0"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.6.1.4"
+//    implementation "com.taurusx.ads:ylhm_adapter_toutiao:3.6.1.4.0"
+//    implementation "com.taurusx.ads:mediation_toutiao:3.6.1.4.0"
+//    implementation "com.taurusx.ads:toutiao_open_ad_sdk:3.6.1.4"
 
     // YKY
     implementation "com.taurusx.ads:mediation_yky:2.2.0.21.0"
