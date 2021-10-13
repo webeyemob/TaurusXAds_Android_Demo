@@ -14,6 +14,10 @@ import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.demo.utils.Utils;
+import com.taurusx.ads.mediation.networkconfig.QttRewardedVideoConfig;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 public class RewardedVideoActivity extends BaseActivity {
@@ -118,5 +122,28 @@ public class RewardedVideoActivity extends BaseActivity {
                 Utils.toast(RewardedVideoActivity.this, "onRewardFailed");
             }
         });
+    }
+
+    private QttRewardedVideoConfig createQttRewardedVideoConfig() {
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("countdown_award_des", "可领奖励");
+            jsonObject.put("close_dialog_title", "奖励提示");
+            jsonObject.put("close_dialog_des", "看完视频即可获得奖励");
+            jsonObject.put("close_dialog_exit_des", "放弃奖励");
+            jsonObject.put("close_dialog_continue_btn_des", "看完视频");
+            jsonObject.put("countdown_wait_des", "即将获得奖励");
+            jsonObject.put("countdown_success_des", "奖励已发放");
+            jsonObject.put("countdown_repeat_des", "不能重复领取奖励");
+            jsonObject.put("countdown_fail_des", "领取奖励失败");
+            jsonObject.put("countdown_icon_light_url", "http://cdn.aiclk.com/nsdk/res/imgstatic/incite_video_coin_light.png");
+            jsonObject.put("countdown_icon_gray_url", "http://cdn.aiclk.com/nsdk/res/imgstatic/incite_video_coin_gray.png");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return QttRewardedVideoConfig.Builder()
+                // 设置激励视频的文案
+                .setDescriptions(jsonObject)
+                .build();
     }
 }

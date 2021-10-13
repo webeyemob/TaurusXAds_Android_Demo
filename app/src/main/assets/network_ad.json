@@ -87,6 +87,24 @@
       }
     },
     {
+      "adName": "QTT",
+      "rewarded": {
+        "RewardedVideo": "563d2f65-a186-48b9-bb2f-4e11ad213986"
+      },
+      "feedlist": {
+        "FeedList": "83c20894-8969-4f75-95fd-924094841cff"
+      },
+      "splash": {
+        "Splash": "b898732b-37b0-4b91-bed6-3376c2d3b006"
+      },
+      "mixview": {
+        "MixView": "bce2f548-cd14-4795-87f1-f809f40c8804"
+      },
+      "mixfull": {
+        "MixFullScreen": "da08ca4d-4d97-4936-a76d-d9622e089ae3"
+      }
+    },
+    {
       "adName": "Tuia",
       "banner": {
         "Banner 320*50": "dc0582a8-48f5-43b2-b512-bd742d30a5cb",
