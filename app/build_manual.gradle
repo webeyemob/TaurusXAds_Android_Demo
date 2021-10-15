@@ -66,13 +66,13 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.6.3"
+        implementation "com.taurusx.ads:core-oversea:2.6.4"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
         implementation "com.google.android.gms:play-services-cronet:17.0.0"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.6.3"
+        implementation "com.taurusx.ads:core:2.6.4"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
@@ -94,19 +94,19 @@ dependencies {
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.400.1270.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.400.1270.1"
     implementation "com.qq.e.union:union:4.400.1270"
     // 如果要使用数据上报 SDK，用 datadetect 代替 union
 //     implementation "com.qq.e.union:datadetect:4.400.1270"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:9.15.0"
+    implementation "com.taurusx.ads:mediation_baidu:9.15.1"
     implementation "com.taurusx.ads:baidu_mobads_sdk:9.15"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.14.0"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.14.1"
     implementation "com.taurusx.ads:ks_adsdk:3.3.14"
     // 如果要使用 KuaiShou 内容 SDK，请使用 kssdk_all 代替 ks_adsdk
     // implementation "com.taurusx.ads:kssdk_all:3.3.22"

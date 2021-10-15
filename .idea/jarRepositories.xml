@@ -361,5 +361,10 @@
       <option name="name" value="maven16" />
       <option name="url" value="https://gitee.com/waves_wb/ProbeSdk/raw/master/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="file:/$PROJECT_DIR$/Upload-Sdk/" />
+    </remote-repository>
   </component>
 </project>
