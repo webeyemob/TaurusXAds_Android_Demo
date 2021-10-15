@@ -67,12 +67,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.6.3"
+        implementation "com.taurusx.ads:core-oversea:2.6.4"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.6.3"
+        implementation "com.taurusx.ads:core:2.6.4"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.3.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
@@ -244,7 +244,7 @@ dependencies {
 
     // Mobrain-GDT
     implementation "com.taurusx.ads:mobrain_adapter_gdt:4.400.1270.0"
-    implementation "com.taurusx.ads:mediation_gdt:4.400.1270.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.400.1270.1"
     implementation "com.qq.e.union:union:4.400.1270"
     // 如果要使用数据上报 SDK，请使用 datadetect 代替 union
 //     implementation "com.qq.e.union:datadetect:4.400.1270"
@@ -252,7 +252,7 @@ dependencies {
 
     // Mobrain-KuaiShou
     implementation "com.taurusx.ads:mobrain_adapter_kuaishou:3.3.14.0"
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.14.0"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.14.1"
     implementation "com.taurusx.ads:ks_adsdk:3.3.14"
     implementation "com.google.android.material:material:1.1.0"
     implementation "androidx.appcompat:appcompat:1.2.0-alpha02"
@@ -261,7 +261,7 @@ dependencies {
 
     // Mobrain-Baidu
     implementation "com.taurusx.ads:mobrain_adapter_baidu:9.15.0"
-    implementation "com.taurusx.ads:mediation_baidu:9.15.0"
+    implementation "com.taurusx.ads:mediation_baidu:9.15.1"
     implementation "com.taurusx.ads:baidu_mobads_sdk:9.15"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
