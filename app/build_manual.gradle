@@ -94,8 +94,8 @@ dependencies {
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.400.1270.1"
-    implementation "com.qq.e.union:union:4.400.1270"
+    implementation "com.taurusx.ads:mediation_gdt:4.420.1290.0"
+    implementation "com.qq.e.union:datadetect:4.420.1290"
     // 如果要使用数据上报 SDK，用 datadetect 代替 union
 //     implementation "com.qq.e.union:datadetect:4.400.1270"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
