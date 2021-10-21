@@ -67,12 +67,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.6.4"
+        implementation "com.taurusx.ads:core-oversea:2.6.5"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.6.4"
+        implementation "com.taurusx.ads:core:2.6.5"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.3.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
@@ -187,8 +187,8 @@ dependencies {
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // Jad
-    implementation "com.taurusx.ads:mediation_jad:1.2.0.1"
-    implementation "com.taurusx.ads:jad_yun_sdk:1.2.0"
+//    implementation "com.taurusx.ads:mediation_jad:1.2.0.1"
+//    implementation "com.taurusx.ads:jad_yun_sdk:1.2.0"
 
     // Mintegral
     if (oversea) {
@@ -328,6 +328,15 @@ dependencies {
     // QTT
     implementation "com.taurusx.ads:mediation_qtt:3.414.10.379.0"
     implementation "com.taurusx.ads:aiclk_nsdk:3.414.10.379_1"
+
+    // MeiShu
+    implementation "com.taurusx.ads:mediation_meishu:0.9.0.13.0"
+    implementation "com.taurusx.ads:ms_sdk:0.9.0.13"
+    implementation "com.taurusx.ads:jad_yun_sdk:1.2.8"
+    implementation "com.github.razerdp:BasePopup:2.2.1"
+    implementation "com.squareup.okhttp3:okhttp:3.12.0"
+    implementation "com.google.code.gson:gson:2.8.5"
+    implementation "com.googlecode.android-query:android-query:0.25.9"
 
     // ####################################### Other Network #######################################
     // AppLovin Max

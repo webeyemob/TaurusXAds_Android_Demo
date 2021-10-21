@@ -384,6 +384,26 @@
       "splash": {
         "Splash": "6758e9c8-d3b7-4156-926c-954b4995a88f"
       }
+    },
+    {
+      "adName": "MeiShu",
+      "banner": {
+        "Banner_320*50": "8341c071-90f7-49e3-88c9-fd66f21be337"
+      },
+      "interstitial": {
+        "interstitial": "7e6aa06e-822e-4f9e-b153-600b2d737124"
+      },
+      "rewarded": {
+        "rewarded": "d0ce1dd9-1c9a-4b0b-90df-8497b332edb4"
+      },
+      "feedlist": {
+        "Custom": "ae010c70-74f2-46af-b6fc-590de3837a8c",
+        "Express": "9d2bb7ac-fdf4-42d8-849c-af4452c70cab",
+        "Draw": "897098bd-fcb0-41aa-acb8-c6ef1f156a89"
+      },
+      "splash": {
+        "Splash": "c54a433e-ae7c-4b61-85e4-139695b0c9ae"
+      }
     }
   ]
 }
