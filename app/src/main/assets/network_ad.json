@@ -302,19 +302,21 @@
     {
       "adName": "YLHM",
       "interstitial": {
-        "Interstitial": "e0edf1f6-2904-418c-a952-f75b65e4255b",
-        "Express_Interstitial": "769b597d-1480-4253-ac71-f3085f97a42a",
-        "Interstitial_normal": "75cbaa12-9132-411e-9a07-430d193951b7"
+        "Interstitial": "06f34ac6-2613-49d7-a79c-60b7eb34790c",
+        "FullScreen": "6892ecb4-81ae-4f6e-ac47-99b00d1fd04e"
       },
       "feedlist": {
-        "FeedList": "c893de7a-ccfa-4aa9-800a-13fe6adb56ac"
+        "Express": "310acbf5-3db2-4156-a806-9d9949adff0d",
+        "Custom": "e744f7de-4acc-4dca-b9d9-12185ab3b6fc"
       },
       "rewarded": {
-        "RewardedVideo": "a85982d9-0497-433e-9749-87aadca46939",
-        "Express_Reward": "6f36cb22-5126-4e43-9374-77b14ddbd9cb"
+        "RewardedVideo": "db35a427-5fc1-48fd-8e3f-0b3becbeb17a"
+      },
+      "banner": {
+        "banner": "86c26c9b-dbfd-416a-adee-56edfd4d243e"
       },
       "splash": {
-        "Splash": "5f7168de-7088-4791-be1b-2c41be8dd983"
+        "Splash": "96ca5469-3654-4631-ad12-ce1f7b3d50e4"
       }
     },
     {
