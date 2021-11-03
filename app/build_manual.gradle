@@ -67,12 +67,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.6.7"
+        implementation "com.taurusx.ads:core-oversea:2.6.8"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.6.7"
+        implementation "com.taurusx.ads:core:2.6.8"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.3.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
@@ -301,22 +301,22 @@ dependencies {
     implementation "com.taurusx.ads:mediation_sigmob:3.4.1.0"
     implementation "com.taurusx.ads:windAd:3.4.1"
 
-    // YLHM-Base
-    implementation "com.taurusx.ads:ylhm_adapter_base:1.0"
-    implementation "com.taurusx.ads:mediation_gdt:4.420.1290.0"
-    implementation "com.taurusx.ads:tx_prefer:4.421.1291"
-
-    // YLHM-Baidu
-    implementation "com.taurusx.ads:ylhm_adapter_baidu:9.16.0"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:9.16"
-
-    // YLHM-KuaiShou
-    implementation "com.taurusx.ads:ylhm_adapter_kuaishou:3.3.16.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.16"
-
-    // YLHM-TouTiao
-    implementation "com.taurusx.ads:ylhm_adapter_toutiao:4.0.0.3.0"
-    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.0.0.3"
+//    // YLHM-Base
+//    implementation "com.taurusx.ads:ylhm_adapter_base:1.0"
+//    implementation "com.taurusx.ads:mediation_gdt:4.420.1290.0"
+//    implementation "com.taurusx.ads:tx_prefer:4.421.1291"
+//
+//    // YLHM-Baidu
+//    implementation "com.taurusx.ads:ylhm_adapter_baidu:9.16.0"
+//    implementation "com.taurusx.ads:baidu_mobads_sdk:9.16"
+//
+//    // YLHM-KuaiShou
+//    implementation "com.taurusx.ads:ylhm_adapter_kuaishou:3.3.16.0"
+//    implementation "com.taurusx.ads:ks_adsdk:3.3.16"
+//
+//    // YLHM-TouTiao
+//    implementation "com.taurusx.ads:ylhm_adapter_toutiao:4.0.0.3.0"
+//    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.0.0.3"
 
     // YKY
     implementation "com.taurusx.ads:mediation_yky:2.2.0.36.0"
@@ -328,7 +328,7 @@ dependencies {
     implementation "com.taurusx.ads:aiclk_nsdk:3.414.10.379_1"
 
     // MeiShu
-    implementation "com.taurusx.ads:mediation_meishu:0.9.0.13.0"
+    implementation "com.taurusx.ads:mediation_meishu:0.9.0.13.1"
     implementation "com.taurusx.ads:ms_sdk:0.9.0.13"
     implementation "com.taurusx.ads:jad_yun_sdk:1.2.8"
     implementation "com.github.razerdp:BasePopup:2.2.1"
