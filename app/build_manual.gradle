@@ -72,9 +72,9 @@ dependencies {
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.6.8"
+        implementation "com.taurusx.ads:core:2.6.9"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
-        implementation "com.satori.sdk:eventio-go:2.3.3.0"
+        implementation "com.satori.sdk:eventio-go:2.3.5.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
         implementation "com.satori.sdk:eventio-crashlytics:1.0.7"
     }
@@ -209,7 +209,7 @@ dependencies {
         implementation "com.mintegral.msdk.oversea:interactiveads:15.4.51"
         implementation "com.mintegral.msdk.oversea:mtgbid:15.4.31"
     } else {
-        implementation "com.taurusx.ads:mediation_mintegral:15.7.27.0"
+        implementation "com.taurusx.ads:mediation_mintegral:15.7.27.1"
         implementation "com.mbridge.msdk.support:videojs:15.7.27"
         implementation "com.mbridge.msdk.support:mbjscommon:15.7.27"
         implementation "com.mbridge.msdk.support:playercommon:15.7.27"
@@ -225,6 +225,18 @@ dependencies {
         implementation "com.mbridge.msdk.support:mbbanner:15.7.27"
         implementation "com.mbridge.msdk.support:interactiveads:15.7.27"
         implementation "com.mbridge.msdk.support:mbbid:15.7.27"
+
+        // 已经适配 15.5.57，但需要和 Mobrain 保持相同版本
+//        implementation "com.taurusx.ads:mediation_mintegral:15.7.57.0"
+//        implementation 'com.mbridge.msdk.support:reward:15.7.57'
+//        implementation 'com.mbridge.msdk.support:interstitialvideo:15.7.57'
+//        implementation 'com.mbridge.msdk.support:mbnative:15.7.57'
+//        implementation 'com.mbridge.msdk.support:interstitial:15.7.57'
+//        implementation 'com.mbridge.msdk.support:mbsplash:15.7.57'
+//        implementation 'com.mbridge.msdk.support:mbnativeadvanced:15.7.57'
+//        implementation 'com.mbridge.msdk.support:mbbanner:15.7.57'
+//        implementation 'com.mbridge.msdk.support:interactiveads:15.7.57'
+//        implementation "com.mbridge.msdk.support:mbbid:15.7.57"
     }
 
     // Mobrain
@@ -271,25 +283,25 @@ dependencies {
     implementation "com.taurusx.ads:unity-ads:3.7.5"
 
     // Mobrain-Mintegral
-    implementation "com.taurusx.ads:mobrain_adapter_mintegral:15.7.27.2"
-    if (!oversea) {
-        implementation "com.taurusx.ads:mediation_mintegral:15.7.27.0"
-        implementation "com.mbridge.msdk.support:videojs:15.7.27"
-        implementation "com.mbridge.msdk.support:mbjscommon:15.7.27"
-        implementation "com.mbridge.msdk.support:playercommon:15.7.27"
-        implementation "com.mbridge.msdk.support:reward:15.7.27"
-        implementation "com.mbridge.msdk.support:videocommon:15.7.27"
-        implementation "com.mbridge.msdk.support:chinasame:15.7.27"
-        implementation "com.mbridge.msdk.support:interstitialvideo:15.7.27"
-        implementation "com.mbridge.msdk.support:mbnative:15.7.27"
-        implementation "com.mbridge.msdk.support:nativeex:15.7.27"
-        implementation "com.mbridge.msdk.support:mbnativeadvanced:15.7.27"
-        implementation "com.mbridge.msdk.support:mbsplash:15.7.27"
-        implementation "com.mbridge.msdk.support:interstitial:15.7.27"
-        implementation "com.mbridge.msdk.support:mbbanner:15.7.27"
-        implementation "com.mbridge.msdk.support:interactiveads:15.7.27"
-        implementation "com.mbridge.msdk.support:mbbid:15.7.27"
-    }
+//    implementation "com.taurusx.ads:mobrain_adapter_mintegral:15.7.27.2"
+//    if (!oversea) {
+//        implementation "com.taurusx.ads:mediation_mintegral:15.7.27.0"
+//        implementation "com.mbridge.msdk.support:videojs:15.7.27"
+//        implementation "com.mbridge.msdk.support:mbjscommon:15.7.27"
+//        implementation "com.mbridge.msdk.support:playercommon:15.7.27"
+//        implementation "com.mbridge.msdk.support:reward:15.7.27"
+//        implementation "com.mbridge.msdk.support:videocommon:15.7.27"
+//        implementation "com.mbridge.msdk.support:chinasame:15.7.27"
+//        implementation "com.mbridge.msdk.support:interstitialvideo:15.7.27"
+//        implementation "com.mbridge.msdk.support:mbnative:15.7.27"
+//        implementation "com.mbridge.msdk.support:nativeex:15.7.27"
+//        implementation "com.mbridge.msdk.support:mbnativeadvanced:15.7.27"
+//        implementation "com.mbridge.msdk.support:mbsplash:15.7.27"
+//        implementation "com.mbridge.msdk.support:interstitial:15.7.27"
+//        implementation "com.mbridge.msdk.support:mbbanner:15.7.27"
+//        implementation "com.mbridge.msdk.support:interactiveads:15.7.27"
+//        implementation "com.mbridge.msdk.support:mbbid:15.7.27"
+//    }
 
     // Mobrain-YKY
     implementation "com.taurusx.ads:mobrain_adapter_yky:2.2.0.36.2"
