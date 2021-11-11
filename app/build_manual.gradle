@@ -67,7 +67,7 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.6.8"
+        implementation "com.taurusx.ads:core-oversea:2.7.0"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
         implementation "com.satori.sdk:eventio-openudid:1.1.5"
     } else {
