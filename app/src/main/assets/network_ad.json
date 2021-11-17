@@ -304,6 +304,18 @@
       }
     },
     {
+      "adName": "TradPlus",
+      "interstitial": {
+        "Interstitial": "e653f094-ca27-405f-8e3f-ca444fa05f9c"
+      },
+      "rewarded": {
+        "RewardedVideo": "ee72238c-8b7e-4ec4-b3c7-3a3beb93a0b3"
+      },
+      "banner": {
+        "banner": "2ba694a6-307c-4f70-807b-53de36eaa9cb"
+      }
+    },
+    {
       "adName": "YLHM",
       "interstitial": {
         "Interstitial": "06f34ac6-2613-49d7-a79c-60b7eb34790c",

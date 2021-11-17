@@ -68,7 +68,7 @@ public class TaurusXApplication extends Application {
                 // 设置是否为计费用户
                 .isPanglePaid(false)
                 // 设置落地页主题，默认为 TTAdConstant.TITLE_BAR_THEME_LIGHT
-                .setPangleTitleBarTheme(com.bytedance.msdk.api.TTAdConstant.TITLE_BAR_THEME_LIGHT)
+//                .setPangleTitleBarTheme(com.bytedance.msdk.api.TTAdConstant.TITLE_BAR_THEME_LIGHT)
                 // 设置是否允许 SDK 弹出通知
                 .allowPangleShowNotify(true)
                 // 设置是否允许落地页出现在锁屏上面
