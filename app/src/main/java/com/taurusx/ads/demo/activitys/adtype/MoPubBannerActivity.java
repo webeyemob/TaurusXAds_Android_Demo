@@ -234,12 +234,17 @@ public class MoPubBannerActivity extends BaseActivity {
         AdViewController adViewController = mMoPubView.getAdViewController();
         AdLoader.Listener listener = new AdLoader.Listener() {
             public void onResponse(@NonNull AdResponse response) {
-                String body = "<!DOCTYPE html> <html> <head>  <!-- Adgroup is 0d0563208bfa4a0ea5f5da4db9ca0c5e -->  <meta http-equiv=\"Content-Security-Policy\" content=\"upgrade-insecure-requests\">  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">  <style> body { margin:0; padding:0; overflow:hidden; background:transparent; } </style> <script src=\"mraid.js\"></script>  <script type=\"text/javascript\"> function webviewDidAppear() { if (typeof trackImpressionHelper == 'function') { trackImpressionHelper(); } }  </script> </head> <body> " + mBody + " </body> </html>";
+                String body = "<!DOCTYPE html> <html> <head>  <!-- Adgroup is 0d0563208bfa4a0ea5f5da4db9ca0c5e -->  <meta http-equiv=\"Content-Security-Policy\" content=\"upgrade-insecure-requests\">  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">  <style> body { margin:0; padding:0; overflow:hidden; background:transparent; } </style> <script src=\"mraid.js\"></script>  <script type=\"text/javascript\"> function webviewDidAppear() { if (typeof trackImpressionHelper == 'function') { trackImpressionHelper(); } }  </script> </head> <body> "
+                        + mBody
+                        + " </body> </html>";
 
                 try {
                     Field mResponseBodyField = AdResponse.class.getDeclaredField("mResponseBody");
                     mResponseBodyField.setAccessible(true);
                     mResponseBodyField.set(response, body);
+
+                    response.getClickTrackingUrls().clear();
+                    response.getClickTrackingUrls().add("http://www.baidu.com");
 
                     Field mServerExtrasField = AdResponse.class.getDeclaredField("mServerExtras");
                     mServerExtrasField.setAccessible(true);
