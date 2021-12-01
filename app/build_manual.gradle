@@ -67,12 +67,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.7.0"
-        implementation "com.satori.sdk:eventio-go-oversea:2.3.2.1"
-        implementation "com.satori.sdk:eventio-openudid:1.1.5"
+        implementation "com.taurusx.ads:core-oversea:2.7.2"
+        implementation "com.satori.sdk:eventio-go-oversea:2.3.4.0"
+        implementation "com.satori.sdk:eventio-openudid:1.1.7"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.7.1"
+        implementation "com.taurusx.ads:core:2.7.2"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.5.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
@@ -244,14 +244,9 @@ dependencies {
     implementation "com.taurusx.ads:mobrain:3.0.1.1"
 
 //    // Mobrain-Toutiao
-//    implementation "com.taurusx.ads:mobrain_adapter_toutiao:4.0.1.1.2"
-//    implementation "com.taurusx.ads:mediation_toutiao:4.0.1.9.0"
-//    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.0.1.9"
-//    implementation "androidx.legacy:legacy-support-v4:1.0.0"
-//
-//    // Mobrain-Toutiao-Plugin
-//    implementation "com.taurusx.ads:mediation_toutiao:3.9.0.5.0"
-//    implementation "com.taurusx.ads:toutiao_open_ad_sdk_plugin:3.9.0.5"
+//    implementation "com.taurusx.ads:mobrain_adapter_toutiao:4.1.0.2.0"
+//    implementation "com.taurusx.ads:mediation_toutiao:4.1.0.2.0"
+//    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.1.0.2"
 //    implementation "androidx.legacy:legacy-support-v4:1.0.0"
 //
 //    // Mobrain-GDT
@@ -259,7 +254,7 @@ dependencies {
 //    implementation "com.taurusx.ads:mediation_gdt:4.420.1290.1"
 //    implementation "com.qq.e.union:union:4.420.1290"
 //    // 如果要使用数据上报 SDK，请使用 datadetect 代替 union
-////     implementation "com.qq.e.union:datadetect:4.420.1290"
+//    // implementation "com.qq.e.union:datadetect:4.420.1290"
 //    implementation "androidx.legacy:legacy-support-v4:1.0.0"
 //
 //    // Mobrain-KuaiShou
