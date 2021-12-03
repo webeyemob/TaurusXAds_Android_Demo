@@ -84,7 +84,7 @@
     <remote-repository>
       <option name="id" value="D:\Android\sdk\extras\android\m2repository" />
       <option name="name" value="D:\Android\sdk\extras\android\m2repository" />
-      <option name="url" value="file:/D:/Android/sdk/extras/android/m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../Android/sdk/extras/android/m2repository" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven" />
@@ -94,7 +94,7 @@
     <remote-repository>
       <option name="id" value="D:\Android\sdk\extras\m2repository" />
       <option name="name" value="D:\Android\sdk\extras\m2repository" />
-      <option name="url" value="file:/D:/Android/sdk/extras/m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../Android/sdk/extras/m2repository" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven2" />
@@ -104,7 +104,7 @@
     <remote-repository>
       <option name="id" value="D:\Android\sdk\extras\google\m2repository" />
       <option name="name" value="D:\Android\sdk\extras\google\m2repository" />
-      <option name="url" value="file:/D:/Android/sdk/extras/google/m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../Android/sdk/extras/google/m2repository" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven3" />
@@ -345,6 +345,31 @@
       <option name="id" value="maven6" />
       <option name="name" value="maven6" />
       <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="file:/$PROJECT_DIR$/../Upload-Go" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven5" />
+      <option name="name" value="maven5" />
+      <option name="url" value="file:/$PROJECT_DIR$/../Upload-Core" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="file:/$PROJECT_DIR$/Upload-Go" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven5" />
+      <option name="name" value="maven5" />
+      <option name="url" value="file:/$PROJECT_DIR$/Upload-Core" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="file:/$PROJECT_DIR$/Upload-Mediation/" />
     </remote-repository>
   </component>
 </project>

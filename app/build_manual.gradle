@@ -125,7 +125,7 @@ dependencies {
     implementation "com.taurusx.ads:tzsdk_core:3.0.1"
     implementation "com.taurusx.ads:tzsdk_coral:2.0.1"
     implementation "com.taurusx.ads:tzsdk_reporter:3.0.1"
-    implementation "com.qq.e.union:union:4.380.1250"
+//    implementation "com.qq.e.union:union:4.380.1250"
     implementation "com.android.support:support-v4:26.1.0"
 
     // TopOn
@@ -309,21 +309,21 @@ dependencies {
 //    implementation "com.taurusx.ads:windAd:3.4.1"
 
     // YLHM-Base
-    implementation "com.taurusx.ads:ylhm_adapter_base:1.0"
-    implementation "com.taurusx.ads:mediation_gdt:4.420.1290.0"
-//    implementation "com.taurusx.ads:tx_prefer:4.421.1291"
+//    implementation "com.taurusx.ads:ylhm_adapter_base:1.1"
+//    implementation "com.taurusx.ads:mediation_gdt:4.431.1301.0"
+//    implementation "com.taurusx.ads:tx_prefer:4.431.1301"
 
 //    // YLHM-Baidu
-//    implementation "com.taurusx.ads:ylhm_adapter_baidu:9.16.0"
-//    implementation "com.taurusx.ads:baidu_mobads_sdk:9.16"
+//    implementation "com.taurusx.ads:ylhm_adapter_baidu:9.17.0"
+//    implementation "com.taurusx.ads:baidu_mobads_sdk:9.17"
 //
 //    // YLHM-KuaiShou
-//    implementation "com.taurusx.ads:ylhm_adapter_kuaishou:3.3.16.0"
-//    implementation "com.taurusx.ads:ks_adsdk:3.3.16"
+//    implementation "com.taurusx.ads:ylhm_adapter_kuaishou:3.3.17.1.0"
+//    implementation "com.taurusx.ads:ks_adsdk:3.3.17.1"
 //
 //    // YLHM-TouTiao
-//    implementation "com.taurusx.ads:ylhm_adapter_toutiao:4.0.0.3.0"
-//    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.0.0.3"
+//    implementation "com.taurusx.ads:ylhm_adapter_toutiao:4.1.0.2.0"
+//    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.1.0.2"
 
     // YKY
     implementation "com.taurusx.ads:mediation_yky:2.2.0.36.0"
