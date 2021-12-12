@@ -554,12 +554,10 @@
         "Express FullScreenVideo Horizontal": "f2c37e09-3151-49a8-a3da-f5c397306dd9"
       },
       "native": {
-        "Custom FeedList": "e3945699-915e-4d57-8abf-ebf599e10bf5",
-        "Express FeedList": "0a1e4246-d8cb-4fb1-9bba-36759d056ac4"
+        "Custom FeedList": "e3945699-915e-4d57-8abf-ebf599e10bf5"
       },
       "feedlist": {
-        "Custom FeedList": "354e15b8-9168-4a15-a419-c775f9325fb5",
-        "Express FeedList": "88529901-1668-4e9d-8d6b-1ffd43e92ad4"
+        "Custom FeedList": "354e15b8-9168-4a15-a419-c775f9325fb5"
       },
       "rewarded": {
         "RewardedVideo Vertical": "7ef22fb6-1b63-4dce-914a-943f1fb0914f",
