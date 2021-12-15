@@ -84,7 +84,7 @@ dependencies {
     // ####################################### China Network #######################################
     if (oversea) {
         // Pangle
-        implementation "com.taurusx.ads:mediation_pangle:4.1.1.5.0"
+        implementation "com.taurusx.ads:mediation_pangle:4.1.1.5.1"
         implementation "com.pangle.global:ads-sdk:4.1.1.5"
     } else {
         // TikTok
