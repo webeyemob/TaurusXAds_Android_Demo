@@ -240,7 +240,7 @@ dependencies {
     }
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:3.0.1.1.1"
+    implementation "com.taurusx.ads:mediation_mobrain:3.0.1.1.3"
     implementation "com.taurusx.ads:mobrain:3.0.1.1"
 
 //    // Mobrain-Toutiao
@@ -252,7 +252,7 @@ dependencies {
 //    // Mobrain-GDT
 //    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.420.1290.1"
 //    implementation "com.taurusx.ads:mediation_gdt:4.420.1290.1"
-//    implementation "com.qq.e.union:union:4.420.1290"
+    implementation "com.qq.e.union:union:4.420.1290"
 //    // 如果要使用数据上报 SDK，请使用 datadetect 代替 union
 //    // implementation "com.qq.e.union:datadetect:4.420.1290"
 //    implementation "androidx.legacy:legacy-support-v4:1.0.0"
@@ -326,8 +326,8 @@ dependencies {
 //    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.1.0.2"
 
     // YKY
-    implementation "com.taurusx.ads:mediation_yky:2.2.0.36.0"
-    implementation "com.taurusx.ads:klevin:2.2.0.36"
+    implementation "com.taurusx.ads:mediation_yky:2.3.0.17.0"
+    implementation "com.taurusx.ads:klevin:2.3.0.17"
     implementation "com.android.support:appcompat-v7:28.0.0"
 
     // QTT
