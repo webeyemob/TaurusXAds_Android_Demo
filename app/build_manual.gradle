@@ -67,12 +67,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.7.3"
+        implementation "com.taurusx.ads:core-oversea:2.7.4"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.4.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.7.3"
+        implementation "com.taurusx.ads:core:2.7.4"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.5.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
@@ -345,7 +345,7 @@ dependencies {
 
     // ####################################### Other Network #######################################
     // AppLovin Max
-    implementation "com.taurusx.ads:mediation_applovinmax:10.3.5.0"
+    implementation "com.taurusx.ads:mediation_applovinmax:10.3.5.4"
     implementation "com.applovin:applovin-sdk:10.3.5"
     implementation "com.google.android.gms:play-services-ads:17.2.1"
 
