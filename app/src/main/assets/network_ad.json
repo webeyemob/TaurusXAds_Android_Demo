@@ -105,6 +105,28 @@
       }
     },
     {
+      "adName": "SAN",
+      "banner": {
+        "Banner 320*50": "b9785487-cdad-48e2-95a8-fc62c8625724",
+        "Banner 300*250": "78d69cbd-731d-4f56-91b2-2acb58ed76d9"
+      },
+      "interstitial": {
+        "Interstitial": "6d78d530-8295-4ada-ba41-ed26ecbaa766"
+      },
+      "rewarded": {
+        "RewardedVideo": "1424370f-7299-4547-ad7f-322cf761aae9"
+      },
+      "feedlist": {
+        "FeedList": "dc5eb46f-09fd-481f-90f6-cff1715e1fcc"
+      },
+      "mixview": {
+        "MixView": "8bb0fd7c-fbe3-4afc-91c6-b8963ef33f76"
+      },
+      "mixfull": {
+        "MixFullScreen": "19ef26a0-9a49-4a2b-a4b7-a13ea1ccfaae"
+      }
+    },
+    {
       "adName": "Tuia",
       "banner": {
         "Banner 320*50": "dc0582a8-48f5-43b2-b512-bd742d30a5cb",

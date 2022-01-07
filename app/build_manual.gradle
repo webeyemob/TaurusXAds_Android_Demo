@@ -11,8 +11,11 @@ android {
             // Jad
             // applicationId "com.jd.sdkceshiandroid"
 
+            // SAN
+            // applicationId "com.san.sansample"
+
             // YLMH
-//            applicationId "com.dzddz.lxddz"
+            // applicationId "com.dzddz.lxddz"
 
             minSdkVersion 21
             targetSdkVersion 28
@@ -67,12 +70,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.7.4"
+        implementation "com.taurusx.ads:core-oversea:2.7.5"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.4.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.7.4"
+        implementation "com.taurusx.ads:core:2.7.5"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.5.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
@@ -351,6 +354,10 @@ dependencies {
 
     // Prebid
     implementation "com.taurusx.ads:mediation_prebid:1.5.1"
+
+    // SAN
+    implementation "com.taurusx.ads:mediation_san:3.4.0.0"
+    implementation "com.myadsget:san-sdk:3.4.0"
 
     // TradPlus
 //    implementation 'com.taurusx.ads:mediation_tradplus:6.9.80.1.1'
