@@ -356,7 +356,7 @@ dependencies {
     implementation "com.taurusx.ads:mediation_prebid:1.5.1"
 
     // SAN
-    implementation "com.taurusx.ads:mediation_san:3.4.0.0"
+    implementation "com.taurusx.ads:mediation_san:3.4.0.1"
     implementation "com.myadsget:san-sdk:3.4.0"
 
     // TradPlus
