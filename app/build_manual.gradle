@@ -329,8 +329,8 @@ dependencies {
 //    implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.1.0.2"
 
     // YKY
-    implementation "com.taurusx.ads:mediation_yky:2.3.0.17.0"
-    implementation "com.taurusx.ads:klevin:2.3.0.17"
+    implementation "com.taurusx.ads:mediation_yky:2.4.1.10.0"
+    implementation "com.taurusx.ads:klevin:2.4.1.10"
     implementation "com.android.support:appcompat-v7:28.0.0"
 
     // QTT
