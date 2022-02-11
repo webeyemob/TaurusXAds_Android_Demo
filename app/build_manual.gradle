@@ -88,8 +88,8 @@ dependencies {
         implementation "com.pangle.global:ads-sdk:4.1.1.5"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:4.1.0.6.0"
-        implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.1.0.6"
+        implementation "com.taurusx.ads:mediation_toutiao:4.2.0.2.0"
+        implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.2.0.2"
         implementation "androidx.legacy:legacy-support-v4:1.0.0"
     }
 
@@ -101,13 +101,13 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:9.17.0"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:9.17"
+    implementation "com.taurusx.ads:mediation_baidu:9.18.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:9.18"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.16.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.16"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.19.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.19"
     // 如果要使用 KuaiShou 内容 SDK，请使用 kssdk_all 代替 ks_adsdk
     // implementation "com.taurusx.ads:kssdk_all:3.3.22"
     implementation 'com.google.android.material:material:1.2.1'
@@ -116,8 +116,8 @@ dependencies {
     implementation "com.google.code.gson:gson:2.8.6"
 
     // Sigmob
-    implementation 'com.taurusx.ads:mediation_sigmob:3.4.1.0'
-    implementation 'com.taurusx.ads:windAd:3.4.1'
+    implementation 'com.taurusx.ads:mediation_sigmob:3.5.3.0'
+    implementation 'com.taurusx.ads:windAd:3.5.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // 360
@@ -327,8 +327,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-ads:17.1.2"
 
     // Unity ads
-    implementation "com.taurusx.ads:mediation_unity:3.7.5.0"
-    implementation "com.unity3d.ads:unity-ads:3.7.5"
+    implementation "com.taurusx.ads:mediation_unity:4.0.0.0"
+    implementation "com.unity3d.ads:unity-ads:4.0.0"
 
     // Vungle
     implementation "com.taurusx.ads:mediation_vungle:6.9.1.0"
