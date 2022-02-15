@@ -261,13 +261,13 @@ dependencies {
 //    implementation "androidx.legacy:legacy-support-v4:1.0.0"
 //
 //    // Mobrain-KuaiShou
-//    implementation "com.taurusx.ads:mobrain_adapter_kuaishou:3.3.19.1"
-//    implementation "com.taurusx.ads:mediation_kuaishou:3.3.19.0"
-//    implementation "com.taurusx.ads:ks_adsdk:3.3.19"
-//    implementation "com.google.android.material:material:1.1.0"
-//    implementation "androidx.appcompat:appcompat:1.2.0-alpha02"
-//    implementation "androidx.recyclerview:recyclerview:1.1.0"
-//    implementation "com.google.code.gson:gson:2.8.6"
+    implementation "com.taurusx.ads:mobrain_adapter_kuaishou:3.3.19.1"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.19.0"
+    implementation "com.taurusx.ads:kssdk_all:3.3.27"
+    implementation "com.google.android.material:material:1.1.0"
+    implementation "androidx.appcompat:appcompat:1.2.0-alpha02"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "com.google.code.gson:gson:2.8.6"
 //
 //    // Mobrain-Baidu
 //    implementation "com.taurusx.ads:mobrain_adapter_baidu:9.18.1"
@@ -281,25 +281,25 @@ dependencies {
 //    implementation "com.taurusx.ads:unity-ads:4.0.0"
 //
 //    // Mobrain-Mintegral
-    implementation "com.taurusx.ads:mobrain_adapter_mintegral:15.8.07.0"
-    if (!oversea) {
-        implementation "com.taurusx.ads:mediation_mintegral:15.8.07.0"
-        implementation "com.mbridge.msdk.support:videojs:15.8.07"
-        implementation "com.mbridge.msdk.support:mbjscommon:15.8.07"
-        implementation "com.mbridge.msdk.support:playercommon:15.8.07"
-        implementation "com.mbridge.msdk.support:reward:15.8.07"
-        implementation "com.mbridge.msdk.support:videocommon:15.8.07"
-        implementation "com.mbridge.msdk.support:chinasame:15.8.07"
-        implementation "com.mbridge.msdk.support:interstitialvideo:15.8.07"
-        implementation "com.mbridge.msdk.support:mbnative:15.8.07"
-        implementation "com.mbridge.msdk.support:nativeex:15.8.07"
-        implementation "com.mbridge.msdk.support:mbnativeadvanced:15.8.07"
-        implementation "com.mbridge.msdk.support:mbsplash:15.8.07"
-        implementation "com.mbridge.msdk.support:interstitial:15.8.07"
-        implementation "com.mbridge.msdk.support:mbbanner:15.8.07"
-        implementation "com.mbridge.msdk.support:interactiveads:15.8.07"
-        implementation "com.mbridge.msdk.support:mbbid:15.8.07"
-    }
+//    implementation "com.taurusx.ads:mobrain_adapter_mintegral:15.8.07.0"
+//    if (!oversea) {
+//        implementation "com.taurusx.ads:mediation_mintegral:15.8.07.0"
+//        implementation "com.mbridge.msdk.support:videojs:15.8.07"
+//        implementation "com.mbridge.msdk.support:mbjscommon:15.8.07"
+//        implementation "com.mbridge.msdk.support:playercommon:15.8.07"
+//        implementation "com.mbridge.msdk.support:reward:15.8.07"
+//        implementation "com.mbridge.msdk.support:videocommon:15.8.07"
+//        implementation "com.mbridge.msdk.support:chinasame:15.8.07"
+//        implementation "com.mbridge.msdk.support:interstitialvideo:15.8.07"
+//        implementation "com.mbridge.msdk.support:mbnative:15.8.07"
+//        implementation "com.mbridge.msdk.support:nativeex:15.8.07"
+//        implementation "com.mbridge.msdk.support:mbnativeadvanced:15.8.07"
+//        implementation "com.mbridge.msdk.support:mbsplash:15.8.07"
+//        implementation "com.mbridge.msdk.support:interstitial:15.8.07"
+//        implementation "com.mbridge.msdk.support:mbbanner:15.8.07"
+//        implementation "com.mbridge.msdk.support:interactiveads:15.8.07"
+//        implementation "com.mbridge.msdk.support:mbbid:15.8.07"
+//    }
 //
 //    // Mobrain-YKY
 //    implementation "com.taurusx.ads:mobrain_adapter_yky:2.4.1.10.0"
