@@ -10,7 +10,6 @@ import androidx.annotation.Nullable;
 
 import com.baidu.mobads.sdk.api.ArticleInfo;
 import com.qq.e.ads.cfg.VideoOption;
-import com.qq.e.ads.nativ.express2.VideoOption2;
 import com.taurusx.ads.core.api.ad.config.AdSize;
 import com.taurusx.ads.core.api.ad.feedlist.Feed;
 import com.taurusx.ads.core.api.ad.feedlist.FeedList;
@@ -29,7 +28,6 @@ import com.taurusx.ads.demo.utils.Utils;
 import com.taurusx.ads.mediation.networkconfig.BaiduFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.GDTCustom2_0FeedListConfig;
-import com.taurusx.ads.mediation.networkconfig.GDTExpress2_0FeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.GDTExpressFeedListConfig;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouAppDownloadListener;
 import com.taurusx.ads.mediation.networkconfig.KuaiShouCustomFeedListConfig;
@@ -155,7 +153,6 @@ public class FeedListActivity extends BaseActivity {
                 .addConfig(createBaiduFeedListConfig())
                 .addConfig(createGDTCustom2_0FeedListConfig())
                 .addConfig(createGDTExpressFeedListConfig())
-                .addConfig(createGDTExpress2_0FeedListConfig())
                 .addConfig(createKuaiShouCustomFeedListConfig())
                 .addConfig(createTikTokCustomFeedListConfig())
                 .addConfig(createTikTokExpressFeedListConfig())
@@ -277,19 +274,6 @@ public class FeedListActivity extends BaseActivity {
                 // 此设置会影响广告填充，请谨慎设置。
                 // .setMinVideoDuration(5)
                 // .setMaxVideoDuration(60)
-                .build();
-    }
-
-    private GDTExpress2_0FeedListConfig createGDTExpress2_0FeedListConfig() {
-        return GDTExpress2_0FeedListConfig.Builder()
-                // 视频播放配置
-                .setVideoOption2(new VideoOption2.Builder()
-                        // .setXxx(Xxx)
-                        // 设置返回视频广告的视频时长，单位:秒，视频时长有效值范围为[5,60]。
-                        // 此设置会影响广告填充，请谨慎设置。
-                        // .setMinVideoDuration(5)
-                        // .setMaxVideoDuration(60)
-                        .build())
                 .build();
     }
 
