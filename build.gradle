@@ -17,6 +17,12 @@ buildscript {
 
 allprojects {
     repositories {
+        // Pangle
+        maven { url "https://artifact.bytedance.com/repository/pangle" }
+
+        // Alibc
+//        maven { url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/" }
+
         // For local test
         maven { url "../Upload-Sdk" }
         maven { url "../Upload-Mediation" }
@@ -33,9 +39,6 @@ allprojects {
         maven { url "https://bitbucket.org/maven-taurusxads/taurusxads/raw/release" }
         maven { url "https://bitbucket.org/sdkcenter/sdkcenter/raw/release" }
         maven { url "http://nexus.webeyemobi.com/repository/webeye" }
-
-        // Alibc
-        maven { url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/" }
 
         // Mintegral
         maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_support" }
