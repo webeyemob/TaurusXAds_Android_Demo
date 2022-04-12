@@ -94,20 +94,20 @@ dependencies {
     }
 
     // Tencent GDT
-    implementation "com.taurusx.ads:mediation_gdt:4.450.1320.0"
-//    implementation "com.qq.e.union:union:4.450.1320"
+    implementation "com.taurusx.ads:mediation_gdt:4.460.1330.0"
+//    implementation "com.qq.e.union:union:4.460.1330"
     // 如果要使用数据上报 SDK，用 datadetect 代替 union
-     implementation "com.taurusx.ads:tx_prefer:4.450.1320"
+     implementation "com.taurusx.ads:tx_prefer:4.460.1330"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:9.18.0"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:9.18"
+    implementation "com.taurusx.ads:mediation_baidu:9.202.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:9.202"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.19.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.19"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.22.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.22"
     // 如果要使用 KuaiShou 内容 SDK，请使用 kssdk_all 代替 ks_adsdk
 //     implementation "com.taurusx.ads:kssdk_all:3.3.27"
     implementation 'com.google.android.material:material:1.2.1'
@@ -116,8 +116,9 @@ dependencies {
     implementation "com.google.code.gson:gson:2.8.6"
 
     // Sigmob
-    implementation 'com.taurusx.ads:mediation_sigmob:3.5.3.0'
-    implementation 'com.taurusx.ads:windAd:3.5.3'
+    implementation 'com.taurusx.ads:mediation_sigmob:4.1.0.0'
+    implementation 'com.taurusx.ads:windAd:4.1.0'
+    implementation 'com.taurusx.ads:wind_common:1.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // 360
