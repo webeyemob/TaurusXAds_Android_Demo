@@ -88,8 +88,8 @@ dependencies {
         implementation "com.pangle.global:ads-sdk:4.1.1.5"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:4.3.0.1.0"
-        implementation "com.pangle.cn:ads-sdk-pro:4.3.0.1"
+        implementation "com.taurusx.ads:mediation_toutiao:4.4.0.2.0"
+        implementation "com.pangle.cn:ads-sdk-pro:4.4.0.2"
         implementation "androidx.legacy:legacy-support-v4:1.0.0"
     }
 
@@ -116,9 +116,8 @@ dependencies {
     implementation "com.google.code.gson:gson:2.8.6"
 
     // Sigmob
-    implementation 'com.taurusx.ads:mediation_sigmob:4.1.0.0'
-    implementation 'com.taurusx.ads:windAd:4.1.0'
-    implementation 'com.taurusx.ads:wind_common:1.2.0'
+    implementation 'com.taurusx.ads:mediation_sigmob:3.5.6.0'
+    implementation 'com.taurusx.ads:windAd:3.5.6'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // 360
