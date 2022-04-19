@@ -205,6 +205,21 @@
       }
     },
     {
+      "adName": "Mint",
+      "banner": {
+        "Banner": "9f1f1be7-1933-4521-a88d-d514e89ced76"
+      },
+      "interstitial": {
+        "Interstitial": "bd5d7a2a-60d3-457d-9e32-a2da2602d7b3"
+      },
+      "feedlist": {
+        "FeedList": "3462a83f-1406-4b2f-aa86-2938086bb9bc"
+      },
+      "rewarded": {
+        "RewardedVideo": "3c430d42-974f-4124-9e38-714e8ed29f2b"
+      }
+    },
+    {
       "adName": "Mobrain-TikTok",
       "banner": {
         "Banner 320*50": "7325e51b-a756-4227-bca2-67a8e5efe32f",
