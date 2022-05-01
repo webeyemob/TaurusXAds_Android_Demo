@@ -301,7 +301,7 @@ dependencies {
 //    // Mobrain-GDT
 //    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.460.1330.0"
 //    implementation "com.taurusx.ads:mediation_gdt:4.460.1330.0"
-//    implementation "com.qq.e.union:union:4.460.1330"
+    implementation "com.qq.e.union:union:4.460.1330"
     // 如果要使用数据上报 SDK，请使用 datadetect 代替 union
     // implementation "com.taurusx.ads:tx_prefer:4.460.1330"
 //    implementation "androidx.legacy:legacy-support-v4:1.0.0"
@@ -394,9 +394,9 @@ dependencies {
 
     // ####################################### Other Network #######################################
     // AppLovin Max
-//    implementation "com.taurusx.ads:mediation_applovinmax:11.3.3.0"
-//    implementation "com.applovin:applovin-sdk:11.3.3"
-//    implementation "com.google.android.gms:play-services-ads:17.2.1"
+    implementation "com.taurusx.ads:mediation_applovinmax:11.3.3.1"
+    implementation "com.applovin:applovin-sdk:11.3.3"
+    implementation "com.google.android.gms:play-services-ads:17.2.1"
 
     // Prebid
     implementation "com.taurusx.ads:mediation_prebid:1.5.1"
