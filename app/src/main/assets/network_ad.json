@@ -354,7 +354,10 @@
         "RewardedVideo": "ee72238c-8b7e-4ec4-b3c7-3a3beb93a0b3"
       },
       "banner": {
-        "banner": "2ba694a6-307c-4f70-807b-53de36eaa9cb"
+        "Banner": "2ba694a6-307c-4f70-807b-53de36eaa9cb"
+      },
+      "feedlist": {
+        "FeedList": "d2b5f5ba-a63f-4b47-aed6-8560be39a5a9"
       },
       "splash": {
         "Splash": "ae0637f3-8c04-414d-8d2e-5fe5c08b3146"
