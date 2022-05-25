@@ -88,8 +88,8 @@ dependencies {
         implementation "com.pangle.global:ads-sdk:4.1.1.5"
     } else {
         // TikTok
-        implementation "com.taurusx.ads:mediation_toutiao:4.4.0.2.0"
-        implementation "com.pangle.cn:ads-sdk-pro:4.4.0.2"
+        implementation "com.taurusx.ads:mediation_toutiao:4.5.1.1.0"
+        implementation "com.pangle.cn:ads-sdk-pro:4.5.1.1"
         implementation "androidx.legacy:legacy-support-v4:1.0.0"
     }
 
@@ -101,13 +101,13 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Baidu
-    implementation "com.taurusx.ads:mediation_baidu:9.202.0"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:9.202"
+    implementation "com.taurusx.ads:mediation_baidu:9.21.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:9.21"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 
     // KuaiShou
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.22.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.22"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.24.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.24"
     // 如果要使用 KuaiShou 内容 SDK，请使用 kssdk_all 代替 ks_adsdk
 //     implementation "com.taurusx.ads:kssdk_all:3.3.27"
     implementation 'com.google.android.material:material:1.2.1'
