@@ -215,22 +215,22 @@ dependencies {
 //        implementation "com.mintegral.msdk.oversea:interactiveads:15.4.51"
 //        implementation "com.mintegral.msdk.oversea:mtgbid:15.4.31"
     } else {
-//        implementation "com.taurusx.ads:mediation_mintegral:16.0.37.0"
-//        implementation "com.mbridge.msdk.support:videojs:16.0.37"
-//        implementation "com.mbridge.msdk.support:mbjscommon:16.0.37"
-//        implementation "com.mbridge.msdk.support:playercommon:16.0.37"
-//        implementation "com.mbridge.msdk.support:reward:16.0.37"
-//        implementation "com.mbridge.msdk.support:videocommon:16.0.37"
-//        implementation "com.mbridge.msdk.support:chinasame:16.0.37"
-//        implementation "com.mbridge.msdk.support:interstitialvideo:16.0.37"
-//        implementation "com.mbridge.msdk.support:mbnative:16.0.37"
-//        implementation "com.mbridge.msdk.support:nativeex:16.0.37"
-//        implementation "com.mbridge.msdk.support:mbnativeadvanced:16.0.37"
-//        implementation "com.mbridge.msdk.support:mbsplash:16.0.37"
-//        implementation "com.mbridge.msdk.support:interstitial:16.0.37"
-//        implementation "com.mbridge.msdk.support:mbbanner:16.0.37"
-//        implementation "com.mbridge.msdk.support:newinterstitial:16.0.37"
-//        implementation "com.mbridge.msdk.support:mbbid:16.0.37"
+        implementation "com.taurusx.ads:mediation_mintegral:16.1.17.0"
+        implementation "com.mbridge.msdk.support:videojs:16.1.17"
+        implementation "com.mbridge.msdk.support:mbjscommon:16.1.17"
+        implementation "com.mbridge.msdk.support:playercommon:16.1.17"
+        implementation "com.mbridge.msdk.support:reward:16.1.17"
+        implementation "com.mbridge.msdk.support:videocommon:16.1.17"
+        implementation "com.mbridge.msdk.support:chinasame:16.1.17"
+        implementation "com.mbridge.msdk.support:interstitialvideo:16.1.17"
+        implementation "com.mbridge.msdk.support:mbnative:16.1.17"
+        implementation "com.mbridge.msdk.support:nativeex:16.1.17"
+        implementation "com.mbridge.msdk.support:mbnativeadvanced:16.1.17"
+        implementation "com.mbridge.msdk.support:mbsplash:16.1.17"
+        implementation "com.mbridge.msdk.support:interstitial:16.1.17"
+        implementation "com.mbridge.msdk.support:mbbanner:16.1.17"
+        implementation "com.mbridge.msdk.support:newinterstitial:16.1.17"
+        implementation "com.mbridge.msdk.support:mbbid:16.1.17"
 
         // 已经适配 15.5.57，但需要和 Mobrain 保持相同版本
 //        implementation "com.taurusx.ads:mediation_mintegral:15.7.57.0"
@@ -349,8 +349,8 @@ dependencies {
 //
 //    // Mobrain-YKY
 //    implementation "com.taurusx.ads:mobrain_adapter_yky:2.5.1.6.2"
-    implementation "com.taurusx.ads:mediation_yky:2.6.2.7.0"
-    implementation "com.taurusx.ads:klevin:2.6.2.7"
+//    implementation "com.taurusx.ads:mediation_yky:2.6.2.7.0"
+//    implementation "com.taurusx.ads:klevin:2.6.2.7"
 //
 //    // Mobrain-Sigmob
 //    implementation "com.taurusx.ads:mobrain_adapter_sigmob:3.5.6.2"
@@ -360,7 +360,7 @@ dependencies {
     // YLHM-Base
     implementation "com.taurusx.ads:ylhm_adapter_base:1.4"
     implementation "com.taurusx.ads:mediation_gdt:4.462.1332.0"
-    implementation "com.taurusx.ads:tx_prefer:4.462.1332"
+//    implementation "com.taurusx.ads:tx_prefer:4.462.1332"
 
 //    // YLHM-Baidu
     implementation "com.taurusx.ads:ylhm_adapter_baidu:9.202.0"
@@ -375,8 +375,8 @@ dependencies {
     implementation "com.taurusx.ads:toutiao_open_ad_sdk:4.3.0.8"
 
     // YKY
-    implementation "com.taurusx.ads:mediation_yky:2.6.2.7.0"
-    implementation "com.taurusx.ads:klevin:2.6.2.7"
+    implementation "com.taurusx.ads:mediation_yky:2.7.2.10.0"
+    implementation "com.taurusx.ads:klevin:2.7.2.10"
     implementation "com.android.support:appcompat-v7:28.0.0"
 
     // QTT
