@@ -266,16 +266,14 @@
       },
       "interstitial": {
         "Interstitial": "1d408674-5dbc-4c6f-b634-8532f5596c60",
-        "Interstitial Full Ad": "cc39dd1c-959f-41e5-8a81-5d7d713c12e1",
-        "FullScreenVideo": "a0b45afe-ce60-420f-8773-c12370581bf5"
+        "Interstitial Full Ad": "cc39dd1c-959f-41e5-8a81-5d7d713c12e1"
       },
       "feedlist": {
         "Custom FeedList": "ee66e925-6600-4a86-bc75-a03310e7846b",
         "Express FeedList": "5c515397-4377-4e8d-8dbc-310299160b11"
       },
       "rewarded": {
-        "RewardedVideo": "6dedb91c-709f-4b53-aaa2-b5e142a222ba",
-        "Express RewardedVideo": "c92a46b9-c7b1-4433-852d-6d135b48f30f"
+        "RewardedVideo": "6dedb91c-709f-4b53-aaa2-b5e142a222ba"
       },
       "splash": {
         "Splash": "2f9cb08b-0a77-4853-9f8e-9ef5a935a1f6"
