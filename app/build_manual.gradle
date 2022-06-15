@@ -406,7 +406,7 @@ dependencies {
     implementation "com.myadsget:san-sdk:3.4.0"
 
     // TradPlus
-    implementation 'com.taurusx.ads:mediation_tradplus:7.8.0.1.0'
+    implementation 'com.taurusx.ads:mediation_tradplus:7.8.0.1.1'
     implementation 'com.tradplusad:tradplus:7.8.0.1'
     implementation 'com.google.android.ads.consent:consent-library:1.0.6'
     // TradPlus-AdMob
