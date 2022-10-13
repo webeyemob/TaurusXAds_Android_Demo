@@ -73,12 +73,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.8.2"
+        implementation "com.taurusx.ads:core-oversea:2.8.8"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.4.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.8.2"
+        implementation "com.taurusx.ads:core:2.8.8"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.5.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
@@ -289,74 +289,74 @@ dependencies {
 //    implementation 'com.mi.dev.mint:mintegral-adapter:15.7.51.1'
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:3.6.0.1.0"
-    implementation "com.taurusx.ads:mobrain:3.6.0.1"
+    implementation "com.taurusx.ads:mediation_mobrain:3.7.0.3.0"
+    implementation "com.taurusx.ads:mobrain:3.7.0.3"
 
 //    // Mobrain-Toutiao
-    implementation "com.taurusx.ads:mobrain_adapter_toutiao:4.6.0.7.3"
-    implementation "com.taurusx.ads:mediation_toutiao:4.6.0.7.0"
-    implementation "com.pangle.cn:ads-sdk-pro:4.6.0.7"
+    implementation "com.taurusx.ads:mobrain_adapter_toutiao:4.8.0.8.2"
+    implementation "com.taurusx.ads:mediation_toutiao:4.8.0.8.0"
+    implementation "com.pangle.cn:ads-sdk-pro:4.8.0.8"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 //
 //    // Mobrain-GDT
-    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.482.1352.0"
-    implementation "com.taurusx.ads:mediation_gdt:4.482.1352.0"
-    implementation "com.qq.e.union:union:4.482.1352"
+    implementation "com.taurusx.ads:mobrain_adapter_gdt:4.491.1361.0"
+    implementation "com.taurusx.ads:mediation_gdt:4.491.1361.0"
+    implementation "com.qq.e.union:union:4.491.1361"
     // 如果要使用数据上报 SDK，请使用 datadetect 代替 union
 //     implementation "com.taurusx.ads:tx_prefer:4.460.1330"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Mobrain-KuaiShou
-    implementation "com.taurusx.ads:mobrain_adapter_kuaishou:3.3.27.0"
-    implementation "com.taurusx.ads:mediation_kuaishou:3.3.27.0"
-    implementation "com.taurusx.ads:ks_adsdk:3.3.27"
+    implementation "com.taurusx.ads:mobrain_adapter_kuaishou:3.3.31.0"
+    implementation "com.taurusx.ads:mediation_kuaishou:3.3.31.0"
+    implementation "com.taurusx.ads:ks_adsdk:3.3.31"
     implementation "com.google.android.material:material:1.1.0"
     implementation "androidx.appcompat:appcompat:1.2.0-alpha02"
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation "com.google.code.gson:gson:2.8.6"
 //
 //    // Mobrain-Baidu
-    implementation "com.taurusx.ads:mobrain_adapter_baidu:9.23.0"
-    implementation "com.taurusx.ads:mediation_baidu:9.23.0"
-    implementation "com.taurusx.ads:baidu_mobads_sdk:9.23"
+    implementation "com.taurusx.ads:mobrain_adapter_baidu:9.241.0"
+    implementation "com.taurusx.ads:mediation_baidu:9.241.0"
+    implementation "com.taurusx.ads:baidu_mobads_sdk:9.241"
     implementation "com.taurusx.ads:miit_mdid:1.0.25"
 //
 //    // Mobrain-Unity Ads
-    implementation "com.taurusx.ads:mobrain_adapter_unity:4.2.1.4"
-    implementation "com.taurusx.ads:mediation_unity:4.2.1.0"
-    implementation "com.taurusx.ads:unity-ads:4.2.1"
+    implementation "com.taurusx.ads:mobrain_adapter_unity:4.3.0.3"
+    implementation "com.taurusx.ads:mediation_unity:4.3.0.0"
+    implementation "com.taurusx.ads:unity-ads:4.3.0"
 //
 //    // Mobrain-Mintegral
-//    implementation "com.taurusx.ads:mobrain_adapter_mintegral:16.1.17.0"
+    implementation "com.taurusx.ads:mobrain_adapter_mintegral:16.2.27.3"
     if (!oversea) {
-        implementation "com.taurusx.ads:mediation_mintegral:16.1.97.0"
-        implementation "com.mbridge.msdk.support:videojs:16.1.97"
-        implementation "com.mbridge.msdk.support:mbjscommon:16.1.97"
-        implementation "com.mbridge.msdk.support:playercommon:16.1.97"
-        implementation "com.mbridge.msdk.support:reward:16.1.97"
-        implementation "com.mbridge.msdk.support:videocommon:16.1.97"
-        implementation "com.mbridge.msdk.support:chinasame:16.1.97"
-        implementation "com.mbridge.msdk.support:interstitialvideo:16.1.97"
-        implementation "com.mbridge.msdk.support:mbnative:16.1.97"
-        implementation "com.mbridge.msdk.support:nativeex:16.1.97"
-        implementation "com.mbridge.msdk.support:mbnativeadvanced:16.1.97"
-        implementation "com.mbridge.msdk.support:mbsplash:16.1.97"
-        implementation "com.mbridge.msdk.support:interstitial:16.1.97"
-        implementation "com.mbridge.msdk.support:mbbanner:16.1.97"
-        implementation "com.mbridge.msdk.support:newinterstitial:16.1.97"
-        implementation "com.mbridge.msdk.support:mbbid:16.1.97"
+        implementation "com.taurusx.ads:mediation_mintegral:16.2.27.0"
+        implementation "com.mbridge.msdk.support:videojs:16.2.27"
+        implementation "com.mbridge.msdk.support:mbjscommon:16.2.27"
+        implementation "com.mbridge.msdk.support:playercommon:16.2.27"
+        implementation "com.mbridge.msdk.support:reward:16.2.27"
+        implementation "com.mbridge.msdk.support:videocommon:16.2.27"
+        implementation "com.mbridge.msdk.support:chinasame:16.2.27"
+        implementation "com.mbridge.msdk.support:interstitialvideo:16.2.27"
+        implementation "com.mbridge.msdk.support:mbnative:16.2.27"
+        implementation "com.mbridge.msdk.support:nativeex:16.2.27"
+        implementation "com.mbridge.msdk.support:mbnativeadvanced:16.2.27"
+        implementation "com.mbridge.msdk.support:mbsplash:16.2.27"
+        implementation "com.mbridge.msdk.support:interstitial:16.2.27"
+        implementation "com.mbridge.msdk.support:mbbanner:16.2.27"
+        implementation "com.mbridge.msdk.support:newinterstitial:16.2.27"
+        implementation "com.mbridge.msdk.support:mbbid:16.2.27"
     }
 //
 //    // Mobrain-YKY
-    implementation "com.taurusx.ads:mobrain_adapter_yky:2.9.0.9.1"
-    implementation "com.taurusx.ads:mediation_yky:2.9.0.9.0"
-    implementation "com.taurusx.ads:klevin:2.9.0.9"
+    implementation "com.taurusx.ads:mobrain_adapter_yky:2.9.1.5.3"
+    implementation "com.taurusx.ads:mediation_yky:2.9.1.5.0"
+    implementation "com.taurusx.ads:klevin:2.9.1.5"
 //
 //    // Mobrain-Sigmob
-    implementation "com.taurusx.ads:mobrain_adapter_sigmob:4.4.0.1"
-    implementation "com.taurusx.ads:mediation_sigmob:4.4.0.0"
-    implementation "com.taurusx.ads:windAd:4.4.0"
-    implementation "com.taurusx.ads:wind_common:1.3.4"
+    implementation "com.taurusx.ads:mobrain_adapter_sigmob:4.5.0.2"
+    implementation "com.taurusx.ads:mediation_sigmob:4.5.0.0"
+    implementation "com.taurusx.ads:windAd:4.5.0"
+    implementation "com.taurusx.ads:wind_common:1.3.5"
 
     // YLHM-Base
     implementation "com.taurusx.ads:ylhm_adapter_base:1.4"
