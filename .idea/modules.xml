@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TaurusXDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/TaurusXDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TaurusXDemo.app.unitTest.iml" />
     </modules>
   </component>
 </project>
