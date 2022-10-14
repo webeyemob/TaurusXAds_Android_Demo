@@ -91,6 +91,9 @@
     },
     {
       "adName": "QTT",
+      "interstitial" : {
+        "Interstitial": "c79da88e-c20c-4359-8739-6d989aef7e85"
+      },
       "rewarded": {
         "RewardedVideo": "563d2f65-a186-48b9-bb2f-4e11ad213986"
       },

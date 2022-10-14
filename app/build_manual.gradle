@@ -381,8 +381,8 @@ dependencies {
     implementation "com.android.support:appcompat-v7:28.0.0"
 
     // QTT
-    implementation "com.taurusx.ads:mediation_qtt:3.414.10.379.0"
-    implementation "com.taurusx.ads:aiclk_nsdk:3.414.10.379_1"
+    implementation "com.taurusx.ads:mediation_qtt:3.439.10.409x.0"
+    implementation "com.taurusx.ads:aiclk_nsdk:3.439.10.409x"
 
     // MeiShu
 //    implementation "com.taurusx.ads:mediation_meishu:0.9.0.13.1"
