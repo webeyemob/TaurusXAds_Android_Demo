@@ -73,12 +73,12 @@ dependencies {
 
     if (oversea) {
         // 海外版
-        implementation "com.taurusx.ads:core-oversea:2.8.8"
+        implementation "com.taurusx.ads:core-oversea:2.9.0"
         implementation "com.satori.sdk:eventio-go-oversea:2.3.4.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.8.8"
+        implementation "com.taurusx.ads:core:2.9.0"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.5.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
@@ -118,8 +118,9 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Tuia
-    implementation "com.taurusx.ads:mediation_tuia:3.1.0.0.0"
-    implementation "com.tuia:sdk:3.1.0.0"
+    implementation "com.taurusx.ads:mediation_tuia:3.4.0.6.0"
+    implementation "com.taurusx.ads:tuia_sdk:3.4.0.6"
+    implementation "com.taurusx.ads:tuia_download:1.0.5"
     implementation "androidx.appcompat:appcompat:1.2.0-alpha02"
 
     // TMS

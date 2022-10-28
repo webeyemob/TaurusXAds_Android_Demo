@@ -134,32 +134,11 @@
     },
     {
       "adName": "Tuia",
-      "banner": {
-        "Banner 320*50": "dc0582a8-48f5-43b2-b512-bd742d30a5cb",
-        "Banner 320*100": "2cb34a0a-2c24-4531-b39b-ce0d5affcda0",
-        "Banner 300*250": "3bcdc32d-81f3-460b-a5ec-74d3aa90701e",
-        "Banner 468*60": "2b4100da-5128-466e-a215-2bb8c1eba27b",
-        "Banner 728*90": "9a9411b8-69bf-418d-925c-e26ab50041ac"
-      },
-      "interstitial": {
-        "Dialog": "6c8f8b68-0554-45a3-8849-11299d1862dc",
-        "Native Interstitial": "e573b170-5245-4830-88ea-139520953d84"
-      },
-      "feedlist": {
-        "Template": "8ac84c69-4527-4d91-bbda-3685c213b7f4",
-        "Custom": "a39befcf-933a-4ae4-9fe1-dead0ba30d6e",
-        "ICON": "85538214-c2b6-47a9-b64d-baf35194439d",
-        "Text Link": "640bd3de-38eb-4aa9-8c33-4004ce7234e0",
-        "Native Interstitial": "99efc587-3d14-40c5-8892-525ac5df04a4"
+      "rewarded": {
+        "RewardedVideo": "39f23fc3-3af3-4c8d-ba37-cd0b03c8a43d"
       },
       "splash": {
-        "Splash": "d6aed121-f09b-4bc2-8282-8eaa31b5f1c6"
-      },
-      "mixview": {
-        "MixView": "8b479150-ad1e-4839-a837-f192e625bb28"
-      },
-      "mixfull": {
-        "MixFullScreen": "bd0dd6cd-7410-4dc4-920c-902b5522a98d"
+        "Splash": "e62ee947-ab3b-4b1d-945a-b6fb34f9bd83"
       }
     },
     {
