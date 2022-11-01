@@ -118,7 +118,7 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Tuia
-    implementation "com.taurusx.ads:mediation_tuia:3.4.0.6.0"
+    implementation "com.taurusx.ads:mediation_tuia:3.4.0.6.1"
     implementation "com.taurusx.ads:tuia_sdk:3.4.0.6"
     implementation "com.taurusx.ads:tuia_download:1.0.5"
     implementation "androidx.appcompat:appcompat:1.2.0-alpha02"
