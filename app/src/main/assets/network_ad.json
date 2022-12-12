@@ -134,6 +134,10 @@
     },
     {
       "adName": "Tuia",
+      "interstitial": {
+        "Normal": "574adb3b-b91b-475e-b943-78983f543c1e",
+        "FullScreenVideo": "aa92bb6e-80ea-4bb9-b030-347ffc5c510b"
+      },
       "rewarded": {
         "RewardedVideo": "39f23fc3-3af3-4c8d-ba37-cd0b03c8a43d"
       },
