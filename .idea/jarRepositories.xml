@@ -381,5 +381,60 @@
       <option name="name" value="maven2" />
       <option name="url" value="file:/$PROJECT_DIR$/Upload-Sdk/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven25" />
+      <option name="name" value="maven25" />
+      <option name="url" value="https://android-sdk.is.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven36" />
+      <option name="name" value="maven36" />
+      <option name="url" value="https://gitee.com/waves_wb/ProbeSdk/raw/master/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven24" />
+      <option name="name" value="maven24" />
+      <option name="url" value="https://maven.display.io/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven35" />
+      <option name="name" value="maven35" />
+      <option name="url" value="https://verve.jfrog.io/artifactory/verve-gradle-release" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven33" />
+      <option name="name" value="maven33" />
+      <option name="url" value="https://sdk.tapjoy.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven16" />
+      <option name="name" value="maven16" />
+      <option name="url" value="https://bitbucket.org/maven-gametools/gametools/raw/release" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven28" />
+      <option name="name" value="maven28" />
+      <option name="url" value="https://fan-adn.github.io/nendSDK-Android-lib/library" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven34" />
+      <option name="name" value="maven34" />
+      <option name="url" value="https://artifact.bytedance.com/repository/Volcengine/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven18" />
+      <option name="name" value="maven18" />
+      <option name="url" value="https://bitbucket.org/maven-richox/richox/raw/release" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven19" />
+      <option name="name" value="maven19" />
+      <option name="url" value="https://repo1.maven.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven17" />
+      <option name="name" value="maven17" />
+      <option name="url" value="https://bitbucket.org/maven-fission/fission/raw/release" />
+    </remote-repository>
   </component>
 </project>

@@ -20,6 +20,9 @@ android {
             // Mint
 //             applicationId "com.wordtiles.topgame"
 
+            // vivo
+//            applicationId "com.vivo.adnet.demo.app"
+
             minSdkVersion 21
             targetSdkVersion 28
             versionCode 1
@@ -78,7 +81,7 @@ dependencies {
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
     } else {
         // 国内版
-        implementation "com.taurusx.ads:core:2.9.1"
+        implementation "com.taurusx.ads:core:2.9.2"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
         implementation "com.satori.sdk:eventio-go:2.3.5.0"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
@@ -290,8 +293,12 @@ dependencies {
 //    implementation 'com.mi.dev.mint:mintegral-adapter:15.7.51.1'
 
     // Mobrain
-    implementation "com.taurusx.ads:mediation_mobrain:3.7.0.3.0"
+    implementation "com.taurusx.ads:mediation_mobrain:3.7.0.3.2"
     implementation "com.taurusx.ads:mobrain:3.7.0.3"
+
+    implementation "com.taurusx.ads:mobrain_adapter_vivo:5.7.6.1.0"
+    implementation "com.taurusx.ads:miit_mdid:1.0.25"
+    implementation "com.taurusx.ads:vivo_open_ad:5.7.6.1"
 
 //    // Mobrain-Toutiao
     implementation "com.taurusx.ads:mobrain_adapter_toutiao:4.8.0.8.2"

@@ -266,6 +266,12 @@
       }
     },
     {
+      "adName": "Mobrain-vivo",
+      "rewarded": {
+        "RewardedVideo": "fd326c5a-5e70-431c-8dcf-3e35ba767bac"
+      }
+    },
+    {
       "adName": "Meishu",
       "rewarded": {
         "RewardedVideo(OpenUrl)": "8de275a1-40be-4760-aeef-514de9d3caa9",
