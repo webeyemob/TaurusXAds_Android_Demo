@@ -14,9 +14,6 @@ import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.demo.utils.Utils;
-import com.taurusx.ads.mediation.networkconfig.SigmobSplashConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TikTokSplashConfig;
 
 public class SplashActivity extends Activity {
 
@@ -65,8 +62,6 @@ public class SplashActivity extends Activity {
 
         // (Optional) Set Network special Config
         mSplashAd.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(createSigmobSplashConfig())
-                .addConfig(createTikTokSplashConfig())
                 .build());
 
         // Bottom area settings (For: OPPO, Sigmob and vivo)
@@ -116,57 +111,5 @@ public class SplashActivity extends Activity {
 
         // Load SplashAd
         mSplashAd.loadAd();
-    }
-
-    private SigmobSplashConfig createSigmobSplashConfig() {
-        return SigmobSplashConfig.Builder()
-                /**
-                 * 广告结束，广告内容是否自动隐藏；默认 false。
-                 * 若开屏和应用共用 Activity，建议 false。
-                 * 若开屏是单独 Activity，建议true。
-                 */
-                .setDisableAutoHideAd(true)
-                .build();
-    }
-
-    private TikTokSplashConfig createTikTokSplashConfig() {
-        return TikTokSplashConfig.Builder()
-                // 具体尺寸，单位 px；默认为屏幕大小
-                // .setImageAcceptedSize(1080, 1920)
-                // 宽度充满屏幕，高度固定
-                // .setImageAcceptedSize(ViewGroup.LayoutParams.MATCH_PARENT, 1800)
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                    }
-
-                    @Override
-                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                    }
-                })
-                .build();
     }
 }

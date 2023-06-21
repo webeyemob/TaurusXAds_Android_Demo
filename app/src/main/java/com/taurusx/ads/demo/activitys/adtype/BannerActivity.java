@@ -15,12 +15,6 @@ import com.taurusx.ads.demo.R;
 import com.taurusx.ads.demo.activitys.base.BaseActivity;
 import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.demo.utils.Utils;
-import com.taurusx.ads.mediation.networkconfig.AdMobBannerConfig;
-import com.taurusx.ads.mediation.networkconfig.DFPBannerConfig;
-import com.taurusx.ads.mediation.networkconfig.InMobiBannerConfig;
-import com.taurusx.ads.mediation.networkconfig.TikTokAppDownloadListener;
-import com.taurusx.ads.mediation.networkconfig.TikTokExpressBannerConfig;
-
 
 public class BannerActivity extends BaseActivity {
 
@@ -86,10 +80,6 @@ public class BannerActivity extends BaseActivity {
 
         // (Optional) Set Network special Config
         mBannerAdView.setNetworkConfigs(NetworkConfigs.Builder()
-                .addConfig(createAdMobBannerConfig())
-                .addConfig(createDFPBannerConfig())
-                .addConfig(createInMobiBannerConfig())
-                .addConfig(createTikTokExpressBannerConfig())
                 .build());
 
         // Listen Ad load result
@@ -124,81 +114,5 @@ public class BannerActivity extends BaseActivity {
                 Utils.toast(BannerActivity.this, adError.toString());
             }
         });
-    }
-
-    private AdMobBannerConfig createAdMobBannerConfig() {
-        // 根据当前屏幕的方向设置 Adaptive Banner 的尺寸
-        return AdMobBannerConfig.Builder()
-                // .setAnchoredAdaptiveBannerSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 320))
-                // .setInlineAdaptiveBannerSize(AdSize.getCurrentOrientationInlineAdaptiveBannerAdSize(this, 300))
-                .build();
-
-        // 或者，如果你想预加载，可以指定期望的屏幕方向。
-//        return AdMobBannerConfig.Builder()
-//                .setAnchoredAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
-//                .setInlineAdaptiveBannerSize(AdSize.getLandscapeInlineAdaptiveBannerAdSize(this, 728))
-//                .build();
-    }
-
-    private DFPBannerConfig createDFPBannerConfig() {
-        // 根据当前屏幕的方向设置 Adaptive Banner 的尺寸
-        return DFPBannerConfig.Builder()
-                // .setAnchoredAdaptiveBannerSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 320))
-                // .setInlineAdaptiveBannerSize(AdSize.getCurrentOrientationInlineAdaptiveBannerAdSize(this, 300))
-                .build();
-
-        // 或者，如果你想预加载，可以指定期望的屏幕方向。
-//        return DFPBannerConfig.Builder()
-//                .setAnchoredAdaptiveBannerSize(AdSize.getPortraitAnchoredAdaptiveBannerAdSize(this, 320))
-//                .setInlineAdaptiveBannerSize(AdSize.getLandscapeInlineAdaptiveBannerAdSize(this, 728))
-//                .build();
-    }
-
-    private InMobiBannerConfig createInMobiBannerConfig() {
-        return InMobiBannerConfig.Builder()
-                // 设置刷新动画；默认为 InMobiBanner.AnimationType.ANIMATION_OFF
-                // .setAnimationType(InMobiBanner.AnimationType.ANIMATION_OFF)
-                .build();
-    }
-
-    private TikTokExpressBannerConfig createTikTokExpressBannerConfig() {
-        return TikTokExpressBannerConfig.Builder()
-                // 使用默认的 Dislike Dialog 样式，仅需设置 Dislike 回调
-                // .setDislikeCallback(new TikTokGetDislikeCallback() {})
-                // 或自定义 Dislike Dialog
-                // .setDislikeDialog(new TikTokGetDislikeDialog() {})
-                // 监听应用类广告下载
-                .setAppDownloadListener(new TikTokAppDownloadListener() {
-                    @Override
-                    public void onIdle() {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onIdle");
-                    }
-
-                    @Override
-                    public void onDownloadActive(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadActive: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadPaused(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadPaused: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFailed(long totalBytes, long currBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFailed: " + appName);
-                    }
-
-                    @Override
-                    public void onDownloadFinished(long totalBytes, String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onDownloadFinished: " + appName);
-                    }
-
-                    @Override
-                    public void onInstalled(String fileName, String appName) {
-                        LogUtil.d(TAG, "TikTokAppDownloadListener: onInstalled");
-                    }
-                })
-                .build();
     }
 }
