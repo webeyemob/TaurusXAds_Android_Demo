@@ -83,7 +83,7 @@ dependencies {
         // 国内版
         implementation "com.taurusx.ads:core:2.9.2"
         implementation "com.taurusx.ads:miit_mdid:1.0.25"
-        implementation "com.satori.sdk:eventio-go:2.3.5.0"
+        implementation "com.satori.sdk:eventio-go:2.3.7.3_callserver"
         implementation "com.satori.sdk:eventio-openudid:1.1.7"
         implementation "com.satori.sdk:eventio-crashlytics:1.0.7"
     }

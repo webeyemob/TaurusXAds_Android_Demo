@@ -436,5 +436,20 @@
       <option name="name" value="maven17" />
       <option name="url" value="https://bitbucket.org/maven-fission/fission/raw/release" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="file:$PROJECT_DIR$/../Upload-Plugin" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven15" />
+      <option name="name" value="maven15" />
+      <option name="url" value="https://artifactory.verizonmedia.com/artifactory/maven" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="file:$PROJECT_DIR$/Upload-Plugin" />
+    </remote-repository>
   </component>
 </project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.satori.sdk</groupId>
+  <artifactId>eventio-go</artifactId>
+  <versioning>
+    <release>2.3.7.3_callserver</release>
+    <versions>
+      <version>2.3.7.3_callserver</version>
+    </versions>
+    <lastUpdated>20230814061609</lastUpdated>
+  </versioning>
+</metadata>

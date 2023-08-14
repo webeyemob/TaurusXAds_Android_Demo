@@ -1,11 +1,20 @@
 package com.taurusx.ads.demo;
 
-import android.app.Application;
+import static com.satori.sdk.io.event.core.openapi.Constants.DEFAULT_TAG;
 
+import android.app.Application;
+import android.util.Log;
+
+import com.headspring.goevent.GoEventLib;
+import com.headspring.goevent.GoEventProperties;
+import com.satori.sdk.io.event.core.openapi.EventIoConfig;
+import com.satori.sdk.io.event.core.openapi.EventIoConfigFactory;
+import com.satori.sdk.io.event.core.openapi.EventIoHolder;
 import com.taurusx.ads.core.api.TaurusXAds;
 import com.taurusx.ads.core.api.ad.networkconfig.NetworkConfigs;
 import com.taurusx.ads.core.api.constant.DownloadNetwork;
 import com.taurusx.ads.core.api.segment.Segment;
+import com.taurusx.ads.core.api.utils.LogUtil;
 import com.taurusx.ads.demo.utils.Constant;
 import com.taurusx.ads.mediation.networkconfig.MobrainGlobalConfig;
 import com.taurusx.ads.mediation.networkconfig.PrebidConfig;
@@ -14,6 +23,8 @@ import com.taurusx.ads.mediation.networkconfig.TuiaGlobalConfig;
 
 import org.prebid.mobile.Host;
 
+import java.util.Map;
+
 public class TaurusXApplication extends Application {
 
     private final String TAG = "TaurusXApplication";
@@ -21,6 +32,27 @@ public class TaurusXApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        GoEventLib.getInstance().setCallServerListener(new GoEventLib.CallServerListener() {
+            @Override
+            public boolean customSend() {
+                return true;
+            }
+
+            @Override
+            public void callServer(String s, Map<String, String> map, byte[] bytes) {
+                LogUtil.d(TAG, "GoEvent: callServer");
+            }
+        });
+
+        GoEventProperties.a().b("shouldLog", true);
+        EventIoConfig config = EventIoConfigFactory.toBuilder((Application)getApplicationContext())
+                .build();
+
+        GoEventProperties.a().b("shouldLog", true);
+        EventIoHolder.createHolder(config).fire();
+
+        GoEventProperties.a().b("shouldLog", true);
 
         // 授权 GDPR；true 表示同意
         TaurusXAds.getDefault().setGdprConsent(true);
